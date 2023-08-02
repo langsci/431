@@ -29,16 +29,6 @@
   \posscitealias%
   \textcites}
 
-% biblatex
-% Define new bibliography stings
-\NewBibliographyString{
-  subvoce, subvoces,
-}
-\DefineBibliographyStrings{german}{%
-  subvoce = {\relax{}s\adddot\,v\adddot},
-  subvoces = {\relax{}s\adddot\,vv\adddot},
-}
-
 % cleveref
 % In-text references
 % cf. https://tex.stackexchange.com/a/139051
@@ -105,11 +95,6 @@
 % tikz
 \usetikzlibrary{decorations}
 \usetikzlibrary{tikzmark}
-
-% tikz
-% Alias for tikzmark's \subnode[]{}{} to spare lots of empty brackets for nodes
-% not containing any text anyway
-\newcommand{\mysn}[1]{\subnode{#1}{}}
 
 % tikz
 % Private style settings
