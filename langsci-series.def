@@ -5,6 +5,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+\newcommand{\ahl}{ahl}
 \newcommand{\algad}{algad}
 \newcommand{\calseries}{calseries}
 \newcommand{\cam}{cam}
@@ -40,6 +41,23 @@
 \newcommand{\lsSeriesFontColor}{white}
 
 \AtBeginDocument{
+\ifx\lsSeries\ahl
+  \newcommand{\lsSeriesTitle}{Advances in Historical Linguistics}
+  \newcommand{\lsSeriesColor}{lsRed}
+  \renewcommand{\lsISSN}{}
+  \renewcommand{\lsSeriesText}{
+            Chief Editor:    XXX \\
+            Editor:        XXX
+
+            \bigskip
+
+            In this series:
+
+            \begin{enumerate}
+            \item XXX
+            \end{enumerate}
+        }
+\fi
 \ifx\lsSeries\algad
 	\newcommand{\lsSeriesTitle}{African Language Grammars \newlineCover and Dictionaries}
 	\newcommand{\lsSeriesColor}{lsLightOrange}
