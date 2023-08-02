@@ -2053,55 +2053,55 @@ sie im Rahmen ähnlicher Konstruktionen als \q{gefloatete Quantoren} auf. Was
 darüber hinaus \citeauthor{shlonsky1991}, \citeauthor{pittner1995} und
 \citeauthor{merchant1996} eint, ist, dass sie alle den Unterschied in der
 Lesart zwischen der Version mit Kontaktstellung und der mit Distanzstellung
-behandeln. Der Unterschied wird in \cref{ex:siebeideauto} den Beispielen bei
+behandeln. Der Unterschied wird in \cref{ex:siebeidefhrd} den Beispielen bei
 \citet[30--31]{pittner1995} folgend illustriert.
 
 \begin{exe}
-\ex \label{ex:siebeideauto}
+\ex \label{ex:siebeidefhrd}
 	\begin{xlist}
-	\ex \label{ex:siebeideauto_1}
-		Sie haben beide ein Auto.
+	\ex \label{ex:siebeidefhrd_1}
+		Sie haben beide ein Fahrrad.
 		\medskip
 
 		\begin{tikzpicture}[baseline=(A.base)]
 			\node [draw, rectangle] (A) at (0,1) {A};
 			\node [draw, rectangle] (B) at (2,1) {B};
-			\node [draw, rectangle] (auto1) at (0,0) {Auto};
-			\node [draw, rectangle] (auto2) at (2,0) {Auto};
+			\node [draw, rectangle] (fhrd1) at (0,0) {Fahrrad};
+			\node [draw, rectangle] (fhrd2) at (2,0) {Fahrrad};
 
-			\draw [-latex] (A) -- (auto1);
-			\draw [-latex] (B) -- (auto2);
+			\draw [-latex] (A) -- (fhrd1);
+			\draw [-latex] (B) -- (fhrd2);
 		\end{tikzpicture}
 		\\
 
-	\ex \label{ex:siebeideauto_2}
-		Sie beide haben ein Auto.
+	\ex \label{ex:siebeidefhrd_2}
+		Sie beide haben ein Fahrrad.
 		\medskip
 
 		\begin{tikzpicture}[baseline=(A.base)]
 			\node [draw, rectangle] (A) at (0,1) {A};
 			\node [draw, rectangle] (B) at (4,1) {B};
-			\node [draw, rectangle, gray] (auto1) at (0,0) {Auto};
-			\node [draw, rectangle      ] (auto)  at (2,0) {Auto};
-			\node [draw, rectangle, gray] (auto2) at (4,0) {Auto};
+			\node [draw, rectangle, gray] (fhrd1) at (0,0) {Fahrrad};
+			\node [draw, rectangle      ] (fhrd)  at (2,0) {Fahrrad};
+			\node [draw, rectangle, gray] (fhrd2) at (4,0) {Fahrrad};
 
-			\draw [-latex] (A) to [out=east, in=north] (auto);
-			\draw [-latex] (B) to [out=west, in=north] (auto);
+			\draw [-latex] (A) to [out=east, in=north] (fhrd);
+			\draw [-latex] (B) to [out=west, in=north] (fhrd);
 
-			\draw [-latex, gray] (A) -- (auto1);
-			\draw [-latex, gray] (B) -- (auto2);
+			\draw [-latex, gray] (A) -- (fhrd1);
+			\draw [-latex, gray] (B) -- (fhrd2);
 		\end{tikzpicture}
 		\\
 	\end{xlist}
 \end{exe}
 
-Während der Satz in \cref{ex:siebeideauto_1} mit gefloatetem Quantor
-ausschließlich die Lesart zulässt, bei der beide Parteien jeweils ein Auto
-besitzen (distributive Lesart), lässt das Beispiel in \cref{ex:siebeideauto_2}
-zusätzlich die Interpretation zu, nach der beide Parteien gemeinsam ein Auto
+Während der Satz in \cref{ex:siebeidefhrd_1} mit gefloatetem Quantor
+ausschließlich die Lesart zulässt, bei der beide Parteien jeweils ein Fahrrad
+besitzen (distributive Lesart), lässt das Beispiel in \cref{ex:siebeidefhrd_2}
+zusätzlich die Interpretation zu, nach der beide Parteien gemeinsam ein Fahrrad
 besitzen (kollektive Lesart). Zusätzliche Betonung des Quantors kann in diesem
 Fall zwar zur Disambiguierung beitragen (\textit{Sie \ul{beide} haben ein
-Auto} = distributiv), ist aber bei der rein textlichen Wiedergabe von Sprache
+Fahrrad} = distributiv), ist aber bei der rein textlichen Wiedergabe von Sprache
 ohne spezielle Markierung nicht nachvollziehbar.
 
 \phantomsection
