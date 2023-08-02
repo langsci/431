@@ -29,6 +29,16 @@
   \posscitealias%
   \textcites}
 
+% biblatex
+% Define new bibliography stings
+\NewBibliographyString{
+  subvoce, subvoces,
+}
+\DefineBibliographyStrings{german}{%
+  subvoce = {\relax{}s\adddot\,v\adddot},
+  subvoces = {\relax{}s\adddot\,vv\adddot},
+}
+
 % cleveref
 % In-text references
 % cf. https://tex.stackexchange.com/a/139051
