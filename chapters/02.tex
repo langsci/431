@@ -35,13 +35,13 @@ zunächst \fw{Controller} (Kongruenzauslöser) und \fw{Target} (Kongruenzziel).%
 %
 	\footnote{In der deutschsprachigen Fachliteratur finden sich verschiedene
 	Terminologien. \citet{fleischerschallert2011} sprechen beispielsweise von
-	\q*{Kongruenzträger} und \q*{-ziel}, \citet{panther2009} von
-	\q*{Kontrolleur} und \q*{Ziel}.}
+	\q{Kongruenzträger} und \q{-ziel}, \citet{panther2009} von
+	\q{Kontrolleur} und \q{Ziel}.}
 %
 Dieses Begriffspaar bezeichnet die beiden zuvor genannten, in bestimmten
 grammatischen Merkmalen übereinstimmende Instanzen, die in einer
 Kongruenzrelation zueinander stehen. Die Kongruenzrelation geht vom Controller
-aus, nach \citeauthor{corbett2006} \q*{empfängt} das Target die Information zu
+aus, nach \citeauthor{corbett2006} \q{empfängt} das Target die Information zu
 dessen grammatischen Merkmalen sozusagen.
 
 \begin{figure}
@@ -53,15 +53,15 @@ dessen grammatischen Merkmalen sozusagen.
 		\\
 
 		%
-		& \colorbox{gray}{\textcolor{white}{-\Nom.\M.\Sg}}% .\Stp
-		& \textcolor{gray}{\Nom.\M.\Sg}
+		& \colorbox{gray}{\textcolor{white}{-\textsc{nom.m.sg}}}% .\Stp
+		& \textcolor{gray}{\textsc{nom.m.sg}}
 		\\
 
 		\cmidrule(lr){1-2}
 		\cmidrule(lr){3-3}
 
-		\multicolumn{2}{c}{\textsc{\sffamily target}}
-		& \multicolumn{1}{c}{\textsc{\sffamily controller}}
+		\multicolumn{2}{c}{\textsc{target}}
+		& \multicolumn{1}{c}{\textsc{controller}}
 		\\
 
 		\multicolumn{2}{c}{\tikzmark{ctrltarg_targ}}
@@ -69,27 +69,27 @@ dessen grammatischen Merkmalen sozusagen.
 		\\
 	\end{tabular}
 \begin{tikzpicture}[remember picture, overlay]
-\draw [-latex]
+\draw [myarrow]
 	([yshift=2.5ex]{pic cs:ctrltarg_ctrl})
 	|- ++ (south:2ex) -|
 	([yshift=2.5ex]{pic cs:ctrltarg_targ})
-	node [near start, below] {\smaller[1]\scshape\sffamily kongruenz};
+	node [near start, below] {\smaller[1]\scshape kongruenz};
 \end{tikzpicture}
-\caption{\q*{Verschobene} Information in einer Kongruenzrelation}
+\caption{\q{Verschobene} Information in einer Kongruenzrelation}
 \label{fig:ctrltarg}
 \end{figure}
 
 Das Beispiel in \cref{fig:ctrltarg} enthält ein Substantiv, \fw{Baum}. Von
 diesem Substantiv ist bekannt, dass es die folgenden grammatischen Merkmale
-trägt: \leipzigfont{maskulin}, \leipzigfont{singular}. Ferner sei angenommen,
-dass es im \leipzigfont{nominativ} steht. Die Merkmale \leipzigfont{maskulin}
-und \leipzigfont{singular} sind dem Lexikoneintrag des Wortes inhärent; sie
+trägt: \textsc{maskulin}, \textsc{singular}. Ferner sei angenommen,
+dass es im \textsc{nominativ} steht. Die Merkmale \textsc{maskulin}
+und \textsc{singular} sind dem Lexikoneintrag des Wortes inhärent; sie
 werden nicht morphologisch an ihm markiert. Die grammatischen Informationen
 zeigen sich jedoch in einem Portmanteau-Morphem zusätzlich zum Kasus des
 Substantivs als Suffix \fw{-er} am Adjektiv \fw{grün}, das von sich aus keine
 Personenmerkmale und Informationen zum Kasus der Nominalphrase (NP) enthält.
 Personen- und Kasusmerkmale des Substantivs werden durch die Flexion am
-Adjektiv widergespiegelt und erscheinen daher \q*{verschoben}. Das Adjektiv ist
+Adjektiv widergespiegelt und erscheinen daher \q{verschoben}. Das Adjektiv ist
 damit das Target der Kongruenz\-relation, während das Substantiv den Controller
 darstellt.
 
@@ -100,11 +100,11 @@ semantische Eigenschaften der bezeichneten Person gebunden; bei Dingen und
 Abstrakta ergeben sie sich anhand formaler Kriterien \autocites[vgl.][2--4,
 125--132]{corbett2006}{koepckezubin2017}. So bezeichnet \fw{Mutter} eine
 \textquote{Frau, die ein oder mehrere Kinder geboren hat}, oder allgemeiner
-eine \blockcquote[\pno~\fw{Mutter}]{duden-online}{Frau, die in der Rolle einer
-Mutter ein oder mehrere Kinder versorgt, erzieht}. \fw{Mutter} hat damit
-\leipzigfont{feminin} als Wert des grammatischen Merkmals \leipzigfont{genus}.
-Doch dass etwa \fw{Baum} maskulin und \fw{Liebe} feminin ist, hat kein Korrelat
-in der außersprachlichen Realität, sondern ist eine Konvention des Deutschen.%
+eine \blockcquote[s.\,v.~\fw{Mutter}]{duden-online}{Frau, die in der Rolle
+einer Mutter ein oder mehrere Kinder versorgt, erzieht}. \fw{Mutter} hat damit
+\textsc{feminin} als Wert des grammatischen Merkmals \textsc{genus}. Doch dass
+etwa \fw{Baum} maskulin und \fw{Liebe} feminin ist, hat kein Korrelat in der
+außersprachlichen Realität, sondern ist eine Konvention des Deutschen.%
 %
 	\footnote{Nichtsdestoweniger ist die Genuszuweisung bei Inanimata nicht
 		ganz willkürlich. \citeauthor{koepckezubin2017} haben seit den 1980er
@@ -115,9 +115,9 @@ in der außersprachlichen Realität, sondern ist eine Konvention des Deutschen.%
 			{koepckezubin2009}%
 			{koepckezubin2017},
 		dass nicht nur Derivationssuffixe wie
-			\fw{-ling} (\M),
-			\fw{-schaft} (\F) oder
-			\fw{-chen} (\N),
+			\fw{-ling} (\textsc{m}),
+			\fw{-schaft} (\textsc{f}) oder
+			\fw{-chen} (\textsc{n}),
 		sondern auch die phonologische Struktur von Wortstämmen und die
 		Zugehörigkeit von Substantiven zu bestimmten semantischen Feldern einen
 		starken Einfluss auf die Genuszuweisung haben. Zum Beispiel tendieren
@@ -150,17 +150,17 @@ in der außersprachlichen Realität, sondern ist eine Konvention des Deutschen.%
 Wie darüber hinaus aus dem Schema in \cref{fig:termini} deutlich wird,
 unterscheiden \citet{wechslerzlatic2003} nicht nur zwischen grammatischer und
 pragmatischer Kongruenz, sondern innerhalb der grammatischen Kongruenz noch
-Kongruenz mit den Merkmalskategorien \Concord{} (grammatische Kongruenz \fw{ad
-formam} innerhalb der NP) und \Index{} (grammatische Kongruenz \fw{ad formam}
-oder \fw{ad sensum} außerhalb der NP) \citep[8--17]{wechslerzlatic2003}. Die
-theoretische Grundlage für diese Unterscheidung liefert ihnen die
-\fw{Head-driven Phrase Structure Grammar} (HPSG; \cite{pollardsag1994}). Im
-Gegensatz zu der Anmerkung von \citet[164]{fleischer2012}, dass \q*{formal} und
-\q*{semantisch} in der Forschung synonym zu \q*{grammatisch} und
-\q*{pragmatisch} benutzt werden, unterscheiden \citet{wechslerzlatic2003} also
-alle vier Termini. Pragmatische und semantische Kongruenz überschneiden sich
-mit dem Begriff \fw{constructio ad sensum}, da sie sich beide aus der Semantik
-speisen.
+Kongruenz mit den Merkmalskategorien \textsc{concord} (grammatische Kongruenz
+\fw{ad formam} innerhalb der NP) und \textsc{index} (grammatische Kongruenz
+\fw{ad formam} oder \fw{ad sensum} außerhalb der NP)
+\citep[8--17]{wechslerzlatic2003}. Die theoretische Grundlage für diese
+Unterscheidung liefert ihnen die \fw{Head-driven Phrase Structure Grammar}
+(HPSG; \cite{pollardsag1994}). Im Gegensatz zu der Anmerkung von
+\citet[164]{fleischer2012}, dass \q{formal} und \q{semantisch} in der
+Forschung synonym zu \q{grammatisch} und \q{pragmatisch} benutzt werden,
+unterscheiden \citet{wechslerzlatic2003} also alle vier Termini. Pragmatische
+und semantische Kongruenz überschneiden sich mit dem Begriff \fw{constructio ad
+sensum}, da sie sich beide aus der Semantik speisen.
 
 \begin{figure}
 \centering
@@ -178,11 +178,11 @@ speisen.
 	\draw [-latex] (prg) -- (sem);
 
 	\node [draw, rectangle, align=center, gray] (con) at (0,-2) {
-		\Concord \\
+		\textsc{concord} \\
 		\footnotesize (Modifikatoren)
 	};
 	\node [draw, rectangle, align=center, gray] (idx) at (3,-2) {
-		\Index \\
+		\textsc{index} \\
 		\footnotesize (anaphorische\\
 		\footnotesize Bindung)
 	};
@@ -212,70 +212,82 @@ vier Domänen mit wachsender Lokalität und abnehmender Kanonizität:
 	\item außerhalb des Satzes.
 \end{enumerate}
 
-In \cref{ex:beidedomains} wird jeweils ein Beispiel pro Domäne gegeben. In
-\cref{ex:beidedomains_1} stellt \lit{bede} \wdef{beide} als Target einen
-Modifikator seines Controllers \lit{wingarten} \wdef{Weingarten} in derselben
-NP beziehungsweise in derselben Nominalgruppe dar. Der Controller \lit{zil}
-\wdef{Ziele, Fristen} in \cref{ex:beidedomains_2} bildet den Kopf der in sich
-abgeschlossenen Genitiv-NP \lit{der vor genanten zil} \wdef{der vorgenannten
-Ziele}. \textins{\lit{B}}\lit{eidiv} \wdef{beide} als darauf bezogenes Target
-steht außerhalb davon als Kopf der darüber liegenden NP, aber dennoch im
-gleichen Satzteil wie \lit{zil} \wdef{Ziele, Fristen}, da die komplexe NP
-\lit{der vor genanten zil / ainez / oder beidiv} \wdef{eines oder beide der
-vorgenannten Ziele} das Akkusativobjekt zu \lit{verſitzzet} \wdef{versäumt}
-ist. In \cref{ex:beidedomains_3} ist das Target \lit{beideu} \wdef{beide} auf
-den Controller \lit{rihtær} \wdef{Richter} bezogen, befindet sich formal aber
-nicht im gleichen Satzteil wie dieser, dennoch aber im gleichen (Teil-)Satz,
-insofern beide NPs vom gleichen Verb \lit{ſprachen} \wdef{sprachen} abhängen.
-Im letzten Schritt bezieht sich das Target \lit{bede} \wdef{beide} in
-\cref{ex:beidedomains_4} zwar auf \lit{herren} \wdef{Herren}, doch bildet
-\lit{herren} das Subjekt zum Verb \lit{lident} \wdef{leiden}, während
-\lit{bede} zusammen mit dem Personalpronomen \lit{Si} \wdef{sie} das
-Subjekt von \lit{ligent} \wdef{liegen} bildet. Damit stehen der
-(Erst-)Controller \lit{herren} und das Target \lit{bede} in unterschiedlichen
-Sätzen.
+In \crefrange{ex:beidedomains_1}{ex:beidedomains_4} wird jeweils ein Beispiel
+pro Domäne gegeben. In \cref{ex:beidedomains_1} stellt \lit{bede} `beide' als
+Target einen Modifikator seines Controllers \lit{wingarten} `Weingarten' in
+derselben NP beziehungsweise in derselben Nominalgruppe dar. Das Target steht
+attributiv zum Controller.
 
 \begin{exe}
-\ex \label{ex:beidedomains}
-	\begin{xlist}
-	\ex \label{ex:beidedomains_1}
-		innerhalb derselben Nominalgruppe (attributiv)\\
-		\gll die \textbf{bede} \textbf{wingarten} \\
-			die beide-\Acc.\Pl.\M.\St{} Weingarten-\Acc.\Pl.\M{} \\
-		\begin{taggedline}{\parencites(Zürich, 1290)[\pno~1221, 484.9]{cao2}}
-		\trans \wdef{die beiden Weingärten}
-		\end{taggedline}
+\ex \label{ex:beidedomains_1}
+	\gll die bede wingarten \\
+		die beide-\textsc{acc.pl.m.st} Weingarten-\textsc{acc.pl.m} \\
+	\trans `die beiden Weingärten'
+		\parencites%
+			(Nr.~1221, Zürich, 1290)%
+			[484:9]{cao2}
+\end{exe}
 
-	\ex \label{ex:beidedomains_2}
-		gleicher Satzteil (anaphorisch)\\
-		\gll ſwenne man der {vor genanten} \textbf{zil} / ainez / oder
-			\textbf{beidiv} \textelp{} verſitzzet \\
-			so=wenn man der vorgenannten Ziel[\Gen.\Pl.\N] {} eines {}
-			oder beide-\Acc.\Pl.\N.\St{} {} versäumt \\
-		\begin{taggedline}{\parencites(Augsburg, 1283)[\pno~619, 47.31]{cao2}}
-		\trans \wdef{falls man eines oder beide der vorgenannten Ziele
-			\textelp{} versäumt}
-		\end{taggedline}
+Der Controller \lit{zil} `Ziele, Fristen' in \cref{ex:beidedomains_2} bildet
+den Kopf der in sich abgeschlossenen Genitiv-NP \lit{der vor genanten zil} `der
+vorgenannten Ziele'. \textins{\lit{B}}\lit{eidiv} `beide' als darauf bezogenes
+Target steht außerhalb davon als Kopf der darüber liegenden NP, aber dennoch im
+gleichen Satzteil wie \lit{zil} `Ziele, Fristen', da die komplexe NP
+\lit{der vor genanten zil / ainez / oder beidiv} `eines oder beide der
+vorgenannten Ziele' das Akkusativobjekt zu \lit{verſitzzet} `versäumt'
+ist. Das Target steht in einer anaphorischen Beziehung zum Controller.
 
-	\ex \label{ex:beidedomains_3}
-		gleicher Teilsatz (anaphorisch)\\
-		\gll Die \textbf{rihtær} ſprachen \textbf{beideu} {dar zuͦ} \\
-			die Richter[\Nom.\Pl.\M] sprachen beide-\Nom.\Pl.\N.\St{}
-				dazu \\
-		\begin{taggedline}{\parencites[\pno~28\ra, 8]{kc:B1}[vgl.][10090]{schroeder1895}}
-		\trans \wdef{die Richter äußerten sich beide dazu}
-		\end{taggedline}
+\begin{exe}
+\ex \label{ex:beidedomains_2}
+	\gll ſwenne man der {vor genanten} zil / ainez / oder
+		beidiv \textelp{} verſitzzet \\
+		so=wenn man der vorgenannten Ziel[\textsc{gen.pl.n}] {} eines {}
+		oder beide-\textsc{acc.pl.n.st} {} versäumt \\
+	\trans `falls man eines oder beide der vorgenannten Ziele \textelp{}
+		versäumt'
+		\parencites%
+			(Nr.~619, Augsburg, 1283)%
+			[47:31]{cao2}
+\end{exe}
 
+In \cref{ex:beidedomains_3} ist das Target \lit{beideu} `beide' auf den
+Controller \lit{rihtær} `Richter' bezogen, befindet sich formal aber nicht im
+gleichen Satzteil wie dieser, dennoch aber im gleichen (Teil-)Satz, insofern
+beide NPs vom gleichen Verb \lit{ſprachen} `sprachen' abhängen. Auch hier ist
+die Kongruenzbeziehung anaphorisch.
+
+\begin{exe}
+\ex \label{ex:beidedomains_3}
+	\gll Die rihtær ſprachen beideu {dar zuͦ} \\
+		die Richter[\textsc{nom.pl.m}] sprachen beide-\textsc{nom.pl.n.st}
+			dazu \\
+	\trans `die Richter äußerten sich beide dazu'
+		(%
+			B1: 28ra:8;
+			\cite[vgl.][267 {[=~V.~10090]}]{schroeder1895}%
+		)
+\end{exe}
+
+Im letzten Schritt bezieht sich das Target \lit{bede} `beide' in
+\cref{ex:beidedomains_4} zwar auf \lit{herren} `Herren', doch bildet
+\lit{herren} das Subjekt zum Verb \lit{lident} `leiden', während
+\lit{bede} zusammen mit dem Personalpronomen \lit{Si} `sie' das
+Subjekt von \lit{ligent} `liegen' bildet. Damit stehen der (Erst-)Controller
+\lit{herren} und das Target \lit{bede} in unterschiedlichen Sätzen. Das
+\norm{bėide}-Target bezieht sich ebenfalls anaphorisch auf seinen Controller.
+
+\begin{exe}
 	\ex \label{ex:beidedomains_4}
-			anderer Satz (anaphorisch)\\
-		\gll Min \textbf{herren} lident ovch groze not. \\
-			mein Herr-\Nom.\Pl.\M{} leiden auch große Not \\
-	\sn \gll \textbf{Si} ligent \textbf{bede} fvͤr tot \\
-			\Tpl\subM.\Nom{} liegen beide-\Nom.\Pl.\M.\St{} für tot \\
-		\begin{taggedline}{\parencites[\pno~86\ra, 3--4]{kc:VB}[vgl.][12033--12034]{schroeder1895}}
-		\trans \wdef{Meine Herren leiden auch große Not. Sie liegen beide tot \textins{darnieder}.}
-		\end{taggedline}
-	\end{xlist}
+		\gll Min herren lident ovch groze not. \\
+			mein Herr-\textsc{nom.pl.m} leiden auch große Not \\
+	\sn \gll Si ligent bede fvͤr tot \\
+			\textsc{3pl\subM.nom} liegen beide-\textsc{nom.pl.m.st} für tot \\
+	\trans `Meine Herren leiden auch große Not. Sie liegen beide tot
+		\textins{darnieder}.'
+		(%
+			VB: 86ra:3--4;
+			\cite[vgl.][301 {[=~V.~12033--12034]}]{schroeder1895}%
+		)		
 \end{exe}
 
 \section{Index und Concord}
@@ -283,30 +295,24 @@ Sätzen.
 
 \phantomsection
 \label{phsec:index}
-Das Merkmal \Index\ ist in der HPSG seinerseits Teil des Merkmals
-\leipzigfont{content} eines lexikalischen Zeichens, das sich aus der Semantik
+Das Merkmal \textsc{index} ist in der HPSG seinerseits Teil des Merkmals
+\textsc{content} eines lexikalischen Zeichens, das sich aus der Semantik
 speisende Informationen über dessen Denotat enthält, konkret also
-grammatikalisierte Personenmerkmale wie \leipzigfont{person},
-\leipzigfont{numerus} und \leipzigfont{genus}
-\citep[15--17]{wechslerzlatic2003}. Auch in der mit der HPSG verwandten
-\fw{Lexical-Functional Grammar} (LFG;
+grammatikalisierte Personenmerkmale wie \textsc{person}, \textsc{numerus} und
+\textsc{genus} \citep[15--17]{wechslerzlatic2003}. Auch in der mit der HPSG
+verwandten \fw{Lexical-Functional Grammar} (LFG;
 \cites{kaplanbresnan1982}{bresnan2001}{bresnanetal2016}) existiert ein solches
-Merkmal \citep[189--190]{bresnanetal2016}. Das \Index-Merkmal bildet die Basis
-für anaphorische Referenz, indem es ein Individuum oder ein Ding als Instanz
-des Bezeichneten im Diskurs verankert \citep[10--11]{wechslerzlatic2003}.
-Während eine große Nähe zwischen \Index{} und Semantik konstatiert wird, ist
-diese nicht absolut, da auch das generische Pronomen \fw{man} oder das
-expletive Subjektspronomen \fw{es} einen \Index{} besitzen, obwohl sie sich
-nicht auf eine bestimmte semantische Größe beziehen
-\citep[11--13]{wechslerzlatic2003}. Dies wird bei der Konjugation von Verben
-und der Bindung von Reflexivpronomen sichtbar \cref{ex:explvbkonj}.
-% insofern Verbkonjugation auf die Grammatikalisierung von
-% klitischen Pronomina zurückgeführt wird
-% \parencites[43--45]{lehmann2015}[76--77]{corbett2006}.
-% Die Konjugation von Verben unterliegt daher der Kongruenz mit dem \Index\ des
-% Subjekts \citep[90]{wechslerzlatic2003}.
+Merkmal \citep[189--190]{bresnanetal2016}. Das \textsc{index}-Merkmal bildet
+die Basis für anaphorische Referenz, indem es ein Individuum oder ein Ding als
+Instanz des Bezeichneten im Diskurs verankert
+\citep[10--11]{wechslerzlatic2003}. Während eine große Nähe zwischen
+\textsc{index} und Semantik konstatiert wird, ist diese nicht absolut, da auch
+das generische Pronomen \fw{man} oder das expletive Subjektspronomen \fw{es}
+einen \textsc{index} besitzen, obwohl sie sich nicht auf eine bestimmte
+semantische Größe beziehen \citep[11--13]{wechslerzlatic2003}. Dies wird bei
+der Konjugation von Verben und der Bindung von Reflexivpronomen sichtbar
+\cref{ex:explvbkonj}.
 
-\needspace{1\baselineskip}
 \begin{exe}
 \ex \label{ex:explvbkonj}
 	\begin{xlist}
@@ -315,13 +321,13 @@ und der Bindung von Reflexivpronomen sichtbar \cref{ex:explvbkonj}.
 	\end{xlist}
 \end{exe}
 
-\citet{kingdalrymple2004} argumentieren des Weiteren, dass \Index\ in
+\citet{kingdalrymple2004} argumentieren des Weiteren, dass \textsc{index} in
 koordinierten nominalen Strukturen ein nicht-distributives Merkmal darstellt,
 indem die Kombination zweier Substantive einen neuen Index erhält, mit dem
 kongruiert wird \citep[74--76]{kingdalrymple2004}. \fw{Jan} und \fw{Markus} in
-\cref{ex:coordidx} haben zwar jeder für sich einen Singular-\Index, die Gruppe
-\fw{Jan und Markus} hat aber einen Plural-\Index, was sich in der
-Kongruenz zwischen Subjekt und Verb zeigt.
+\cref{ex:coordidx} haben zwar jeder für sich einen Singular-\textsc{index}, die
+Gruppe \fw{Jan und Markus} hat aber einen Plural-\textsc{index}, was sich in
+der Kongruenz zwischen Subjekt und Verb zeigt.
 
 \begin{exe}
 \ex\label{ex:coordidx}
@@ -333,83 +339,59 @@ Kongruenz zwischen Subjekt und Verb zeigt.
 
 \phantomsection
 \label{phsec:concord}
-Das Gegenstück zum \Index\ bildet \Concord, das in der HPSG Teil des
-Kopfmerkmals ist \citep[17]{wechslerzlatic2003}. Das Merkmal \Concord\
-existiert ebenso in der LFG \citep[189--192]{bresnanetal2016} und enthält in
-beiden Theoriesystemen syntaktisch relevante Informationen über den nominalen
-Phrasenkopf, die im Deutschen für einzelne, unkoordinierte NPs weitgehend
-deckungsgleich mit denen des \Index\ sind:%
+Das Gegenstück zum \textsc{index} bildet \textsc{condord}, das in der HPSG Teil
+des Kopfmerkmals ist \citep[17]{wechslerzlatic2003}. Das Merkmal
+\textsc{concord} existiert ebenso in der LFG \citep[189--192]{bresnanetal2016}
+und enthält in beiden Theoriesystemen syntaktisch relevante Informationen über
+den nominalen Phrasenkopf, die im Deutschen für einzelne, unkoordinierte NPs
+weitgehend deckungsgleich mit denen des \textsc{index} sind:%
 %
 	\footnote{\citet{wechslerzlatic2003} untersuchen den Fall des
-	Bosnisch-Kroatisch-Mazedonisch-Serbischen (BKMS), in dem es Substantive gibt,
-	für die dies nicht der Fall ist.}
+	Bosnisch-Kroatisch-Mazedonisch-Serbischen (BKMS), in dem es Substantive
+	gibt, für die dies nicht der Fall ist.}
 %
-Zu den Merkmalen \leipzigfont{numerus} und \leipzigfont{genus} tritt das
-strukturelle Merkmal \leipzigfont{kasus}, dafür spielt \leipzigfont{person}
-hier keine Rolle. Kongruenz über das Merkmal \Concord\ herrscht typischerweise
-zwischen einem nominalen Kopf und seinen Modifizierern, was in der HPSG mit dem
+Zu den Merkmalen \textsc{numerus} und \textsc{genus} tritt das strukturelle
+Merkmal \textsc{kasus}, dafür spielt \textsc{person} hier keine Rolle.
+Kongruenz über das Merkmal \textsc{concord} herrscht typischerweise zwischen
+einem nominalen Kopf und seinen Modifizierern, was in der HPSG mit dem
 \fw{Head Feature Principle} begründet wird. Dieses besagt im Grunde, dass ein
 Phrasenkopf seine grammatischen Informationen mit seinen Töchtern teilt
 \autocite[vgl.][22]{wechslerzlatic2003}. Daher ist im Gegensatz zu
-\Index\ das Merkmal \Concord\ lokal auf die NP beschränkt, während das
-\Index-Merkmal überall dort vorkommt, wo anaphorische Bindung eine Rolle spielt
+\textsc{index} das Merkmal \textsc{concord} lokal auf die NP beschränkt,
+während das \textsc{index}-Merkmal überall dort vorkommt, wo anaphorische
+Bindung eine Rolle spielt
 \parencites[14--16, 22]{wechslerzlatic2003}[189]{bresnanetal2016}.
 
 In Bezug auf koordinierte Substantive wie in \cref{ex:coordidx} sei angemerkt,
-dass \citet[76--78]{kingdalrymple2004} \Concord\ im Gegensatz zu \Index\ als
-distributives Merkmal analysieren. Dies
-bedeutet, dass Modifizierer von koordinierten Substantiven mit jedem Konjunkt
-einzeln in \Concord-Merkmalen übereinstimmen müssen, um einen akzeptablen
-Ausdruck zu produzieren. Das Beispiel in \cref{ex:engartdiscong} illustriert
-dies, insofern \fw{these} \wdef{diese} nur dann verwendet werden kann, wenn
-beide von ihm determinierten Konjunkte jeweils im Plural stehen
-\cref{ex:engartdiscong_1} oder wenn es lediglich ein einzelnes Substantiv
-determiniert und stattdessen die Konjunktion auf höherer syntaktischer Ebene
-stattfindet \cref{ex:engartdiscong_4}.
+dass \citet[76--78]{kingdalrymple2004} \textsc{concord} im Gegensatz zu
+\textsc{index} als distributives Merkmal analysieren. Dies bedeutet, dass
+Modifizierer von koordinierten Substantiven mit jedem Konjunkt einzeln in
+\textsc{condord}-Merkmalen übereinstimmen müssen, um einen akzeptablen Ausdruck
+zu produzieren. Das Beispiel in \cref{ex:engartdiscong} illustriert dies,
+insofern \fw{these} `diese' nur dann verwendet werden kann, wenn beide von ihm
+determinierten Konjunkte jeweils im Plural stehen \cref{ex:engartdiscong_1}
+oder wenn es lediglich ein einzelnes Substantiv determiniert und stattdessen
+die Konjunktion auf höherer syntaktischer Ebene stattfindet
+\cref{ex:engartdiscong_4}.
 
 \begin{exe}
-\needspace{3\baselineskip}
 \ex\label{ex:engartdiscong}
 	Englisch \parencite[nach][70]{kingdalrymple2004}
 	\begin{xlist}
-	\ex[]{these[\Pl] boys[\Pl] and girls[\Pl]}
+	\ex[]{these[\textsc{pl}] boys[\textsc{pl}]
+		and girls[\textsc{pl}]}
 		\label{ex:engartdiscong_1}
-	\ex[*]{these[\Pl] boys[\Pl] and girl[\Sg]}
+	\ex[*]{these[\textsc{pl}] boys[\textsc{pl}]
+		and girl[\textsc{sg}]}
 		\label{ex:engartdiscong_2}
-	\ex[*]{this[\Sg] boy[\Sg] and girls[\Pl]}
+	\ex[*]{this[\textsc{sg}] boy[\textsc{sg}]
+		and girls[\textsc{pl}]}
 		\label{ex:engartdiscong_3}
-	\ex[]{these[\Pl] boys[\Pl] and this[\Sg] girl[\Sg]}
+	\ex[]{these[\textsc{pl}] boys[\textsc{pl}]
+		and this[\textsc{sg}] girl[\textsc{sg}]}
 		\label{ex:engartdiscong_4}
 	\end{xlist}
 \end{exe}
-
-% Das Englische kennt keine Kongruenz bei Adjektiven, doch im Deutschen lässt
-% sich dasselbe Phänomen auch bei Adjektiven (als Adjunkten) beobachten, die
-% mit ihrem Controller in Kasus, Genus und Numerus übereinstimmen müssen -- es
-% ist also nicht nur auf die Kongruenz zwischen Phrasenkopf und Spezifikator
-% beschränkt.
-
-% \begin{exe}
-% \ex\label{}	
-% 	\begin{xlist}
-% 	\ex[]{schöne Häuser und Gärten}
-% 	\ex[*]{schöne Häuser und Garten}
-% 	\ex[]{schöne Häuser und ein schöner Garten}
-% 	\end{xlist}
-
-% \ex\label{}
-% 	\begin{xlist}
-% 	\ex[*]{schöne [Häuser und Garten]}
-% 	\ex[*]{schönes [Haus und Gärten]}
-% 	\end{xlist}
-
-% \ex\label{}
-% 	\begin{xlist}
-% 	\ex[*]{ein schönes Haus und Garten}
-% 	\ex[*]{ein schöner Haus und Garten}
-% 	\ex[]{ein schönes Haus und ein schöner Garten}
-% 	\end{xlist}
-% \end{exe}
 
 \section{Genus, Sexus und Belebtheit}
 \label{sec:gendsex}
@@ -434,10 +416,10 @@ Zugehörigkeit zu einer bestimmten Klasse von Dingen oder die phonologische
 Struktur des Lexems.
 
 Von den 257 von \citet{corbett2013b} untersuchten, typologisch diversen
-Sprachen besitzen 84 (32,7\pct) ein sexusbasiertes System als semantische
-Grundlage der Klasseneinteilung; in den Daten von \citetitle{grambank}
+Sprachen besitzen 84 (32,7\,\%) ein sexusbasiertes System als semantische
+Grundlage der Klasseneinteilung; in den Daten von \tit{Grambank}
 \autocite{skirgardetal2023} fällt dieser Wert auf lediglich 410 von 2.206
-Varietäten (18,6\pct; \cite[siehe][]{haynie:gb051}). Gerade der Aspekt der
+Varietäten (18,6\,\%; \cite[siehe][]{haynie:gb051}). Gerade der Aspekt der
 Sexusbasiertheit führt zu einiger Komplexität beim Zusammenspiel von Geschlecht
 im biologischen und soziokulturellen Sinn sowie der sekundären Nutzung von
 Geschlecht als grammatischer Kategorie \autocites[dazu
@@ -455,19 +437,19 @@ Sichtbarmachung von Frauen durch Movierung der maskulinen Form eines Nomen
 Agentis sowie von Personen, die sich dem nicht-cis-nicht-heterosexuellen
 Spektrum zugehörig fühlen, durch weitere typografische Mittel \autocite[dazu
 kritisch resümierend][]{kasper2022}. Mit \citet[61--89]{kotthoffnuebling2018}
-ist anzumerken, dass der Laiendiskurs um das sogenannte \q*{Gendern} häufig
+ist anzumerken, dass der Laiendiskurs um das sogenannte \q{Gendern} häufig
 sehr oberflächlich bleibt. Ein explizit andro\-zentrischer Bias durchdringt die
 gesamte Nominalmorphologie des Deutschen sehr viel tiefer.
 
 Aus sprachhistorischer Sicht gründet sich diese kritische Beobachtung letztlich
 darin, dass das Urindogermanische vor der Abspaltung des anatolischen Zweigs
-wahrscheinlich lediglich eine Distinktion \leipzigfont{[±\,belebt]} oder
-\leipzigfont{[±\,human]} besaß, die sowohl im Zusammenhang mit
+wahrscheinlich lediglich eine Distinktion \textsc{[±\,belebt]} oder
+\textsc{[±\,human]} besaß, die sowohl im Zusammenhang mit
 Individualisierbarkeit als auch in syntaktischer Hinsicht mit Agensfähigkeit
 stand. Das spätere Maskulinum setzt das belebte Genus fort, das Neutrum das
 unbelebte. Zur expliziten Kennzeichnung von belebten Feminina hat sich sekundär
 das Suffix \fw{*-h₂} etabliert, das darüber hinaus zur Derivation von
-Kollektiva und Abstrakta diente, wie in \cref{ex:pie_h2} gezeigt
+Kollektiva und Abstrakta diente, wie in \cref{tab:pie_h2} gezeigt
 \autocites%
 	[73--74, 77]{ringe2017}%
 	[195--197, 205--207]{fritzmeierbruegger2021}%
@@ -476,68 +458,58 @@ Kollektiva und Abstrakta diente, wie in \cref{ex:pie_h2} gezeigt
 Rekombination von vorhandenem morphologischen Material bei der
 Ausdifferenzierung von Genera keine Seltenheit darstellt.
 
-\begin{exe}
-\ex \label{ex:pie_h2}
-	\begin{tabular}[t]{@{}
-		>{\raggedleft}p{1em}
-		l @{} l @{} l @{~} l
-		c
-		l @{} l @{} l @{~} l
-		l
-	@{}}
-	% a.
-	% 	& %
-	% 		& %
-	% 		& %
-	% 		& %
-	% 	& %
-	% 	& \fw{*gʷén}
-	% 		& %
-	% 		& \fw{-h₂}
-	% 		& \wdef{Frau}
-	% 	& \parencite[58]{ringe2017} % Kap. 2.3.4.ii
-	% 	\\
+\begin{table}
+\centering
+\caption{\fw{*h₂}-Derivate im Urindogermanischen}
+\begin{tabular}[t]{
+	l @{} l @{} l @{~} l
+	c
+	l @{} l @{} l @{~} l
+	l
+}
 
-	a.
-		& \fw{*wĺ̥kʷ}
-			& \fw{-o}
-			& \fw{-s}
-			& \wdef{Wolf}
-		& $\to$
-		& \fw{*wl̥kʷ}
-			& \fw{-í}
-			& \fw{-h₂}
-			& \wdef{Wölfin}
-		& \parencite[102, 132]{ringe2017} % Kap. 3.2.2.i, 3.2.4.iii
-		\\
+\toprule
 
-	b.
-		& \fw{*kʷékʷl}
-			& \fw{-o}
-			& \fw{-s}
-			& \wdef{Rad}
-		& $\to$
-		& \fw{*kʷekʷl}
-			& \fw{-é}
-			& \fw{-h₂}
-			& \wdef{Rädersatz}
-		& \parencite[59]{ringe2017} % Kap. 2.3.4.ii
-		\\
+\fw{*wĺ̥kʷ}
+	& \fw{-o}
+	& \fw{-s}
+	& `Wolf'
+& $\to$
+& \fw{*wl̥kʷ}
+	& \fw{-í}
+	& \fw{-h₂}
+	& `Wölfin'
+& \parencite[102, 132]{ringe2017} % Kap. 3.2.2.i, 3.2.4.iii
+\\
 
-	c.
-		& \fw{*bʰewg-}
-			& %
-			& %
-			& \wdef{fliehen}
-		& $\to$
-		& \fw{*bʰug}
-			& \fw{-á}
-			& \fw{-h₂}
-			& \wdef{Flucht}
-		& \parencite[74]{ringe2017} % Kap. 2.4.2.i
-		\\
-	\end{tabular}
-\end{exe}
+\fw{*kʷékʷl}
+	& \fw{-o}
+	& \fw{-s}
+	& `Rad'
+& $\to$
+& \fw{*kʷekʷl}
+	& \fw{-é}
+	& \fw{-h₂}
+	& `Rädersatz'
+& \parencite[59]{ringe2017} % Kap. 2.3.4.ii
+\\
+
+\fw{*bʰewg-}
+	& %
+	& %
+	& `fliehen'
+& $\to$
+& \fw{*bʰug}
+	& \fw{-á}
+	& \fw{-h₂}
+	& `Flucht'
+& \parencite[74]{ringe2017} % Kap. 2.4.2.i
+\\
+
+\bottomrule
+\end{tabular}
+\label{tab:pie_h2}
+\end{table}
 
 Bezüglich der eingangs referierten Definition von Genus als relationaler Größe
 hebt \citet[42]{koepcke1982} hervor, dass \blockquote{\textins*{d}er
@@ -548,7 +520,7 @@ gleichen Kontext genannte Dinge unterschiedliche Genera besitzen \autocite[dazu
 auch][320--323]{corbett1991}. Darüber hinaus vermag Genus auf der Ebene der
 Pragmatik die Einstellung einer Sprecherin oder eines Sprechers zu
 signalisieren, was Respekt oder Verachtung, Zu- oder Abneigung gegenüber einer
-Person durch die Verwendung des \q*{richtigen} oder \q*{falschen} Genus in
+Person durch die Verwendung des \q{richtigen} oder \q{falschen} Genus in
 Bezug auf deren Identität betrifft \autocite[322--323]{corbett1991}.
 
 \citet{steriopolosteriopolo2022} verorten diese affektive Funktion des
@@ -558,29 +530,22 @@ Ebene, die den sozialen oder ontologischen Status eines Individuums anspricht,
 eine starke emotionale Komponente, wenn durch abweichenden Genus\-gebrauch zum
 Beispiel despektiertlich kommuniziert wird, dass sich eine Person nicht in
 Einklang mit der ihr zugemessenen Geschlechterrolle verhält.
-% , gibt es auch Ausnahmen. So erwähnt
-% \citet[322]{corbett1991}, dass die umgekehrte Genusverwendung beispielsweise
-% Teil des \fw{Baby Talk} im Arabischen ist;
-% \citet[70--72]{steriopolosteriopolo2022} diskutieren ebenfalls die
-% Möglichkeit umgekehrter Genusverwendung mit zärtlicher Konnotation in intimen
-% queeren Kontexten.
 Abgesehen von lexikalisierten Fällen von abweichendem Genus wie
-mittelhochdeutsch \norm{wīp} \wdef{Frau} (Neutrum mit Bezug auf eine weibliche
-Person) oder \norm{kindelīn} \wdef{Kindlein} (Neutrum mit Bezug auf junge
+mittelhochdeutsch \norm{wīp} `Frau' (Neutrum mit Bezug auf eine weibliche
+Person) oder \norm{kindelīn} `Kindlein' (Neutrum mit Bezug auf junge
 Menschen), spielt situativ abweichender Genusgebrauch bei Personen im
 Belegmaterial keine Rolle.
 
-Im Zusammenhang mit \norm{bėide} \wdef{beide} kommen im Belegmaterial natürlich
+Im Zusammenhang mit \norm{bėide} `beide' kommen im Belegmaterial natürlich
 nicht nur Personen vor, sondern häufig auch Sachen, wie etwa ein \norm{garte}
-\wdef{Garten} und ein \norm{acker} \wdef{Acker}, deren Verkauf die Urkunde
-\notecite[\pno~3249]{cao4} \autocites(Freiburg i.\,Br., 1299)[][]{cao4}
-behandelt. Belebtheit macht sich nicht nur bei der Genuszuweisung, sondern auch
-unter morphologischen Gesichtspunkten bemerkbar, obwohl sie keine eigentliche
-grammatische Kategorie des Mittelhochdeutschen darstellt. In den Worten
-\posscite[99]{dahl1999} ist Belebtheit, also der Unterschied zwischen belebten
-und unbelebten Entitäten, in den Grammatiken menschlicher Sprachen so
-allgegenwärtig, dass sie tendenziell als selbstverständlich hingenommen und
-damit unsichtbar wird.%
+`Garten' und ein \norm{acker} `Acker', deren Verkauf die Urkunde Nr.~3249
+\autocites(Freiburg i.\,Br., 1299)[][]{cao4} behandelt. Belebtheit macht sich
+nicht nur bei der Genuszuweisung, sondern auch unter morphologischen
+Gesichtspunkten bemerkbar, obwohl sie keine eigentliche grammatische Kategorie
+des Mittelhochdeutschen darstellt. In den Worten \posscite[99]{dahl1999} ist
+Belebtheit, also der Unterschied zwischen belebten und unbelebten Entitäten, in
+den Grammatiken menschlicher Sprachen so allgegenwärtig, dass sie tendenziell
+als selbstverständlich hingenommen und damit unsichtbar wird.%
 %
 	\footnote{\foreigntextcquote{english}[99]{dahl1999}{Animacy, or the
 		distinction between animate and inanimate entities, is so pervasive in
@@ -592,7 +557,7 @@ damit unsichtbar wird.%
 \includegraphics[
 	width=\linewidth,
 	keepaspectratio,
-]{./assets/grafiken/belebtheitshierarchie.png}
+]{./figures/belebtheitshierarchie.png}
 \caption{Belebheitshierarchie nach \citet[72]{kotthoffnuebling2018}}
 \label{fig:animhier}
 \end{figure}
@@ -616,10 +581,8 @@ korrelliert (\fw{referential gender}), während ein hoher Grad von Unbelebtheit
 mit formalen Kriterien der Genuszuweisung einhergeht (\fw{lexical gender}). Wie
 aus \cref{fig:animhier} deutlich wird, gibt es der Natur von Kontinua
 entsprechend keine scharfe Grenze zwischen den Polen
-\leipzigfont{[+\,belebt]} und \leipzigfont{[-\,belebt]}, sondern viele
+\textsc{[+\,belebt]} und \textsc{[-\,belebt]}, sondern viele
 Übergangs- und Zweifelsfälle.
-% , von denen die für diese Untersuchung relevantesten im Folgenden kurz
-% charakterisiert werden.
 
 Da die Personen, die in den hier untersuchten Texten benannt werden, seit
 Jahrhunderten tot und im Fall der \KC{} zusätzlich literarisch
@@ -632,10 +595,6 @@ z.\,B.][]{klinger2002}. Weil Kontexte, in denen cis- und heterosexuelle Normen
 explizit unterlaufen oder infrage gestellt werden, im Belegmaterial nicht
 vorkommen, gehe ich bei der Klassifizierung meiner Daten von cis- und
 heteronormativen Gegebenheiten aus.
-% , also davon, dass zum Beispiel konventionell männliche Namen wie
-% \norm{Konrad} auf eine männlich zu lesende Person schließen lassen und dass
-% Konrads \norm{hūsvrouwe} \wdef{Ehefrau, Gattin}
-% \autocite[\pno~\textit{hûsvrouwe}]{mwb2} weiblich zu lesen ist.
 
 Wenn im Weiteren vereinfachend von \textit{Sexus} als semantischer Basis von
 Genus die Rede ist, bezieht sich der Begriff nicht primär auf eine biologische
@@ -643,13 +602,12 @@ Lesart. Vielmehr ist damit diejenige Geschlechter\-rolle gemeint, die in der
 Wortbedeutung einer Personenbezeichnung angelegt ist und daher stereotyp
 erwartet wird oder die vom Textzusammenhang etwa durch Namennennung implizierte
 Geschlechterrolle. Gerade in der älteren Literatur ist in diesem Kontext häufig
-vom \q*{natürlichen Geschlecht} die Rede; \citet[67]{panther2009} spricht
-diesbezüglich vom \q*{konzeptuellen Genus}. Um auf das zuvor zitierte Beispiel
+vom \q{natürlichen Geschlecht} die Rede; \citet[67]{panther2009} spricht
+diesbezüglich vom \q{konzeptuellen Genus}. Um auf das zuvor zitierte Beispiel
 zurückzukommen, wird im Folgenden die Bezeichnung \fw{Mutter} entsprechend der
 in der Wortbedeutung angelegten weiblichen Geschlechterrolle als eine weibliche
-Person denotierend aufgefasst \autocite[vgl.][\pno~\fw{Mutter}]{duden-online}.
-% , unabhängig von biologischen Parametern, die bei den hier untersuchten
-% Texten ohnehin nicht erörterbar sind.
+Person denotierend aufgefasst
+\autocite[vgl.][s.\,v.~\fw{Mutter}]{duden-online}.
 
 Bezüglich komplexer Kombinationen von Genus, Sexus und der Kongruenz darauf
 bezogener Targets diskutiert \textcite[183--184]{corbett1991} sogenannte
@@ -663,7 +621,7 @@ Epikoina.
 
 Bei Lexical Hybrids im engeren Sinn liegt ein Konflikt zwischen Genus und Sexus
 auf der lexikalischen Ebene vor \autocite[145]{klein2022}. In diesem
-Zusammenhang ist das historisch langlebige Wort für \wdef{Frau} als formales
+Zusammenhang ist das historisch langlebige Wort für `Frau' als formales
 Neutrum mit weiblicher Denotation hervorzuheben: Im Alt- und
 Mittelhochdeutschen lautet es \norm{wīb} beziehungsweise \norm{wīp}. Auch im
 modernen Deutschen findet sich \fw{Weib} noch mindestens bis ins
@@ -701,10 +659,10 @@ kann, genereller auf nicht-erwachsene Menschen.%
 	\footnote{Darüber hinaus kann sich \fw{Kind} im übertragenen Sinn auch auf
 		erwachsene Menschen beziehen, zum Beispiel, wenn damit die
 		Abhängigkeitsbeziehung zu den Eltern oder metaphorisch zu Gott betont
-		wird \autocite[\pno~\textit{kint}]{lexer:mhdhwb}. In manchen Fällen
+		wird \autocite[s.\,v.~\textit{kint}]{lexer:mhdhwb}. In manchen Fällen
 		kann \fw{Kind} auch besonders auf Mädchen oder junge Frauen bezogen
 		sein
-		\autocites[\pno~\textit{kint}]{drw}[\pno~\textit{Kind}]{duden-online}.}
+		\autocites[s.\,v.~\textit{kint}]{drw}[s.\,v.~\textit{Kind}]{duden-online}.}
 %
 Insbesondere \fw{Kind} verdient Aufmerksamkeit, da die Variation zwischen
 Neutrum in Einklang mit dem formalen Genusmerkmal sowie Maskulinum oder
@@ -733,59 +691,59 @@ dass damit allgemein die Stadt bewohnende Menschen gemeint sind.
 
 \begin{exe}
 \ex \label{ex:nongenmasc}
-	\begin{taggedline}{\parencites%
-		(Überlingen, Bodenseekr., 1285)[\pno~N~288, 223.19--21]{cao5}}
 	\gll Hermann der Marſpurrer \textelp{} vnd Cvͦnrat der Turſte
 			\textelp{} die {vor genemten} burgare bede von V́berlingen \\
-		Hermann[\Nom.\Sg.\M] der Marspurrer {} und Konrad[\Nom.\Sg.\M] der
-			Turste {} die vorgenannten Bürger[\Nom.\Pl.\M] beid-\Nom.\Pl.\M{}
-			von Überlingen \\
-	\trans \wdef{Hermann der Marspurrer \textelp{} und Konrad der Turste
-		\textelp{}, die vorgenannten beiden Bürger von Überlingen} \\
-	\end{taggedline}
+		Hermann[\textsc{nom.sg.m}] der Marspurrer {} und
+			Konrad[\textsc{nom.sg.m}] der Turste {} die vorgenannten
+			Bürger[\textsc{nom.pl.m}] beid-\textsc{nom.pl.m} von Überlingen \\
+	\trans `Hermann der Marspurrer \textelp{} und Konrad der Turste
+		\textelp{}, die vorgenannten beiden Bürger von Überlingen' \\
+		\parencites%
+			(Nr.~N~288, Überlingen, Bodenseekr., 1285)%
+			[223:19--21]{cao5}
 \end{exe}
 
 Körperteile stellen eine weitere Übergangskategorie dar, indem sie
 Dingcharakter haben, aber Teil eines Organismus sind. Im speziellen Kontext mit
-\norm{bėide} \wdef{beide} liegen in der Belegsammlung zu dieser Arbeit keine
+\norm{bėide} `beide' liegen in der Belegsammlung zu dieser Arbeit keine
 Fälle von kombiniertem pronominalen Bezug auf Körperteile vor, sondern
 lediglich der Fall in \cref{ex:bodyparts_attr}, bei dem \lit{baide}
-\wdef{beide} attributiv \lit{hênde} \wdef{Hände} quantifiziert, sowie mehrere
+`beide' attributiv \lit{hênde} `Hände' quantifiziert, sowie mehrere
 Fälle mit \norm{bėide} als Konjunktion, von denen einer exemplarisch in
 \cref{ex:bodyparts_conj} zitiert wird. In diesem Beispiel wird die Koordination
-von \lit{ader} \wdef{Ader} und \lit{lit} \wdef{Glied} mit \lit{baidiv}
-\wdef{beide} eingeführt, jedoch im weiteren Verlauf kein kombinierter Bezug auf
+von \lit{ader} `Ader' und \lit{lit} `Glied' mit \lit{baidiv}
+`beide' eingeführt, jedoch im weiteren Verlauf kein kombinierter Bezug auf
 beide Konjunkte durch Pronomina hergestellt.
 
 \begin{exe}
 \ex \begin{xlist}
 	\ex \label{ex:bodyparts_attr}
-		\begin{taggedline}{\parencites%
-			[\pno~6\rb, 19]{kc:K}%
-			[vgl. abweichend][4\va, 26--27]{kc:A1}%
-			[5\va, 4]{kc:H}%
-			[7\vb, 8]{kc:M}%
-			[4\vb, 49]{kc:B1}%
-			[9\ra, 5]{kc:P}%
-			[913]{schroeder1895}} % setno 1065
 		\gll Si wand ír baide hênde \\
-			sie wand ihr beid-\Acc.\Pl.\F.\St{} Hand-\Acc.\Pl.\F{} \\
-		\trans \wdef{Sie wand ihre beiden Hände.}
-		\end{taggedline}
+			sie wand ihr beid-\textsc{acc.pl.f.st} Hand-\textsc{acc.pl.f} \\
+		\trans `Sie wand ihre beiden Hände.'
+			(%
+				K:~6rb:19, vgl. abweichend
+				A1:~4va:26--27,
+				H:~5va:4,
+				M:~7vb:8,
+				B1:~4vb:49,
+				P:~9ra:5;
+				\cite[98 {[=~V.~913]}]{schroeder1895}% setno 1065
+			)
 
 	\ex \label{ex:bodyparts_conj}
-		\begin{taggedline}{\parencites%
-			[\pno~32\rb, 31]{kc:A1}%
-			[vgl.][44\va, 15]{kc:H}%
-			[56\vb, 21]{kc:M}%
-			[39\rb, 3]{kc:C1}%
-			[45\ra, 32]{kc:K}%
-			[147\va, 20]{kc:Z}%
-			[7468]{schroeder1895}} % setno 2018
 		\gll baidiv ader unt lit. \\
-			beide Ader[\Acc.\Sg.\F] und Glied[\Acc.\Sg.\M/\N] \\
-		\trans \wdef{sowohl Ader als auch Glied}
-		\end{taggedline}
+			beide Ader[\textsc{acc.sg.f}] und Glied[\textsc{acc.sg.m/n}] \\
+		\trans `sowohl Ader als auch Glied'
+			(%
+				A1:~32rb:31, vgl.
+				H:~44va:15,
+				M:~56vb:21,
+				C1:~39rb:3,
+				K:~45ra:32,
+				Z:~147va:20;
+				\cite[218 {[=~V.~7468]}]{schroeder1895}% setno 2018
+			)
 \end{xlist}
 \end{exe}
 
@@ -793,21 +751,19 @@ Der Belebtheitsstatus von Körperteilen ist zumindest im modernen
 Standarddeutschen beachtenswert, da sich deren Possessivsyntax von anderen,
 weniger belebten Dingen abhebt, wie die Beispiele in \cref{ex:stdgeralien}
 zeigen. Dieses Verhalten lässt sich als Unterschied in der Alienabilität fassen
-\autocites{nichols1988}[17--18]{heine1997}.
-% Unter Umständen könnte es also sinnvoll sein, diese als Analysekategorie zu
-% führen, wo Körperteile tatsächlich eine Rolle spielen.
-Eine kursorische Suche im \REM{} nach dem inalienablen Typ mit
-\textsc{pronomen}~(\Dat) -- \textsc{artikel}~(\Acc) -- \textsc{substantiv} hat
-keine Ergebnisse geliefert.
+\autocites{nichols1988}[17--18]{heine1997}. Eine kursorische Suche im \REM{}
+nach dem inalienablen Typ mit \textsc{pronomen}~(\textsc{dat}) --
+\textsc{artikel}~(\textsc{acc}) -- \textsc{substantiv} hat keine Ergebnisse
+geliefert.
 
 	\begin{exe}
 	\ex \begin{xlist}
 		\ex[]{Ich wasche mein Auto.
-				\jambox{\hphantom{*\,}$\leipzigfont{[+ alienabel]}$}}
+				\jambox{\hphantom{*\,}$\textsc{[+ alienabel]}$}}
 		\ex[]{Ich wasche mir die Hände.
-				\jambox{\hphantom{*\,}$\leipzigfont{[- alienabel]}$}}
+				\jambox{\hphantom{*\,}$\textsc{[- alienabel]}$}}
 		\ex[*]{Ich wasche mir das Auto.
-				\jambox{*\,$\leipzigfont{[- alienabel]}$}}
+				\jambox{*\,$\textsc{[- alienabel]}$}}
 		\end{xlist}
 		\label{ex:stdgeralien}
 	\end{exe}
@@ -840,16 +796,16 @@ angegeben.
 \caption{Abkürzungen für grammatisches und semantisches Geschlecht}
 \begin{tabular}{@{} l l l l @{}} % @{\hspace{4\tabcolsep}}
 \toprule
-\mc{2}{c}{\textbf{Genus}} & \mc{2}{c}{\textbf{Sexus}} \\ % \smallskip
+\mc{2}{c}{Genus} & \mc{2}{c}{Sexus} \\ % \smallskip
 
 \cmidrule(r){1-2}
 \cmidrule(l){3-4}
 
-\M & maskulin             & \SM & männlich     \\
-\F & feminin              & \SF & weiblich     \\
-\N & neutral              & \SI & unbelebt     \\
-   &                      & \SA & unspezifisch \\
-   &                      & \SX & unbekannt    \\
+\textsc{m} & maskulin & \SM & männlich     \\
+\textsc{f} & feminin  & \SF & weiblich     \\
+\textsc{n} & neutral  & \SI & unbelebt     \\
+           &          & \SA & unspezifisch \\
+           &          & \SX & unbekannt    \\
 \bottomrule
 \end{tabular}
 \label{tab:gendsex}
@@ -858,22 +814,21 @@ angegeben.
 Dabei wird für die Bezeichnung der formalen Kategorie \textit{Genus} die
 lateinische Terminologie verwendet, für die Bezeichnung der semantischen
 Kategorie \textit{Sexus} die deutsche. Zum Beispiel wird
-\norm{wīp} \wdef{Frau} als \NeutF\ annotiert, \norm{kint} \wdef{Kind} je
+\norm{wīp} `Frau' als \NeutF\ annotiert, \norm{kint} `Kind' je
 nachdem, ob das Geschlecht des Kindes im Kontext bekannt ist, als \NeutM,
 \NeutF\ oder \NeutX. Wenn sich im Kontext eines Beispiels \norm{ėrbe}
-\wdef{Erbe} oder \norm{burgǟre} \wdef{Bürger} nicht auf eine bestimmte Person
-beziehen lassen, also unspezifische Referenz vorliegt, werden sie mit \MascA\
-annotiert. Im Fall von \norm{schuech} \wdef{Schuh} als unbelebtem Substantiv
-steht \MascI, bei \norm{minne} \wdef{Liebe} als Abstraktum \FemI. Da es sich
-bei Körperteilen nicht um Menschen handelt, wurden auch diese unter Vorbehalt
-als Inanimata gewertet. So wird \norm{hant} \wdef{Hand} mit \FemI{} annotiert,
-es sei denn, damit ist metonymisch ein Diener oder eine Dienerin gemeint, in
-welchem Fall die Annotation entsprechend \FemM{} oder \FemF{} lautet.
-Semantisch komplexe Bezeichnungen wie \norm{drīvaltichėit}
-\wdef{Dreifaltigkeit} kommen im ausgewerteten Material nicht vor. \norm{Got}
-\wdef{Gott} wurde gemäß seiner Bezeichnung als \norm{truhtīn} \wdef{Herrscher}
-und \norm{hērre} \wdef{Herr} \autocite[z.\,B.][8314, 13525]{schroeder1895} als
-\MascM\ gewertet.
+`Erbe' oder \norm{burgǟre} `Bürger' nicht auf eine bestimmte Person beziehen
+lassen, also unspezifische Referenz vorliegt, werden sie mit \MascA\ annotiert.
+Im Fall von \norm{schuech} `Schuh' als unbelebtem Substantiv steht \MascI, bei
+\norm{minne} `Liebe' als Abstraktum \FemI. Da es sich bei Körperteilen nicht um
+Menschen handelt, wurden auch diese unter Vorbehalt als Inanimata gewertet. So
+wird \norm{hant} `Hand' mit \FemI{} annotiert, es sei denn, damit ist
+metonymisch ein Diener oder eine Dienerin gemeint, in welchem Fall die
+Annotation entsprechend \FemM{} oder \FemF{} lautet. Semantisch komplexe
+Bezeichnungen wie \norm{drīvaltichėit} `Dreifaltigkeit' kommen im ausgewerteten
+Material nicht vor. \norm{Got} `Gott' wurde gemäß seiner Bezeichnung als
+\norm{truhtīn} `Herrscher' und \norm{hērre} `Herr' \autocite[z.\,B.][234
+{[=~V.~8314]}, 323 {[=~V.~13525]}]{schroeder1895} als \MascM\ gewertet.
 
 Im modernen Standarddeutschen liegen darüber hinaus einzelne Wörter wie
 \fw{Schild} oder \fw{Korpus} vor, die je nach Bedeutungskontext
@@ -883,22 +838,21 @@ Schirm; \fw{der Korpus} (\MascI) als Schallkörper eines Saiteninstruments,
 \fw{das Korpus} (\NeutI) als strukturierte Sammlung von Texten oder
 Belegstellen. Ferner ist neben standardsprachlichem \fw{die Butter} (\FemI)
 regional auch \fw{der Butter} (\MascI) verbreitet
-\autocite[\pno~\textit{der/die Butter}]{elspassmoeller2003}. Ein
+\autocite[s.\,v.~\textit{der/die Butter}]{elspassmoeller2003}. Ein
 mittelhochdeutsches Beispiel für Substantive mit bedeutungs\-unterscheidendem
-Genus ist \norm{dęr tėil} (\MascI) \wdef{Anteil, Zugeteiltes, Eigentum}
-gegenüber \norm{daȥ tėil} (\NeutI) \wdef{Teil von einem Ganzen, Stück, Seite,
-Abteilung} \autocite[\pno~\textit{teil}]{lexer:mhdhwb}.
+Genus ist \norm{dęr tėil} (\MascI) `Anteil, Zugeteiltes, Eigentum' gegenüber
+\norm{daȥ tėil} (\NeutI) `Teil von einem Ganzen, Stück, Seite, Abteilung'
+\autocite[s.\,v.~\textit{teil}]{lexer:mhdhwb}.
 
 Des Weiteren liegt in der mittelhochdeutschen Periode noch eine größere Zahl an
 Substantiven vor, deren Genus bei gleicher Bedeutung variabel belegt ist oder
 die ihr Genus im Lauf der Zeit gewechselt haben \autocite[157--166]{ksw2}, zum
-Beispiel \norm{die} (\FemI) oder \norm{daȥ jārƶīt} (\NeutI)
-\wdef{Jahrestag} beziehungsweise mittel\-hoch\-deutsch \fw{die wiƶƶe} (\FemI)
-\wdef{Wissen, Verstand, Klugheit}
-\autocite[vgl.][\pno~\textit{witze}]{lexer:mhdhwb} gegenüber neu\-hoch\-deutsch
-\fw{der Witz} (\MascI). In diesen Fällen wurde im Kontext der jeweiligen
-Textstelle nach Hinweisen gesucht, mit welchem Genus das jeweilige Lexem
-verwendet wird, soweit dies möglich war.
+Beispiel \norm{die} (\FemI) oder \norm{daȥ jārƶīt} (\NeutI) `Jahrestag'
+beziehungsweise mittel\-hoch\-deutsch \fw{die wiƶƶe} (\FemI) `Wissen, Verstand,
+Klugheit' \autocite[vgl.][s.\,v.~\textit{witze}]{lexer:mhdhwb} gegenüber
+neu\-hoch\-deutsch \fw{der Witz} (\MascI). In diesen Fällen wurde im Kontext
+der jeweiligen Textstelle nach Hinweisen gesucht, mit welchem Genus das
+jeweilige Lexem verwendet wird, soweit dies möglich war.
 
 \section{Gender Resolution}
 \label{sec:gendres}
@@ -911,115 +865,115 @@ Kategorie flektiert, mit diesen divergierenden Merkmalen umgeht. Eine
 Möglichkeit der Konfliktlösung besteht darin, lediglich mit dem nächsten
 Konjunkt zu kongruieren \autocites[\fw{closest conjunct agreement};
 vgl.][179--180]{corbett1983}[168--170]{corbett2006}, wie in dem Schema in
-\cref{ex:ccagraphic} gezeigt.
+\cref{fig:ccagraphic} gezeigt.
 
-\begin{exe}
-\ex \label{ex:ccagraphic}
-\begin{xlist}
-\ex \label{ex:ccagraphic_1}
-	\begin{tikzpicture}[
-			baseline=(clbl.base),
-			box/.style={
-				draw,
-				minimum height=2.5em,
-			% 	font=\itshape,
-			},
-			wordbox/.style={
-				draw,
-				minimum height=1.75em,
-			% 	font=\itshape,
-			},
-			lbl/.style={
-				minimum height=1.5em,
-				font={\mynodefont}
-			},
-			every node/.style={anchor=base}
-		]
+\begin{figure}
+\centering
+\begin{tikzpicture}[
+		baseline=(clbl.base),
+		box/.style={
+			draw,
+			minimum height=2.5em,
+		% 	font=\itshape,
+		},
+		wordbox/.style={
+			draw,
+			minimum height=1.75em,
+		% 	font=\itshape,
+		},
+		lbl/.style={
+			minimum height=1.5em,
+			font={\smaller\bfseries}
+		},
+		every node/.style={anchor=base}
+	]
 
-		\node [wordbox,                                ] (1) {A};
-		\node [wordbox, base right=1ex of 1, draw=white] (2) {und};
-		\node [wordbox, base right=1ex of 2            ] (3) {\textbf{B}};
-		\node [         base right=3ex of 3            ] (4) {\dots};
-		\node [wordbox, base right=3ex of 4, draw=white] (5) {C$_B$};
+	\node [wordbox,                                ] (1) {A};
+	\node [wordbox, base right=1ex of 1, draw=white] (2) {und};
+	\node [wordbox, base right=1ex of 2            ] (3) {B};
+	\node [         base right=3ex of 3            ] (4) {\dots};
+	\node [wordbox, base right=3ex of 4, draw=white] (5) {C$_B$};
 
-		\node (C) [box, rectangle, fit={(1) (2) (3)}, thick] {};
-		\node (T) [box, rectangle, fit=(5)                 ] {};
+	\node (C) [box, rectangle, fit={(1) (2) (3)}, thick] {};
+	\node (T) [box, rectangle, fit=(5)                 ] {};
 
-		\node (clbl) [lbl, above=.5ex of C] {Controller};
-		\node (tlbl) [lbl, above=.5ex of T] {Target};
+	\node (clbl) [lbl, above=.5ex of C] {Controller};
+	\node (tlbl) [lbl, above=.5ex of T] {Target};
 
-		\draw [-, thick] (3) -- ++(south:2em) -| (T);
-		\node [lbl, below=1.25em of 4.south] {Kongruenz};
-	\end{tikzpicture}
+	\draw [-, thick] (3) -- ++(south:2em) -| (T);
+	\node [lbl, below=1.25em of 4.south] {Kongruenz};
+\end{tikzpicture}
 
-\ex \label{ex:ccagraphic_2}
-	\begin{tikzpicture}[
-			baseline=(clbl.base),
-			box/.style={
-				draw,
-				minimum height=2.5em,
-			% 	font=\itshape,
-			},
-			wordbox/.style={
-				draw,
-				minimum height=1.75em,
-			% 	font=\itshape,
-			},
-			lbl/.style={
-				minimum height=1.5em,
-				font={\mynodefont}
-			},
-			every node/.style={anchor=base}
-		]
+\begin{tikzpicture}[
+		baseline=(clbl.base),
+		box/.style={
+			draw,
+			minimum height=2.5em,
+		% 	font=\itshape,
+		},
+		wordbox/.style={
+			draw,
+			minimum height=1.75em,
+		% 	font=\itshape,
+		},
+		lbl/.style={
+			minimum height=1.5em,
+			font={\smaller\bfseries}
+		},
+		every node/.style={anchor=base}
+	]
 
-		\node [wordbox,                                ] (1) {B};
-		\node [wordbox, base right=1ex of 1, draw=white] (2) {und};
-		\node [wordbox, base right=1ex of 2            ] (3) {\textbf{A}};
-		\node [         base right=3ex of 3            ] (4) {\dots};
-		\node [wordbox, base right=3ex of 4, draw=white] (5) {C$_A$};
+	\node [wordbox,                                ] (1) {B};
+	\node [wordbox, base right=1ex of 1, draw=white] (2) {und};
+	\node [wordbox, base right=1ex of 2            ] (3) {A};
+	\node [         base right=3ex of 3            ] (4) {\dots};
+	\node [wordbox, base right=3ex of 4, draw=white] (5) {C$_A$};
 
-		\node (C) [box, rectangle, fit={(1) (2) (3)}, thick] {};
-		\node (T) [box, rectangle, fit=(5)                 ] {};
+	\node (C) [box, rectangle, fit={(1) (2) (3)}, thick] {};
+	\node (T) [box, rectangle, fit=(5)                 ] {};
 
-		\node (clbl) [lbl, above=.5ex of C] {Controller};
-		\node (tlbl) [lbl, above=.5ex of T] {Target};
+	\node (clbl) [lbl, above=.5ex of C] {Controller};
+	\node (tlbl) [lbl, above=.5ex of T] {Target};
 
-		\draw [-, thick] (3) -- ++(south:2em) -| (T);
-		\node [lbl, below=1.25em of 4.south] {Kongruenz};
-	\end{tikzpicture}
-\end{xlist}
-\end{exe}
+	\draw [-, thick] (3) -- ++(south:2em) -| (T);
+	\node [lbl, below=1.25em of 4.south] {Kongruenz};
+\end{tikzpicture}
+\caption{Kongruenz mit dem nächsten Konjunkt}
+\label{fig:ccagraphic}
+\end{figure}
 
 \citet[169]{corbett2006} gibt im Rahmen von Genuskongruenz das Beispiel in
-\cref{ex:cca} aus dem Swahili. Dort treten \fw{kiti} \wdef{Stuhl} und \fw{mguu
-wa meza} \wdef{Tischbein} auf, die jeweils einer unterschiedlichen
-Nominalklasse angehören: \fw{kiti} \wdef{Stuhl} gehört zu den Klassen 7 (Sg.)
-und 8 (Pl.), \fw{mguu} \wdef{Bein} zu den Klassen 3 (Sg.) und 4 (Pl.). Das
+\cref{ex:cca} aus dem Swahili. Dort treten \fw{kiti} `Stuhl' und \fw{mguu
+wa meza} `Tischbein' auf, die jeweils einer unterschiedlichen
+Nominalklasse angehören: \fw{kiti} `Stuhl' gehört zu den Klassen 7 (Sg.)
+und 8 (Pl.), \fw{mguu} `Bein' zu den Klassen 3 (Sg.) und 4 (Pl.). Das
 gemeinsame Target \fw{u-/kimevunjika} zeigt Kongruenz in der Nominalklasse
 nur mit demjenigen Konjunkt, das ihm am nächsten steht (3 bzw.~7).
 
 \begin{exe}
-\needspace{3\baselineskip}
 \ex \label{ex:cca}
-	Swahili \autocites(zitiert in \cite[169]{corbett2006})[nach][45]{bokamba1985}
+	\langinfo%
+		{Swahili}%
+		{}%
+		{\cite[45]{bokamba1985} in \cite[169]{corbett2006}}
 	\begin{xlist}
 	\ex \label{ex:cca_1}
-		\gll ki-ti na \textbf{m-guu} wa meza \textbf{u-me-vunjika} \\
-			\leipzigfont{cl7}-chair and \leipzigfont{cl3}-leg of table
-			\leipzigfont{cl3}-\Prf-broken \\
-		\trans \wdef{the chair and the leg of the table are broken}
+		\gll ki-ti na m-guu wa meza u-me-vunjika \\
+			\textsc{cl7}-chair and \textsc{cl3}-leg of table
+			\textsc{cl3}-\textsc{prf}-broken \\
+		\trans `the chair and the leg of the table are broken'
 
 	\ex \label{ex:cca_2}
-		\gll m-guu wa meza na \textbf{ki-ti} \textbf{ki-me-vunjika} \\
-			\leipzigfont{cl3}-leg of table and \leipzigfont{cl7}-chair
-			\leipzigfont{cl7}-\Prf-broken \\
-		\trans \wdef{the leg of the table and the chair are broken}
+		\gll m-guu wa meza na ki-ti ki-me-vunjika \\
+			\textsc{cl3}-leg of table and \textsc{cl7}-chair
+			\textsc{cl7}-\textsc{prf}-broken \\
+		\trans `the leg of the table and the chair are broken'
 	\end{xlist}
 \end{exe}
 
-In der Genuskongruenz der oberdeutschen Schreibdialekte der mittelhochdeutschen
-Sprachperiode wird in solchen Fällen die Kombinationsstrategie angewandt, wie
-in \cref{ex:combgraphic} verdeutlicht
+In der Genuskongruenz der mittelhochdeutschen Sprachperiode wird in den
+oberdeutschen Schreibdialekte in solchen Fällen die Kombinationsstrategie
+angewandt, wie in \cref{fig:combgraphic} verdeutlicht
 \autocites[vgl.][312]{grimm1890}[329]{grimm1898}[39--41]{behaghel1928}[187--189]{dal2014}:
 Wenn für das Target keine Form der Deklinationsendung vorliegt, die im Plural
 genusindifferent ist, muss der Unterschied zwischen den einzelnen Controllern
@@ -1027,64 +981,67 @@ durch die Kombination ihrer Personenmerkmale aufgelöst werden, damit das Target
 regelgemäß kongruieren kann
 \autocites[vgl.][182--193]{corbett1983}[269--306]{corbett1991}[243--263]{corbett2006}.
 
-\begin{exe}
-\ex \label{ex:combgraphic}
-	\begin{tikzpicture}[
-			baseline=(clbl.base),
-			box/.style={
-				draw,
-				minimum height=2.5em,
-			% 	font=\itshape,
-			},
-			wordbox/.style={
-				draw,
-				minimum height=1.75em,
-			% 	font=\itshape,
-			},
-			lbl/.style={
-				minimum height=1.5em,
-				font={\mynodefont}
-			},
-			every node/.style={anchor=base}
-		]
+\begin{figure}
+\centering
+\begin{tikzpicture}[
+		baseline=(clbl.base),
+		box/.style={
+			draw,
+			minimum height=2.5em,
+		% 	font=\itshape,
+		},
+		wordbox/.style={
+			draw,
+			minimum height=1.75em,
+		% 	font=\itshape,
+		},
+		lbl/.style={
+			minimum height=1.5em,
+			font={\smaller\bfseries}
+		},
+		every node/.style={anchor=base}
+	]
 
-		\node [wordbox,                                ] (1) {\textbf{A}};
-		\node [wordbox, base right=1ex of 1, draw=white] (2) {und};
-		\node [wordbox, base right=1ex of 2            ] (3) {\textbf{B}};
-		\node [         base right=3ex of 3            ] (4) {\dots};
-		\node [wordbox, base right=3ex of 4, draw=white] (5) {C$_{A+B}$};
+	\node [wordbox,                                ] (1) {A};
+	\node [wordbox, base right=1ex of 1, draw=white] (2) {und};
+	\node [wordbox, base right=1ex of 2            ] (3) {B};
+	\node [         base right=3ex of 3            ] (4) {\dots};
+	\node [wordbox, base right=3ex of 4, draw=white] (5) {C$_{A+B}$};
 
-		\node (C) [box, rectangle, fit={(1) (2) (3)}, thick] {};
-		\node (T) [box, rectangle, fit=(5)                 ] {};
+	\node (C) [box, rectangle, fit={(1) (2) (3)}, thick] {};
+	\node (T) [box, rectangle, fit=(5)                 ] {};
 
-		\node (clbl) [lbl, above=.5ex of C] {Controller};
-		\node (tlbl) [lbl, above=.5ex of T] {Target};
+	\node (clbl) [lbl, above=.5ex of C] {Controller};
+	\node (tlbl) [lbl, above=.5ex of T] {Target};
 
-		\draw [-, thick] (C) -- ++(south:2em) -| (T);
-		\node [lbl, below=1em of $(2.south)!0.5!(5.south)$] {Kongruenz};
-	\end{tikzpicture}
-\end{exe}
+	\draw [-, thick] (C) -- ++(south:2em) -| (T);
+	\node [lbl, below=1em of $(2.south)!0.5!(5.south)$] {Kongruenz};
+\end{tikzpicture}
+\caption{Kongruenz mit beiden Konjunkten}
+\label{fig:combgraphic}
+\end{figure}
 
 Dies ist in den oberdeutschen Dialekten der Fall im Nom./Akk.\ Pl.\ der starken
 Adjektiv\-deklination \autocite[182]{ksw2}. Im Großteil der hier ausgewerteten
 Belege steht daher, wie in \cref{ex:gendres} illustriert, aufgrund der
 Kombination der semantischen Personenmerkmale die neutrale Form
-\norm{bėidiu} \wdef{beide (\NeutMF)}, wie in diesem Fall in Bezug auf
-\lit{Rvͦdiger} \wdef{Rüdiger (\MascM)} und seine \lit{hovſfrowe} \wdef{Ehefrau
-(\FemF)}, auch wenn auf formaler Ebene \norm{bėide} ansonsten sowohl für
+\norm{bėidiu} `beide (\NeutMF)', wie in diesem Fall in Bezug auf
+\lit{Rvͦdiger} `Rüdiger (\MascM)' und seine \lit{hovſfrowe} `Ehefrau
+(\FemF)', auch wenn auf formaler Ebene \norm{bėide} ansonsten sowohl für
 Maskulina als auch Feminina gilt.
 
 \begin{exe}
 \ex \label{ex:gendres}
-	\gll swenne aber her \textbf{R\sscr{v}{o}diger} vnd ſin
-			\textbf{hovſfrowe} \textbf{bediv} niht enſint\\
-			so=wenn aber Herr Rüdiger[\Nom.\Sg.\MascM] und sein
-			Ehefrau[\Nom.\Sg.\FemF] beide-\Nom.\Pl.\NeutMF.\St{} nicht
-			\Neg=sind \\
-	\begin{taggedline}{\parencites(Regensburg, 1299)[\pno~3262, 425.13--14]{cao4}}
-	\trans \wdef{Wenn aber irgendwann Herr Rüdiger und seine Ehefrau beide
-		nicht \textins{mehr} sind}
-	\end{taggedline}
+	\gll swenne aber her Rvͦdiger vnd ſin
+			hovſfrowe bediv niht enſint\\
+		so=wenn aber Herr Rüdiger[\textsc{nom.sg.\MascM}] und sein
+			Ehefrau[\textsc{nom.sg.\FemF}] beide-\textsc{nom.pl.\NeutMF.st}
+			nicht \textsc{Neg}=sind \\
+	\trans `Wenn aber irgendwann Herr Rüdiger und seine Ehefrau beide
+		nicht \textins{mehr} sind'
+		\parencites%
+			(Nr.~3262, Regensburg, 1299)%
+			[425:13--14]{cao4}
 \end{exe}
 
 Eine direkte Entsprechung von \cref{ex:gendres} mit umgekehrter Reihenfolge der
@@ -1103,37 +1060,36 @@ Form des Nom.~Sg.~F.\ handelt, die ebenfalls auf \norm{-iu} endet.
 \begin{exe}
 	\ex \label{ex:askfmbeidiu}
 		\begin{xlist}
-		\ex \gll vnſer \textbf{m\sscr{o}{v}ter} iwer frîundin. \\
-				unser Mutter[\Nom.\Sg.\FemF] euer Freundin \\
-		\sn \gll unde vnſer \textbf{vater} ſint \textbf{beidiv} tot. \\
-				und unser Vater[\Nom.\Sg.\MascM] sind beide-\Nom.\Pl.\NeutMF.\St{} 
+		\ex \gll vnſer moͮter iwer frîundin. \\
+				unser Mutter[\textsc{nom.sg.\FemF}] euer Freundin \\
+		\sn \gll unde vnſer vater ſint beidiv tot. \\
+				und unser Vater[\textsc{nom.sg.\MascM}] sind beide-\textsc{nom.pl.\NeutMF.st} 
 					tot \\
-			\begin{taggedline}{(%
-					Gottfried von Straßburg: \tit{Tristan},
-					nach München, Bayerische Staatsbibl., Cgm~51: Bl. 96\rb, 23--24
-					[\cite[1286]{hsc}],
-					vgl.~\cite[259~{[=~V.~18644--18645]}]{maroldschroeder1969}%
+			\trans `Unsere Mutter, eure Freundin, und unser Vater sind beide
+				tot.'
+				(%
+					\iai{Gottfried von Straßburg}, \tit{Tristan}: V.~18644--18645
+					nach München, Bayerische Staatsbibl., Cgm~51: 96rb:23--24
+					[\cite[1286]{hsc}];
+					vgl.~\cite[259]{maroldschroeder1969}%
 					% (= S. 259 → in ⁵2004: S. 313)
-				)}
-			\trans \wdef{Unsere Mutter, eure Freundin, und unser Vater sind beide tot.}
-			\end{taggedline}
+				)
 			\label{ex:askfmbeidiu_1}
 	
-		\ex \gll \textbf{Condwir amvrſ} daz wip din \\
-				Condwiramurs[\Nom.\Sg.\FemF] das Frau dein \\
-		\sn \gll vn̄ din \textbf{ſvn} Loherangrin \\
-				und dein Sohn[\Nom.\Sg.\MascM] Loherangrin \\
-		\sn \gll sint \textbf{beidiv} mit dir dar benant \\
-				sind beide-\Nom.\Pl.\NeutMF{} mit dir da benannt \\
-			\begin{taggedline}{(%
-					Wolfram von Eschenbach: \tit{Parzival},
-					nach St.~Gallen, Stiftsbibl., Cod.~Sang.~857: S.~275\tsup{a}, 32--34
-					[\cite[1211]{hsc}],
-					vgl.~\cite[785~{[=~781.17--19]}]{knechtschirok2003}% (= S. 785)
-				)}
-			\trans \wdef{Condwiramurs, deine Frau, und dein Sohn Loherangrin
-				sind beide mit dir da benannt.}
-			\end{taggedline}
+		\ex \gll {Condwir amvrſ} daz wip din \\
+				Condwiramurs[\textsc{nom.sg.\FemF}] das Frau dein \\
+		\sn \gll vn̄ din ſvn Loherangrin \\
+				und dein Sohn[\textsc{nom.sg.\MascM}] Loherangrin \\
+		\sn \gll sint beidiv mit dir dar benant \\
+				sind beide-\textsc{nom.pl.\NeutMF} mit dir da benannt \\
+		\trans `Condwiramurs, deine Frau, und dein Sohn Loherangrin
+			sind beide mit dir da benannt.'
+			(%
+				\iai{Wolfram von Eschenbach}, \tit{Parzival}: 781.17--19
+				nach St.~Gallen, Stiftsbibl., Cod.~Sang.~857: 275a:32--34
+				[\cite[1211]{hsc}];
+				vgl.~\cite[785]{knechtschirok2003}% (= S. 785)
+			)
 			\label{ex:askfmbeidiu_2}
 	\end{xlist}
 \end{exe}
@@ -1190,13 +1146,13 @@ Die F-Struktur wird in Attribut-Wert-Matrizen dargestellt (\fw{attribute-value
 matrices}; \cites[vgl.][44--45]{bresnanetal2016}[Kap.~6]{mueller2020}), die
 Informationen strukturiert präsentieren, vergleiche \cref{ex:avm}. Als
 Attribute in der linken Spalte dienen Funktionen oder Merkmale wie
-\leipzigfont{subjekt}, \leipzigfont{prädikator}, oder \leipzigfont{numerus}.
+\textsc{subjekt}, \textsc{prädikator}, oder \textsc{numerus}.
 Zugehörige Werte in der rechten Spalte können grammatische Eigenschaften wie
-\leipzigfont{plural}, Funktionsmorpheme wie \textit{und}, Wortformen wie
-\wdef{Baum}, A-Strukturen wie \astruct{schreiben}{\ups{\Subj},
+\textsc{plural}, Funktionsmorpheme wie \textit{und}, Wortformen wie
+`Baum', A-Strukturen wie \astruct{schreiben}{\ups{\Subj},
 \ups{\Obj}} sowie F-Strukturen oder Mengen von F-Strukturen sein. Jedem
 Attribut sind dabei ein oder mehrere eindeutige Werte zugewiesen; Funktionen
-(\leipzigfont{subjekt}, \leipzigfont{objekt}, etc.) können nur einfach
+(\textsc{subjekt}, \textsc{objekt}, etc.) können nur einfach
 instanziiert werden \autocite[vgl.][44--58]{bresnanetal2016}.
 
 \begin{figure}
@@ -1207,12 +1163,12 @@ instanziiert werden \autocite[vgl.][44--58]{bresnanetal2016}.
 	{\avmsetup{attributes=\scshape}
 % 	\smaller
 	\avm{[
-		vorname		& \wdef{Max} \\
-		nachname	& \wdef{Meier} \\
+		vorname		& `Max' \\
+		nachname	& `Meier' \\
 		geburtstag	& \DTMDate{1985-10-10} \\
 		vater		& [
-			vorname		& \wdef{Peter} \\
-			nachname	& \wdef{Meier} \\
+			vorname		& `Peter' \\
+			nachname	& `Meier' \\
 			geburtstag	& \DTMDate{1960-05-10} \\
 			vater		& \dots \\
 			mutter		& \dots \\
@@ -1220,13 +1176,13 @@ instanziiert werden \autocite[vgl.][44--58]{bresnanetal2016}.
 		mutter		& \dots \\
 		% kind		& \{
 		% 	[
-		% 		vorname		& \wdef{Julia} \\
-		% 		nachname	& \wdef{Meier} \\
+		% 		vorname		& `Julia' \\
+		% 		nachname	& `Meier' \\
 		% 		geburtstag	& \DTMDate{2015-01-05} \\
 		% 		geschlecht	& \F
 		% 	], [
-		% 		vorname		& \wdef{Max} \\
-		% 		nachname	& \wdef{Meier} \\
+		% 		vorname		& `Max' \\
+		% 		nachname	& `Meier' \\
 		% 		geburtstag	& \DTMDate{2017-05-01} \\
 		% 		geschlecht	& \M
 		% 	]
@@ -1279,7 +1235,7 @@ disambiguiert.
 			\Tense	&	\Prs \\
 
 			\Subj	&	\tikzmark{cfstruct_subj}$g$: [
-				\Pred	&	\wdef{Lola} \\
+				\Pred	&	`Lola' \\
 				\Pers	&	\Third \\
 				\Num	&	\Sg \\
 				\Case	&	\Nom \\
@@ -1308,8 +1264,8 @@ disambiguiert.
 
 In \cref{ex:cfstruct} wird die Korrespondenz zwischen der C-Struktur und der
 F-Struktur des Satzes \fw{Lola rennt} dargestellt. Der Satz betsteht aus einer
-NP mit dem Kopf \fw{Lola}, die das \leipzigfont{subjekt} des Satzes darstellt,
-und einer \fw{conjunctional phrase} (CP), die das \leipzigfont{subjekt}
+NP mit dem Kopf \fw{Lola}, die das \textsc{subjekt} des Satzes darstellt,
+und einer \fw{conjunctional phrase} (CP), die das \textsc{subjekt}
 dominiert und das (flektierte) Verb \fw{rennt} zum Kopf hat. Ein Pfeil nach
 unten (↓) bezeichnet in der Annotation den jeweiligen Knoten selbst, ein Pfeil
 nach oben (↑) den darüber liegenden. \q{\pass{\Subj}} ist daher so zu
@@ -1355,7 +1311,7 @@ Dies wird in \cref{ex:lolamorphlex} verdeutlicht, wo die Lexikoneinträge für
 	$Lola$
 		&	N
 		&	\begin{tabular}[t]{l l l}
-				\ups{\Pred}	& =	& \wdef{Lola} \\
+				\ups{\Pred}	& =	& `Lola' \\
 				\ups{\Pers}	& =	& \Third \\
 				\ups{\Num}	& =	& \Sg \\
 				% \ups{\Gend}	& =	& \F \\
@@ -1377,10 +1333,10 @@ Dies wird in \cref{ex:lolamorphlex} verdeutlicht, wo die Lexikoneinträge für
 \end{exe}
 
 \fw{Lola} bildet als Substantiv einen Diskursanker und definiert (=) die
-angegebenen Merk\-male: \leipzigfont{\Third.~person} und
-\leipzigfont{singular}. Die finite Verbform \fw{rennt} bedingt (\req) ihrem
+angegebenen Merk\-male: \textsc{\Third.~person} und
+\textsc{singular}. Die finite Verbform \fw{rennt} bedingt (\req) ihrem
 Lexikoneintrag gemäß eine Subjekts-NP, die die Personenmerkmale
-\leipzigfont{\Third.~person} und \leipzigfont{singular} aufweist. Da die
+\textsc{\Third.~person} und \textsc{singular} aufweist. Da die
 Personenmerkmale von \fw{Lola} diese Bedingung (\fw{constraint}) erfüllen,
 kommt es zur Kongruenz zwischen Subjekt und Verb
 \autocite[vgl.][59]{bresnanetal2016}.
@@ -1389,8 +1345,8 @@ In Anlehnung an die Beispiele \cref{ex:coordidx,ex:engartdiscong} werden hier no
 grammatisch akzeptablen Varianten vor dem Hintergrund des gewählten
 Theorieframeworks gezeigt. Die Annotation der koordinierten NPs folgt
 \citet{peterson2004}. In \cref{ex:lfgcoord_1} erfordert das Verb \fw{spielen}
-ein Subjekt mit den Personenmerkmalen \leipzigfont{\Third.~person} und
-\leipzigfont{plural} in Übereinstimmung mit dem kombinierten \Index{} der
+ein Subjekt mit den Personenmerkmalen \textsc{\Third.~person} und
+\textsc{plural} in Übereinstimmung mit dem kombinierten \textsc{index} der
 Subjekts-NP in $g$; zwei Singulare ergeben zusammen einen Plural.
 % Wenn das Verb
 % \fw{spielt} lauten würde und damit Singularkongruenz hätte, würde diese
@@ -1446,7 +1402,7 @@ Subjekts-NP in $g$; zwei Singulare ergeben zusammen einen Plural.
 			\mc{2}{l}{%
 				\{
 					[
-						\Pred	&	\wdef{Jan} \\
+						\Pred	&	`Jan' \\
 							\Index	&	[
 								\Pers	& \Third \\
 								\Gend	& \M \\
@@ -1460,7 +1416,7 @@ Subjekts-NP in $g$; zwei Singulare ergeben zusammen einen Plural.
 %							]
 					],
 					[
-						\Pred	&	\wdef{Markus} \\
+						\Pred	&	`Markus' \\
 							\Index	&	[
 								\Pers	& \Third \\
 								\Gend	& \M \\
@@ -1484,7 +1440,7 @@ Subjekts-NP in $g$; zwei Singulare ergeben zusammen einen Plural.
 		] \\
 
 		\Obj	& \tikzmark{lfgcoord1_h}$h$: [
-% 			\Pred	& \wdef{Fußball} \\
+% 			\Pred	& `Fußball' \\
 % 			\Pers	& \Third \\
 % 			\Gend	& \M \\
 % 			\Case	& \Acc \\
@@ -1512,20 +1468,20 @@ Subjekts-NP in $g$; zwei Singulare ergeben zusammen einen Plural.
 			([yshift=.5ex]{pic cs:lfgcoord1_h});
 	\end{tikzpicture}
 %
-	\footnotetext{Mit \q*{g-und} wird das gruppenbildende \fw{und} bezeichnet,
+	\footnotetext{Mit \q{g-und} wird das gruppenbildende \fw{und} bezeichnet,
 	bei dem sich die Konjunkte auf jeweils unterschiedliche Indizes $i, j$
 	beziehen \autocite[382--383]{dalrymple2001}.
 	% \citet[382--383]{dalrymple2001} unterscheidet zwei Arten von
-	% 	\wdef{und}: boolesches \q*{und} (beide Konjunkte beziehen sich jeweils
+	% 	`und': boolesches \q{und} (beide Konjunkte beziehen sich jeweils
 	% 	auf denselben Index $i$) und gruppenbildendes
-	% 	\q*{g-und} (die Konjunkte beziehen sich auf jeweils unterschiedliche
+	% 	\q{g-und} (die Konjunkte beziehen sich auf jeweils unterschiedliche
 	% 	Indizes $i, j$).
 	}
 \end{exe}%
 
 Demgegenüber ist es innerhalb der in \cref{ex:lfgcoord_2} gezeigten NP
 notwendig, dass der De\-termi\-nierer \fw{diese} im Numerus mit dem
-\Concord-Merkmal jedes der beiden Konjunkte übereinstimmt, damit Kongruenz
+\textsc{condord}-Merkmal jedes der beiden Konjunkte übereinstimmt, damit Kongruenz
 hergestellt werden kann und ein kohärenter, grammatisch wohlgeformter Ausdruck
 entsteht.%
 %
@@ -1538,7 +1494,7 @@ entsteht.%
 	sinnvoll für die Analyse von NPs im Deutschen erachtet.}
 %
 \citet[91--94]{kingdalrymple2004} zufolge stellen Modifikatoren im Deutschen
-zusätzlich Bedingungen an \Index-Merkmale.
+zusätzlich Bedingungen an \textsc{index}-Merkmale.
 
 \begin{exe}
 \ex \label{ex:lfgcoord_2}
@@ -1581,7 +1537,7 @@ zusätzlich Bedingungen an \Index-Merkmale.
 		\avm{%
 		\tikzmark{lfgcoord2_f}$f$: [
 			\Spec	& [
-				\Pred	& \wdef{diese}
+				\Pred	& `diese'
 			] \\
 			
 			\Conj	& \textit{g-und} \\
@@ -1589,7 +1545,7 @@ zusätzlich Bedingungen an \Index-Merkmale.
 			\mc{2}{l}{%
 				\{
 					[
-						\Pred	& \wdef{Jungen} \\
+						\Pred	& `Jungen' \\
 
 						\Concord	& [
 							\Case	& \Nom \\
@@ -1604,7 +1560,7 @@ zusätzlich Bedingungen an \Index-Merkmale.
 						]
 					],
 					[
-						\Pred	& \wdef{Mädchen} \\
+						\Pred	& `Mädchen' \\
 
 						\Concord	& [
 							\Case	& \Nom \\
@@ -1709,13 +1665,13 @@ innerhalb derselben F-Struktur $f$ (gleicher Satz).
 			\tikzmark{fsdom_f}$f$: [
 				\Subj	& \tikzmark{fsdom_subj}$g$: [
 					\Possr	& \tikzmark{fsdom_poss}$h$: [
-						\Pred	&	\wdef{Jana} \\
+						\Pred	&	`Jana' \\
 						\Case	&	\Gen \\
 					] \\
 
 					\Adjc		& \tikzmark{fsdom_adj}\{
 						[
-							\Pred	& \wdef{braun}
+							\Pred	& `braun'
 						]
 					\} \\
 
@@ -1786,11 +1742,11 @@ Als Modifikatoren von Substantiven (und in manchen Fällen auch Pronomen, zum
 Beispiel \fw{sie beide}, \fw{alle diese}) unterliegen Quantoren wie
 \norm{bėide} im Mittelhochdeutschen wie auch \fw{beide} im Neuhochdeutschen
 der Adjektivdeklination. Das bedeutet, sie kongruieren mit ihrem nominalen
-Controller formal in den Kategorien \leipzigfont{kasus} (\Case),
-\leipzigfont{genus} (\Gend) und \leipzigfont{numerus} (\Num) über ein
+Controller formal in den Kategorien \textsc{kasus} (\Case),
+\textsc{genus} (\Gend) und \textsc{numerus} (\Num) über ein
 fusionales Suffix, das diese Eigenschaften kombiniert kodiert
 \autocites(vgl.~auch
-\cref{sec:ctrltarg,sec:lfgkongr})[181--184]{ksw2}[368--369]{woellstein2016}.
+\cref{sec:ctrltarg,sec:lfgkongr})[181--184]{ksw2}[772]{woellstein2022}.
 Daneben ist bei \fw{beide} im Deutschen zu beachten, dass es zusammen mit einem
 Definit- oder Possessivartikel auftreten kann \cref{ex:beidedet_2}, anders als
 Definit- und Possessivartikel selbst, die gewöhnlich in komplementärer
@@ -1833,11 +1789,11 @@ Anm.~1]{merchant1996}).
 \end{xlist}
 \end{exe}
 
-Aufgrund dieser Unterschiede sowohl zu \q*{typischen} Determinierern als auch zu
+Aufgrund dieser Unterschiede sowohl zu \q{typischen} Determinierern als auch zu
 Adjektiven wird in Einklang mit der im folgenden zu besprechenden Literatur
 angenommen, dass Quantoren wie \fw{beide} eine gesonderte funktionale Kategorie
 \xhead{Q} nominalen Typs repräsentieren. Anders als zum Beispiel
-\fw{all} und das englische \fw{both} \wdef{beide}, die ganz links in der
+\fw{all} und das englische \fw{both} `beide', die ganz links in der
 Nominalgruppe stehen (\fw{all die \dots}, \fw{both the \dots}), reiht sich die
 Quantorenphase (QP) mit \fw{beide} im Standarddeutschen gewöhnlich zwischen DP
 und NP ein, wie in \cref{ex:nomstack} dargestellt (vgl.~auch \cite[44--45 mit
@@ -1886,16 +1842,16 @@ der Adjunkte (\Adjc) gezählt werden sollte.
 			\Def	& $+$ \\
 
 			\Quant	& 	[
-				\Pred	& \wdef{beide} \\
+				\Pred	& `beide' \\
 			] \\
 
 			\Adjc	& \{
 				[
-					\Pred	& \wdef{rot}
+					\Pred	& `rot'
 				]
 			\} \\
 
-			\Pred	& \wdef{Buch} \\
+			\Pred	& `Buch' \\
 			\Case	& \Nom \\
 			\Pers	& \Third \\
 			\Gend	& \N \\
@@ -1989,11 +1945,11 @@ mehrere, oberflächlich ähnliche Konstruktionen unterschieden werden
 \end{exe}
 
 \citet{sportiche1988} beschäftigt sich mit der Syntax des Allquantors \fw{tous}
-\wdef{alle} im Französischen. Er argumentiert, dass Quantoren, die getrennt von
+`alle' im Französischen. Er argumentiert, dass Quantoren, die getrennt von
 ihrer Bezugs-NP rechts vom Verb stehen, keine Adverbien sind, wie zuvor
 vorgeschlagen wurde, sondern in einem anaphorischen Verhältnis zu der NP
 stehen, die sie modifizieren \autocite[428--433]{sportiche1988}. Ferner werde
-nicht der Quantor nach rechts verschoben (\q*{gefloatet}), sondern die
+nicht der Quantor nach rechts verschoben (\q{gefloatet}), sondern die
 Subjekts-NP aus ihrer Position hinter dem Quantor aus der Verbphrase
 extrahiert, also nach vorn gezogen. Dabei werde eine Spur (\fw{trace}; $t$)
 zurückgelassen, was die anaphorische Relation zwischen Quantor und
@@ -2009,7 +1965,7 @@ Quantorenphrase (QP) mit dem Quantor als Kopf und einer Determiniererphrase
 (DP) als Komplement bilden. \citet{merchant1996} überträgt die Erkenntnisse von
 \citet{sportiche1988,shlonsky1991} auf das Deutsche und nimmt weitere
 Verfeinerungen ihrer Theorie bezüglich möglicher Positionen des gestrandeten
-Quantors vor. Für das Englische \fw{all} \wdef{alle} mit Bezug auf das Subjekt
+Quantors vor. Für das Englische \fw{all} `alle' mit Bezug auf das Subjekt
 gibt \citet[180]{merchant1996} grob die Konstituentenstruktur in \cref{ex:qfgg}
 an (die Pfeile wurden zur Verdeutlichung der postulierten Transformation
 hinzugefügt).
@@ -2093,7 +2049,7 @@ hinzugefügt).
 \textcites{sportiche1988,shlonsky1991,merchant1996} beschränken sich sämtlich
 auf den Quantor \fw{alle}, nur \citet{pittner1995} geht darüber hinaus und
 untersucht auch das ähnlich funktionierende \fw{beide}; nur diese beiden fasst
-sie im Rahmen ähnlicher Konstruktionen als \q*{gefloatete Quantoren} auf. Was
+sie im Rahmen ähnlicher Konstruktionen als \q{gefloatete Quantoren} auf. Was
 darüber hinaus \citeauthor{shlonsky1991}, \citeauthor{pittner1995} und
 \citeauthor{merchant1996} eint, ist, dass sie alle den Unterschied in der
 Lesart zwischen der Version mit Kontaktstellung und der mit Distanzstellung
@@ -2104,7 +2060,7 @@ behandeln. Der Unterschied wird in \cref{ex:siebeideauto} den Beispielen bei
 \ex \label{ex:siebeideauto}
 	\begin{xlist}
 	\ex \label{ex:siebeideauto_1}
-		\textbf{Sie} haben \textbf{beide} ein Auto.
+		Sie haben beide ein Auto.
 		\medskip
 
 		\begin{tikzpicture}[baseline=(A.base)]
@@ -2119,7 +2075,7 @@ behandeln. Der Unterschied wird in \cref{ex:siebeideauto} den Beispielen bei
 		\\
 
 	\ex \label{ex:siebeideauto_2}
-		\textbf{Sie} \textbf{beide} haben ein Auto.
+		Sie beide haben ein Auto.
 		\medskip
 
 		\begin{tikzpicture}[baseline=(A.base)]
@@ -2154,7 +2110,7 @@ Die bisher referierten Artikel diskutieren Floating Quantifiers im Rahmen der
 Rektions- und Bindungstheorie \autocite{chomsky1981}. Wie könnte eine Adaption
 in die LFG aussehen? Diesen Versuch unternimmt \citet{spector2009} in Rückgriff
 auf \citet{shlonsky1991} für das Ivrit. Anders als im Deutschen oder im
-Französischen kongruiert der gefloatete Quantor (\fw{kol} \wdef{alle}) dort
+Französischen kongruiert der gefloatete Quantor (\fw{kol} `alle') dort
 nicht bloß, sondern beinhaltet ein klitisches Pronomen, das mit dem
 Quantifizierten koindiziert ist.%
 %
@@ -2172,9 +2128,9 @@ Quantifizierten koindiziert ist.%
 \begin{exe}
 \ex \label{ex:hebrqf}
 	Ivrit \parencite[nach][522, 537]{spector2009}\\
-	\gll \textbf{ha-yeladim} halxu \textbf{kulam} la-yam \\
+	\gll ha-yeladim halxu kulam la-yam \\
 		\Def=children[\Tpl.\M]$_i$ went all=\Tpl.\M{}$_i$ to=sea.\Def{} \\
-	\trans \wdef{The children went all to the sea.}
+	\trans `The children went all to the sea.'
 	\\
 
 	\begin{forest} shorter edges, narrower nodes, italic leaves, align text
@@ -2210,7 +2166,7 @@ Quantifizierten koindiziert ist.%
 	\smaller
 	\avm{\tikzmark{hebrqf_f}[
 		\Top	& \tikzmark{hebrqf_top}[
-			\Pred	& \wdef{child} \\
+			\Pred	& `child' \\
 			\Def	& $+$ \\
 			\Num	& \Pl \\
 		] $i$
@@ -2233,7 +2189,7 @@ Quantifizierten koindiziert ist.%
 		\Oblq{dir}	& \tikzmark{hebrqf_obl}[
 			\Pred	& \astruct{to}{\ups{\Obj}} \\
 			\Obj	& [
-				\Pred	& \wdef{sea} \\
+				\Pred	& `sea' \\
 				\Def	& $+$ \\
 				\Num	& \Sg \\
 			] \\
@@ -2285,7 +2241,7 @@ verbunden, werden aber nicht in der F-Struktur miteinander vereinigt
 Die Analysen von \citet{shlonsky1991,spector2009} für das Ivrit könnten
 insofern für die Analyse des Deutschen relevant sein, als
 \citet[179]{merchant1996} eine Ähnlichkeit zwischen dem hebräischen \fw{kol}
-\wdef{alle} und dem deutschen \fw{alle} bezüglich des Auftretens von Flexion in
+`alle' und dem deutschen \fw{alle} bezüglich des Auftretens von Flexion in
 Abhängigkeit der Stellungsvariante vermerkt: Die Kongruenzendung fehlt, wenn
 der Quantor einer definiten NP vorangeht: \fw{all die X} aber \fw{alle X}. Der
 Fall von \fw{die beiden X} und \fw{beide X} würde eine separate Diskussion
@@ -2385,7 +2341,7 @@ Situation im Mittelhochdeutschen anstellen.
 % 			da sprachen die Leute von den beid-\Dat.\Pl.\NeutI.\Wk{}
 % 				Eigentum[\Dat.\Pl.\NeutI] \\
 % 		\begin{taggedline}{\parencite[\pno~67, 103.23; Stift Heiligenkreuz, 1263]{cao1}}
-% 		\trans \wdef{Da sagten die Leute über die beiden Eigentume}
+% 		\trans `Da sagten die Leute über die beiden Eigentume'
 % 		\end{taggedline}
 
 % 	\ex \label{ex:detbeidemhd_2}
@@ -2393,7 +2349,7 @@ Situation im Mittelhochdeutschen anstellen.
 % 			danach da liehen die Pfleger der beid-\Gen.\Pl.\NeutI.\St{}
 % 				Haus-\Gen.\Pl.\NeutI{} \\
 % 		\begin{taggedline}{\parencite[\pno~1221, 484.3; Zürich, 1290]{cao2}}
-% 		\trans \wdef{Danach verliehen die Pfleger der beiden Häuser}
+% 		\trans `Danach verliehen die Pfleger der beiden Häuser'
 % 		\end{taggedline}
 
 % 	\ex \label{ex:detbeidemhd_3}
@@ -2402,15 +2358,15 @@ Situation im Mittelhochdeutschen anstellen.
 % 		\gll Die bede boten frone \\
 % 			die beide-\Nom.\Pl.\MascM.\St{} Bote-\Nom.\Pl.\MascM{} heilig \\
 % 		\begin{taggedline}{\parencites[\pno~38\ra, 1--2]{kc:VB}[vgl.][7844--7846]{schroeder1895}}
-% 		\trans \wdef{Da erschienen ihm Petrus und Paulus, die beiden heiligen
-% 			Boten}
+% 		\trans `Da erschienen ihm Petrus und Paulus, die beiden heiligen
+% 			Boten'
 % 		\end{taggedline}
 
 % 	\ex \label{ex:detbeidemhd_4}
 % 		\gll Si wand ír baide hênde \\
 % 			Sie wand ihr beide-\Acc.\Pl.\FemI.\St{} Hand-\Acc.\Pl.\FemI{} \\
 % 		\begin{taggedline}{\parencites[\pno~6\rb, 19]{kc:K}[vgl.][913]{schroeder1895}}
-% 		\trans \wdef{Sie wand ihre beiden Hände.}
+% 		\trans `Sie wand ihre beiden Hände.'
 % 		\end{taggedline}
 % 	\end{xlist}
 % \end{exe}  
@@ -2445,7 +2401,7 @@ Situation im Mittelhochdeutschen anstellen.
 Während im modernen Standarddeutschen Determinierer und Adjektive normalerweise
 links vom Substantiv stehen, können Adjektive im Mittelhochdeutschen
 auch rechts davon auftreten \autocite[185--186, 237--243]{ksw2}, selten auch
-Determinierer wie Possessivartikel, \norm{dehėin} \wdef{kein} und \norm{bėide}
+Determinierer wie Possessivartikel, \norm{dehėin} `kein' und \norm{bėide}
 \autocite[515--517, 551--552, 623--624]{ksw2}. Im hier ausgewerteten Material
 liegen immerhin zwanzig Fälle im \CAO{} und drei in der \KC{}
 mit nachgestelltem \norm{bėide} hinter einem einfachen Plural-Substantiv vor
@@ -2515,8 +2471,8 @@ mit nachgestelltem \norm{bėide} hinter einem einfachen Plural-Substantiv vor
 % 			Als die vorgenannten Herr-\Nom.\Pl.\MascM{} beide da kamen auf den
 % 				Tag \\
 % 		\begin{taggedline}{\parencite[\pno~2930, 222.1--2]{cao4}}
-% 		\trans \wdef{Als die beiden vorgenannten Herren da zum Gerichtstermin
-% 			kamen}
+% 		\trans `Als die beiden vorgenannten Herren da zum Gerichtstermin
+% 			kamen'
 % 		\end{taggedline}
 
 	\ex \label{ex:beidepost_2}
@@ -2524,7 +2480,7 @@ mit nachgestelltem \norm{bėide} hinter einem einfachen Plural-Substantiv vor
 			so man die Jahrestag[\Acc.\Pl.\NeutI] beide-\Acc.\Pl.\NeutI.\St{}
 			begeht \\
 		\begin{taggedline}{\parencites(Straßburg und Colmar, 1299)[\pno~3331, 468.21--22]{cao4}}
-		\trans \wdef{wenn man die Jahrestage beide begeht}
+		\trans `wenn man die Jahrestage beide begeht'
 		\end{taggedline}
 
 % 	\ex \label{ex:beidepost_3}
@@ -2534,7 +2490,7 @@ mit nachgestelltem \norm{bėide} hinter einem einfachen Plural-Substantiv vor
 % 			die Gott-\Gen.\Sg.\MascM{} Bote-\Nom.\Pl.\MascM{}
 % 				beide-\Nom.\Pl.\MascM.\St{} da \\
 % 		\begin{taggedline}{\parencites[\pno~41\rb, 24--25]{kc:C1}[vgl.][7844--7845]{schroeder1895}}
-% 		\trans \wdef{da erschienen ihm die Herren, die beiden Gottesboten.}
+% 		\trans `da erschienen ihm die Herren, die beiden Gottesboten.'
 % 		\end{taggedline}
 % 	\end{xlist}
 \end{exe}
@@ -2544,11 +2500,11 @@ syntaktischen Einheiten auf einer abstrakten Ebene wie in \cref{ex:qfgg}
 angenommen werden), bietet sich für die Lesart mit Kontaktstellung in
 \cref{ex:beidepost_2cont} an,
 \norm{die} (\xhead{D}) und \norm{bėide} (\xhead{Q}) als funktionale Ko-Köpfe
-von \norm{jārƶīt} \wdef{Jahrestag} (\xhead{N}) zu behandeln.%
+von \norm{jārƶīt} `Jahrestag' (\xhead{N}) zu behandeln.%
 %
 	\footnote{Artikel und Quantor sind im ursprünglichen Beispiel nicht
 		kongruent, insofern \norm{jārƶīt} entweder feminin oder neutral belegt
-		ist \autocite[\pno~\fw{jârzît}]{lexer:mhdhwb}. Der Artikel \norm{die}
+		ist \autocite[s.\,v.~\fw{jârzît}]{lexer:mhdhwb}. Der Artikel \norm{die}
 		flektiert maskulin-feminin, der Quantor \norm{bėidiu} dagegen neutral.
 		Neutrum in Bezug auf einen unbelebten Referenten lässt sich als
 		semantische Kongruenz interpretieren, was die Lesart in
@@ -2587,13 +2543,13 @@ von \norm{jārƶīt} \wdef{Jahrestag} (\xhead{N}) zu behandeln.%
 		\tikzmark{beidepost2c_f}$f:$ [
 			\Obj	& \tikzmark{beidepost2c_obj}[
 				\Def	& $+$ \\
-				\Pred	& \wdef{Jahrestag} \\
+				\Pred	& `Jahrestag' \\
 				\Case	& \Acc \\
 				\Num	& \Pl \\
 				\Gend	& \F \\
 				\Anim	& $-$ \\
 				\Quant	& [
-					\Pred	& \wdef{beide} \\
+					\Pred	& `beide' \\
 				] \\
 			] \\
 
@@ -2685,7 +2641,7 @@ spielen.
 		\tikzmark{beidepost2d_f}$f:$ [
 			\Foc	& \tikzmark{beidepost2d_foc}$g:$ [
 				\Def	& $+$ \\
-				\Pred	& \wdef{Jahrestag} \\
+				\Pred	& `Jahrestag' \\
 				\Case	& \Acc \\
 				\Num	& \Pl \\
 				\Gend	& \F \\
@@ -2693,7 +2649,7 @@ spielen.
 			] $i$ \smallskip \\
 
 			\Obj	& \tikzmark{beidepost2d_obj}$h:$ [
-				\Pred	& \wdef{beide} \\
+				\Pred	& `beide' \\
 			] $i$\enspace \\
 
 			\Pred	& \astruct{begehen}{\ups{\Subj}, \ups{\Obj}} \\
@@ -2870,7 +2826,7 @@ kann. \citet[623--624]{ksw2} benennen dieses Problem ebenfalls und zählen
 % Analyse zufolge stellen Possessiva im Alt- und Mittelhochdeutschen aufgrund
 % solcher Belege eher Adjektive als Artikelwörter dar (vgl.~aber
 % \ref{ex:detbeidemhd_4}), insofern besteht die Frage, ob es sich bei \norm{mīn
-% brüeder} \wdef{meine Brüder} um eine DP mit \norm{mīn} als Kopf oder um eine NP
+% brüeder} `meine Brüder' um eine DP mit \norm{mīn} als Kopf oder um eine NP
 % mit \norm{brüeder} als Kopf handelt.
 
 % \begin{exe}
@@ -2879,7 +2835,7 @@ kann. \citet[623--624]{ksw2} benennen dieses Problem ebenfalls und zählen
 % 		So sollen sie mahnen {} beid-\Acc.\Pl.\MascM.\St{} mein
 % 			Bruder[\Acc.\Pl.\MascM] \\
 % 	\begin{taggedline}{\autocite[\pno~519, 456.9]{cao1}}
-% 	\trans \wdef{So sollen sie meine beiden Brüder anmahnen}
+% 	\trans `So sollen sie meine beiden Brüder anmahnen'
 % 	\end{taggedline}
 % \end{exe}
 
@@ -2991,12 +2947,12 @@ kann. \citet[623--624]{ksw2} benennen dieses Problem ebenfalls und zählen
 % Dieser Unterschied ist auf mehreren Ebenen relevant. Auf grammatischer Ebene
 % unterscheiden sich Kontakt- und Distanzstellung in der Art der Kongruenz, die
 % angewendet werden kann. \citet[178--179]{shlonsky1991} diskutiert dies im Rahmen
-% der generativen Grammatik anhand von \q*{strong} und \q*{weak agreement} sowie
+% der generativen Grammatik anhand von \q{strong} und \q{weak agreement} sowie
 % anhand von Rektionsverhältnissen zwischen den verschiedenen semantisch
 % zusammengehörigen Positionen in der Konstituentenstruktur. Im Rahmen des eher
 % funktional orientierten Analyseansatzes der vorliegenden Arbeit wurde in
-% \cref{subsec:indexconcord} im Grunde das Gleiche anhand der Termini \Concord\
-% und \Index\ diskutiert. Unabhängig vom verwendeten Theorieframework weisen
+% \cref{subsec:indexconcord} im Grunde das Gleiche anhand der Termini \textsc{concord}
+% und \textsc{index} diskutiert. Unabhängig vom verwendeten Theorieframework weisen
 % \citet{sportiche1988,merchant1996,shlonsky1991} sämtlich darauf hin, dass der
 % Quantor mit dem Quantifizierten durch Koindizierung verbunden ist, ihm also
 % ähnlich einem Pronomen oder einem prädikativen Adjektiv referentielle Funktion
@@ -3005,7 +2961,7 @@ kann. \citet[623--624]{ksw2} benennen dieses Problem ebenfalls und zählen
 % Unter den ausgewerteten Belgen ist der Fall mit einer NP allerdings nicht so
 % häufig wie der Fall mit einem Pronomen \autocite[vgl.][623--625]{ksw2}. Der
 % Analyse nach \citet{merchant1996,shlonsky1991} zufolge erscheint es am
-% sinnvollsten zu sein, \norm{si bėide} \wdef{sie beide} und ähnliche
+% sinnvollsten zu sein, \norm{si bėide} `sie beide' und ähnliche
 % Formulierungen, bei denen \norm{bėide} von einem Pronomen gefolgt wird, wie in
 % (\ref{ex:sibeidecs}a) zu analysieren. Auch hier besteht jedoch zumindest die
 % Möglichkeit, dass \norm{bėide} in der VP steht (\ref{ex:sibeidecs}b).
@@ -3173,7 +3129,7 @@ kann. \citet[623--624]{ksw2} benennen dieses Problem ebenfalls und zählen
 % 			\Pers	& \Third \\
 % 			\Num	& \Pl \\
 % 			\Quant	& \tikzmark{sibeideas2_q}[
-% 				\Pred	& \wdef{beide} \\
+% 				\Pred	& `beide' \\
 % 			] \\
 % 		]%
 % 	}}
@@ -3226,12 +3182,12 @@ kann. \citet[623--624]{ksw2} benennen dieses Problem ebenfalls und zählen
 % 		\tikzmark{beidenpcs_f}$f:$ [
 % 			\Def	& $+$ \\
 % 			\Quant	& \tikzmark{beidenpcs_q}[
-% 				\Pred	& \wdef{beide} \\
+% 				\Pred	& `beide' \\
 % 			] \\
 % 			\Adjc	& \tikzmark{beidenpcs_adj}[ % \{[
-% 				\Pred	& \wdef{grün}
+% 				\Pred	& `grün'
 % 			] \\ % ]\} \\
-% 			\Pred	& \wdef{Auto} \\
+% 			\Pred	& `Auto' \\
 % 			\Pers	& \Third \\
 % 			\Num	& \Pl \\
 % 			\Gend	& \N \\
@@ -3263,11 +3219,11 @@ kann. \citet[623--624]{ksw2} benennen dieses Problem ebenfalls und zählen
 % Untersuchungen immer wieder gesehen haben, flektieren Attribute wie Adjektive
 % und auch Quantoren beim Bezug auf einfache Substantive in den ausgewerteten
 % mittelhochdeutschen Quellen sehr regelmäßig nach deren formalen Personen- und
-% Strukturmerkmalen (\Concord{} innerhalb der NP oder der vom Controller
+% Strukturmerkmalen (\textsc{concord} innerhalb der NP oder der vom Controller
 % prädizierten grammatischen Funktion). Der Kongruenzhierarchie zufolge stehen
 % auf der anderen Seite Personalpronomen, die mit ihren Controllern koindiziert
 % sind -- also zwar außerhalb der NP stehen, aber auf sie bezogen sind und
-% tendenziell nach deren semantischen Personenmerkmalen flektieren (\Index{}
+% tendenziell nach deren semantischen Personenmerkmalen flektieren (\textsc{index}
 % außerhalb der NP oder der vom Controller prädizierten grammatischen Funktion).
 
 \section{Die Kongruenzhierarchie}
@@ -3285,7 +3241,7 @@ zulassen.%
 	nicht-indoeuropäische --, für die seitdem Untersuchungen durchgeführt
 	wurden.}
 %
-Das Ergebnis der Studie ist, dass mit wachsender \q*{syntaktischer Distanz} zwischen
+Das Ergebnis der Studie ist, dass mit wachsender \q{syntaktischer Distanz} zwischen
 Controller und Target die Wahrscheinlichkeit für das Auftreten von
 semantischer statt formaler Kongruenz steigt \citep[218--223]{corbett1979}.
 \citet[204]{corbett1979} formuliert die Kongruenzhierarchie folgendermaßen:
@@ -3336,16 +3292,16 @@ kontrolliert.%
 		not restricted to the sentence of the item controlling agreement}.}
 
 Die Kernthese von \citet{wechslerzlatic2003} ist daher, dass formale
-Kongruenz bei Attributen zu erwarten ist, da innerhalb der NP \Concord\ das
+Kongruenz bei Attributen zu erwarten ist, da innerhalb der NP \textsc{concord} das
 entscheidende Kongruenzmerkmal darstellt.
 % %
 % 	\footnote{Siehe dagegen aber \citet[94--97]{kingdalrymple2004}, die
 % 	Beispiele aus dem Russischen anführen, für die sie auf Kongruenz mit dem
-% 	\Index-Merkmal innerhalb der NP schließen.}
+% 	\textsc{index}-Merkmal innerhalb der NP schließen.}
 % %
 Hingegen ist semantische Kongruenz bei Personalpronomen außerhalb der
 bindenden NP deshalb mit höherer Wahrscheinlichkeit zu erwarten, weil Pronomen
-über den referenziellen \Index\ an ihren Referenten gebunden sind
+über den referenziellen \textsc{index} an ihren Referenten gebunden sind
 \citep[89--91]{wechslerzlatic2003}. Die Autoren argumentieren also für eine
 Korrelation zwischen der Distribution von Kongruenz zeigenden Wortarten, deren
 syntaktischer Lokalität sowie den anwendbaren Kongruenz\-merkmalen.
@@ -3357,7 +3313,7 @@ wurden. In diesen Fällen komme entweder grammatische oder pragmatische
 Kongruenz zum Zuge, letztere speist sich aus der Semantik des Bezeichneten.
 Relativpronomina seien dagegen immer anaphorisch gebunden -- wobei sich die
 Autoren hier vermutlich auf den innersprachlichen Kontext beziehen -- und
-kongruieren in \Index-Merkmalen, möglicherweise auch in \Concord-Merkmalen, da
+kongruieren in \textsc{index}-Merkmalen, möglicherweise auch in \textsc{condord}-Merkmalen, da
 sie NP-intern auftreten. Aufgrund induktiver Kriterien ergibt sich das Schema
 in \cref{fig:theoagrdist}.
 
@@ -3460,15 +3416,15 @@ wird.
 \label{sec:erwkonjbegr}
 
 Neben Fällen, in denen sich \fw{beide} direkt oder indirekt auf zwei mit
-\fw{und} verbundene Konjunkte bezieht (zum Beispiel \q*{\textsc{substantiv}
+\fw{und} verbundene Konjunkte bezieht (zum Beispiel \q{\textsc{substantiv}
 \fw{und} \textsc{substantiv}}), gibt es vereinzelt Kontexte, in denen die
 kombinierten Controller nach syntaktischen Kriterien keine Konjunkte im
 formalen Sinn darstellen \autocite[vgl.~auch][247--248]{askedal1973}.
 Nichtsdestoweniger können zwei formal getrennte Controller $i$ und $j$ im
-Diskurs existieren, auf die sich \norm{bėide} \wdef{beide} als Target
+Diskurs existieren, auf die sich \norm{bėide} `beide' als Target
 gleichermaßen bezieht. Dies ist in der Belegstelle in \cref{ex:disjointctrl_1}
 der Fall, in der es um ein Geschäft geht, das \fw{Agneſ} und \fw{Lukas}
-gemeinsam getätigt haben. Sie sagen \lit{bedi} \wdef{beide (\N.\Pl)} aus, die
+gemeinsam getätigt haben. Sie sagen \lit{bedi} `beide (\N.\Pl)' aus, die
 Zahlung erhalten zu haben.%
 %
 	\footnote{In der ausgewerteten Stichprobe tritt \lit{be(i)di} wie an der in
@@ -3489,67 +3445,67 @@ Zahlung erhalten zu haben.%
 \begin{exe}
 \ex\label{ex:disjointctrl_1}
 	\setlength{\glossglue}{6pt plus 2pt minus 2pt}
-	\gll das vur \textbf{Agneſ}$_i$ mit hern \textbf{Lukas}$_j$ hant \textelp{}
-			het gegeben ze coͧffenne \textelp{} vn̄ hant \textbf{bedi}$_{i+j}$
+	\gll das vur Agneſ$_i$ mit hern Lukas$_j$ hant \textelp{}
+			het gegeben ze coͧffenne \textelp{} vn̄ hant bedi$_{i+j}$
 			veriehen, daſ ſie gewert ſint dis ſilberſ \\
-		dass Frau Agnes[\Nom.\Sg.\FemF] mit Herrn Lukas[\Dat.\Sg.\MascM] Hand
+		dass Frau Agnes[\textsc{nom.sg.\FemF}] mit Herrn Lukas[\Dat.\Sg.\MascM] Hand
 			{} hat gegeben zu kaufen {} und haben beide-\Nom.\Pl.\N\subMF.\St{}
 			ausgesagt dass sie gewährt sind dieses Silbers \\
 	\begin{taggedline}{\parencites(Straßburg, 1281)[\pno~N~202, 156.11--16]{cao5}}
-		\trans \wdef{dass Frau Agnes mit Herrn Lukas' Hand \textelp{} hat zum
+		\trans `dass Frau Agnes mit Herrn Lukas' Hand \textelp{} hat zum
 			Kauf gegeben \textelp{} und haben beide ausgesagt, dass ihnen das
-			Silber gezahlt wurde.}
+			Silber gezahlt wurde.'
 	\end{taggedline}
 \end{exe}%
 
 Auf formaler Ebene werden \fw{Agneſ} und \fw{Lukas} aber nicht koordiniert.
-Vielmehr liegt \lit{mit hern Lukas hant} \wdef{mit Herrn Lukas' Hand} eine
+Vielmehr liegt \lit{mit hern Lukas hant} `mit Herrn Lukas' Hand' eine
 adverbiale Präpositionalphrase vor, in der \lit{Lukas} seinerseits ein
-Genitivattribut zu \lit{hant} \wdef{Hand} darstellt. Trotz allem sind beide
+Genitivattribut zu \lit{hant} `Hand' darstellt. Trotz allem sind beide
 Personen damit im Diskurs verankert, sodass im weiteren Verlauf Verben wie
-\lit{hant} \wdef{haben (\Tpl.\Ind.\Prs)}, Pronomina wie \norm{ſie} \wdef{sie
-(\Pl)} und damit auch \lit{bedi} \wdef{beide} auf sie gemeinsam Bezug nehmen
+\lit{hant} `haben (\Tpl.\Ind.\Prs)', Pronomina wie \norm{ſie} `sie
+(\Pl)' und damit auch \lit{bedi} `beide' auf sie gemeinsam Bezug nehmen
 können.
 
 Während in \cref{ex:disjointctrl_1} die beiden Controller in unterschiedlichen
 Satzgliedern desselben Satzes stehen, ist die Verbindung der Controller in
 \cref{ex:disjointctrl_2} unter formalen Kriterien noch lockerer. So bezieht sich
-\lit{ſi beidv̍} \wdef{sie beide (\N)} dort gleichermaßen auf
+\lit{ſi beidv̍} `sie beide (\N)' dort gleichermaßen auf
 \lit{Mehthilt} und ihren Mann \lit{Heinrich\textdel{}}. Letzterer wird
 syntaktisch getrennt in einem eingeschobenen, unabhängigen Temporalsatz
 genannt.
 
 \begin{exe}
 \ex\label{ex:disjointctrl_2}
-	\gll dv̓ vorgenante fro \textbf{Mehthilt}$_i$ / vor e ſi$_i$ den
-			vorgenanten \textbf{Heinrichen}$_j$ neme \textelp{} vn̄ ſo
-			ſi$_{i+j}$ \textbf{beid\sscr{v}{ı}}$_{i+j}$ ſterbent \textelp{}
+	\gll dv̓ vorgenante fro Mehthilt$_i$ / vor e ſi$_i$ den
+			vorgenanten Heinrichen$_j$ neme \textelp{} vn̄ ſo
+			ſi$_{i+j}$ beidv̍$_{i+j}$ ſterbent \textelp{}
 			% ſo iſt daſ vorgenante guͦt \textelp{} {dem ſelben} ſpittal vn̄
 			% den dv̓rftigen lidig
 			\\
-		die vorgenannt Frau Mechthild[\Nom.\Sg.\FemF] {} vor ehe
+		die vorgenannt Frau Mechthild[\textsc{nom.sg.\FemF}] {} vor ehe
 			\Tsg.\FemF.\Nom{} den vorgenannten Heinrich-\Acc.\Sg.\MascM{} nahm {}
-			und so \Tpl\subMF.\Nom{} beide-\Nom.\Pl.\NeutMF.\St{} sterben {}
+			und so \Tpl\subMF.\Nom{} beide-\textsc{nom.pl.\NeutMF.st} sterben {}
 			% so ist das vorgenannte Gut {} demselben Spital und den
 			% Bedürftigen ledig
 			\\
 	\begin{taggedline}{\parencites(Freiburg i.\,Br., 1294)[\pno~2008, 253.30--39]{cao3}}
-		\trans \wdef{Die vorgenannte Frau Mechthild, bevor sie den
+		\trans `Die vorgenannte Frau Mechthild, bevor sie den
 			vorgenannten Heinrich \textins{zum Mann} nahm \textelp{} Und wenn
 			sie beide sterben \textelp{}%
 			% , fällt das vorgenannte Gut an dasselbe Spital und die
 			% Bedürftigen zurück.
-			}
+			'
 	\end{taggedline}
 \end{exe}
 
 Innerhalb des Temporalsatzes wird Mechthild zwar durch das Pronomen \lit{ſi}
-\wdef{sie} vertreten, doch auch hier liegt keine Konjunktion vor, da \lit{ſi}
-das Subjektspronomen und Heinrich das Objekt von \lit{neme} \wdef{nahm}
+`sie' vertreten, doch auch hier liegt keine Konjunktion vor, da \lit{ſi}
+das Subjektspronomen und Heinrich das Objekt von \lit{neme} `nahm'
 darstellt. Beide Controller werden zwar syntaktisch unabhängig voneinander im
 Diskurs etabliert, stehen aber für den kombinierten Bezug durch Pronomen wie
-\norm{si} \wdef{sie (\Pl)} und damit auch für \norm{bėide}
-\wdef{beide} zur Verfügung.
+\norm{si} `sie (\Pl)' und damit auch für \norm{bėide}
+`beide' zur Verfügung.
 
 Im Sinne eines erweiterten Konjunktionsbegriffs werden im Folgenden auch
 \norm{bėide}-Targets wie die in \cref{ex:disjointctrl_1,ex:disjointctrl_2}
