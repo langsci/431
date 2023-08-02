@@ -1,1 +1,26 @@
-\newcommand*{\orcid}{}
+\newcommand*{\orcid}{0000-0002-6023-551X}
+
+% Foreign word in text
+\newcommand{\fw}[1]{\emph{#1}}
+
+% Literally quoted MHG spelling
+\newcommand{\lit}[1]{\emph{#1}}
+
+% Normalized MHG spelling
+\newcommand{\norm}[1]{\emph{#1}}
+
+% Suppress shorthand field(s) in BibTeX citation on next citation
+\newcommand{\nosh}{\AtNextCite{\AtEachCitekey{\clearfield{shorthand}}}}
+
+% Titles of monographies
+\newcommand{\tit}[1]{{\emph{#1}}}
+
+% Titles of abbreviated works
+\newcommand{\CAO}{\tit{CAO}}
+\newcommand{\KC}{\tit{KC}}
+\newcommand{\REM}{\tit{ReM}}
+\newcommand{\WMU}{\tit{WMU}}
+
+% Shorthand for multicol, multirow
+\let\mc\multicolumn
+\let\mr\multirow
