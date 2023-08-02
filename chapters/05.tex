@@ -1,0 +1,998 @@
+\chapter{Methodik der Datenerhebung}
+\label{ch:methoden}
+
+\section%
+	[Datenerhebung aus dem \tit{Corpus der altdeutschen Originalurkunden}]%
+	{Datenerhebung aus dem \tit{Corpus der altdeutschen\\ Originalurkunden}}
+\label{sec:miningcao}
+
+Die Daten für die Teilauswertung zum \citetitle*{cao} (CAO) wurden aus der in
+\textcites[207]{beckerschallert2021}[155--158]{beckerschallert2022b}
+beschriebenen Datenbank exzerpiert. Grundlage dafür bildet die digitalisierte
+Fassung des \citetitle{cao}
+\autocites{cao-online}[vgl.~dazu][]{gniffkerapp2005} inklusive der von
+\citeauthor{beckerschallert2022b} vorgenommenen Zuordnung von Ortskoordinaten.
+Das \citetitle{cao} umfasst insgesamt etwa zwei Millionen Wortformen inklusive
+Mehrfachausfertigungen und nicht-deutschsprachiger Urkunden. Pro Urkunde liegen
+damit durchschnittlich 453 Wortformen vor, die Standardabweichung beträgt 500
+Wortformen.
+
+Wie in \cref{sec:materialcao} bezüglich der Text\-treue des \citetitle{cao}
+beschrieben, gehe ich davon aus, dass die in der Edition gebotenen
+Transkriptionen für die Zwecke dieser Untersuchung hinreichend fehlerfrei sind.
+Bei der Belegsammlung wurden nur solche Urkunden berücksichtigt, die eine
+eindeutige Jahresangabe besitzen und die laut der Zuordung im
+Schreibortverzeichnis von \citet{cao-online} einem einzigen Ausstellungsort
+zugeordnet sind. Bei der näheren Beschäftigung mit dem Material hat sich gezeigt, dass der Zeitfaktor weniger ausschlaggebend ist, da
+ohnehin die meisten Textstücke im \citetitle{cao} aus der Zeit zwischen 1280
+und 1299 stammen (vgl.~\cref{tab:urkstat}).
+
+Bezüglich des Orts sollen aber nur Ausstellungs\-kontexte mit möglichst
+kleinräumigem Bezug erfasst werden, um Urkundentexte mit überregionaler Geltung
+und gegebenenfalls damit einhergehender Vermeidung von Regionalismen nach
+Möglichkeit auszuschließen. Implizit lehnen sich diese Kriterien an die in
+\citet[41--42]{ganslmayer2012} diskutierten an, wobei der Faktor \q*{Text} in
+Bezug auf Parallelausfertigungen und zeitferne Abschriften ignoriert wurde.
+Wenn durch die in \citet[155--158]{beckerschallert2022b} geschilderten
+Ausschlusskriterien lediglich etwa 50\pct\ des Gesamttextbestands zur Verfügung
+stehen, dürften die 8,9\pct\ der deutschsprachigen Urkunden, die
+\citeauthor{ganslmayer2012} aufgrund des Faktors \q*{Text} ausschließt, kaum
+ins Gewicht fallen.%
+%
+	\footnote{Neben 4.289 deutschsprachigen Urkunden weist
+		\citet[41]{ganslmayer2012} insgesamt 35 lateinische und 293
+		niederländische Urkunden aus.}
+%
+Des Weiteren wurde auf eine Bestimmung des Schreibdialekts jeder einzelnen
+ausgewerteten Urkunde im Abgleich mit ihrem angegebenen Ausstellungsort
+verzichtet.
+
+Die Suche in der Datenbank geschah
+% , wie in
+% \textcites[207--209]{beckerschallert2021}[155--158]{beckerschallert2022b}
+% beschrieben,
+mit Hilfe
+% des in \cref{ex:regexcao} aufgeführten
+eines regulären Ausdrucks \autocite[dazu z.\,B.][33--37]{perkuhnetal2012}, der
+auf Basis der Liste der im \citetitle{cao} belegten Formen des Lemmas
+\norm{bėide} formuliert wurde \autocites(mit allen Deklinationsformen insgesamt
+ca.~2.050 Belege)[vgl.][166--168]{wmu1}. \cref{tab:beidespelcao} listet die
+belegten grafischen Varianten pro Position im Wort entsprechend diesem
+Suchausdruck tabellarisch auf.%
+%
+	\footnote{Die einzige im \tit{\citetitle{wmu}} verzeichnete Form mit
+		\lit{-t-} ist \lit{beyte} \autocite[166]{wmu1}: \lit{durch beyte deſ
+		vor genanten Hugeſ von Luzelſteyn vn̄ Henriches von Fleckenſteyn}
+		\wdef{durch beide, des vorgenannten Hugo von Lützelstein und Heinrichs
+		von Fleckenstein} \autocites(Straßburg, 1294)[\pno~N~674,
+		484.18]{cao5}. Diese Urkunde war nicht Teil der Auswertung. Formen wie
+		\lit{bete} oder \lit{pet} stehen ansonsten für \norm{bęte} \wdef{Bitte,
+		Gebet} oder stellen Formen von \norm{biten} \wdef{bitten} dar.}
+%
+Bei der Suche nach Zeichenketten wurden die Belegstellen nicht automatisch nach
+dem syntaktischen Funktionskontext des jeweiligen Belegs (determinierender
+Quantor, Konjunktion) geschieden. Diese Zuordnung geschah manuell in einem
+zweiten Schritt.
+
+% \needspace{3\baselineskip}
+% \begin{exe}
+% \ex \begin{verbatim}
+% \b(?:
+%   (?:b(?:[eêéæ]|e[iîye]|eͤ|êi|a[iîy]|aͤ|aͥ|âi|æi|i[æe])
+%     |p(?:[ea][iy]|[eæ]|æi)
+%   )[dt]
+%   (?:eiw|uͥ|vͥ|u̍|v̍|ú|v́|iͮ|j|i(?:û|v̂|uͦ|vͦ|uͤ|vͤ)|[ie][uvw]?|[uv])?
+% )\b
+% \end{verbatim}
+% \label{ex:regexcao}
+% \end{exe}
+
+\begin{table}
+\centering
+\caption{Im \citet{wmu} belegte Schreibweisen von mhd.~\norm{bėide/-iu} pro
+	Position im Wort}
+\begin{tabular}{c c c c}
+\toprule
+
+\mc{3}{c}{\bfseries Stamm}
+	& \bfseries Flexion
+	\\
+
+\cmidrule(r){1-3}
+\cmidrule(l){4-4}
+
+% \begin{minipage}{1em}
+\makecell{
+	b\\
+	p
+}
+% \end{minipage}
+	& \begin{minipage}{6em}
+		\begin{multicols}{4}\centering
+		ai\\
+		ay\\
+		aî\\
+		aͤ\\
+		aͥ\\
+		ee\\
+		ei\\
+		ey\\
+		eî\\
+		eͤ\\
+		ie\\
+		iæ\\
+		âi\\
+		æi\\
+		êi\\
+		e\\
+		æ\\
+		é\\
+		ê
+		\end{multicols}
+	\end{minipage}
+	& \makecell{
+			d\\
+			(t)
+		}
+	& \begin{minipage}{6em}
+		\begin{multicols}{4}\centering
+			eiw\\
+			iuͦ\\
+			ivͤ\\
+			iͤv\\
+			eu\\
+			ev\\
+			ew\\
+			iu\\
+			iv\\
+			iû\\
+			iͮ\\
+			uͥ\\
+			vͥ\\
+			îv\\
+			e\\
+			i\\
+			j\\
+			u\\
+			v\\
+			ú\\
+			û\\
+			Ø
+		\end{multicols}
+	\end{minipage}
+	\\
+
+\addlinespace[1ex]
+\bottomrule
+\end{tabular}
+\label{tab:beidespelcao}
+\end{table}
+
+\phantomsection
+\label{phsec:caohiatus}
+Insgesamt wurden 401 Belege zu \norm{bėide}-Targets erfasst, von denen 244 auf
+Kontexte mit Quantor entfielen, 157 auf Kontexte mit Konjunktion; 55
+Belegstellen wurden aus verschiedenen Gründen ausgeschlossen
+(vgl.~\cref{tab:ausgewcao,sec:urkliste}). Von den 4.289 im \citetitle{cao}
+enthaltenen Urkunden und 1.021 zuordenbaren Ausstellungsorten sind in der
+Stichprobe 291 Urkunden aus 114 Orten vertreten, von denen 256 Urkunden aus 102
+Orten für die Auswertung verwendbar waren.
+
+\begin{table}
+\centering
+\caption{Zahl der gesammelten und ausgewerteten Belegstellen}
+\begin{tabular}{l r r r}
+\toprule
+
+%
+	& \bfseries Gesammelt
+	& \bfseries Ausgewertet
+	& \bfseries in \pct
+	\\
+
+\midrule
+
+% Zahlen retrospektiv überprüft am 01.08.23 an
+% data/2022-05-19_beide_cao_controller-target.ods
+
+Quantor
+	& 244 % gesamt
+	& 219 % ausgewertet
+	& 89,8 % in %
+	\\
+
+Konjunktion
+	& 157 % gesamt
+	& 127 % ausgewertet
+	& 80,9 % in %
+	\\
+
+\midrule
+
+Summe
+	& 401 % gesamt
+	& 346 % ausgewertet
+	& 86,3 % in %
+	\\
+
+\bottomrule
+\end{tabular}
+\label{tab:ausgewcao}
+\end{table}
+
+Zu allen Kongruenztargets wurden die Controller erfasst -- im Fall von Targets
+in unmittelbarer Abhängigkeit von pronominalen Controllern diese sowie die
+letzte Nennung der Referenten, auf die sie verweisen (\q*{Erstcontroller}).
+Alle Controller und Targets wurden anschließend nach ihren formalen und
+semantischen Personenmerkmalen annotiert. Außerdem wurde jeweils die Wortart
+festgehalten sowie die Flexionsform des Targets mit deren Flexionstyp
+(\norm{-e}, -Ø, \norm{-iu}) und ob gegebenenfalls Schwa-Apokope vorliegt. Auch
+der lineare Abstand der betreffenden aufeinander bezogenen Wortformen und die
+Domäne der Kongruenzbeziehung (gleiche Phrase, gleicher Teilsatz, anderer Satz)
+wurden registriert.
+
+Targets, bei denen in Urkunden vom gleichen Ort nach kursorischer Durchsicht
+kein Unterschied in der starken Adjektivdeklination zwischen \norm{-e} und
+\norm{-iu} im Nom./Akk.~Pl.\ ausgemacht werden konnte, wurden ausgesondert
+(vgl.~\cref{sec:adjdeclcao}). Targets, bei denen der Vokal des Flexionssuffixes
+im Hiatus steht und der daher zumindest theoretisch elidierbar ist
+\autocites[vgl.][90--91]{askedal1973}[191]{gjelsten1980} wurden gesondert
+markiert, wenn auch die Urkundentexte nicht an ein metrisches Schema gebunden
+sind.
+
+% \subsection{Ausgeschlossene Belege}
+% \label{subsec:ausgeschlossene_cao}
+
+% Neben diesen dialektalen Ausschlusskriterien wurde ein Beleg aufgrund von
+% inhaltlichen Ambiguitäten ausgeschlossen \cref{ex:beidesamt}. Dieser ist an
+% sich einschlägig, doch gibt es hier Komplikationen bei der Referenz von
+% \lit{beidú ſamit} \wdef{alle beide}. Zunächst könnte man vermuten, dass sich
+% dieser Ausdruck auf \lit{die bruͦdir von ſant Johanniſ}
+% \wdef{die Brüder von St.~Johannes} bezieht, wobei diese nicht persönlich
+% erwähnt werden.
+
+% \begin{exe}
+% \ex\label{ex:beidesamt}
+% 	\lit{Vnde hant die brůdir von ſant Johanniſ daz ſelbi guͦt / \textbf{beidú}
+% 	ſamit / wider verlúhen Heinrich jrme ſun} \\
+% 	\begin{taggedline}{\parencites(Freiburg i.\,Br., 1273)[\pno~201,~211.25--26]{cao1}}
+%     	\wdef{Und die Brüder von St.~Johannes haben dasselbe Gut, alle beide,
+%     	wieder verliehen an Heinrich, ihren \textins{=~Frau Agnes'} Sohn.}
+% 	\end{taggedline}
+% \end{exe}
+
+% Andererseits ist der Verhandlungsgegenstand der Urkunde Frau Agnes' \lit{hûſ
+% ze Adilar / vnde daz vierteil jrſ gvͦteſ ze \smash{Oͤliſwiller}} \wdef{Haus
+% in Adilar und das Viertel ihres Gutes in Öliswiller}
+% \autocites(N.~Sg~+~N.~Sg.)[\pno~201,~211.23]{cao1}, wobei im weiteren Text
+% stets nur von \norm{\textins{dem} ſelbi\textins*{n} guͦt} \wdef{demselben
+% Gut} (N.~Sg.) die Rede ist. Es scheint dabei unlogisch, dass sich \lit{beidú
+% ſamit} \wdef{alle beide} als Ausdruck der betonten Zweiheit nur auf \lit{daz
+% vierteil jrſ gvͦteſ} \wdef{das Viertel ihres Gutes} beziehen sollte; genauso
+% wird es mehr als zwei Brüder im Johanniterstift gegeben haben. Sinnvoller
+% wäre, \lit{guͦt} \wdef{Gut} in \cref{ex:beidesamt} verallgemeinert im Sinne
+% von \wdef{Besitztum} zu interpretieren. \lit{\textins{B}eidú ſamit} wäre
+% damit als Apposition zu lesen, die unterstreicht, dass mit \lit{guͦt} beide
+% Gegenstände gemeint sind: Haus und Viertel des Gutes. Der Controller von
+% \lit{beidú} ist daher syntaktisch trotz allem \lit{guͦt}, allerdings
+% semantisch umfassend das \lit{hûſ} und das
+% \lit{vierteil}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Datenerhebung aus der \tit{Kaiserchronik}}
+
+Die Texte der \citetitle{kc} (KC) liegen dank \citetitle{kcdigital}
+\autocite{kcdigital} im XML-Format vor. Dieses kann problemlos in Klartext
+zurückgewandelt werden, indem Annotationstags verworfen oder serialisiert
+werden.%
+%
+	\footnote{Ich danke Magnus Breder Birkenes (Oslo), der diesen Arbeitsschritt
+	bereits vollzogen und mir die Klartexte sämtlicher Textzeugen zur Verfügung
+	gestellt hat.}
+%
+Dies ermöglicht wie auch beim \citetitle{cao}-Material eine Textsuche mit Hilfe
+von regulären Ausdrücken. Die Vorgehensweise gestaltet sich dennoch leicht
+anders, da für die \citet{kc} kein lemmatisiertes Verzeichnis von grafischen
+Varianten wie mit dem \citet{wmu} für die Urkunden vorliegt, sodass kein
+maßgeschneiderter Suchausdruck aufgrund bereits indizierter Schreibvarianten
+destilliert werden kann. Stattdessen ist es notwendig, sich an die vertretenen
+Schreibweisen durch begründete Annahmen heranzutasten. Aus der Arbeit am
+\citetitle{cao} ist zu schließen, dass das Konsonantengerüst des Wortstamms
+regelmäßig die Form \textit{b/p--d} hat; auch die Lemmaliste zum
+\tit{Mittelhochdeutschen Wörterbuch} von \citeauthor{mwb1}
+\autocite[\pno~\fw{beide}]{mwb1} enthält diesbezüglich keine anderweitige
+Evidenz.%
+%
+	\footnote{Siehe
+		\url{http://www.mhdwb-online.de/konkordanz.php?lid=13638000&seite=1}
+		(\DTMdate{2021-12-28}). Die grafische Variation unter den 2.559 Belegen,
+		die zum gegenwärtigen Zeitpunkt aufgelistet werden, bemisst sich auf
+		\lit{b, p} -- \lit{ai, ay, ei, ey, eí, eǐ, éi, êi, é, ê} -- \lit{d} --
+		\lit{iͤv, eu, ev, iu, iv, uͦ, íu, iͮ, a, e, i, u, è, ú, û,} Ø. In den
+		ausgewerteten Handschriften der \citet{kc} gibt es keine Anzeichen für
+		Schreibvarianten von \norm{bėide} mit \lit{-t-}, auch nicht in
+		Kontexten mit Apokope. Formen ähnlich \norm{bėide} mit \lit{-t-} oder
+		\lit{-t} sind den Lemmata \norm{bęte} \wdef{Bitte, Gebet},
+		\norm{bęten/biten} \wdef{bitten, beten}, \norm{bėtte} \wdef{Bett},
+		\norm{bėiten} \wdef{zögern, warten} und \norm{bieten} \wdef{(an)bieten}
+		zuzuordnen.}
+%
+Für die gegenwärtige Auswertung kommen nur die Flexionsformen vom Typ \norm{-e}
+und \norm{-iu} in Frage, daher wurden bei der Belegsammlung Formen, bei denen
+in der Zeichenkette nach dem Wortstamm \norm{m}, \norm{n}, \norm{r}, \norm{s}
+oder \norm{z} enthalten sind, nicht berücksichtigt; Falschpositive wurden
+manuell überprüft und eliminiert. \cref{tab:beidespelkc} gibt eine Übersicht
+über die für das \citet{kc}-Material ermittelten grafischen Varianten der
+Wortformen \norm{bėide} und \norm{bėidiu} pro Position im Wort. Eine
+hypothetische Form \fw{*weid-} mit bairischer Verwechslung von \norm{b} und
+\norm{w} \autocite[153]{paul2007} konnte nicht belegt werden.
+
+% \b(?:
+%   b(?:
+%     aedev|æidiv|a[yÿ]de|ejde|eyde?|êide|aid(?:
+%       e[uv]?|[ií]v|u̍
+%     )?|aíd(?:
+%       [eí]v|u̍|e
+%     )|eid(?:
+%       e[uv]|iv|í[uv]|[ev]
+%     )?|evdi[uv]|eíd(?:
+%       í[uv]|e
+%     )|ed(?:
+%       [ií][uv]|e
+%     )?|æd(?:
+%       [ei]v|e
+%     )
+%   )
+%   |p(?:
+%     aideu|aẏ?dív|a[yÿ]de|ede?|aid(?:
+%       i[uv]|ív|e
+%     )?|aíd(?:
+%       [ií]v|e
+%     )|eid(?:
+%       eu?|[ií]v
+%     )?|eyd(?:
+%       iv|e
+%     )
+%   )
+% )\b
+
+\begin{table}
+\centering
+\caption{In der \citet{kc} belegte Schreibweisen von mhd.~\norm{bėide/-iu} pro
+	Position im Wort}
+\begin{tabular}{c c c c}
+\toprule
+
+\mc{3}{c}{\bfseries Stamm}
+	& \bfseries Flexion
+	\\
+
+\cmidrule(r){1-3}
+\cmidrule(l){4-4}
+
+% \begin{minipage}{2em}
+\makecell{
+	b\\
+	p
+}
+% \end{minipage}
+	& \begin{minipage}{6em}
+		\begin{multicols}{4}\centering
+		ae\\
+		ai\\
+		ay\\
+		aí\\
+		aÿ\\
+		aẏ\\
+		ei\\
+		ej\\
+		ev\\
+		ey\\
+		eí\\
+		æi\\
+		êi\\
+		a\\
+		e\\
+		æ
+		\end{multicols}
+	\end{minipage}
+	& d
+	& \begin{minipage}{4em}
+		\begin{multicols}{3}\centering
+			eu\\
+			ev\\
+			iu\\
+			iv\\
+			íu\\
+			ív\\
+			u̍\\
+			e\\
+			Ø
+		\end{multicols}
+	\end{minipage}
+	\\
+
+\addlinespace[1ex]
+\bottomrule
+\end{tabular}
+\label{tab:beidespelkc}
+\end{table}
+
+Die Auswahl der Textzeugen beschränkt sich auf die drei Leithandschriften der
+neuen \citet{kc}-Edition von \citeauthor{chincaetal2019b}
+(Siglen \cite{kc:A1}, \cite{kc:B1}, \cite{kc:C1}) sowie die Vergleichs- (\cite{kc:H}, \cite{kc:VB})
+und Parallelhandschriften, insofern sie umfassende Teile des Texts enthalten
+(\cite{kc:M}, \cite{kc:P}, \cite{kc:K}, \cite{kc:Z}).%
+%
+	\footnote{Im Folgenden werden die einzelnen Textzeugen der \citet{kc} der
+	Kürze halber mit Siglen bezeichnet. Diese richten sich nach
+	\citetitle{kcdigital} \autocite{kcdigital}.}
+%
+Ausgenommen wurden die Vergleichshandschrift \citet{kc:VC} sowie die
+Parallelhandschrift \citet{kc:W}: bei Vorarbeiten hatte sich \citet{kc:VC}
+bezüglich ihres Sprachstands als problematisch erwiesen, da der Text im
+bairisch-österreichischen Schreibdialekt (mit leichtem mitteldeutschen
+Einschlag) \blockcquote[73]{wolf:kckat}{deutlichen Änderungen im Laufe des
+Schreibprozesses} unterliegt. \citet{kc:W} stellt eine Mischredaktion aus A und
+C dar und enthält außerdem die \tit{Prosa\-kaiserchronik}
+\autocite[48--54]{weis2022}, ist also ebenfalls ein sprachlich heterogener
+Text. Fragmente wurden bei der Auswertung generell nicht berücksichtigt, da sie
+im Durchschnitt einen einzigen Beleg für \norm{bėide} pro Textzeuge liefern,
+jedoch in 14 von 38 Fällen keinen einzigen.
+
+Neben einzelnen Episoden mit weiblichen Protagonisten -- zum Beispiel Veronica,
+Lucretia oder Crescentia \autocite[729--838, 4335--4772,
+11518--12808]{schroeder1895} -- handelt die \citet{kc} dem Prolog nach
+vornehmlich
+
+\blockcquote[][\pno~19--20]{schroeder1895}[]{
+	\norm{von den bâbesen unt von den chunigen,\\
+	baidiu guoten unt ubelen}
+
+	\q*{von den Päpsten und von den Königen,\\
+	sowohl guten als auch schlechten}
+}
+
+Aufgrund der thematischen Ausrichtung geht es also vornehmlich um Männer. Paare
+aus Mann und Frau kommen extrem selten vor. Die \citet{kc} ist trotz allem
+eine Untersuchung wert, da es sich bei ihr um einen der prestige- und
+einflussreichsten Texte des deutschsprachigen Mittelalters handelt
+\autocite[93]{wolf2008}, durch dessen digitale Erschließung mit zeichengenauer
+Transkription \autocite{kcdigital} der Sprachwissenschaft ein umfangreiches
+Textkorpus aus einem Guss zur Verfügung steht. Die große Menge der Textzeugen
+auch innerhalb der einzelnen Rezensionen macht die \citet{kc} attraktiv als
+Parallelkorpus \autocite{cysouwwaelchli2007}. Alle 53 derzeit über
+\citetitle{kcdigital} verfügbaren Textstücke aus 47 verschiedenen Handschriften
+umfassen etwa 995.832 Wortformen, wobei sich ein Mittelwert pro Handschrift von
+21.649 Wortformen ergibt; die Standardabweichung liegt bei 34.652 Wortformen.
+
+Von 59 gesammelten Belegen mit kombiniertem gemischtgeschlechtlichen Bezug
+liegen lediglich sechs attributiv gegenüber 53 mit \norm{bėide} als Teil der
+korrelativen Konjunktion \norm{bėide \dots\ unde} \wdef{sowohl \dots\ als auch}
+vor. Dass nur sehr wenige attributive Belege in der Stichprobe enthalten sind,
+macht den Vergleich zu den Urkunden des \citetitle{cao} besonders interessant,
+da dort umgekehrte Mengenverhältnisse vorliegen: Im \citetitle{cao} stehen 76
+Belege mit kombiniertem gemischtgeschlechtlichen Bezug zur Verfügung, von denen
+70 attributiv sind und lediglich sechs Teil der korrelativen Konjunktion. Die
+Belegsammlung zur \citet{kc} lässt sich so als Gegengewicht zu derjenigen des
+\citetitle{cao} verstehen, nicht nur, was die Textgattung betrifft. Die
+\cref{tab:beidevar} schlüsselt die Zahl der gesammelten Belege nach Handschrift
+mit ihrer jeweiligen Sigle, Funktion und Wortform auf.
+
+\begin{table}
+\centering
+\caption{Vorkommen von \norm{bėide/-iu} in den exzerpierten Handschriften nach Funktion}
+% Diese Tabelle enthält *alle* exzerpierten Belege, ungefiltert!
+\begin{tabular}[t]{
+	l
+	r r
+	r r
+	r
+	r
+}
+\toprule
+
+\mr[c]{2}{*}{\textbf{Hs.}}
+	& \mc{2}{c}{\textbf{Quantor}}
+	& \mc{2}{c}{\textbf{Konjunktion}}
+	& \mr[c]{2}{*}{\textbf{Summe}}
+	& \mr[c]{2}{*}{\textbf{Wortformen}}
+	\\
+
+\cmidrule(rl){2-3}
+\cmidrule(rl){4-5}
+
+%
+	& \textit{bėid(e)}
+	& \textit{bėidiu}
+	& \textit{bėid(e)}
+	& \textit{bėidiu}
+	\\
+
+\midrule
+
+\citet{kc:A1}
+	& 24
+	& 
+	& 16
+	& 21
+	& 61
+	& 90.068
+	\\
+
+\citet{kc:M}
+	& 26
+	& 
+	& 
+	& 40
+	& 66
+	& 84.658
+	\\
+
+\citet{kc:H}
+	& 26
+	& 
+	& 37
+	& 
+	& 63
+	& 86.573
+	\\
+
+\midrule
+
+\citet{kc:B1}
+	& 26
+	&  6
+	&  2
+	& 28
+	& 62
+	& 79.850
+	\\
+
+\citet{kc:P}
+	& 17
+	& 
+	& 16
+	& 
+	& 33
+	& 28.717
+	\\
+
+\citet{kc:VB}
+	& 26
+	&  1
+	& 25
+	& 24
+	& 76
+	& 76.000
+	\\
+
+\midrule
+
+\citet{kc:C1}
+	& 13
+	&  2
+	& 
+	& 34
+	& 49
+	& 87.791
+	\\
+
+\citet{kc:K}
+	& 15
+	&  2
+	&  1
+	& 32
+	& 50
+	& 89.888
+	\\
+
+\citet{kc:Z}
+	& 17
+	& 
+	& 31
+	& 
+	& 48
+	& 90.939
+	\\
+
+\midrule
+
+Summe
+	&     190
+	&      11
+	&     128
+	&     179
+	&     508
+	& 714.484
+	\\
+
+\bottomrule
+\end{tabular}
+\label{tab:beidevar}
+\end{table}
+
+Trotz des Vorbehalts zur zahlenmäßigen Verteilung der Belege auf die
+unterschiedlichen syntaktischen Kontexte ist gerade der Vergleich der
+bairischen Handschrift \citet{kc:B1} zum Urkunden\-material interessant, da
+\citet{kc:B1} die einzige der neun untersuchten Handschriften ist, in der im
+Kontext des kombinierten gemischtgeschlechtlichen Bezugs beim Quantor
+\norm{bėide} überhaupt beide Formen, \norm{bėide} und \norm{bėidiu}, auftreten.
+
+In der Untersuchung des \citetitle{cao} wird sich zeigen, dass in bairischen
+Urkunden -- anders als in den meisten \citet{kc}-Handschriften -- durchaus
+Variation zwischen diesen beiden Formen herrscht. Abgesehen von \norm{bėide} in
+seiner Funktion als Quantor kommt Variation in der Funktion als Konjunktion bei
+den Handschriften \citet{kc:A1} und \citet{kc:VB} vor. Auch \citet{kc:VB} ist
+in Bezug auf das Urkundenmaterial insofern bemerkenswert, als
+\citet[224]{schneider1987a} die Handschrift \citet{kc:VB} unter der Rubrik zum
+letzten Viertel des 13.~Jahrhunderts aufführt; \citeauthor{wolf:kckat} schätzt
+sie auf \blockcquote[65]{wolf:kckat}{um 1290/1300}. Die Handschrift dürfte also
+etwa zeitgleich mit dem Großteil der Urkunden des \citetitle{cao} entstanden
+sein (vgl.~\cref{tab:urkstat}).
+
+Generell stellt sich bei der Auswertung der \citet{kc}-Belege die Frage
+nach deren Zählweise. Anders als beim \citetitle{cao}, das nur wenige
+Parallelausfertigungen enthält \autocite[vgl.][326--328]{ganslmayeretal2003},
+verteilen sich 456 von insgesamt 508 aus der \citet{kc} exzerpierte
+Targets auf 110 identifizierte Parallelstellen. Dies bedeutet,
+dass 89,7\pct\ der Gesamtzahl der Belege mindestens einem anderen Parallelbeleg
+zugeordnet werden können, wobei im Durchschnitt vier Belege ein solches Set aus
+Parallelstellen ergeben, neben 52 Einzelbelegen.
+% Wie können also die Beleghäufigkeiten in den Auswertungstabellen in
+% \cref{ch:kcanalyse} angegeben werden -- einzeln nach absoluter Häufigkeit
+% oder zusammengefasst nach Parallelstelle?
+Da auch zwischen Parallelstellen mitunter Variation herrscht, würde eine
+Zusammenfassung der zugehörigen Belege bei der Zählung die Statistik verzerren.
+Jeden Beleg einzeln zu zählen erscheint daher als die bessere Strategie. Die
+eher geringe Belegmenge pro Kontext erlaubt es in vielen Fällen, Einzelbelege
+und ihre Parallelstellen anzugeben und gemeinsam zu diskutieren.
+
+\subsection{Ausgeschlossene Belege}
+\label{subsec:ausgeschlossene_kc}
+
+In der \citet{kc} gibt es einzelne Stellen, die sich bei der Auswertung als
+unverständlich oder fehlerhaft erwiesen und sich der morphologischen
+Annotierung entzogen, oder aber in ungeeigneten Kontexten stehen und daher
+ebenfalls nicht verwertbar sind. Darüber hinaus wurden die beiden
+mitteldeutschen Handschriften \citet{kc:H} und \citet{kc:P} sowie die
+schwäbische Handschrift \citet{kc:Z} nicht regulär in die Auswertung
+einbezogen, da dort regelmäßig keine Variation zwischen \norm{bėide} und
+\norm{bėidiu} vorliegt \autocite[vgl. auch][183]{ksw2}.
+% % Belege aus diesen Handschriften werden gelegentlich aber zum Vergleich
+% % mitangeführt.
+% Im Folgenden werden nur diejenigen Belege in die Analyse einbezogen, die nicht
+% aufgrund von fehlender Variation in der jeweiligen Handschrift ausgeschlossen
+% wurden (siehe~\cref{sec:adjdeclkc}).
+
+Der Fall eines vermuteten Abschreibfehlers wird durch den Beleg in
+\cref{ex:kcexcl1} vertreten. Der Editionstext nach \nosh\citet{schroeder1895}
+wird zum Vergleich in \cref{ex:kcexcl1_schroeder} angegeben. Die Korrektheit
+der Transkription der Textstelle wurde am Digitalisat der Handschrift überprüft
+und bestätigt.
+
+\begin{exe}
+\ex \begin{xlist}
+	\ex \label{ex:kcexcl1}
+		\gll von den pæpſten vnd von chûnigen \\
+			von den Päpsten und von Königen \\
+	\sn \gll Peide und frûmigen \\
+			beide und tüchtigen \\
+		\begin{taggedline}{\parencite[\pno~2\va, 20--21]{kc:B1}}
+		\trans \wdef{von den Päpsten und von Königen, sowohl als auch tüchtigen
+			\textins{sic}}
+		\end{taggedline}
+
+	\ex \label{ex:kcexcl1_schroeder}
+		\gll von den bâbesen unt von den chunigen, \\
+			von den Päpsten und von den Königen \\
+	\sn \gll baidiu guoten unt ubelen, \\
+			beide guten und bösen \\
+		\begin{taggedline}{\parencite[19--20]{schroeder1895}}
+		\trans \wdef{von den Päpsten und von den Königen, sowohl guten als auch
+			bösen}
+		\end{taggedline}
+\end{xlist}
+\end{exe}
+
+Auch die älteste vollständige Handschrift \autocite{kc:A1} berichtet, die
+Chronik handele von den Päpsten und von den Königen \lit{bædiv gvͦten vn̄ ubelen}
+\wdef{sowohl guten als auch bösen} \autocites[1\ra,
+18]{kc:A1}[vgl.][20]{schroeder1895}, insofern wird \norm{bėide} hier nicht als
+nachgestellter Quantor zu werten sein. Die
+B-\allowbreak{}Pa\-ral\-lel\-hand\-schrift \citet{kc:P} enthält hier die
+Variante \lit{bejde boſen un̄ frumege} \wdef{sowohl bösen als auch
+tüchtige\textins{n}} \autocite[\pno~1\ra, 10]{kc:P} und in der
+B-Vergleichshandschrift \citet{kc:VB} lautet die Zeile \lit{Boͤſen vnd
+frvͤmigen} \wdef{bösen und tüchtigen}, allerdings ohne einleitendes
+\norm{bėide} \autocite[\pno~1\ra, 18]{kc:VB}. Am ehesten wird der Beleg in \cref{ex:kcexcl1} also
+zur gleichen Gruppe wie seine Parallelstellen passen: \norm{bėide} als
+korrelative Konjunktion mit zwei koordinierten Adjektiven (vgl.
+\cref{subsec:beidkoordtarg}), von denen das erste ausfällt.
+
+Mit Bezug auf \notecite[19--20]{schroeder1895} verweist \citet[26,
+Anm.~45]{weis2022} mit \citet[55, Anm.~87]{dickhutbielsky2015} außerdem auf
+eine Kontroverse um deren grammatische Bezüge. Ich stimme mit \citet{haupt2019}
+überein, \notecite[20]{schroeder1895} \blockcquote[239]{haupt2019}{als Klammer
+nur auf die zwei zunächst folgenden Wörter (\textit{guoten unt ubelen}), im
+Sinne von \enquote{sowohl als auch}} bezogen zu lesen. Ob sich das Attribut
+\lit{baidiu guoten unt ubelen} \wdef{sowohl guten als auch bösen} nur auf
+die Könige oder auch auf die Päpste bezieht, lässt sich nicht eindeutig
+beurteilen. Belege, die den Rückbezug der Konjunktion \lit{bėide} auf zwei
+Konjunkte nahelegen, ließen sich im exzerpierten Material keine finden. Da
+keine zwei Könige explizit genannt werden, erscheint eine Interpretation von
+\lit{baidiu} als nachgestelltem Quantor mit Bezug auf \lit{chunigen}
+\wdef{Königen} unplausibel, zumal in diesem Fall die Form des Quantors
+(Nom./Akk.~Pl. N.) nicht kongruent mit dem Präpositionalobjekt wäre (Dat.~Pl.
+M.).
+
+% Zur Konstruktion \norm{bėidiu \dots\ unde} im Mittelhochdeutschen siehe
+% \citet[626--628]{ksw2}. Eine allgemeine Diskussion zur Syntax korrelativer
+% Konjunktionen aus Sicht der generativen Grammatik bietet
+% \citet{johannessen2005}; aus Sicht der LFG behandelt
+% \citet[366--368]{dalrymple2001} dieses Thema. Siehe jedoch auch
+% \citet{peterson2004,borsley2005} mit gewichtigen Argumenten gegen
+% \posscite{johannessen1998,johannessen2005} Modell von Koordination als
+% endozentrische, das heißt hierarchische Konstruktion.
+
+% % % Im weiteren Verlauf dieser Arbeit soll jedoch Hermeneutik weniger eine %
+% % Rolle spielen; vielmehr soll die \citet{kc} als Textkorpus zur % %
+% Untersuchung aus Perspektive der historischen Sprachwissenschaft dienen.
+
+In einem anderen Fall bezieht sich in dem in \cref{ex:chindpaid_1} zitierten
+Beleg \lit{chínd} \wdef{Kinder} auf die Knaben Faustinus und Faustus
+\autocites[\pno~10\rb, 5--6]{kc:M}[vgl.][1239--1240]{schroeder1895}. Der Beleg
+ist unflektiert. Die angegebenen Parallelstellen enthalten jeweils \lit{der
+kinde baider} \wdef{der beiden Kinder}. Bei Voranstellung des schwach
+flektierten Adjektivs wäre unabhängig vom Genus regulär mit \norm{bėiden} zu
+rechnen, vergleiche \cref{ex:chindpaid_2}.
+
+\begin{exe}
+\ex \label{ex:chindpaid}
+\begin{xlist}
+	\ex \label{ex:chindpaid_1}
+		\gll Frowe der trovm ergat dir niht zelaíd. \\
+			Frau der Traum ergeht dir nicht zuleide \\
+	\sn \gll Nv {vnder wínt} dich der chínd \textbf{paid}. \\
+			nun nimm.an dich der Kind[\Gen.\Pl.\NeutM] beide[\Gen.\Pl.\NeutM] \\
+		\begin{taggedline}{\parencites%
+			[\pno~11\ra, 17]{kc:M}[vgl.]%
+			[\pno~6\rb, 22--23]{kc:A1}
+			[\pno~8\ra, 12--13]{kc:H}
+			[1354]{schroeder1895}
+		} % 1073x
+		\trans \wdef{Frau, der Traum soll dich nicht belasten. Nun nimm dich der
+			beiden Kinder an.}
+		\end{taggedline}
+		% → GEN.PL.M/F/N ansonsten stark -er, schwach -en.
+
+	\ex \label{ex:chindpaid_2}
+		\gll Gewan er {dreizich tvſent}. \\
+			Gewann er dreißigtausend \\
+	\sn \gll Aller \textbf{guten} chnehte. \\
+			aller gut-\Gen.\Pl.\MascM.\Wk{} Knechte \\
+		\begin{taggedline}{\parencites%
+			[\pno~52\vb, 20--21]{kc:M}[vgl.]%
+			[\pno~30\rb, 14--15]{kc:A1}
+			[\pno~41\rb, 36--37]{kc:H}
+			[\pno~19\vc, 23--24]{kc:B1}
+			[\pno~33\vb, 20--21]{kc:VB}
+			% [\pno~24\vc, 23--24]{kc:VC}
+			[\pno~42\ra, 24--25]{kc:K}
+			[\pno~137\va, 1--2]{kc:Z}
+			[6967--6968]{schroeder1895}
+		}
+		\trans \wdef{gewann er \textins{=~Severus} für sich dreißigtausend
+			von allen guten Soldaten.}
+		\end{taggedline}
+\end{xlist}
+\end{exe}
+
+Vergleichbare Belege mit Nachstellung des Adjektivs in einer determinierten NP
+liegen in der Stichprobe lediglich vier vor. Davon enthält der einzige Beleg im
+Akkusativ \cref{ex:maccadj_1} unflektiertes \lit{gut} \wdef{gut}, gegenüber
+flektiertem \lit{guten} \wdef{guten} bei Voranstellung, wie exemplarisch in
+\cref{ex:maccadj_2} gezeigt. Die Handschrift \citet{kc:A1} enthält an dieser
+Stelle % [31\vb, 29]
+tatsächlich \lit{manigen helt guͦten} \wdef{manch guten Helden}.
+
+\begin{exe}
+\ex \label{ex:maccadj}
+	\begin{xlist}
+	\ex \label{ex:maccadj_1}
+		% \gll Der Hertzog von Meran. \\
+		% 	der Herzog von Meran \\
+		% \gll Vnd clauus ſeín man. \\
+		% 	und \textins{Sc}lavus sein Mann \\
+		\gll Di furten manigẽ helt \textbf{gut}. \\
+			die führten viel-\Acc.\Sg.\MascM.\St{} Held gut[\Acc.\Sg.\MascM] \\
+	\sn \gll Si chomen dar mít eínẽ mvt. \\
+			sie kamen dahin mit vereintem Gesinnung \\
+	\sn \gll Jn di ſtat zerome. \\
+			in die Stadt zu=Rom \\
+		\begin{taggedline}{\parencites%
+			[\pno~55\vb, 20--24]{kc:M}[vgl.]%
+			[\pno~31\vb, 27--31]{kc:A1}
+			[\pno~43\vb,15--19]{kc:H}
+			[\pno~38\va, 18--21]{kc:C1}
+			% [\pno~26\rb, 23--27]{kc:VC}
+			[\pno~44\rb, 28--32]{kc:K}
+			[\pno~145\ra, 18--21]{kc:Z}
+			[7346--7350]{schroeder1895}
+		}
+		\trans \wdef{%
+			% Der Herzog von Meran und \textins{Sc}lavus, sein Mann,
+			\textelp{} die führten viele gute Helden an. Sie kamen einmütig hin
+			zu der Stadt Rom.}
+		\end{taggedline}
+
+	\ex \label{ex:maccadj_2}
+		\gll Do vragt er di geſvnden \\
+			da fragte er die Leute \\
+	\sn \gll Wo er iheſum moht vínden. \\
+			wo er Jesus könnte finden \\
+	\sn \gll Den vil \textbf{guten} arzat \\
+			den viel gut-\Acc.\Sg.\MascM.\Wk{} Arzt \\
+		\begin{taggedline}{\parencites%
+			[\pno~6\rb, 31]{kc:M}[vgl.]%
+			[\pno~3\vb, 26--28]{kc:A1}
+			[\pno~4\rb, 28--30]{kc:H}
+			[\pno~4\rb, 35--36]{kc:B1}
+			[\pno~7\ra, 9--10]{kc:P}
+			[\pno~4\ra, 24--27]{kc:C1}
+			[\pno~12\va, 12--15]{kc:Z}
+			[723--725]{schroeder1895}
+		}
+		\trans \wdef{Da fragte er die Leute, wo er Jesus finden
+			könnte, den sehr guten Arzt.}%
+		%
+		% 	\footnote{Die Handschriften variieren hier relativ stark im
+		% 		Wortlaut, der Tenor ist jedoch, dass der Bote in der Stadt
+		% 		herumfragt. Die beiden parallelen A-Handschriften enthalten
+		% 		eine Formulierung mit \norm{gesinde} \wdef{Dienerschaft,
+		% 		Leute}: \lit{doͮ frac er di geſinden} \autocite[\pno~3\vb, 26]{kc:A1};
+		% 		\lit{Do uragete er daz geſinde} \autocite[\pno~4\rb, 28]{kc:H}
+		% 		\wdef{Da fragte er die Leute}.
+		% 		% Durch das Schlüsselwort
+		% 		% \norm{arƶāt} \wdef{Arzt} beeinflusst könnte der Schreiber von
+		% 		% \citet{kc:M} hier \norm{gesinde} mit \norm{gesunde}
+		% 		% \wdef{Gesunde/r} verwechselt haben.
+		% 		}
+		\end{taggedline}
+		\\
+	\end{xlist}
+\end{exe}
+
+Auffällig an \cref{ex:maccadj_1} ist, dass \lit{gut(en)} \wdef{gut(en)} auf
+\norm{mvt} \wdef{Gesinnung, Stimmung, Geist} gereimt wird. Es ist möglich,
+dass an dieser Stelle die Endung aus Reimzwang wegfällt. Andererseits liegt in
+der Adjektivstichprobe auch in anderen untersuchten Handschriften im Kontext
+der Nachstellung eine Tendenz zur Endungslosigkeit vor. Dies wird bestätigt
+durch die Beobachtung von \citet[241]{ksw2}, die allgemein eine über das
+13.~Jahrhundert hin zunehmende Neigung zum Weglassen der Flexion beim
+nachgestellten Adjektiv im Reim feststellen. Die Endungslosigkeit von
+\lit{paid} in \cref{ex:chindpaid_1} wird vermutlich ebenfalls in diesem
+Zusammenhang stehen.
+
+\phantomsection
+\label{phsec:kchiatus}
+Entsprechend der von \citet{gjelsten1980} genannten methodischen Kritikpunkte
+an \posscite{askedal1974} Studie wurden außerdem solche Belege nicht in die
+Auswertung einbezogen, die vor Vokal oder in Reimposition stehen.
+\citet{askedal1973} merkt bezüglich eines ähnlichen Falls in seiner Auswertung
+der \citetitle{maroldschroeder1969}-Edition von \citet{maroldschroeder1969}
+bereits selbst an, dass denkbar sei, dass die Flexionsendung \norm{iu} in
+Hiatuspositionen bei der Rezitation apokopiert werde und möglicherweise
+hyperkorrekt dafür \norm{e} geschrieben werde \autocite[90--91]{askedal1973}.
+
+Des Weiteren führt er mit Bezug auf \citet[662--663]{grimm1870} die
+Reimposition als für eine morphosyntaktische Analyse problematisch an, insofern
+\blockcquote[89]{askedal1973}{die Flexionsendung \norm{-iu} des Nom.\ Sing.\
+Fem.\ und Nom.\ Akk.\ Plur.\ Neutr.\ in der mhd.\ Epik niemals in der
+Reimposition am Zeilenende vorkommt}. In der Belegsammlung zur \citet{kc}
+finden sich insgesamt 133 Belege von 510 in Neutralisierungspositionen;
+\cref{ex:neutralpos,ex:neutralpos2} geben Beispiele aus beiden Gruppen.
+Gegenbeispiele, in denen \norm{bėidiu} in der Reimposition vorkommt, sind auch
+im hier exzerpierten Material nicht vorhanden, allerdings liegen auch keine
+Belege vor, in denen andernfalls regulär mit \norm{-iu} zu rechnen wäre. Belege
+mit \norm{iu} vor Vokal gibt es immerhin elf, davon bis auf einen
+\cref{ex:neutralpos2} nur bei \norm{bėide} als Konjunktion.
+
+\begin{exe}
+\ex \label{ex:neutralpos}
+	\gll Den gewalt habten ſi beid\textbf{e} \\
+		den Macht hatten \Tpl\subM.\Nom{} beide-\Nom.\Pl\subM.\St{} \\
+\sn \gll Daz enſchol v̂ns nímmer werden leide \\
+		das \Neg=wird uns nie werden Leid \\
+	\begin{taggedline}{\parencites%
+		[\pno~13\ra, 41--42]{kc:B1}[vgl.]%
+		[\pno~18\rb, 3]{kc:A1}
+		[\pno~24\vb, 35]{kc:H}
+		[\pno~32\ra, 3]{kc:M}
+		[\pno~21\ra, 31]{kc:VB}
+		[\pno~37\ra, 26]{kc:P}
+		[\pno~23\rb, 5]{kc:C1}
+		[\pno~25\rb, 39]{kc:K}
+		[\pno~83\ra, 5]{kc:Z}
+		[4261--4264]{schroeder1895}
+	}
+	\trans \wdef{Diese Macht hatten sie beide. Das wird uns nie Leid werden.}
+	\end{taggedline}
+
+\ex \label{ex:neutralpos2}
+	\begin{xlist}
+	\ex \label{ex:neutralpos2_1}
+		\gll der berch der haizet gargan. \\
+			der Berg der heißt Gargân \\
+	\sn \gll da worden ſi baid\textbf{e} \textbf{\sscr{o}{v}}ffe erſlagen. \\
+			da wurden \Tpl\subM.\Nom{} beide-\Nom.\Pl.\MascM.\St{} auf
+				erschlagen \\
+		\begin{taggedline}{\parencites%
+			[\pno~33\rb, 28--30]{kc:A1}[vgl.]%
+			[\pno~46\ra, 12]{kc:H}
+			[\pno~58\vb, 15]{kc:M}
+			[\pno~40\va, 15]{kc:C1}
+			[\pno~46\va, 30]{kc:K}
+			[\pno~152\va, 5]{kc:Z}
+			[7704--7705]{schroeder1895}}
+		\trans \wdef{Der Berg heißt Gargân, darauf wurden sie beide erschlagen.}
+		\end{taggedline}
+
+	\ex \label{ex:neutralpos2_2}
+		\gll Rome vnd Lateran \\
+			Rom und Lateran \\
+	\sn \gll Wurden ím baid\textbf{\sscr{u}{ı}} \textbf{v}ndertan \\
+			wurden ihm beide-\Nom.\Pl.\NeutI.\St{} untertan \\
+		\begin{taggedline}{\parencites%
+			[\pno~68\vb, 13--14]{kc:K}[vgl.]%
+			[\pno~49\vb, 15--16]{kc:A1}
+			[\pno~69\ra, 29--30]{kc:H}
+			[\pno~87\ra, 32--33]{kc:M}
+			[\pno~31\vb, 18--19]{kc:B1}
+			[\pno~82\va, 45--46]{kc:VB}
+			[\pno~60\ra, 14--15]{kc:C1}
+			% [\pno~39\vc, 25--26]{kc:VC}
+			[\pno~229\ra, 6--7]{kc:Z}
+			[11416--11417]{schroeder1895}}
+		\trans \wdef{Rom und Lateran wurden ihm beide untertan.}
+		\end{taggedline}
+		\\
+	\end{xlist}
+\end{exe}
+
+Mit Ausnahme der Handschrift \citet{kc:K} wurden keine alemannischen
+\citet{kc}-Textzeugen in die Analyse aufgenommen. Der Vollständigkeit halber
+seien in \cref{ex:beidkcalem} die wenigen Belege zu \norm{bėide} aus solchen
+Fragmenten aufgeführt, die im \citet{hsc} als spezifisch alemannisch
+ausgewiesen werden \autocite[vgl.][4, 44, 54]{wolf:kckat}.
+
+\begin{exe}
+\ex \label{ex:beidkcalem}
+	\begin{xlist}
+	\needspace{3\baselineskip}
+	\ex \gll bediv rome vnde Lateran \\ % 2013
+		     beide Rom[\Acc.\Sg.\NeutI] und Lateran[\Acc.\Sg.\MascI] \\
+		\begin{taggedline}{\parencites[\pno~2\vb, 17]{kc:a11}[vgl.][5953]{schroeder1895}}
+		\trans \wdef{sowohl Rom als auch der Lateran}
+		\end{taggedline}
+
+	\ex \gll die iuncherren beide \\ % 1091
+		     die Junker-\Nom.\Pl{} beide-\Nom.\Pl.\MascM{} \\
+		\begin{taggedline}{\parencites[\pno~1\vb, 14]{kc:a14}[vgl.][1417]{schroeder1895}}
+		\trans \wdef{die beiden jungen Herren}
+		\end{taggedline}
+
+	\ex \gll Beidiv die ſtat \textins{\lit{u}}n̄ daz lan\textins{\lit{t}} \\ % Ø
+		     beide die Stadt[\Acc.\Sg.\FemI] und das Land[\Acc.\Sg.\NeutI] \\
+		\begin{taggedline}{\parencite[\pno~1\rb, 4]{kc:b1}}
+		\trans \wdef{sowohl die Stadt als auch das Land}
+		\end{taggedline}
+
+	\ex \gll Beidiv wip un̄ man \\ % 2004
+		     beide Frau[\Nom.\Sg.\NeutF] und Mann[\Nom.\Sg.\MascM] \\
+		\begin{taggedline}{\parencites[\pno~2\rb, 29]{kc:b1}[vgl.][619]{schroeder1895}}
+		\trans \wdef{Frau wie Mann}
+		\end{taggedline}
+\end{xlist}
+\end{exe}
