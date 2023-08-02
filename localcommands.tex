@@ -1,8 +1,15 @@
 % Author's ORCID
 \newcommand*{\orcid}{0000-0002-6023-551X}
 
+% Check and cross mark
+\newcommand{\chk}{{\fontspec{FreeSerif}✓}} % Check mark
+\newcommand{\crs}{{\fontspec{FreeSerif}✗}} % Cross mark
+
 % Foreign word in text
 \newcommand{\fw}[1]{\emph{#1}}
+
+% Gray text
+\newcommand{\gr}[1]{\textcolor{gray}{#1}}
 
 % Literally quoted MHG spelling
 \newcommand{\lit}[1]{\emph{#1}}
@@ -73,3 +80,33 @@
 \newcommand{\UnknI}{?\textsubscript{\SI}}
 \newcommand{\UnknM}{?\textsubscript{\SM}}
 \newcommand{\UnknX}{?\textsubscript{\SX}}
+
+% LFG macros
+\newcommand{\downfeat}[2]{(↓~{#1})~=~{#2}} % (↓X) = Y
+\newcommand{\downs}[1]{(↓~{#1})} % (↓X)
+\newcommand{\elem}[1]{↓~$\in$~(↑~{#1})} % ↓ ∊ (↑X)
+\newcommand{\pass}[1]{(↑~{#1})~=~↓} % (↑X) = ↓
+\newcommand{\req}{=$_c$} % =_c
+\newcommand{\uncertain}[2]{((#1~↑)~{#2})} % ((X↑) Y)
+\newcommand{\updown}{↑~=~↓} % ↑ = ↓
+\newcommand{\updownelem}{↓~$\in$~↑} % ↓ ∊ ↑
+\newcommand{\upfeat}[2]{(↑~{#1})~=~{#2}} % (↑X) = Y
+\newcommand{\ups}[1]{(↑~{#1})} % (↑X)
+\newcommand{\xbar}[1]{#1′} % X'
+\newcommand{\xhead}[1]{#1⁰} % X⁰
+
+% \SObjT and \OblqT must be manually added to the leipzig glossary listing
+\newcommand{\SObj}[1]{\textsc{obj}$_{#1}$}
+\newcommand{\Oblq}[1]{\textsc{obl}$_{#1}$}
+
+% A-structure rules: \astruct[1]{2}{3} > '2 <3> 1'
+\newcommand{\astruct}[3][]{`#2~⟨\,#3\,⟩%
+	\notblank{#1}{%
+		\enspace#1'}{%
+		}'%
+}
+
+% Feature annotation above (for use in TREES); no value in [] prints ↑ = ↓
+\newcommand{\anno}[2][\updown{}]{%
+	$\overset{\text{#1}}{\text{#2}}$%
+}
