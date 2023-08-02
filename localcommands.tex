@@ -33,6 +33,11 @@
 \let\mc\multicolumn
 \let\mr\multirow
 
+% biblatex
+% Make divider for multicites and multipostnotes semicolon
+\renewcommand{\multicitedelim}{\addsemicolon\addspace}
+\renewcommand{\multipostnotedelim}{\addsemicolon\addspace}
+
 % Annotation macros
 \newcommand{\SM}{\fontspec{FreeSerif}♂}
 \newcommand{\SF}{\fontspec{FreeSerif}♀}
@@ -52,29 +57,29 @@
 \newcommand{\subFF}{\textsubscript{\SFF}}
 \newcommand{\subMF}{\textsubscript{\SMF}}
 \newcommand{\subII}{\textsubscript{\SII}}
-\newcommand{\MascA}{\M\textsubscript{\SA}} % M∗
-\newcommand{\MascF}{\M\textsubscript{\SF}} % M♀
-\newcommand{\MascI}{\M\textsubscript{\SI}} % M⚪
-\newcommand{\MascM}{\M\textsubscript{\SM}} % M♂
-\newcommand{\MascX}{\M\textsubscript{\SX}} % M?
-\newcommand{\FemA}{\F\textsubscript{\SA}}
-\newcommand{\FemF}{\F\textsubscript{\SF}}
-\newcommand{\FemI}{\F\textsubscript{\SI}}
-\newcommand{\FemM}{\F\textsubscript{\SM}}
-\newcommand{\FemX}{\F\textsubscript{\SX}}
-\newcommand{\NeutA}{\N\textsubscript{\SA}}
-\newcommand{\NeutF}{\N\textsubscript{\SF}}
-\newcommand{\NeutI}{\N\textsubscript{\SI}}
-\newcommand{\NeutM}{\N\textsubscript{\SM}}
-\newcommand{\NeutX}{\N\textsubscript{\SX}}
-\newcommand{\NeutMM}{\N\textsubscript{\SMM}}
-\newcommand{\NeutMF}{\N\textsubscript{\SMF}}
-\newcommand{\NeutII}{\N\textsubscript{\SII}}
-\newcommand{\NullA}{\Null\textsubscript{\SA}}
-\newcommand{\NullF}{\Null\textsubscript{\SF}}
-\newcommand{\NullI}{\Null\textsubscript{\SI}}
-\newcommand{\NullM}{\Null\textsubscript{\SM}}
-\newcommand{\NullX}{\Null\textsubscript{\SX}}
+\newcommand{\MascA}{\textsc{m}\textsubscript{\SA}} % M∗
+\newcommand{\MascF}{\textsc{m}\textsubscript{\SF}} % M♀
+\newcommand{\MascI}{\textsc{m}\textsubscript{\SI}} % M⚪
+\newcommand{\MascM}{\textsc{m}\textsubscript{\SM}} % M♂
+\newcommand{\MascX}{\textsc{m}\textsubscript{\SX}} % M?
+\newcommand{\FemA}{\textsc{f}\textsubscript{\SA}}
+\newcommand{\FemF}{\textsc{f}\textsubscript{\SF}}
+\newcommand{\FemI}{\textsc{f}\textsubscript{\SI}}
+\newcommand{\FemM}{\textsc{f}\textsubscript{\SM}}
+\newcommand{\FemX}{\textsc{f}\textsubscript{\SX}}
+\newcommand{\NeutA}{\textsc{n}\textsubscript{\SA}}
+\newcommand{\NeutF}{\textsc{n}\textsubscript{\SF}}
+\newcommand{\NeutI}{\textsc{n}\textsubscript{\SI}}
+\newcommand{\NeutM}{\textsc{n}\textsubscript{\SM}}
+\newcommand{\NeutX}{\textsc{n}\textsubscript{\SX}}
+\newcommand{\NeutMM}{\textsc{n}\textsubscript{\SMM}}
+\newcommand{\NeutMF}{\textsc{n}\textsubscript{\SMF}}
+\newcommand{\NeutII}{\textsc{n}\textsubscript{\SII}}
+\newcommand{\NullA}{Ø\textsubscript{\SA}}
+\newcommand{\NullF}{Ø\textsubscript{\SF}}
+\newcommand{\NullI}{Ø\textsubscript{\SI}}
+\newcommand{\NullM}{Ø\textsubscript{\SM}}
+\newcommand{\NullX}{Ø\textsubscript{\SX}}
 \newcommand{\UnknA}{?\textsubscript{\SA}}
 \newcommand{\UnknF}{?\textsubscript{\SF}}
 \newcommand{\UnknI}{?\textsubscript{\SI}}
@@ -110,3 +115,7 @@
 \newcommand{\anno}[2][\updown{}]{%
 	$\overset{\text{#1}}{\text{#2}}$%
 }
+
+% Alias for tikzmark's \subnode[]{}{} to spare lots of empty brackets for nodes
+% not containing any text anyway
+\newcommand{\mysn}[1]{\subnode{#1}{}}
