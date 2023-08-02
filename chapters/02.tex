@@ -883,7 +883,7 @@ vgl.][179--180]{corbett1983}[168--170]{corbett2006}, wie in dem Schema in
 		},
 		lbl/.style={
 			minimum height=1.5em,
-			font={\smaller\bfseries}
+			font={\smaller\scshape}
 		},
 		every node/.style={anchor=base}
 	]
@@ -897,11 +897,11 @@ vgl.][179--180]{corbett1983}[168--170]{corbett2006}, wie in dem Schema in
 	\node (C) [box, rectangle, fit={(1) (2) (3)}, thick] {};
 	\node (T) [box, rectangle, fit=(5)                 ] {};
 
-	\node (clbl) [lbl, above=.5ex of C] {Controller};
-	\node (tlbl) [lbl, above=.5ex of T] {Target};
+	\node (clbl) [lbl, above=.5ex of C] {controller};
+	\node (tlbl) [lbl, above=.5ex of T] {target};
 
 	\draw [-, thick] (3) -- ++(south:2em) -| (T);
-	\node [lbl, below=1.25em of 4.south] {Kongruenz};
+	\node [lbl, below=1.25em of 4.south] {kongruenz};
 \end{tikzpicture}
 
 \begin{tikzpicture}[
@@ -918,7 +918,7 @@ vgl.][179--180]{corbett1983}[168--170]{corbett2006}, wie in dem Schema in
 		},
 		lbl/.style={
 			minimum height=1.5em,
-			font={\smaller\bfseries}
+			font={\smaller\scshape}
 		},
 		every node/.style={anchor=base}
 	]
@@ -932,11 +932,11 @@ vgl.][179--180]{corbett1983}[168--170]{corbett2006}, wie in dem Schema in
 	\node (C) [box, rectangle, fit={(1) (2) (3)}, thick] {};
 	\node (T) [box, rectangle, fit=(5)                 ] {};
 
-	\node (clbl) [lbl, above=.5ex of C] {Controller};
-	\node (tlbl) [lbl, above=.5ex of T] {Target};
+	\node (clbl) [lbl, above=.5ex of C] {controller};
+	\node (tlbl) [lbl, above=.5ex of T] {target};
 
 	\draw [-, thick] (3) -- ++(south:2em) -| (T);
-	\node [lbl, below=1.25em of 4.south] {Kongruenz};
+	\node [lbl, below=1.25em of 4.south] {kongruenz};
 \end{tikzpicture}
 \caption{Kongruenz mit dem nächsten Konjunkt}
 \label{fig:ccagraphic}
@@ -997,7 +997,7 @@ regelgemäß kongruieren kann
 		},
 		lbl/.style={
 			minimum height=1.5em,
-			font={\smaller\bfseries}
+			font={\smaller\scshape}
 		},
 		every node/.style={anchor=base}
 	]
@@ -1011,11 +1011,11 @@ regelgemäß kongruieren kann
 	\node (C) [box, rectangle, fit={(1) (2) (3)}, thick] {};
 	\node (T) [box, rectangle, fit=(5)                 ] {};
 
-	\node (clbl) [lbl, above=.5ex of C] {Controller};
-	\node (tlbl) [lbl, above=.5ex of T] {Target};
+	\node (clbl) [lbl, above=.5ex of C] {controller};
+	\node (tlbl) [lbl, above=.5ex of T] {target};
 
 	\draw [-, thick] (C) -- ++(south:2em) -| (T);
-	\node [lbl, below=1em of $(2.south)!0.5!(5.south)$] {Kongruenz};
+	\node [lbl, below=1em of $(2.south)!0.5!(5.south)$] {kongruenz};
 \end{tikzpicture}
 \caption{Kongruenz mit beiden Konjunkten}
 \label{fig:combgraphic}
@@ -1228,7 +1228,6 @@ disambiguiert.
 	]
 	\end{forest}
 	\hspace{2em}
-	\adjustbox{valign=t}{%
 	\avm{%
 		\tikzmark{cfstruct_f}$f$: [
 			\Pred	&	\astruct{rennen}{\ups{\Subj}} \\
@@ -1241,7 +1240,7 @@ disambiguiert.
 				\Case	&	\Nom \\
 			]
 		]%
-	}}
+	}
 	\begin{tikzpicture}[remember picture, overlay]
 		\draw [myarrow]
 			([yshift=.5ex]{pic cs:cfstruct_CP})
