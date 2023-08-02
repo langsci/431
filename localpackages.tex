@@ -67,5 +67,52 @@
 \SetBlockEnvironment{quote}
 \let\q\textquote
 
+% enumitem
+\usepackage{enumitem}
+
+% forest
+% Ability to draw tree diagrams
+\usepackage[linguistics]{forest}
+
+% forest
+% Forest styles to apply to trees for formatting
+\forestset{shorter edges/.style={
+  for tree={l sep-=.5em, l=0}
+}}
+\forestset{narrower nodes/.style={
+  for tree={s sep-=1em, s=0}
+}}
+\forestset{italic leaves/.style={
+  where n children=0{font=\itshape}{}
+}}
+\forestset{align text/.style={
+  where n children=0{tier=words}{}
+}}
+\forestset{nice empty nodes/.style={
+  for tree={fit=band}, % {calign=fixed edge angles},
+    delay={where content={}{for parent={for children={anchor=north}}}{}}
+}}
+
+% langsci-avm
+\usepackage{langsci-avm}
+
 % multirow
 \usepackage{multirow}
+
+% relsize
+\usepackage{relsize}
+
+% tikz
+\usetikzlibrary{decorations}
+\usetikzlibrary{tikzmark}
+
+% tikz
+% Alias for tikzmark's \subnode[]{}{} to spare lots of empty brackets for nodes
+% not containing any text anyway
+\newcommand{\mysn}[1]{\subnode{#1}{}}
+
+% tikz
+% Private style settings
+\tikzset{myarrow/.style={
+  -latex, shorten >= 2pt, shorten <= 2pt, min distance=1cm, black!50
+}}
