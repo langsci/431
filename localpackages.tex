@@ -105,7 +105,7 @@
 \tikzset{myarrow/.style={
   -latex, shorten >= 2pt, shorten <= 2pt, min distance=.5cm, black!50
 }}
-\tikzset{avmcontainer/.style={
-  right=of current bounding box.north east,
+\tikzset{avmcontainer/.style n args={1}{
+  right=#1 of current bounding box.north east,
   anchor=north west
 }}
