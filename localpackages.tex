@@ -84,8 +84,11 @@
 }}
 
 % langsci-avm
-\usepackage[lfg]{langsci-avm}
+\usepackage{langsci-avm}
 \avmsetup{values=\normalfont}
+
+% makecell
+\usepackage{makecell}
 
 % multirow
 \usepackage{multirow}
@@ -100,5 +103,9 @@
 % tikz
 % Private style settings
 \tikzset{myarrow/.style={
-  -latex, shorten >= 2pt, shorten <= 2pt, min distance=1cm, black!50
+  -latex, shorten >= 2pt, shorten <= 2pt, min distance=.5cm, black!50
+}}
+\tikzset{avmcontainer/.style={
+  right=of current bounding box.north east,
+  anchor=north west
 }}
