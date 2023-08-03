@@ -1265,10 +1265,6 @@ Informationen kompatibel miteinander sein müssen.%
 		compatible}.
 	}
 %
-% Dabei spielt die Unterteilbarkeit eines Wortes in einzelne Flexionsmorpheme
-% oder Klitika keine Rolle, denn LFG basiert auf dem Prinzip der lexikalischen
-% Integrität, das besagt, dass die Syntax lexikalische Zeichen als ganze
-% erfasst.
 Dies wird in \cref{ex:lolamorphlex} verdeutlicht, wo die Lexikoneinträge für
 \fw{Lola} und \fw{rennt} vereinfacht wiedergegeben werden.
 
@@ -1303,16 +1299,13 @@ Personenmerkmale von \fw{Lola} diese Bedingung (\fw{constraint}) erfüllen,
 kommt es zur Kongruenz zwischen Subjekt und Verb
 \autocite[vgl.][59]{bresnanetal2016}.
 
-In Anlehnung an die Beispiele \cref{ex:coordidx,ex:engartdiscong} werden hier noch einmal zur Illustration die jeweils
-grammatisch akzeptablen Varianten vor dem Hintergrund des gewählten
-Theorieframeworks gezeigt. Die Annotation der koordinierten NPs folgt
-\citet{peterson2004}. In \cref{ex:lfgcoord_1} erfordert das Verb \fw{spielen}
-ein Subjekt mit den Personenmerkmalen \textsc{3.~person} und
-\textsc{plural} in Übereinstimmung mit dem kombinierten \textsc{index} der
+In Anlehnung an die Beispiele \cref{ex:coordidx,ex:engartdiscong} werden hier
+noch einmal zur Illustration die jeweils grammatisch akzeptablen Varianten vor
+dem Hintergrund des gewählten Theorieframeworks gezeigt. Die Annotation der
+koordinierten NPs folgt \citet{peterson2004}. In \cref{ex:lfgcoord_1} erfordert
+das Verb \fw{spielen} ein Subjekt mit den Personenmerkmalen \textsc{3.~person}
+und \textsc{plural} in Übereinstimmung mit dem kombinierten \textsc{index} der
 Subjekts-NP in $g$; zwei Singulare ergeben zusammen einen Plural.
-% Wenn das Verb
-% \fw{spielt} lauten würde und damit Singularkongruenz hätte, würde diese
-% Bedingung nicht erfüllt werden, sodass der Satz formal ungrammatisch wäre.
 
 \begin{exe}
 \ex \label{ex:lfgcoord_1}
@@ -1395,16 +1388,11 @@ Subjekts-NP in $g$; zwei Singulare ergeben zusammen einen Plural.
 
 			index	&	[
 				pers	& 3 \\
-%				gend	& \textsc{m} \\
 				num		& \textsc{pl} \\
 			] \\
 		] \\
 
 		obj	& \tikzmark{lfgcoord1_h}$h$: [
-% 			pred	& `Fußball' \\
-% 			pers	& 3 \\
-% 			gend	& \textsc{m} \\
-% 			case	& \textsc{acc} \\
 			\q{Fußball}
 		] \\
 	]%
@@ -1431,14 +1419,8 @@ Subjekts-NP in $g$; zwei Singulare ergeben zusammen einen Plural.
 %
 	\footnotetext{Mit \q{g-und} wird das gruppenbildende \fw{und} bezeichnet,
 	bei dem sich die Konjunkte auf jeweils unterschiedliche Indizes $i, j$
-	beziehen \autocite[382--383]{dalrymple2001}.
-	% \citet[382--383]{dalrymple2001} unterscheidet zwei Arten von
-	% 	`und': boolesches \q{und} (beide Konjunkte beziehen sich jeweils
-	% 	auf denselben Index $i$) und gruppenbildendes
-	% 	\q{g-und} (die Konjunkte beziehen sich auf jeweils unterschiedliche
-	% 	Indizes $i, j$).
-	}
-\end{exe}%
+	beziehen \autocite[382--383]{dalrymple2001}.}
+\end{exe}
 
 Demgegenüber ist es innerhalb der in \cref{ex:lfgcoord_2} gezeigten NP
 notwendig, dass der De\-termi\-nierer \fw{diese} im Numerus mit dem
@@ -1460,13 +1442,6 @@ zusätzlich Bedingungen an \textsc{index}-Merkmale.
 \begin{exe}
 \ex \label{ex:lfgcoord_2}
 	\begin{forest} narrower nodes, shorter edges, italic leaves, align text
-	% Dalrymple (2001) benutzt einfach nur "Det" innerhalb von NPs und
-	% nimmt an, dass es eine Funktion SPEC gibt. Bresnan et al. (2016: 98)
-	% scheinen dagegen SPEC als Merkmal zu handhaben, sagen aber, dass es
-	% da Variation in der Forschungsliteratur gibt. Ansonsten verwenden
-	% beide die DP-Hypothese für komplexere Determinierer relativ
-	% durchgehend.
-	% 
 	[{\anno[\pass{subj}]{DP\mysn{lfgcoord2_DP}}}
 		[\anno{\xhead{D}}
 			[{%
@@ -1755,21 +1730,14 @@ angenommen, dass Quantoren wie \fw{beide} eine gesonderte funktionale Kategorie
 Nominalgruppe stehen (\fw{all die \dots}, \fw{both the \dots}), reiht sich die
 Quantorenphase (QP) mit \fw{beide} im Standarddeutschen gewöhnlich zwischen DP
 und NP ein, wie in \cref{ex:nomstack} dargestellt (vgl.~auch \cite[44--45 mit
-Anm.~30]{lyons1999}).
-% %
-% 	\footnote{Es ist möglich, die Reihenfolge von \fw{beide} und Adjektiv
-% 		umzustellen, wenn das Adjektiv mit kontrastivem Fokus betont wird:
-% 		\fw{Welche beiden Bücher hätten Sie gerne?} -- \fw{Die \ul{roten}
-% 		beiden Bücher.}%
-% 	}
-% %
-Als funktionale nominale Kategorie ist \xhead{Q} wie \xhead{D} aus Sicht der
-LFG ein Ko-Kopf von \xhead{N} (\fw{cohead}; \cite[124]{bresnanetal2016}). Dies
-bedeutet, dass die Information in DP und QP mit NP in derselben F-Struktur
-vereinigt wird. Zusätzlich wird hier angenommen, dass der Quantor zumindest bei
-seiner Verwendung innerhalb der DP ein Merkmal \textsc{quant} definiert, da er
-aufgrund des distributiven Unterschieds zu Adjektiven nicht als Teil der Menge
-der Adjunkte (\textsc{adjc}) gezählt werden sollte.
+Anm.~30]{lyons1999}). Als funktionale nominale Kategorie ist \xhead{Q} wie
+\xhead{D} aus Sicht der LFG ein Ko-Kopf von \xhead{N} (\fw{cohead};
+\cite[124]{bresnanetal2016}). Dies bedeutet, dass die Information in DP und QP
+mit NP in derselben F-Struktur vereinigt wird. Zusätzlich wird hier angenommen,
+dass der Quantor zumindest bei seiner Verwendung innerhalb der DP ein Merkmal
+\textsc{quant} definiert, da er aufgrund des distributiven Unterschieds zu
+Adjektiven nicht als Teil der Menge der Adjunkte (\textsc{adjc}) gezählt werden
+sollte.
 
 \begin{exe}
 \ex \label{ex:nomstack}
@@ -1868,13 +1836,10 @@ ein eindeutiger Bezug hergestellt werden kann
 Ein weiteres Charakteristikum von Quantoren wie \fw{alle},
 \fw{beide}, \fw{einige} oder \fw{viele} ist, dass sie innerhalb desselben
 Satzes getrennt von ihrer Nominalgruppe stehen können, wie in
-\cref{ex:floatsubj%
-% ,ex:floatobj
-} mit Bezug auf das Subjekt
-% beziehungsweise das Objekt
-gezeigt. Die Versionen mit Distanzstellung in (b) und (c) sind jeweils
-markiert, insofern der Fokus auf der Menge liegt. Allerdings müssen auch hier
-mehrere, oberflächlich ähnliche Konstruktionen unterschieden werden
+\cref{ex:floatsubj} mit Bezug auf das Subjekt gezeigt. Die Versionen mit
+Distanzstellung in (b) und (c) sind jeweils markiert, insofern der Fokus auf
+der Menge liegt. Allerdings müssen auch hier mehrere, oberflächlich ähnliche
+Konstruktionen unterschieden werden
 \autocites[27--28]{pittner1995}[65--67]{fanselowcavar2002}.
 
 \begin{exe}
@@ -1888,17 +1853,6 @@ mehrere, oberflächlich ähnliche Konstruktionen unterschieden werden
 		[\tsup{QP}~Alle]$_i$ mögen [\tsup{DP}~sie/*die Kinder]$_i$
 			Schokolade.
 \end{xlist}
-
-% \ex \label{ex:floatobj}
-% \begin{xlist}
-% 	\ex \label{ex:floatobj_1}
-% 		Er hat [\tsup{DP}~die [\tsup{QP}~beiden [\tsup{NP}~Äpfel]]] aufgegessen.
-% 	\ex \label{ex:floatobj_2}
-% 		Er hat [\tsup{DP}~die Äpfel]$_i$ [\tsup{QP}~beide]$_i$ aufgegessen.
-% 	\ex \label{ex:floatobj_3}
-% 		[\tsup{QP}~Beide]$_i$ hat er [\tsup{DP}~sie/$^?$die Äpfel]$_i$
-% 			aufgegessen.
-% \end{xlist}
 \end{exe}
 
 \citet{sportiche1988} beschäftigt sich mit der Syntax des Allquantors \fw{tous}
@@ -1927,7 +1881,6 @@ gibt \citet[180]{merchant1996} grob die Konstituentenstruktur in \cref{ex:qfgg}
 an (die Pfeile wurden zur Verdeutlichung der postulierten Transformation
 hinzugefügt).
 
-% \begin{figure}
 \begin{exe}
 \ex \label{ex:qfgg}
 	\begin{forest} shorter edges, italic leaves
@@ -1964,44 +1917,6 @@ hinzugefügt).
 	\draw [-latex, gray] (t2) to [out=west, in=south] (DP);
 	\end{forest}
 \end{exe}
-% \end{figure}
-
-% Auch \citeauthor{pittner1995} erklärt, dass \blockcquote[29]{pittner1995}{der
-% Quantor \textelp{} eine vollständige NP dar\textins*{stellt}}. Darüber hinaus
-% diskutiert sie die Frage, ob aufgrund der Ähnlichkeit zwischen gefloateten
-% Quantoren und koprädikativen Adjektiven \cref{ex:copredquant} die Annahme
-% gerechtfertigt ist, dass es sich bei gefloateten Quantoren um koprädikative
-% Elemente handelt. Sie kommt zu dem Schluss, dass prinzipiell nichts dagegen
-% spreche und eine solche Analyse bezüglich der Zuweisung der syntaktischen
-% Rollen in einem Satz aus generativer Sicht sogar vorteilhaft
-% wäre. Abweichendes Verhalten des Quantors in der Flexion und der Distribution
-% ließen sich durch den Unterschied im Phrasentyp erklären (Adjektivphrase
-% gegenüber Quantorenphrase; \cite[37--39]{pittner1995}). \citet[181,
-% Anm.~1]{merchant1996} sieht diese Abweichungen dagegen als Ausschlusskriterium
-% für eine solche Analyse.
-
-% \begin{exe}
-% \ex \label{ex:copredquant}
-% 	\begin{xlist}
-% 	\ex \label{ex:copredquant_1}
-% 		[\tsup{NP}~Julius]$_i$ kam [\tsup{AdjP}~erholt]$_i$ aus dem Urlaub
-% 			zurück.\\
-% 		\textit{(Julius war erholt.)}
-
-% 	\ex \label{ex:copredquant_2}
-% 		Sie lassen [\tsup{DP}~den lieben Gott]$_i$
-% 			[\tsup{DP}~einen guten Mann]$_i$ sein.\\
-% 		\textit{(Der liebe Gott ist ein guter Mann.)}
-
-% 	\ex \label{ex:copredquant_3}
-% 		[\tsup{NP}~Oma und Opa]$_i$ lebten damals [\tsup{QP}~beide]$_i$ noch.\\
-% 		\textit{(Oma und Opa waren *beide.)}
-
-% 	\ex \label{ex:copredquant_4}
-% 		Anna steckt [\tsup{DP}~die Schlüssel]$_i$ [\tsup{QP}~beide]$_i$ ein.\\
-% 		\textit{(Die Schlüssel sind *beide.)}
-% 	\end{xlist}
-% \end{exe}
 
 \textcites{sportiche1988,shlonsky1991,merchant1996} beschränken sich sämtlich
 auf den Quantor \fw{alle}, nur \citet{pittner1995} geht darüber hinaus und
@@ -2057,7 +1972,7 @@ ausschließlich die Lesart zulässt, bei der beide Parteien jeweils ein Fahrrad
 besitzen (distributive Lesart), lässt das Beispiel in \cref{ex:siebeidefhrd_2}
 zusätzlich die Interpretation zu, nach der beide Parteien gemeinsam ein Fahrrad
 besitzen (kollektive Lesart). Zusätzliche Betonung des Quantors kann in diesem
-Fall zwar zur Disambiguierung beitragen (\textit{Sie \ul{beide} haben ein
+Fall zwar zur Disambiguierung beitragen (\emph{Sie \emph{beide} haben ein
 Fahrrad} = distributiv), ist aber bei der rein textlichen Wiedergabe von Sprache
 ohne spezielle Markierung nicht nachvollziehbar.
 
@@ -2212,11 +2127,12 @@ mit nachgestelltem \norm{bėide} hinter einem einfachen Plural-Substantiv vor
 \begin{exe}
 	\ex \label{ex:beidepost_2}
 		\gll ſo man die iargezit beidú begat \\
-			so man die Jahrestag[\Acc.\Pl.\NeutI] beide-\Acc.\Pl.\NeutI.\St{}
-			begeht \\
-		\begin{taggedline}{\parencites(Straßburg und Colmar, 1299)[\pno~3331, 468.21--22]{cao4}}
+			so man die Jahrestag[\textsc{acc.pl.\NeutI}]
+			beide-\textsc{acc.pl.\NeutI.st} begeht \\
 		\trans `wenn man die Jahrestage beide begeht'
-		\end{taggedline}
+			\parencites%
+				(Nr.~3331, Straßburg und Colmar, 1299)%
+				[468:21--22]{cao4}
 \end{exe}
 
 Da die LFG ohne Transformationen auskommt (also keine Verschiebungen von
@@ -2480,8 +2396,8 @@ zulassen.%
 	nicht-indoeuropäische --, für die seitdem Untersuchungen durchgeführt
 	wurden.}
 %
-Das Ergebnis der Studie ist, dass mit wachsender \q{syntaktischer Distanz} zwischen
-Controller und Target die Wahrscheinlichkeit für das Auftreten von
+Das Ergebnis der Studie ist, dass mit wachsender \q{syntaktischer Distanz}
+zwischen Controller und Target die Wahrscheinlichkeit für das Auftreten von
 semantischer statt formaler Kongruenz steigt \citep[218--223]{corbett1979}.
 \citet[204]{corbett1979} formuliert die Kongruenzhierarchie folgendermaßen:
 
@@ -2530,17 +2446,12 @@ kontrolliert.%
 		clause but is restricted to the sentence, while the personal pronoun is
 		not restricted to the sentence of the item controlling agreement}.}
 
-Die Kernthese von \citet{wechslerzlatic2003} ist daher, dass formale
-Kongruenz bei Attributen zu erwarten ist, da innerhalb der NP \textsc{concord} das
-entscheidende Kongruenzmerkmal darstellt.
-% %
-% 	\footnote{Siehe dagegen aber \citet[94--97]{kingdalrymple2004}, die
-% 	Beispiele aus dem Russischen anführen, für die sie auf Kongruenz mit dem
-% 	\textsc{index}-Merkmal innerhalb der NP schließen.}
-% %
-Hingegen ist semantische Kongruenz bei Personalpronomen außerhalb der
-bindenden NP deshalb mit höherer Wahrscheinlichkeit zu erwarten, weil Pronomen
-über den referenziellen \textsc{index} an ihren Referenten gebunden sind
+Die Kernthese von \citet{wechslerzlatic2003} ist daher, dass formale Kongruenz
+bei Attributen zu erwarten ist, da innerhalb der NP \textsc{concord} das
+entscheidende Kongruenzmerkmal darstellt. Hingegen ist semantische Kongruenz
+bei Personalpronomen außerhalb der bindenden NP deshalb mit höherer
+Wahrscheinlichkeit zu erwarten, weil Pronomen über den referenziellen
+\textsc{index} an ihren Referenten gebunden sind
 \citep[89--91]{wechslerzlatic2003}. Die Autoren argumentieren also für eine
 Korrelation zwischen der Distribution von Kongruenz zeigenden Wortarten, deren
 syntaktischer Lokalität sowie den anwendbaren Kongruenz\-merkmalen.
@@ -2552,9 +2463,9 @@ wurden. In diesen Fällen komme entweder grammatische oder pragmatische
 Kongruenz zum Zuge, letztere speist sich aus der Semantik des Bezeichneten.
 Relativpronomina seien dagegen immer anaphorisch gebunden -- wobei sich die
 Autoren hier vermutlich auf den innersprachlichen Kontext beziehen -- und
-kongruieren in \textsc{index}-Merkmalen, möglicherweise auch in \textsc{condord}-Merkmalen, da
-sie NP-intern auftreten. Aufgrund induktiver Kriterien ergibt sich das Schema
-in \cref{fig:theoagrdist}.
+kongruieren in \textsc{index}-Merkmalen, möglicherweise auch in
+\textsc{condord}-Merkmalen, da sie NP-intern auftreten. Aufgrund induktiver
+Kriterien ergibt sich das Schema in \cref{fig:theoagrdist}.
 
 \begin{figure}
 \centering
@@ -2663,7 +2574,7 @@ Nichtsdestoweniger können zwei formal getrennte Controller $i$ und $j$ im
 Diskurs existieren, auf die sich \norm{bėide} `beide' als Target
 gleichermaßen bezieht. Dies ist in der Belegstelle in \cref{ex:disjointctrl_1}
 der Fall, in der es um ein Geschäft geht, das \fw{Agneſ} und \fw{Lukas}
-gemeinsam getätigt haben. Sie sagen \lit{bedi} `beide (\N.\Pl)' aus, die
+gemeinsam getätigt haben. Sie sagen \lit{bedi} `beide (\textsc{n.pl})' aus, die
 Zahlung erhalten zu haben.%
 %
 	\footnote{In der ausgewerteten Stichprobe tritt \lit{be(i)di} wie an der in
@@ -2685,24 +2596,26 @@ Zahlung erhalten zu haben.%
 \ex\label{ex:disjointctrl_1}
 	\setlength{\glossglue}{6pt plus 2pt minus 2pt}
 	\gll das vur Agneſ$_i$ mit hern Lukas$_j$ hant \textelp{}
-			het gegeben ze coͧffenne \textelp{} vn̄ hant bedi$_{i+j}$
-			veriehen, daſ ſie gewert ſint dis ſilberſ \\
-		dass Frau Agnes[\textsc{nom.sg.\FemF}] mit Herrn Lukas[\Dat.\Sg.\MascM] Hand
-			{} hat gegeben zu kaufen {} und haben beide-\Nom.\Pl.\N\subMF.\St{}
-			ausgesagt dass sie gewährt sind dieses Silbers \\
-	\begin{taggedline}{\parencites(Straßburg, 1281)[\pno~N~202, 156.11--16]{cao5}}
+			het gegeben ze coͧffenne \textelp{} vn̄ hant bedi$_{i+j}$ veriehen,
+			daſ ſie gewert ſint dis ſilberſ \\
+		dass Frau Agnes[\textsc{nom.sg.\FemF}] mit Herrn
+			Lukas[\textsc{dat.sg.\MascM}] Hand {} hat gegeben zu kaufen {} und
+			haben beide-\textsc{nom.pl.n\subMF.st} ausgesagt dass sie gewährt
+			sind dieses Silbers \\
 		\trans `dass Frau Agnes mit Herrn Lukas' Hand \textelp{} hat zum
 			Kauf gegeben \textelp{} und haben beide ausgesagt, dass ihnen das
 			Silber gezahlt wurde.'
-	\end{taggedline}
-\end{exe}%
+			\parencites%
+				(Nr.~N~202, Straßburg, 1281)%
+				[156:11--16]{cao5}
+\end{exe}
 
 Auf formaler Ebene werden \fw{Agneſ} und \fw{Lukas} aber nicht koordiniert.
 Vielmehr liegt \lit{mit hern Lukas hant} `mit Herrn Lukas' Hand' eine
 adverbiale Präpositionalphrase vor, in der \lit{Lukas} seinerseits ein
 Genitivattribut zu \lit{hant} `Hand' darstellt. Trotz allem sind beide
 Personen damit im Diskurs verankert, sodass im weiteren Verlauf Verben wie
-\lit{hant} `haben (\Tpl.\Ind.\Prs)', Pronomina wie \norm{ſie} `sie
+\lit{hant} `haben (\textsc{3pl.ind.prs})', Pronomina wie \norm{ſie} `sie
 (\textsc{pl})' und damit auch \lit{bedi} `beide' auf sie gemeinsam Bezug nehmen
 können.
 
@@ -2723,19 +2636,21 @@ genannt.
 			% den dv̓rftigen lidig
 			\\
 		die vorgenannt Frau Mechthild[\textsc{nom.sg.\FemF}] {} vor ehe
-			\Tsg.\FemF.\Nom{} den vorgenannten Heinrich-\Acc.\Sg.\MascM{} nahm {}
-			und so \Tpl\subMF.\Nom{} beide-\textsc{nom.pl.\NeutMF.st} sterben {}
+			\textsc{3sg.\FemF.nom} den vorgenannten
+			Heinrich-\textsc{acc.sg.\MascM} nahm {} und so
+			\textsc{3pl.\subMF.nom} beide-\textsc{nom.pl.\NeutMF.st} sterben {}	
 			% so ist das vorgenannte Gut {} demselben Spital und den
 			% Bedürftigen ledig
 			\\
-	\begin{taggedline}{\parencites(Freiburg i.\,Br., 1294)[\pno~2008, 253.30--39]{cao3}}
 		\trans `Die vorgenannte Frau Mechthild, bevor sie den
 			vorgenannten Heinrich \textins{zum Mann} nahm \textelp{} Und wenn
 			sie beide sterben \textelp{}%
 			% , fällt das vorgenannte Gut an dasselbe Spital und die
 			% Bedürftigen zurück.
 			'
-	\end{taggedline}
+			\parencites%
+				(Nr.~2008, Freiburg i.\,Br., 1294)%
+				[253:30--39]{cao3}
 \end{exe}
 
 Innerhalb des Temporalsatzes wird Mechthild zwar durch das Pronomen \lit{ſi}
