@@ -1182,7 +1182,7 @@ zwischen Spezifikator, Adjunkt und Komplement gemacht wird, weil die Annotation
 disambiguiert.
 
 \begin{figure}
-\begin{forest} shorter edges, italic leaves, align text
+\begin{forest} italic leaves, align text
 [CP\mysn{cfstruct_CP}
 	[{\anno[\pass{subj}]{NP\mysn{cfstruct_NP}}}
 	 	[\anno{\xhead{N}\mysn{cfstruct_N}}
@@ -1271,7 +1271,7 @@ Dies wird in \cref{ex:lolamorphlex} verdeutlicht, wo die Lexikoneinträge für
 \begin{exe}
 \ex\label{ex:lolamorphlex}
 	\begin{tabular}[t]{@{} l @{\hspace{2em}} c @{\hspace{2em}} l}
-	$Lola$
+		$Lola$
 		&	N
 		&	\begin{tabular}[t]{l l l}
 				\ups{pred}	& =	& `Lola' \\
@@ -1312,7 +1312,7 @@ Subjekts-NP in $g$; zwei Singulare ergeben zusammen einen Plural.%
 		beziehen \autocite[382--383]{dalrymple2001}.}
 
 \begin{figure}
-\begin{forest} narrower nodes, shorter edges, italic leaves, align text
+\begin{forest} narrower nodes, italic leaves, align text
 [CP\mysn{lfgcoord1_CP}
 	[{\anno[\pass{subj}]{NP\mysn{lfgcoord1_NP1}}}
 		[{\anno[\updownelem]{\xhead{N}}}
@@ -1434,7 +1434,7 @@ Ausdruck entsteht.%
 zusätzlich Bedingungen an \textsc{index}-Merkmale.
 
 \begin{figure}
-	\begin{forest} narrower nodes, shorter edges, italic leaves, align text
+	\begin{forest} narrower nodes, italic leaves, align text
 	[{\anno[\pass{subj}]{DP\mysn{lfgcoord2_DP}}}
 		[\anno{\xhead{D}}
 			[diese, name=diese, minimum width=4em]
@@ -1559,7 +1559,7 @@ Objekt vom gleichen Verb \fw{putzen} abhängen, befinden sich beide dennoch
 innerhalb derselben F-Struktur $f$ (gleicher Satz).
 
 \begin{figure}
-	\begin{forest} narrower nodes, shorter edges, italic leaves, align text
+	\begin{forest} narrower nodes, italic leaves, align text
 	[CP\mysn{fsdom_CP}
 		[{\anno[\pass{subj}]{DP\mysn{fsdom_DPs}}}
 			[{\anno[\pass{poss}]{DP\mysn{fsdom_DPp}}}
@@ -1738,7 +1738,7 @@ Adjektiven nicht als Teil der Menge der Adjunkte (\textsc{adj}) gezählt werden
 sollte.
 
 \begin{figure}
-	\begin{forest} narrower nodes, shorter edges, italic leaves, align text
+	\begin{forest} narrower nodes, italic leaves, align text
 	[DP\mysn{nomstack_DP}
 		[\anno{\xhead{D}}
 			[die]
@@ -1883,7 +1883,7 @@ an (die Pfeile wurden zur Verdeutlichung der postulierten Transformation
 hinzugefügt).
 
 \begin{figure}
-	\begin{forest} shorter edges, italic leaves
+	\begin{forest} italic leaves
 	[IP
 		[DP$_i$
 			[{the boys},roof,name=DP]
@@ -2157,7 +2157,7 @@ zu behandeln.%
 		plausibler macht.}
 
 \begin{figure}
-	\begin{forest} shorter edges, narrower nodes, italic leaves, align text
+	\begin{forest} narrower nodes, italic leaves, align text
 	[VP
 		[\anno{VP}
 			[{\anno[\pass{obj}]{DP\mysn{beidepost2c_DP}}}
@@ -2330,67 +2330,53 @@ kann. \citet[623--624]{ksw2} benennen dieses Problem ebenfalls und zählen
 \blockquote{solche Fälle immer als attributiv nachgestellt}, also wie in
 (\ref{ex:sibeideambig}a) dargestellt.
 
-\begin{exe}
-\ex \label{ex:sibeideambig}
-	\begin{tabular}[t]{@{} r l @{\quad} r l @{}}
-	a.
-		& \begin{forest}
-% 			shorter edges,
-			shorter edges,
-			italic leaves,
-			align text,
-			% [CP
-			% 	[\anno{\xhead{C}}
-			% 		[dass]
-			% 	]
-				[\anno{VP}
-					[{\anno[\pass{gf}]{QP}}
-						[\anno{DP}
-							[\anno{\xhead{D}}
-								[si]
-							]
-						]
-						[\anno{\xhead{Q}}
-							[bėide]
-						]
-					]
-					[\anno{\xbar{V}}
-						[\dots]
-					]
+\begin{figure}
+\begin{forest}
+	shorter edges,
+	italic leaves,
+	align text,
+	[\anno{VP}
+		[{\anno[\pass{gf}]{QP}}
+			[\anno{DP}
+				[\anno{\xhead{D}}
+					[si]
 				]
-			% ]
-		\end{forest}
-	& b.
-		& \begin{forest}
-% 			shorter edges,
-			shorter edges,
-			italic leaves,
-			align text,
-			% [CP
-			% 	[\anno{\xhead{C}}
-			% 		[dass]
-			% 	]
-				[\anno{VP}
-					[{\anno[\pass{df}]{DP}}
-						[\anno{\xhead{D}}
-							[si]
-						]
-					]
-					[\anno{VP}
-						[{\anno[\pass{gf}]{QP}}
-							[\anno{\xhead{Q}}
-								[bėide]
-							]
-						]
-						[\anno{\xbar{V}}
-							[\dots]
-						]
-					]
+			]
+			[\anno{\xhead{Q}}
+				[bėide]
+			]
+		]
+		[\anno{\xbar{V}}
+			[\dots]
+		]
+	]
+\end{forest}
+\hspace{2em}
+\begin{forest}
+	shorter edges,
+	italic leaves,
+	align text,
+	[\anno{VP}
+		[{\anno[\pass{df}]{DP}}
+			[\anno{\xhead{D}}
+				[si]
+			]
+		]
+		[\anno{VP}
+			[{\anno[\pass{gf}]{QP}}
+				[\anno{\xhead{Q}}
+					[bėide]
 				]
-			% ]
-		\end{forest} \\
-	\end{tabular}
-\end{exe}
+			]
+			[\anno{\xbar{V}}
+				[\dots]
+			]
+		]
+	]
+\end{forest}
+\caption{Zwei Varianten von oberflächlicher Kontaktstellung}
+\label{ex:sibeideambig}
+\end{figure}
 
 \section{Die Kongruenzhierarchie}
 \label{sec:kongrhier}
