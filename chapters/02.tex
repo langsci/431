@@ -53,7 +53,7 @@ dessen grammatischen Merkmalen sozusagen.
 		\\
 
 		%
-		& \colorbox{gray}{\textcolor{white}{-\textsc{nom.m.sg}}}% .\Stp
+		& \colorbox{gray}{\textcolor{white}{-\textsc{nom.m.sg}}}
 		& \textcolor{gray}{\textsc{nom.m.sg}}
 		\\
 
@@ -1099,10 +1099,11 @@ Form des Nom.~Sg.~F.\ handelt, die ebenfalls auf \norm{-iu} endet.
 
 Die \fw{Lexical-Functional Grammar} (LFG;
 \cites{kaplanbresnan1982,bresnan2001,bresnanetal2016}; \cites[zur Einführung
-vgl.\ z.\,B.][]{buttking2015}[Kapitel~7]{mueller2020}) ist eine
-beschränkungsbasierte, lexikalisch orientierte, nicht-transformationale
-Grammatiktheorie und basiert auf der Intuition, dass trotz aller Variation in
-der Syntax und Morphologie die unterliegende funktionale Struktur (F-Struktur,
+z.\,B.][]{buttking2015}[Kapitel~7]{mueller2020}) ist eine
+beschränkungsbasierte, lexikalisch orientierte,
+nicht-trans\allowbreak{}formationale Grammatiktheorie und basiert auf der
+Intuition, dass trotz aller Variation in der Syntax und Morphologie die
+unterliegende funktionale Struktur (F-Struktur,
 \fw{f-structure}) verschiedener Sprachen größtenteils gleich ist.%
 %
 	\footnote{\foreignblockcquote{english}[42]{bresnanetal2016}{The principle
@@ -1119,14 +1120,9 @@ Sprachen, für die mehr oder weniger ausführliche Beschreibungen in diesem
 Theorieframework vorliegen \autocites[zum modernen Standarddeutschen
 vgl.][]{berman2003}{fortmann2006}. Die Wahl der theoretischen Anbindung ist der
 Praktikabilität geschuldet. Die LFG operiert vornehmlich mit grammatischen
-Merkmalen im Sinne \posscite{corbett2012} und ist damit bestens geeignet, um Kongruenzphänomene zu analysieren; der Annotationsformalismus und die
-Darstellung von Merkmalsstrukturen sind vergleichsweise unkompliziert.%
-% %
-% 	\footnote{Ein weiterer, subjektiver Faktor besteht in der Anknüpfbarkeit an
-% 	vorhandenes Grundwissen im Bereich der Webentwicklung: Ähnlichkeiten
-% 	zwischen Konstituentenstruktur und HTML, der Funktionsstruktur und CSS
-% 	sowie der funktionalen Unsicherheit (\fw{functional uncertainty}) und
-% 	jQuery sind nicht von der Hand zu weisen.}
+Merkmalen im Sinne \posscite{corbett2012} und ist damit bestens geeignet, um
+Kongruenzphänomene zu analysieren; der Annotationsformalismus und die
+Darstellung von Merkmalsstrukturen sind vergleichsweise unkompliziert.
 
 Hauptbestandteil des Formalismus der LFG ist die funktionale Struktur, die eine
 der als parallel gedachten Repräsentationsebenen darstellt, auf denen Sprache
@@ -1149,62 +1145,34 @@ Attribute in der linken Spalte dienen Funktionen oder Merkmale wie
 \textsc{subjekt}, \textsc{prädikator}, oder \textsc{numerus}.
 Zugehörige Werte in der rechten Spalte können grammatische Eigenschaften wie
 \textsc{plural}, Funktionsmorpheme wie \textit{und}, Wortformen wie
-`Baum', A-Strukturen wie \astruct{schreiben}{\ups{\Subj},
-\ups{\Obj}} sowie F-Strukturen oder Mengen von F-Strukturen sein. Jedem
+`Baum', A-Strukturen wie \astruct{schreiben}{\ups{subj},
+\ups{obj}} sowie F-Strukturen oder Mengen von F-Strukturen sein. Jedem
 Attribut sind dabei ein oder mehrere eindeutige Werte zugewiesen; Funktionen
 (\textsc{subjekt}, \textsc{objekt}, etc.) können nur einfach
 instanziiert werden \autocite[vgl.][44--58]{bresnanetal2016}.
 
 \begin{figure}
-% \needspace{10\baselineskip}
-% \begin{exe}
-% \ex\label{ex:avm}
 \centering
-	{\avmsetup{attributes=\scshape}
-% 	\smaller
+	{% \avmsetup{attributes=\scshape}
 	\avm{[
 		vorname		& `Max' \\
 		nachname	& `Meier' \\
-		geburtstag	& \DTMDate{1985-10-10} \\
+		geburtstag	& 10.10.1985 \\
 		vater		& [
 			vorname		& `Peter' \\
 			nachname	& `Meier' \\
-			geburtstag	& \DTMDate{1960-05-10} \\
+			geburtstag	& 10.05.1960 \\
 			vater		& \dots \\
 			mutter		& \dots \\
 		] \\
 		mutter		& \dots \\
-		% kind		& \{
-		% 	[
-		% 		vorname		& `Julia' \\
-		% 		nachname	& `Meier' \\
-		% 		geburtstag	& \DTMDate{2015-01-05} \\
-		% 		geschlecht	& \F
-		% 	], [
-		% 		vorname		& `Max' \\
-		% 		nachname	& `Meier' \\
-		% 		geburtstag	& \DTMDate{2017-05-01} \\
-		% 		geschlecht	& \M
-		% 	]
-		% \}
 	]}}
-% 	\adjustbox{valign=t}{
-% 	$\begin{bmatrix}
-% 		Attribut_1	&	Wert_1\\
-% 		Attribut_2	&	\begin{bmatrix}
-% 							Attribut_a & Wert_1\\
-% 							Attribut_b & Wert_2\\
-% 						\end{bmatrix}\\
-% %		\vdots	&	\vdots \\
-% 		Attribut_n	&	Wert_x\\
-% 	\end{bmatrix}$}
-% \end{exe}
 \caption[Beispiel für eine Attribut-Wert-Matrix]{Beispiel für eine Attribut-Wert-Matrix \autocite[adaptiert aus][206--207]{mueller2020}}
 \label{ex:avm}
 \end{figure}
 
 Darüber hinaus wird eine Konstituentenstruktur (\fw{constituent structure},
-\fw{c-structure}) angesetzt, die parallel zur F-Struktur den Aufbau von
+\fw{c-struc\-ture}) angesetzt, die parallel zur F-Struktur den Aufbau von
 syntaktischen Konstituenten abbildet und eine Variante der \xbar{X}-Theorie
 \autocites{chomsky1970,jackendoff1977} darstellt. Projektionen innerhalb des
 Baumes können dabei funktional annotiert sein; nicht-verzweigende
@@ -1217,7 +1185,7 @@ disambiguiert.
 \ex\label{ex:cfstruct}
 	\begin{forest} shorter edges, italic leaves, align text
 	[CP\mysn{cfstruct_CP}
-		[{\anno[\pass{\Subj}]{NP\mysn{cfstruct_NP}}}
+		[{\anno[\pass{subj}]{NP\mysn{cfstruct_NP}}}
 		 	[\anno{\xhead{N}\mysn{cfstruct_N}}
 		 		[Lola]
 		 	]
@@ -1230,14 +1198,14 @@ disambiguiert.
 	\hspace{2em}
 	\avm{%
 		\tikzmark{cfstruct_f}$f$: [
-			\Pred	&	\astruct{rennen}{\ups{\Subj}} \\
-			\Tense	&	\Prs \\
+			pred	& \astruct{rennen}{\ups{subj}} \\
+			tense	& \textsc{prs} \\
 
-			\Subj	&	\tikzmark{cfstruct_subj}$g$: [
-				\Pred	&	`Lola' \\
-				\Pers	&	\Third \\
-				\Num	&	\Sg \\
-				\Case	&	\Nom \\
+			subj	&	\tikzmark{cfstruct_subj}$g$: [
+				pred	& `Lola' \\
+				pers	& 3 \\
+				num		& \textsc{sg} \\
+				case	& \textsc{nom} \\
 			]
 		]%
 	}
@@ -1263,18 +1231,18 @@ disambiguiert.
 
 In \cref{ex:cfstruct} wird die Korrespondenz zwischen der C-Struktur und der
 F-Struktur des Satzes \fw{Lola rennt} dargestellt. Der Satz betsteht aus einer
-NP mit dem Kopf \fw{Lola}, die das \textsc{subjekt} des Satzes darstellt,
-und einer \fw{conjunctional phrase} (CP), die das \textsc{subjekt}
-dominiert und das (flektierte) Verb \fw{rennt} zum Kopf hat. Ein Pfeil nach
-unten (↓) bezeichnet in der Annotation den jeweiligen Knoten selbst, ein Pfeil
-nach oben (↑) den darüber liegenden. \q{\pass{\Subj}} ist daher so zu
-verstehen, dass die Informationen in dem damit annotierten Knoten die
-Eigenschaften der Subjekts\-funk\-tion des darüberliegenden Knotens darstellen.
-Die optionalen Pfeile zwischen C- und F-Struktur verdeutlichen, welcher Knoten
-seine Informationen in welcher F-Struktur (hier: $f$ oder $g$) ablegt. Die
-F-Struktur wird vom Verb \fw{rennen} prädiziert (\Pred) und nimmt als Argument
-ein Subjekt \ups{\Subj}. Dessen grammatische Eigenschaften bilden den Wert des
-Attributs \Subj.
+NP mit dem Kopf \fw{Lola}, die das \textsc{subjekt} des Satzes darstellt, und
+einer \fw{conjunctional phrase} (CP), die das \textsc{subjekt} dominiert und
+das (flektierte) Verb \fw{rennt} zum Kopf hat. Ein Pfeil nach unten (↓)
+bezeichnet in der Annotation den jeweiligen Knoten selbst, ein Pfeil nach oben
+(↑) den darüber liegenden. \q{\pass{subj}} ist daher so zu verstehen, dass die
+Informationen in dem damit annotierten Knoten die Eigenschaften der
+Subjekts\-funk\-tion des darüberliegenden Knotens darstellen. Die optionalen
+Pfeile zwischen C- und F-Struktur verdeutlichen, welcher Knoten seine
+Informationen in welcher F-Struktur (hier: $f$ oder $g$) ablegt. Die F-Struktur
+wird vom Verb \fw{rennen} prädiziert (\textsc{pred}) und nimmt als Argument ein
+Subjekt \ups{subj}. Dessen grammatische Eigenschaften bilden den Wert des
+Attributs \textsc{subj}.
 
 Dabei wird ein wichtiges Merkmal der LFG sichtbar: Informationen des jeweiligen
 Knotens werden mit dem nächsthöheren Knoten vereinigt. Das bedeutet, dass
@@ -1310,32 +1278,27 @@ Dies wird in \cref{ex:lolamorphlex} verdeutlicht, wo die Lexikoneinträge für
 	$Lola$
 		&	N
 		&	\begin{tabular}[t]{l l l}
-				\ups{\Pred}	& =	& `Lola' \\
-				\ups{\Pers}	& =	& \Third \\
-				\ups{\Num}	& =	& \Sg \\
-				% \ups{\Gend}	& =	& \F \\
+				\ups{pred}	& =	& `Lola' \\
+				\ups{pers}	& =	& 3 \\
+				\ups{num}	& =	& \textsc{sg} \\
 			\end{tabular}
 		\medskip \\
 
 		$rennt$
 		&	C
 		&	\begin{tabular}[t]{l l l}
-				\ups{\Pred}			& = 	& \astruct{rennen}{\ups{\Subj}} \\
-				% \ups{\Tense}		& = 	& \Prs \\
-				% \ups{\Subj{}} & = & ↓ \\
-				% 	\quad\downs{\Pers}	& \req & \Third{} \\
-				% 	\quad\downs{\Num}	& \req & \Sg{} \\
-				\ups{\Subj\ \Pers}	& \req	& \Third{} \\
-				\ups{\Subj\ \Num}	& \req	& \Sg{} \\
+				\ups{pred}		& = 	& \astruct{rennen}{\ups{subj}} \\
+				\ups{subj pers}	& \req	& 3 \\
+				\ups{subj num}	& \req	& \textsc{sg} \\
 			\end{tabular}
 	\end{tabular}
 \end{exe}
 
 \fw{Lola} bildet als Substantiv einen Diskursanker und definiert (=) die
-angegebenen Merk\-male: \textsc{\Third.~person} und
+angegebenen Merk\-male: \textsc{3.~person} und
 \textsc{singular}. Die finite Verbform \fw{rennt} bedingt (\req) ihrem
 Lexikoneintrag gemäß eine Subjekts-NP, die die Personenmerkmale
-\textsc{\Third.~person} und \textsc{singular} aufweist. Da die
+\textsc{3.~person} und \textsc{singular} aufweist. Da die
 Personenmerkmale von \fw{Lola} diese Bedingung (\fw{constraint}) erfüllen,
 kommt es zur Kongruenz zwischen Subjekt und Verb
 \autocite[vgl.][59]{bresnanetal2016}.
@@ -1344,7 +1307,7 @@ In Anlehnung an die Beispiele \cref{ex:coordidx,ex:engartdiscong} werden hier no
 grammatisch akzeptablen Varianten vor dem Hintergrund des gewählten
 Theorieframeworks gezeigt. Die Annotation der koordinierten NPs folgt
 \citet{peterson2004}. In \cref{ex:lfgcoord_1} erfordert das Verb \fw{spielen}
-ein Subjekt mit den Personenmerkmalen \textsc{\Third.~person} und
+ein Subjekt mit den Personenmerkmalen \textsc{3.~person} und
 \textsc{plural} in Übereinstimmung mit dem kombinierten \textsc{index} der
 Subjekts-NP in $g$; zwei Singulare ergeben zusammen einen Plural.
 % Wenn das Verb
@@ -1356,7 +1319,7 @@ Subjekts-NP in $g$; zwei Singulare ergeben zusammen einen Plural.
 	{\hspace{-2em}
 	\begin{forest} narrower nodes, shorter edges, italic leaves, align text
 	[CP\mysn{lfgcoord1_CP}
-		[{\anno[\pass{\Subj}]{NP\mysn{lfgcoord1_NP1}}}
+		[{\anno[\pass{subj}]{NP\mysn{lfgcoord1_NP1}}}
 			[{\anno[\updownelem]{\xhead{N}}}
 				[Jan]
 			]
@@ -1373,13 +1336,13 @@ Subjekts-NP in $g$; zwei Singulare ergeben zusammen einen Plural.
 					spielen \\
 					\smaller[2]\upshape\tabcolsep=.5ex%
 					\begin{tabular}[t]{@{} l l l @{}}
-						\ups{\Subj\ \Pers}	& \req & \Third{} \\
-						\ups{\Subj\ \Num}	& \req & \Pl{} \\
+						\ups{subj pers}	& \req & 3 \\
+						\ups{subj num}	& \req & \textsc{pl} \\
 					\end{tabular}%
 				}]
 			]
 			[\anno{VP\mysn{lfgcoord1_VP}}
-				[{\anno[\pass{\Obj}]{NP\mysn{lfgcoord1_NP2}}}
+				[{\anno[\pass{obj}]{NP\mysn{lfgcoord1_NP2}}}
 					[\anno{\xhead{N}}
 						[Fußball]
 					]
@@ -1389,64 +1352,63 @@ Subjekts-NP in $g$; zwei Singulare ergeben zusammen einen Plural.
 	]
 	\end{forest}}
 	\hfill
-	\adjustbox{valign=t}{\smaller[2]%
 	\avm{%
 	\tikzmark{lfgcoord1_f}$f$: [
-		\Pred	& \astruct{spielen}{\ups{\Subj}, \ups{\Obj}} \\
-		\Tense	& \Prs \\
+		pred	& \astruct{spielen}{\ups{subj}, \ups{obj}} \\
+		tense	& \textsc{prs} \\
 
-		\Subj	& \tikzmark{lfgcoord1_g}$g$: [
-			\Conj & \textit{g-und}\footnotemark \\
+		subj	& \tikzmark{lfgcoord1_g}$g$: [
+			conj & \textit{g-und}\footnotemark \\
 			
 			\mc{2}{l}{%
 				\{
 					[
-						\Pred	&	`Jan' \\
-							\Index	&	[
-								\Pers	& \Third \\
-								\Gend	& \M \\
-								\Num	& \Sg % \\
+						pred	&	`Jan' \\
+							index	&	[
+								pers	& 3 \\
+								gend	& \textsc{m} \\
+								num		& \textsc{sg} % \\
 							] \\
 
-%							\Concord	& [
-								\Case	& \Nom % \\
-%								\Gend	& \M \\
-%								\Num	& \Sg \\
+%							concord	& [
+								case	& \textsc{nom} % \\
+%								gend	& \textsc{m} \\
+%								num		& \textsc{sg} \\
 %							]
 					],
 					[
-						\Pred	&	`Markus' \\
-							\Index	&	[
-								\Pers	& \Third \\
-								\Gend	& \M \\
-								\Num	& \Sg % \\
+						pred	&	`Markus' \\
+							index	&	[
+								pers	& 3 \\
+								gend	& \textsc{m} \\
+								num		& \textsc{sg} % \\
 							] \\
 
-%							\Concord	& [
-								\Case	& \Nom % \\
-%								\Gend	& \M \\
-%								\Num	& \Sg \\
+%							concord	& [
+								case	& \textsc{nom} % \\
+%								gend	& \textsc{m} \\
+%								num		& \textsc{sg} \\
 %							]
 					]
 				\}%
 			} \\
 
-			\Index	&	[
-				\Pers	&	\Third \\
-%				\Gend	&	\M \\
-				\Num	&	\Pl \\
+			index	&	[
+				pers	& 3 \\
+%				gend	& \textsc{m} \\
+				num		& \textsc{pl} \\
 			] \\
 		] \\
 
-		\Obj	& \tikzmark{lfgcoord1_h}$h$: [
-% 			\Pred	& `Fußball' \\
-% 			\Pers	& \Third \\
-% 			\Gend	& \M \\
-% 			\Case	& \Acc \\
+		obj	& \tikzmark{lfgcoord1_h}$h$: [
+% 			pred	& `Fußball' \\
+% 			pers	& 3 \\
+% 			gend	& \textsc{m} \\
+% 			case	& \textsc{acc} \\
 			\q{Fußball}
 		] \\
 	]%
-	}}
+	}
 	\begin{tikzpicture}[remember picture, overlay]
 		\draw [myarrow]
 			([yshift=.5ex]{pic cs:lfgcoord1_CP})
@@ -1485,9 +1447,9 @@ hergestellt werden kann und ein kohärenter, grammatisch wohlgeformter Ausdruck
 entsteht.%
 %
 	\footnote{Im Deutschen kommen noch Kasus und Genus hinzu, die hier
-	vereinfachend weggelassen wurden. \citet{dalrymple2001} benutzt \Spec\ als
+	vereinfachend weggelassen wurden. \citet{dalrymple2001} benutzt \textsc{spec} als
 	grammatische Funktion bei der Annotation des Determinierers,
-	\citet{bresnanetal2016} hingegen behandeln \Spec\ als Merkmal. Beide folgen
+	\citet{bresnanetal2016} hingegen behandeln \textsc{spec} als Merkmal. Beide folgen
 	in ihren Beispielen der DP-Hypothese \autocite{chomsky1986}, für die sich
 	u.\,a.\ auch \citet[9--26]{demske2001} ausspricht, insofern sie sie als
 	sinnvoll für die Analyse von NPs im Deutschen erachtet.}
@@ -1505,14 +1467,14 @@ zusätzlich Bedingungen an \textsc{index}-Merkmale.
 	% beide die DP-Hypothese für komplexere Determinierer relativ
 	% durchgehend.
 	% 
-	[{\anno[\pass{\Subj}]{DP\mysn{lfgcoord2_DP}}}
+	[{\anno[\pass{subj}]{DP\mysn{lfgcoord2_DP}}}
 		[\anno{\xhead{D}}
 			[{%
 				diese \\
 				\smaller[2]\upshape\tabcolsep=.5ex%
 				\begin{tabular}[t]{@{} l l l @{}}
-					\ups{\Concord\ \Num} & \req & \Pl{} \\
-					\ups{\Index\ \Num} & \req & \Pl{} \\
+					\ups{concord num}	& \req & \textsc{pl} \\
+					\ups{index num}		& \req & \textsc{pl} \\
 				\end{tabular}%
 			}]
 		]
@@ -1532,56 +1494,54 @@ zusätzlich Bedingungen an \textsc{index}-Merkmale.
 	]
 	\end{forest}
 	~
-	\adjustbox{valign=t}{\smaller[2]%
-		\avm{%
-		\tikzmark{lfgcoord2_f}$f$: [
-			\Spec	& [
-				\Pred	& `diese'
-			] \\
-			
-			\Conj	& \textit{g-und} \\
+	\avm{%
+	\tikzmark{lfgcoord2_f}$f$: [
+		spec	& [
+			pred	& `diese'
+		] \\
+		
+		conj	& \textit{g-und} \\
 
-			\mc{2}{l}{%
-				\{
-					[
-						\Pred	& `Jungen' \\
+		\mc{2}{l}{%
+			\{
+				[
+					pred	& `Jungen' \\
 
-						\Concord	& [
-							\Case	& \Nom \\
-							\Num	& \Pl \\
-							\Gend	& \M
-						] \\
+					concord	& [
+						case	& \textsc{nom} \\
+						num		& \textsc{pl} \\
+						gend	& \textsc{m}
+					] \\
 
-						\Index	& [
-							\Pers	& \Third \\
-							\Num	& \Pl \\
-							\Gend	& \M
-						]
-					],
-					[
-						\Pred	& `Mädchen' \\
-
-						\Concord	& [
-							\Case	& \Nom \\
-							\Num	& \Pl \\
-							\Gend	& \F
-						] \\
-
-						\Index	& [
-							\Pers	& \Third \\
-							\Num	& \Pl \\
-							\Gend	& \F
-						]
+					index	& [
+						pers	& 3 \\
+						num		& \textsc{pl} \\
+						gend	& \textsc{m}
 					]
-				\}%
-			} \smallskip \\
+				],
+				[
+					pred	& `Mädchen' \\
 
-			\Index	& [
-				\Pers	& \Third \\
-				\Num	& \Pl \\
-			]
+					concord	& [
+						case	& \textsc{nom} \\
+						num		& \textsc{pl} \\
+						gend	& \textsc{f}
+					] \\
+
+					index	& [
+						pers	& 3 \\
+						num		& \textsc{pl} \\
+						gend	& \textsc{f}
+					]
+				]
+			\}%
+		} \smallskip \\
+
+		index	& [
+			pers	& 3 \\
+			num		& \textsc{pl} \\
 		]
-	}}
+	]}
 	\begin{tikzpicture}[remember picture, overlay]
 		\draw [myarrow]
 			([yshift=.5ex]{pic cs:lfgcoord2_NP})
@@ -1607,8 +1567,8 @@ Die unterschiedlichen syntaktischen Domänen nach \citet[54]{corbett2006}, die
 in \cref{sec:ctrltarg} vorgestellt wurden, lassen sich in der Terminologie der
 LFG als Abhängigkeiten zwischen immer weniger lokalen F-Strukturen fassen,
 insofern (lexikalische) C-Strukturköpfe (\xhead{X}) mit F-Strukturköpfen
-(Prädikatoren, \Pred) korrespondieren \autocite[117]{bresnanetal2016}. Dies
-wird anhand von \cref{ex:fstructdomains} verdeutlicht.
+(Prädikatoren, \textsc{pred}) korrespondieren \autocite[117]{bresnanetal2016}.
+Dies wird anhand von \cref{ex:fstructdomains} verdeutlicht.
 
 Dort ist \fw{braune} als adjektivisches Kongruenztarget ein Adjunkt von
 \fw{Katze} und steht damit in derselben F-Struktur $g$ wie sein Controller
@@ -1627,14 +1587,14 @@ innerhalb derselben F-Struktur $f$ (gleicher Satz).
 \ex\label{ex:fstructdomains}
 	\begin{forest} narrower nodes, shorter edges, italic leaves, align text
 	[CP\mysn{fsdom_CP}
-		[{\anno[\pass{\Subj}]{DP\mysn{fsdom_DPs}}}
-			[{\anno[\pass{\Possr}]{DP\mysn{fsdom_DPp}}}
+		[{\anno[\pass{subj}]{DP\mysn{fsdom_DPs}}}
+			[{\anno[\pass{poss}]{DP\mysn{fsdom_DPp}}}
 				[\anno{\xhead{D}}
 					[Janas]
 				]
 			]
 			[\anno{NP\mysn{fsdom_NP}}
-				[{\anno[\elem{\Adjc}]{AdjP\mysn{fsdom_AP}}}
+				[{\anno[\elem{adj}]{AdjP\mysn{fsdom_AP}}}
 					[\anno{\xhead{Adj}}
 						[braune]
 					]
@@ -1649,7 +1609,7 @@ innerhalb derselben F-Struktur $f$ (gleicher Satz).
 				[putzt]
 			]
 			[\anno{VP\mysn{fsdom_VP}}
-				[{\anno[\pass{\Obj}]{DP\mysn{fsdom_DPr}}}
+				[{\anno[\pass{obj}]{DP\mysn{fsdom_DPr}}}
 					[\anno{\xhead{D}}
 						[sich]
 					]
@@ -1659,37 +1619,36 @@ innerhalb derselben F-Struktur $f$ (gleicher Satz).
 	]
 	\end{forest}
 	\hspace{2em}
-	\adjustbox{valign=t}{\smaller%
-		\avm{%
-			\tikzmark{fsdom_f}$f$: [
-				\Subj	& \tikzmark{fsdom_subj}$g$: [
-					\Possr	& \tikzmark{fsdom_poss}$h$: [
-						\Pred	&	`Jana' \\
-						\Case	&	\Gen \\
-					] \\
+	\avm{%
+		\tikzmark{fsdom_f}$f$: [
+			subj	& \tikzmark{fsdom_subj}$g$: [
+				poss	& \tikzmark{fsdom_poss}$h$: [
+					pred	& `Jana' \\
+					case	& \textsc{gen} \\
+				] \\
 
-					\Adjc		& \tikzmark{fsdom_adj}\{
-						[
-							\Pred	& `braun'
-						]
-					\} \\
+				adj		& \tikzmark{fsdom_adj}\{
+					[
+						pred	& `braun'
+					]
+				\} \\
 
-					\Pred		& \astruct{Katze}{\ups{\Possr}} \\
-					\Case		& \Nom \\
-					\Pers		& \Third \\
-					\Gen		& \F \\
-					\Num		& \Sg \\
-				]~$i$\enspace \\
+				pred	& \astruct{Katze}{\ups{poss}} \\
+				case	& \textsc{nom} \\
+				pers	& 3 \\
+				gend	& \textsc{f} \\
+				num		& \textsc{sg} \\
+			]~$i$\enspace \\
 
-				\Pred	& \astruct{putzen}{\ups{\Subj}, \ups{\Obj}} \smallskip \\
+			pred	& \astruct{putzen}{\ups{subj}, \ups{obj}} \smallskip \\
 
-				\Obj	& \tikzmark{fsdom_obj}$j$: [
-					\Prontype	& $refl$ \\
-					\Pred			& $pro$ \\
-					\Case			& \Acc \\
-				]~$i$\enspace \\
-			] \\
-		}}
+			obj	& \tikzmark{fsdom_obj}$j$: [
+				prontype	& $refl$ \\
+				pred		& $pro$ \\
+				case		& \textsc{acc} \\
+			]~$i$\enspace \\
+		] \\
+	}
 	\begin{tikzpicture}[remember picture, overlay]
 		\draw [myarrow]
 			([yshift=.5ex]{pic cs:fsdom_CP})
@@ -1741,8 +1700,8 @@ Als Modifikatoren von Substantiven (und in manchen Fällen auch Pronomen, zum
 Beispiel \fw{sie beide}, \fw{alle diese}) unterliegen Quantoren wie
 \norm{bėide} im Mittelhochdeutschen wie auch \fw{beide} im Neuhochdeutschen
 der Adjektivdeklination. Das bedeutet, sie kongruieren mit ihrem nominalen
-Controller formal in den Kategorien \textsc{kasus} (\Case),
-\textsc{genus} (\Gend) und \textsc{numerus} (\Num) über ein
+Controller formal in den Kategorien \textsc{kasus} (\textsc{case}),
+\textsc{genus} (\textsc{gend}) und \textsc{numerus} (\textsc{num}) über ein
 fusionales Suffix, das diese Eigenschaften kombiniert kodiert
 \autocites(vgl.~auch
 \cref{sec:ctrltarg,sec:lfgkongr})[181--184]{ksw2}[772]{woellstein2022}.
@@ -1808,9 +1767,9 @@ Als funktionale nominale Kategorie ist \xhead{Q} wie \xhead{D} aus Sicht der
 LFG ein Ko-Kopf von \xhead{N} (\fw{cohead}; \cite[124]{bresnanetal2016}). Dies
 bedeutet, dass die Information in DP und QP mit NP in derselben F-Struktur
 vereinigt wird. Zusätzlich wird hier angenommen, dass der Quantor zumindest bei
-seiner Verwendung innerhalb der DP ein Merkmal \Quant\ definiert, da er
+seiner Verwendung innerhalb der DP ein Merkmal \textsc{quant} definiert, da er
 aufgrund des distributiven Unterschieds zu Adjektiven nicht als Teil der Menge
-der Adjunkte (\Adjc) gezählt werden sollte.
+der Adjunkte (\textsc{adjc}) gezählt werden sollte.
 
 \begin{exe}
 \ex \label{ex:nomstack}
@@ -1824,7 +1783,7 @@ der Adjunkte (\Adjc) gezählt werden sollte.
 					[beiden]
 				]
 				[\anno{NP\mysn{nomstack_NP}}
-					[{\anno[\elem{\Adjc}]{AdjP}}
+					[{\anno[\elem{adj}]{AdjP}}
 						[roten]
 					]
 					[\anno{\xhead{N}}
@@ -1835,28 +1794,27 @@ der Adjunkte (\Adjc) gezählt werden sollte.
 		]
 	\end{forest}
 	\hspace{2em}
-	\adjustbox{valign=t}{\smaller%
 	\avm{%
 			\tikzmark{nomstack_f}[
-			\Def	& $+$ \\
+			def	& $+$ \\
 
-			\Quant	& 	[
-				\Pred	& `beide' \\
+			quant	& 	[
+				pred	& `beide' \\
 			] \\
 
-			\Adjc	& \{
+			adj	& \{
 				[
-					\Pred	& `rot'
+					pred	& `rot'
 				]
 			\} \\
 
-			\Pred	& `Buch' \\
-			\Case	& \Nom \\
-			\Pers	& \Third \\
-			\Gend	& \N \\
-			\Num	& \Pl \\
+			pred	& `Buch' \\
+			case	& \textsc{nom} \\
+			pers	& 3 \\
+			gend	& \textsc{n} \\
+			num		& \textsc{pl} \\
 		]
-	}}
+	}
 	\begin{tikzpicture}[remember picture, overlay]
 		\draw [myarrow]
 			([yshift=.5ex]{pic cs:nomstack_DP})
@@ -2128,7 +2086,8 @@ Quantifizierten koindiziert ist.%
 \ex \label{ex:hebrqf}
 	Ivrit \parencite[nach][522, 537]{spector2009}\\
 	\gll ha-yeladim halxu kulam la-yam \\
-		\Def=children[\Tpl.\M]$_i$ went all=\Tpl.\M{}$_i$ to=sea.\Def{} \\
+		\textsc{def}=children[\textsc{3pl.m}]$_i$ went all=\textsc{3pl.m}$_i$
+			to=sea.\textsc{def} \\
 	\trans `The children went all to the sea.'
 	\\
 
@@ -2161,39 +2120,37 @@ Quantifizierten koindiziert ist.%
 	]
 	\end{forest}
 	\hspace{2em}
-	\adjustbox{valign=t}{%
-	\smaller
 	\avm{\tikzmark{hebrqf_f}[
-		\Top	& \tikzmark{hebrqf_top}[
-			\Pred	& `child' \\
-			\Def	& $+$ \\
-			\Num	& \Pl \\
+		top	& \tikzmark{hebrqf_top}[
+			pred	& `child' \\
+			def		& $+$ \\
+			num		& \textsc{pl} \\
 		] $i$
 		\smallskip \\
 
-		\Subj	& \tikzmark{hebrqf_subj}[
-			\Pred	& \astruct{all}{\ups{\Obj}} \\
-			\Obj	& [
-				\Pred	& $pro$ \\
-				\Pers	& \Third \\
-				\Gend	& \M \\
-				\Num	& \Pl \\
+		subj	& \tikzmark{hebrqf_subj}[
+			pred	& \astruct{all}{\ups{obj}} \\
+			obj	& [
+				pred	& $pro$ \\
+				pers	& 3 \\
+				gend	& \textsc{m} \\
+				num		& \textsc{pl} \\
 			] $i$\enspace \\
 		]
 		\smallskip \\
 
-		\Pred	& \astruct{went}{\ups{\Subj}, \ups{\Oblq{dir}}}
+		pred	& \astruct{went}{\ups{subj}, \ups{\Oblq{dir}}}
 		\smallskip \\
 
 		\Oblq{dir}	& \tikzmark{hebrqf_obl}[
-			\Pred	& \astruct{to}{\ups{\Obj}} \\
-			\Obj	& [
-				\Pred	& `sea' \\
-				\Def	& $+$ \\
-				\Num	& \Sg \\
+			pred	& \astruct{to}{\ups{obj}} \\
+			obj	& [
+				pred	& `sea' \\
+				def		& $+$ \\
+				num		& \textsc{sg} \\
 			] \\
 		] \\
-	]}}
+	]}
 	\begin{tikzpicture}[remember picture, overlay]
 		\draw [myarrow]
 			([yshift=.5ex]{pic cs:hebrqf_IP})
@@ -2228,14 +2185,9 @@ Quantifizierten koindiziert ist.%
 Schluss, dass der gefloatete Quantor eine eigenständige NP darstellt. Die
 Topikalisierung des Quantifizierten werde durch die Distanzstellung des
 Quantors angezeigt; die Konstruktion sei dadurch besonders markiert. Beide NPs,
-\Top\ und \Subj, sind in \citeauthor{spector2009}s Analyse durch Koindizierung
-verbunden, werden aber nicht in der F-Struktur miteinander vereinigt
-\autocite[vgl.][99]{bresnanetal2016}.
-% Aufgrund des nicht-transformativen Ansatzes der LFG und der semantischen
-% Unterschiede zwischen Kontakt- und Distanzstellung lehnt
-% \citeauthor{spector2009} ab, dass die Distanzstellung durch die Bewegung des
-% Quantifizierten in die Subjektsposition und folglichem Stranding des Quantors
-% zustande kommt \citet[424--426]{spector2009}.
+\textsc{top} und \textsc{subj}, sind in \citeauthor{spector2009}s Analyse durch
+Koindizierung verbunden, werden aber nicht in der F-Struktur miteinander
+vereinigt \autocite[vgl.][99]{bresnanetal2016}.
 
 Die Analysen von \citet{shlonsky1991,spector2009} für das Ivrit könnten
 insofern für die Analyse des Deutschen relevant sein, als
@@ -2244,158 +2196,8 @@ insofern für die Analyse des Deutschen relevant sein, als
 Abhängigkeit der Stellungsvariante vermerkt: Die Kongruenzendung fehlt, wenn
 der Quantor einer definiten NP vorangeht: \fw{all die X} aber \fw{alle X}. Der
 Fall von \fw{die beiden X} und \fw{beide X} würde eine separate Diskussion
-benötigen.
-% , zumal mit Blick auf das Mittelhochdeutsche.
-% wo \norm{bėide} auch mit NPs nachgestellt auftreten kann, nicht nur mit
-% Pronomen \autocite[623--625]{ksw2}.
-Nachfolgend möchte ich einige vorläufige Überlegungen zur Modellierung der
-Situation im Mittelhochdeutschen anstellen.
-
-% Dennoch besteht zumindest in der
-% neuhochdeutschen Standardsprache ein Unterschied zwischen \fw{alle} und
-% \fw{beide}: Ein definiter Artikel kann \fw{alle} nicht vorausgehen
-% \cref{ex:allenhd_3}, während er \fw{beide} nicht nachfolgen kann
-% \cref{ex:beidenhd_1}. \fw{Beide} flektiert hier wie ein Adjektiv nach einem
-% Determinierer mit overten Personenmerkmalen schwach, genauso wie \fw{viel} und
-% \fw{wenig}, was für \fw{alle} nicht möglich ist.
-
-% \begin{exe}
-% \ex \label{ex:allenhd}
-% \begin{xlist}
-% 	\ex[]{all die Regenschirme}
-% 		\label{ex:allenhd_1}
-% 	\ex[]{alle/*all Regenschirme}
-% 		\label{ex:allenhd_2}
-% 	\ex[*]{die all(e(n)) Regenschirme}
-% 		\label{ex:allenhd_3}
-% \end{xlist}
-
-% \ex \label{ex:beidenhd}
-% \begin{xlist}
-% 	\ex[*]{beide die Regenschirme}
-% 		\label{ex:beidenhd_1}
-% 	\ex[]{beide Regenschirme}
-% 		\label{ex:beidenhd_2}
-% 	\ex[]{die beiden/*beide Regenschirme}
-% 		\label{ex:beidenhd_3}
-% \end{xlist}
-% \end{exe}
-
-% Dass \fw{beide} Teil einer NP ist, wird durch Koordination deutlich. So können
-% \fw{beiden Mädchen} und \fw{vielen Jungen} in \cref{ex:beidecoord_3} nicht
-% koordiniert werden -- was sie jedoch können sollten, wenn sie jeweils eine
-% Konstituente bildeten \autocite[vgl.][99]{carnie2013}.
-
-% \begin{exe}
-% \ex \label{ex:beidecoord}
-% \begin{xlist}
-% 	\ex[]{\textit{Die beiden Mädchen} haben Karten gespielt.}
-% 		\label{ex:beidecoord_1}
-% 	\ex[]{\textit{Die beiden Mädchen} und \textit{die vielen Jungen} haben
-% 		Karten gespielt.}
-% 		\label{ex:beidecoord_2}
-% 	\ex[*]{Die \textit{beiden Mädchen} und \textit{vielen Jungen} haben Karten
-% 		gespielt.}
-% 		\label{ex:beidecoord_3}
-% 	\ex[]{Die beiden \textit{Mädchen} und \textit{Jungen} haben Karten
-% 		gespielt.}
-% 		\label{ex:beidecoord_4}
-% \end{xlist}
-% \end{exe}
-
-% Dabei ist \fw{beide} nicht mit Adjektiven \cref{ex:beideadj_2} koordinierbar
-% oder tauschbar \cref{ex:beideadj_3} und kann auch nicht iteriert werden
-% \cref{ex:beideadj_4}. \textit{Beide} hat damit die syntaktische Distribution
-% eines Determinierers, allerdings ohne sich in komplementärer Distribution mit
-% anderen Determinierern wie \fw{der}, \fw{dies} oder \fw{mein} zu befinden
-% \autocite[52--53, 184--185]{carnie2013}.
-
-% \begin{exe}
-% \ex \label{ex:beideadj}
-% \begin{xlist}
-% 	\ex[]{die \textit{beiden} \textit{grünen} Autos}
-% 		\label{ex:beideadj_1}
-% 	\ex[*]{die \textit{beiden} und \textit{grünen} Autos}
-% 		\label{ex:beideadj_2}
-% 	\ex[*]{die \textit{grünen} \textit{beiden} Autos}
-% 		\label{ex:beideadj_3}
-% 	\ex[*]{die \textit{beiden, vielen} Autos}
-% 		\label{ex:beideadj_4}
-% \end{xlist}
-% \end{exe}
-
-% Auch in den hier ausgewerteten mittelhochdeutschen Texten ist diese
-% Konstruktion verbreitet. Eine kursorische Suche lieferte unter anderem die in
-% \cref{ex:detbeidemhd} zitierten Stellen zurück; auch im \REM{} finden sich
-% eine handvoll Belege. Bei \notecite[67]{cao1} handelt es sich um eine der
-% ältesten Urkunden im \CAO{}. Es kann davon ausgegangen werden, dass
-% bezüglich der Möglichkeit von \norm{bėide} als Determinierer aufzutreten für
-% das Mittelhochdeutsche das gleiche gilt wie für das moderne Standard\-deutsche.
-
-% \begin{exe}
-% \ex \label{ex:detbeidemhd}
-% 	\begin{xlist}
-% 	\ex \label{ex:detbeidemhd_1}
-% 		\gll do ſprachen die leut von den paiden aigen \\
-% 			da sprachen die Leute von den beid-\Dat.\Pl.\NeutI.\Wk{}
-% 				Eigentum[\Dat.\Pl.\NeutI] \\
-% 		\begin{taggedline}{\parencite[\pno~67, 103.23; Stift Heiligenkreuz, 1263]{cao1}}
-% 		\trans `Da sagten die Leute über die beiden Eigentume'
-% 		\end{taggedline}
-
-% 	\ex \label{ex:detbeidemhd_2}
-% 		\gll {Da nach} do Lúwen die phleger der beder hv̓ſer \\
-% 			danach da liehen die Pfleger der beid-\Gen.\Pl.\NeutI.\St{}
-% 				Haus-\Gen.\Pl.\NeutI{} \\
-% 		\begin{taggedline}{\parencite[\pno~1221, 484.3; Zürich, 1290]{cao2}}
-% 		\trans `Danach verliehen die Pfleger der beiden Häuser'
-% 		\end{taggedline}
-
-% 	\ex \label{ex:detbeidemhd_3}
-% 		\gll Do erſcheín im Petrvs vnd Pavlvs \\
-% 			da erschien ihm Petrus und Paulus \\
-% 		\gll Die bede boten frone \\
-% 			die beide-\Nom.\Pl.\MascM.\St{} Bote-\Nom.\Pl.\MascM{} heilig \\
-% 		\begin{taggedline}{\parencites[\pno~38\ra, 1--2]{kc:VB}[vgl.][7844--7846]{schroeder1895}}
-% 		\trans `Da erschienen ihm Petrus und Paulus, die beiden heiligen
-% 			Boten'
-% 		\end{taggedline}
-
-% 	\ex \label{ex:detbeidemhd_4}
-% 		\gll Si wand ír baide hênde \\
-% 			Sie wand ihr beide-\Acc.\Pl.\FemI.\St{} Hand-\Acc.\Pl.\FemI{} \\
-% 		\begin{taggedline}{\parencites[\pno~6\rb, 19]{kc:K}[vgl.][913]{schroeder1895}}
-% 		\trans `Sie wand ihre beiden Hände.'
-% 		\end{taggedline}
-% 	\end{xlist}
-% \end{exe}  
-
-% % VORANGESTELLT
-% %
-% % I.67.103.23     in daz chunt / do ſprachen die leut von den paiden aigen / ſi
-% %                 wæren des nicht wider waz
-% % II.1221.484.01  an der Sila vor v̓nſer ſtat gegeben hat · Dv̓ beiden hv̓ſer Vn̄
-% %                 ir phlegerra hant die vor-
-% % II.1221.484.09  lich ſint ſo mag er wol / die bede wingarten vn̄ den
-% %                 Boͮngarten verkoͮfen · Jſt oͮch das der
-% % II.1221.484.03  vn̄ nach v̓nſer ſtat gewonheit · Da nach do Lúwen die phleger
-% %                 der beder hv̓ſer / dem
-% % III.2209.364.30 erde vnzint in den bach / vn̄ drobe verdeket · vn̄ ſo man
-% %                 gemainlich drûber gat von den baiden ¶ hv̂ſern
-% % III.2214.367.05 guͤter het der vorgenanden Teile / die beide wege / von oben
-% %                 Nider vnz vnden v̂s / vnd
-% % IV.2694.083.02  die voͤr genant ¶ payd Richter / duringche von altenhofen vnd
-% %                 Chuͤnrat der steger ſev paid mit iͤr / an-
-% % IV.3224A.400.13 vnſriv pediv Jn- ¶ ſidel · dar an legen / Des ſint gezivge ·
-% %                 die
-% % IV.3224B.400.13 vnſeriv baidiv Jnſigel / dar an legen · dez ſint gezivge /
-% %                 die vor-
-% % V.N310.237.18   in den peiden dorfern dev man nennet Weides, vnd zwo hvebe die
-% %                 gelegen ſint ze
-% %
-% %
-% % VB_038r-a.line_02   Die bede boten frone
-% % K_006r-b.line_19    Si wand ír baide hênde
+benötigen. Nachfolgend möchte ich einige vorläufige Überlegungen zur
+Modellierung der Situation im Mittelhochdeutschen anstellen.
 
 Während im modernen Standarddeutschen Determinierer und Adjektive normalerweise
 links vom Substantiv stehen, können Adjektive im Mittelhochdeutschen
@@ -2404,76 +2206,10 @@ Determinierer wie Possessivartikel, \norm{dehėin} `kein' und \norm{bėide}
 \autocite[515--517, 551--552, 623--624]{ksw2}. Im hier ausgewerteten Material
 liegen immerhin zwanzig Fälle im \CAO{} und drei in der \KC{}
 mit nachgestelltem \norm{bėide} hinter einem einfachen Plural-Substantiv vor
-% Einige Beispiele für nachgestelltes \norm{bėide} werden in
-% \cref{ex:beidepost} zitiert.
 \cref{ex:beidepost_2}.
 
-% NACHGESTELLT
-%
-% $ for i in I.131.171.44 I.179.200.19 I.389.359.25 II.1218.482.26 \
-%   II.1229.486.33 II.1429.632.14 II.619.047.31 II.777.150.26 II.885.249.04 \
-%   III.1956.216.29 III.2001.250.19 III.2214.367.11 III.2497.542.38 \
-%   IV.2563.001.31 IV.2583.011.15 IV.2930.222.02 IV.3171.369.26 IV.3331.468.21 \
-%   V.N288.223.21 V.N518.371.12; do ./deedtext.py -r `echo $i | \
-%   sed 's/N/N-/' | awk -F. '{print $2}'` | grep $i; done
-%
-% I.131.171.44    ich die hove bede in bezenowe / vn̄ ſtilli / han geben den
-%                 megiren / mit allē reht / alſ ich
-% I.179.200.19    gebroͮder beide · von Togginbvrch · dc wir den broͮdern von
-%                 boͮbinchon ſantihanneſ ordines
-% I.389.359.25    inſigil · diſe ſint die gezvge die ez ſahent vn̄ hortont. Mine
-%                 brvͦder baide herre · Hainrich
-% II.1218.482.26  noch zwien ſvn / vf dem acker · da heinriches Reben ieze ſind
-%                 vnd wan die Teile beide
-% II.1229.486.33  Wir brvͤder / bêd' / Bertelmêe von Liehtenwêrd' / veriehen /
-%                 vnd' tvͦn chvnt / allen
-% II.1429.632.14  vn̄ Rud' vn̄ · haīn̄r ſein ſuͤn · paide vn̄ fridreich der
-%                 chophelm̄ vn̄ fridreich deſ vitztumſ
-% II.619.047.31   tage dar nach / daz ander halbphvnt / vn̄ ſwenne man der vor
-%                 genanten zil / ainez / oder beidiv
-% II.777.150.26   diſme briue geſchriben ſtet. Des erſten zvgent daz die erliche
-%                 lute die burgermeiſtere
-% II.885.249.04   min herre graue vͦlrich vnd ſine ſvne bede vnd min herre graue
-%                 ege vnd hainrich
-% III.1956.216.29 herren ſine hoͤve baide / ledig ſin · vnde daz ich / minē
-%                 herren von ſante gallin dis ſtæte
-% III.2001.250.19 Ruͦdolf der Rintkoͮfe / Her / Johanneſ Snewili / Die Kozzen
-%                 beide / Her Johanneſ von valken-
-% III.2214.367.11 diſen brief · Oͮch hein wir vnd die Teil beide den Rât zurich
-%                 erbetten / dc er ze einē
-% III.2497.542.38 gegenwúrtigen iare aller naͤhſt kv̓nftig wirt / vn̄ iſt daz
-%                 ich in die zinſe bede / ze dem
-% IV.2563.001.31  Jnnomine domini aMen · Jch herre CvͤnR der edel vrie von
-%                 Tengen · vn̄ min ſv̓n bede ·
-% IV.2583.011.15  wen · vn̄ die teile von ein andern wîzten / vn̄ den krieg gar
-%                 zervuͦrten · Die teile beide
-% IV.2930.222.02  herren bede do kom̄ vf den tac alſ wir in beſchieden heten /
-%                 do verhorten wir deſ erſten
-% IV.3171.369.26  Wier / Otte / vnd friderich / beid pruder von Chuniſperch /
-%                 veriehen an diſem brief /
-% IV.3331.468.21  vorgenante korn vndir ſich teilen ſúlent den die danne zvͦ
-%                 gegene ſint ſo man die iargezit
-% V.N288.223.21   zelehen hatte; die vor genemten burgare bede von V́berlingen
-%                 hant v́nſ ir lehen div
-% V.N518.371.12   Jch Chuenrat vnd ich Jacob di brueder bede von Watenſtain wier
-%                 ver iehen vnd
-%
-% C1_041r-b.line_25   díe gotes boten baide da.
-% K_047v-a.line_16    Die Gotteſ botten baide da
-% K_072v-a.line_11    Ja ligent míne herren ¶ Baide ſamt fu̍r tot
 
 \begin{exe}
-% \ex \label{ex:beidepost}
-% 	\begin{xlist}
-% 	\ex \label{ex:beidepost_1}
-% 		\gll Do die vorgenanten herren bede do kom̄ vf den tac \\
-% 			Als die vorgenannten Herr-\Nom.\Pl.\MascM{} beide da kamen auf den
-% 				Tag \\
-% 		\begin{taggedline}{\parencite[\pno~2930, 222.1--2]{cao4}}
-% 		\trans `Als die beiden vorgenannten Herren da zum Gerichtstermin
-% 			kamen'
-% 		\end{taggedline}
-
 	\ex \label{ex:beidepost_2}
 		\gll ſo man die iargezit beidú begat \\
 			so man die Jahrestag[\Acc.\Pl.\NeutI] beide-\Acc.\Pl.\NeutI.\St{}
@@ -2481,17 +2217,6 @@ mit nachgestelltem \norm{bėide} hinter einem einfachen Plural-Substantiv vor
 		\begin{taggedline}{\parencites(Straßburg und Colmar, 1299)[\pno~3331, 468.21--22]{cao4}}
 		\trans `wenn man die Jahrestage beide begeht'
 		\end{taggedline}
-
-% 	\ex \label{ex:beidepost_3}
-% 		\gll do {erſchínem \textins{sic}} ím die herren ſa. \\
-% 			da erschienen ihm die Herren so \\
-% 		\gll díe gotes boten baide da. \\
-% 			die Gott-\Gen.\Sg.\MascM{} Bote-\Nom.\Pl.\MascM{}
-% 				beide-\Nom.\Pl.\MascM.\St{} da \\
-% 		\begin{taggedline}{\parencites[\pno~41\rb, 24--25]{kc:C1}[vgl.][7844--7845]{schroeder1895}}
-% 		\trans `da erschienen ihm die Herren, die beiden Gottesboten.'
-% 		\end{taggedline}
-% 	\end{xlist}
 \end{exe}
 
 Da die LFG ohne Transformationen auskommt (also keine Verschiebungen von
@@ -2515,7 +2240,7 @@ von \norm{jārƶīt} `Jahrestag' (\xhead{N}) zu behandeln.%
 	\begin{forest} shorter edges, narrower nodes, italic leaves, align text
 	[CP
 		[\anno{VP}
-			[{\anno[\pass{\Obj}]{DP\mysn{beidepost2c_DP}}}
+			[{\anno[\pass{obj}]{DP\mysn{beidepost2c_DP}}}
 				[\anno{\xhead{D}}
 					[die]
 				]
@@ -2537,24 +2262,23 @@ von \norm{jārƶīt} `Jahrestag' (\xhead{N}) zu behandeln.%
 	]
 	\end{forest}
 	\hspace{2em}
-	\adjustbox{valign=t}{%
 	\avm{%
 		\tikzmark{beidepost2c_f}$f:$ [
-			\Obj	& \tikzmark{beidepost2c_obj}[
-				\Def	& $+$ \\
-				\Pred	& `Jahrestag' \\
-				\Case	& \Acc \\
-				\Num	& \Pl \\
-				\Gend	& \F \\
-				\Anim	& $-$ \\
-				\Quant	& [
-					\Pred	& `beide' \\
+			obj	& \tikzmark{beidepost2c_obj}[
+				def	& $+$ \\
+				pred	& `Jahrestag' \\
+				case	& \textsc{acc} \\
+				num		& \textsc{pl} \\
+				gend	& \textsc{f} \\
+				anim	& $-$ \\
+				quant	& [
+					pred	& `beide' \\
 				] \\
 			] \\
 
-			\Pred	& \astruct{begehen}{\ups{\Subj}, \ups{\Obj}} \\
+			pred	& \astruct{begehen}{\ups{subj}, \ups{obj}} \\
 		]%
-	}}
+	}
 	\begin{tikzpicture}[remember picture, overlay]
 	\draw [myarrow]
 		([yshift=.5ex]{pic cs:beidepost2c_NP})
@@ -2573,7 +2297,7 @@ von \norm{jārƶīt} `Jahrestag' (\xhead{N}) zu behandeln.%
 
 Basierend auf der Analyse von \citet{spector2009} dient das Schema in
 \cref{ex:beidepost_2dist} als Arbeits\-hypothese für die Lesart mit gefloatetem
-Quantor. Parallel zu \Subj\ und \Top\ werden hier die Rollen \Obj\ und \Foc\
+Quantor. Parallel zu \textsc{subj} und \textsc{top} werden hier die Rollen \textsc{obj} und \textsc{foc}
 für \norm{bėidiu} und die dazugehörige DP angenommen. Die aufeinander bezogenen
 Teile ($g$ und $h$) sind koindiziert ($i$), um die anaphorische Funktion von
 \norm{bėide} zu erfassen.%
@@ -2603,7 +2327,7 @@ spielen.
 		align text
 	[CP
 		[\anno{VP}
-			[{\anno[\pass{\Foc}]{DP\mysn{beidepost2d_DP}}}
+			[{\anno[\pass{foc}]{DP\mysn{beidepost2d_DP}}}
 				[\anno{\xhead{D}}
 					[die]
 				]
@@ -2614,15 +2338,15 @@ spielen.
 				]
 			]
 			[\anno{VP}
-				[{\anno[\pass{\Obj}]{QP\mysn{beidepost2d_QP}}}
+				[{\anno[\pass{obj}]{QP\mysn{beidepost2d_QP}}}
 					[\anno{\xhead{Q}}
 						[{bėidiu\\
 							\smaller[2]\upshape\tabcolsep=.5ex%
 							\begin{tabular}[t]{@{} l l l @{}}
-								\uncertain{$x$}{\Case}	& \req & \Acc \\
-								\uncertain{$x$}{\Num}	& \req & \Pl \\
-								\uncertain{$x$}{\Gend}	& \req & \N \\
-								$\lor$ \uncertain{$x$}{\Anim} & \req & $-$ \\
+								\uncertain{$x$}{case}	& \req & \textsc{acc} \\
+								\uncertain{$x$}{num}	& \req & \textsc{pl} \\
+								\uncertain{$x$}{gend}	& \req & \textsc{n} \\
+								$\lor$ \uncertain{$x$}{anim} & \req & $-$ \\
 							\end{tabular}%
 						}]
 					]
@@ -2635,25 +2359,24 @@ spielen.
 	]
 	\end{forest}
 	\hspace{2em}
-	\adjustbox{valign=t}{%
 	\avm{%
 		\tikzmark{beidepost2d_f}$f:$ [
-			\Foc	& \tikzmark{beidepost2d_foc}$g:$ [
-				\Def	& $+$ \\
-				\Pred	& `Jahrestag' \\
-				\Case	& \Acc \\
-				\Num	& \Pl \\
-				\Gend	& \F \\
-				\Anim	& $-$ \\
+			foc	& \tikzmark{beidepost2d_foc}$g:$ [
+				def	& $+$ \\
+				pred	& `Jahrestag' \\
+				case	& \textsc{acc} \\
+				num		& \textsc{pl} \\
+				gend	& \textsc{f} \\
+				anim	& $-$ \\
 			] $i$ \smallskip \\
 
-			\Obj	& \tikzmark{beidepost2d_obj}$h:$ [
-				\Pred	& `beide' \\
+			obj	& \tikzmark{beidepost2d_obj}$h:$ [
+				pred	& `beide' \\
 			] $i$\enspace \\
 
-			\Pred	& \astruct{begehen}{\ups{\Subj}, \ups{\Obj}} \\
+			pred	& \astruct{begehen}{\ups{subj}, \ups{obj}} \\
 		]%
-	}}
+	}
 	\begin{tikzpicture}[remember picture, overlay]
 	\draw [myarrow]
 		([yshift=.5ex]{pic cs:beidepost2d_NP})
@@ -2694,7 +2417,7 @@ kann. \citet[623--624]{ksw2} benennen dieses Problem ebenfalls und zählen
 			% 		[dass]
 			% 	]
 				[\anno{VP}
-					[{\anno[\pass{\GF}]{QP}}
+					[{\anno[\pass{gf}]{QP}}
 						[\anno{DP}
 							[\anno{\xhead{D}}
 								[si]
@@ -2721,13 +2444,13 @@ kann. \citet[623--624]{ksw2} benennen dieses Problem ebenfalls und zählen
 			% 		[dass]
 			% 	]
 				[\anno{VP}
-					[{\anno[\pass{\DF}]{DP}}
+					[{\anno[\pass{df}]{DP}}
 						[\anno{\xhead{D}}
 							[si]
 						]
 					]
 					[\anno{VP}
-						[{\anno[\pass{\GF}]{QP}}
+						[{\anno[\pass{gf}]{QP}}
 							[\anno{\xhead{Q}}
 								[bėide]
 							]
@@ -2741,489 +2464,6 @@ kann. \citet[623--624]{ksw2} benennen dieses Problem ebenfalls und zählen
 		\end{forest} \\
 	\end{tabular}
 \end{exe}
-
-% Eine Schwierigkeit bei der Analyse gerade dieser Beispiele ist die Frage, wie
-% die unterliegende Konstituentenstruktur aussieht. Der oben geschilderten
-% generativen Erklärung zu \norm{alle} zufolge kann die quantifizerte NP oder DP
-% vom Komplement in die Spezifikatorposition wandern (\ref{ex:subjbeideambig}a).
-% Diese Konfiguration ist oberflächlich nicht von der mit nachgestelltem
-% Determinierer zu unterscheiden (\ref{ex:subjbeideambig}b).
-
-% \begin{exe}
-% \ex \label{ex:subjbeideambig}
-% 	\begin{tabular}[t]{@{} r l @{\quad} r l @{}}
-% 	a.
-% 		& \begin{forest}
-% 			shorter edges,
-% 			narrower nodes,
-% 			italic leaves,
-% 			align text
-% 			[QP
-% 				[DP$_i$, name=DP
-% 					[\xhead{D}
-% 						[die]
-% 					]
-% 					[NP
-% 						[AdjP
-% 							[\xhead{Adj}
-% 								[vorgenanten]
-% 							]
-% 						]
-% 						[\xhead{N}
-% 							[herren]
-% 						]
-% 					]
-% 				]
-% 				[\xbar{Q}
-% 					[\xhead{Q}
-% 						[bede]
-% 					]
-% 					[t$_i$, name=t
-% 						[\_]
-% 					]
-% 				]
-% 			]
-% 			% \draw [-latex, gray] (t) to [out=south west, in=south] (DP);
-% 			\end{forest}
-% 		& b.
-% 		& \begin{forest}
-% 			shorter edges,
-% 			narrower nodes,
-% 			italic leaves,
-% 			align text
-% 			[DP
-% 				[\xhead{D}
-% 					[die]
-% 				]
-% 				[NP
-% 					[\xbar{N}
-% 						[AdjP
-% 							[\xhead{Adj}
-% 								[vorgenanten]
-% 							]
-% 						]
-% 						[\xhead{N}
-% 							[herren]
-% 						]
-% 					]
-% 					[QP
-% 						[\xhead{Q}
-% 							[bede]
-% 						]
-% 					]
-% 				]
-% 			]
-% 			\end{forest}
-% 		\\
-% 	\end{tabular}
-% \end{exe}
-
-% Allerdings kommt die Stellung von \norm{bėide} analog zu \fw{alle} mit
-% nachfolgender DP im ausgewerteten Material nur einmal vor \cref{ex:beidedet}
-% und auch im \REM{} fanden sich keine entsprechenden Vorkommen von
-% \norm{bėide} vor einem Determinierer. \posscite[139--145]{demske2001}
-% Analyse zufolge stellen Possessiva im Alt- und Mittelhochdeutschen aufgrund
-% solcher Belege eher Adjektive als Artikelwörter dar (vgl.~aber
-% \ref{ex:detbeidemhd_4}), insofern besteht die Frage, ob es sich bei \norm{mīn
-% brüeder} `meine Brüder' um eine DP mit \norm{mīn} als Kopf oder um eine NP
-% mit \norm{brüeder} als Kopf handelt.
-
-% \begin{exe}
-% \ex\label{ex:beidedet}
-% 	\gll So ſhuln ſi manen · bede min brvder \\
-% 		So sollen sie mahnen {} beid-\Acc.\Pl.\MascM.\St{} mein
-% 			Bruder[\Acc.\Pl.\MascM] \\
-% 	\begin{taggedline}{\autocite[\pno~519, 456.9]{cao1}}
-% 	\trans `So sollen sie meine beiden Brüder anmahnen'
-% 	\end{taggedline}
-% \end{exe}
-
-% Ein weiterer Fall von Ambiguität liegt dann vor, wenn \norm{bėide} vor
-% allem bei Objektbezug nachgestellt erscheint. Dieses Problem besteht auch noch,
-% wenn man wie in der LFG keine Ableitungen annimmt. \citeauthor{ksw2} benennen
-% dieses Problem ebenfalls und zählen \blockcquote[623]{ksw2}{solche Fälle immer
-% als attributiv nachgestellt} wie in (\ref{ex:objbeideambig}a). Der Unterschied
-% zwischen beiden Konstituentenstrukturen liegt in der Position von QP: Allein
-% aufgrund des Texts in \cref{ex:beidepost_2} ist kein Rückschluss darauf
-% möglich, ob die QP Teil nachgestellter Teil der Subjekts-NP ist
-% (\ref{ex:objbeideambig}a) oder in der VP verbleibt (\ref{ex:objbeideambig}b).
-
-% \begin{exe}
-% \ex \label{ex:objbeideambig}
-% 	\begin{tabular}[t]{@{} r l @{\quad} r l @{}}
-% 	a.
-% 		& \begin{forest}
-% 			shorter edges,
-% 			narrower nodes,
-% 			italic leaves,
-% 			align text
-% 			% [CP
-% 			% 	[\xhead{C}
-% 			% 		[so]
-% 			% 	]
-% 			% 	[VP
-% 			% 		[DP
-% 			% 			[\xhead{D}
-% 			% 				[man]
-% 			% 			]
-% 			% 		]
-% 					[\xbar{V}
-% 						[DP
-% 							[\xhead{D}
-% 								[die]
-% 							]
-% 							[NP
-% 								[\xhead{N}
-% 									[iargezit]
-% 								]
-% 								[QP
-% 									[\xhead{Q}
-% 										[beidú]
-% 									]
-% 								]
-% 							]
-% 						]
-% 						[\xhead{V}
-% 							[begat]
-% 						]
-% 					]
-% 			% 	]
-% 			% ]
-% 			\end{forest}
-% 		& b.
-% 		& \begin{forest}
-% 			shorter edges,
-% 			narrower nodes,
-% 			italic leaves,
-% 			align text
-% 			% [CP
-% 			% 	[\xhead{C}
-% 			% 		[so]
-% 			% 	]
-% 			% 	[VP
-% 			% 		[DP
-% 			% 			[\xhead{D}
-% 			% 				[man]
-% 			% 			]
-% 			% 		]
-% 					[\xbar{V}
-% 						[DP$_i$
-% 							[\xhead{D}
-% 								[die]
-% 							]
-% 							[NP
-% 								[\xhead{N}
-% 									[iargezit]
-% 								]
-% 							]
-% 						]
-% 						[VP
-% 							[QP
-% 								[t$_i$′
-% 									[\_]
-% 								]
-% 								[\xbar{Q}
-% 									[\xhead{Q}
-% 										[beidú]
-% 									]
-% 									[t$_i$
-% 										[\_]
-% 									]
-% 								]
-% 							]
-% 							[\xhead{V}
-% 								[begat]
-% 							]
-% 						]
-% 					]
-% 			% 	]
-% 			% ]
-% 			\end{forest}
-% 		\\
-% 	\end{tabular}
-% \end{exe}
-
-% Dieser Unterschied ist auf mehreren Ebenen relevant. Auf grammatischer Ebene
-% unterscheiden sich Kontakt- und Distanzstellung in der Art der Kongruenz, die
-% angewendet werden kann. \citet[178--179]{shlonsky1991} diskutiert dies im Rahmen
-% der generativen Grammatik anhand von \q{strong} und \q{weak agreement} sowie
-% anhand von Rektionsverhältnissen zwischen den verschiedenen semantisch
-% zusammengehörigen Positionen in der Konstituentenstruktur. Im Rahmen des eher
-% funktional orientierten Analyseansatzes der vorliegenden Arbeit wurde in
-% \cref{subsec:indexconcord} im Grunde das Gleiche anhand der Termini \textsc{concord}
-% und \textsc{index} diskutiert. Unabhängig vom verwendeten Theorieframework weisen
-% \citet{sportiche1988,merchant1996,shlonsky1991} sämtlich darauf hin, dass der
-% Quantor mit dem Quantifizierten durch Koindizierung verbunden ist, ihm also
-% ähnlich einem Pronomen oder einem prädikativen Adjektiv referentielle Funktion
-% zukommt.
-
-% Unter den ausgewerteten Belgen ist der Fall mit einer NP allerdings nicht so
-% häufig wie der Fall mit einem Pronomen \autocite[vgl.][623--625]{ksw2}. Der
-% Analyse nach \citet{merchant1996,shlonsky1991} zufolge erscheint es am
-% sinnvollsten zu sein, \norm{si bėide} `sie beide' und ähnliche
-% Formulierungen, bei denen \norm{bėide} von einem Pronomen gefolgt wird, wie in
-% (\ref{ex:sibeidecs}a) zu analysieren. Auch hier besteht jedoch zumindest die
-% Möglichkeit, dass \norm{bėide} in der VP steht (\ref{ex:sibeidecs}b).
-
-% \begin{exe}
-% \ex \label{ex:sibeidecs}
-% 	\begin{tabular}[t]{@{} r l @{\quad} r l @{}}
-% 	a.
-% 		& \begin{forest}
-% 			shorter edges,
-% 			italic leaves,
-% 			align text
-% 			[\xbar{V}
-% 				[QP
-% 					[DP$_i$
-% 						[\xhead{D}
-% 							[si]
-% 						]
-% 					]
-% 					[\xbar{Q}
-% 						[\xhead{Q}
-% 							[bėide]
-% 						]
-% 						[t$_i$
-% 							[\_]
-% 						]
-% 					]
-% 				]
-% 				[\xhead{V}
-% 					[\dots]
-% 				]
-% 			]
-% 			\end{forest}
-% 		& b.
-% 		& \begin{forest}
-% 			shorter edges,
-% 			italic leaves,
-% 			align text
-% 			[\xbar{V}
-% 				[DP$_i$
-% 					[\xhead{D}
-% 						[si]
-% 					]
-% 				]
-% 				[VP
-% 					[QP
-% 						[t$_i$′
-% 							[\_]
-% 						]
-% 						[\xbar{Q}
-% 							[\xhead{Q}
-% 								[bėide]
-% 							]
-% 							[t$_i$
-% 								[\_]
-% 							]
-% 						]
-% 					]
-% 					[\xhead{V}
-% 						[\dots]
-% 					]
-% 				]
-% 			]
-% 			\end{forest}
-% 		\\
-% 	\end{tabular}
-% \end{exe}
-
-% Da die LFG ohne Transformationen auskommt, besteht bezüglich
-% (\ref{ex:sibeidecs}a) die Frage, wie die zuvor gemachten Überlegungen in dieses
-% Framework übertragen werden können. In \cref{ex:sibeideas1} wird angenommen,
-% dass der Quantor -- entsprechend der generativen Analys -- ein Komplement
-% subkategorisiert. In diesem Fall müsste man allerdings Kongruenz mit dem
-% Komplement annehmen, was für das Deutsche sehr ungewöhnlich wäre. Das
-% sprichwörtliche Pferd würde von hinten aufgezäumt.
-
-% \begin{exe}
-% \ex \label{ex:sibeideas1}
-% 	$^?$\begin{forest}
-% 		shorter edges,
-% 		italic leaves,
-% 		align text
-% 		[QP\mysn{sibeideas1_QP}
-% 			[{\anno[\pass{\Obj}]{DP\mysn{sibeideas1_DP}}}
-% 				[\anno{\xhead{D}}
-% 					[si]
-% 				]
-% 			]
-% 			[\anno{\xhead{Q}}
-% 				[{bėide\\
-% 					\smaller[2]\upshape\tabcolsep=.5ex%
-% 					\begin{tabular}[t]{@{} l l l @{}}
-% 						\ups{\Obj\ \Num}	& \req & \Pl{} \\
-% 						\ups{\Obj\ \Case}	& \req & $\Nom \lor \Acc$ \\
-% 						\ups{\Obj\ \Gend}	& \req & $\M \lor \F$ \\
-% 					\end{tabular}%
-% 				}]
-% 			]
-% 		]
-% 	\end{forest}
-% 	\hspace{2em}
-% 	\adjustbox{valign=t}{%
-% 	\avm{%
-% 		\tikzmark{sibeideas1_f}$f:$ [
-% 			\Pred	& \astruct{beide}{\ups{\Obj}} \\
-% 			\Obj	& \tikzmark{sibeideas1_c}[
-% 				\Pred	& $pro$ \\
-% 				\Pers	& \Third \\
-% 				\Num	& \Pl \\
-% 			]~$i$\enspace \\
-% 			\Index	& $i$\enspace \\
-% 		]%
-% 	}}
-% 	\begin{tikzpicture}[remember picture, overlay]
-% 	\draw [myarrow]
-% 		([yshift=.5ex]{pic cs:sibeideas1_QP})
-% 		to [out=east, in=west]
-% 		([yshift=.5ex]{pic cs:sibeideas1_f});
-% 	\draw [myarrow]
-% 		([yshift=.5ex]{pic cs:sibeideas1_DP})
-% 		to [out=east, in=west]
-% 		([yshift=.5ex]{pic cs:sibeideas1_c});
-% 	\end{tikzpicture}
-% \end{exe}
-
-% Sinnvoller ist dagegen, \norm{si} als Ko-Kopf (\fw{cohead}) von \norm{bėide} zu
-% behandeln \cref{ex:sibeideas2}, was in der LFG die typische Analyse des
-% Zusammenspiels von lexikalischen (VP; NP) mit den ihnen entsprechenden
-% funktionalen Kategorien (IP, CP; DP) darstellt:
-% \foreignblockcquote{english}[124]{bresnanetal2016}{Annotate a nonprojecting
-% complement node \textelp{} dominated by any category X$^n$ with
-% \updown}. Die DP mit dem Pronomen wäre dann immer noch das Komplement des
-% Quantors, aber beide Köpfe legen ihre Informationen in derselben F-Struktur
-% ab.
-
-% \begin{exe}
-% \ex \label{ex:sibeideas2}
-% 	\begin{forest}
-% 		shorter edges,
-% 		italic leaves,
-% 		align text
-% 		[QP\mysn{sibeideas2_QP}
-% 			[\anno{DP\mysn{sibeideas2_DP}}
-% 				[\anno{\xhead{D}}
-% 					[si]
-% 				]
-% 			]
-% 			[\anno{\xhead{Q}}
-% 				[{bėide\\
-% 					\smaller[2]\upshape\tabcolsep=.5ex%
-% 					\begin{tabular}[t]{@{} l l l @{}}
-% 						\ups{\GF\ \Num}		& \req & \Pl{} \\
-% 						\ups{\GF\ \Case}	& \req & $\Nom \lor \Acc$ \\
-% 						\ups{\GF\ \Gend}	& \req & $\M \lor \F$ \\
-% 					\end{tabular}%
-% 				}]
-% 			]
-% 		]
-% 	\end{forest}
-% 	\hspace{2em}
-% 	\adjustbox{valign=t}{%
-% 	\avm{%
-% 		\tikzmark{sibeideas2_f}$f:$ [
-% 			\Pred	& $pro$ \\
-% 			\Pers	& \Third \\
-% 			\Num	& \Pl \\
-% 			\Quant	& \tikzmark{sibeideas2_q}[
-% 				\Pred	& `beide' \\
-% 			] \\
-% 		]%
-% 	}}
-% 	\begin{tikzpicture}[remember picture, overlay]
-% 	\draw [myarrow]
-% 		([yshift=.5ex]{pic cs:sibeideas2_DP})
-% 		to [out=east, in=west]
-% 		([yshift=.5ex]{pic cs:sibeideas2_f});
-% 	\draw [myarrow]
-% 		([yshift=.5ex]{pic cs:sibeideas2_QP})
-% 		to [out=east, in=west]
-% 		([yshift=.5ex]{pic cs:sibeideas2_f});
-% 	\end{tikzpicture}
-% \end{exe}
-
-% Das Schema in \cref{ex:beidenpcs} versucht, diese Erkenntnis auf den Fall mit
-% einer vollständigen NP als Quantifiziertem zu übertragen. Die Triade NP--QP--DP
-% wird hier im Grunde als strukturell parallel zu VP--IP--CP aufgefasst. Da keine
-% unterschiedlichen Konfigurationen berücksichtigt werden müssen, ergibt sich
-% eine sehr ökonomische Analyse.
-
-% \begin{exe}
-% \ex \label{ex:beidenpcs}
-% 	\begin{forest} shorter edges, narrower nodes, italic leaves, align text
-% 	[DP\mysn{beidenpcs_DP}
-% 		[\anno{\xhead{D}}
-% 			[die]
-% 		]
-% 		[\anno{QP\mysn{beidenpcs_QP}}
-% 			[\anno{\xhead{Q}}
-% 				[beiden]
-% 			]
-% 			[\anno{NP\mysn{beidenpcs_NP}}
-% 				[{\anno[\pass{\Adjc}]{AdjP\mysn{beidenpcs_AP}}}
-% 				% {\anno[\elem{\Adjc}]{AdjP\mysn{beidenpcs_AP}}}
-% 					[\anno{\xhead{Adj}}
-% 						[grünen]
-% 					]
-% 				]
-% 				[\anno{\xhead{N}}
-% 					[Autos]
-% 				]
-% 			]
-% 		]
-% 	]
-% 	\end{forest}
-% 	\hspace{2em}
-% 	\adjustbox{valign=t}{%
-% 	\avm{%
-% 		\tikzmark{beidenpcs_f}$f:$ [
-% 			\Def	& $+$ \\
-% 			\Quant	& \tikzmark{beidenpcs_q}[
-% 				\Pred	& `beide' \\
-% 			] \\
-% 			\Adjc	& \tikzmark{beidenpcs_adj}[ % \{[
-% 				\Pred	& `grün'
-% 			] \\ % ]\} \\
-% 			\Pred	& `Auto' \\
-% 			\Pers	& \Third \\
-% 			\Num	& \Pl \\
-% 			\Gend	& \N \\
-% 			\Anim	& $-$ \\
-% 		]%
-% 	}}
-% 	\begin{tikzpicture}[remember picture, overlay]
-% 	\draw [myarrow]
-% 		([yshift=.5ex]{pic cs:beidenpcs_DP})
-% 		to [out=east, in=west]
-% 		([yshift=.5ex]{pic cs:beidenpcs_f});
-% 	\draw [myarrow]
-% 		([yshift=.5ex]{pic cs:beidenpcs_NP})
-% 		to [out=east, in=west]
-% 		([yshift=.5ex]{pic cs:beidenpcs_f});
-% 	\draw [myarrow]
-% 		([yshift=.5ex]{pic cs:beidenpcs_QP})
-% 		to [out=east, in=west]
-% 		([yshift=.5ex]{pic cs:beidenpcs_f});
-% 	\draw [myarrow]
-% 		([yshift=.5ex]{pic cs:beidenpcs_AP})
-% 		to [out=east, in=west]
-% 		([yshift=.5ex]{pic cs:beidenpcs_adj});
-% 	\end{tikzpicture}
-% \end{exe}
-
-% Unterschiede in der anwendbaren Kongruenzstrategie interagieren mit der
-% Kongruenz\-hier\-archie (\cref{sec:kongrhier}). Wie wir in den vorliegenden
-% Untersuchungen immer wieder gesehen haben, flektieren Attribute wie Adjektive
-% und auch Quantoren beim Bezug auf einfache Substantive in den ausgewerteten
-% mittelhochdeutschen Quellen sehr regelmäßig nach deren formalen Personen- und
-% Strukturmerkmalen (\textsc{concord} innerhalb der NP oder der vom Controller
-% prädizierten grammatischen Funktion). Der Kongruenzhierarchie zufolge stehen
-% auf der anderen Seite Personalpronomen, die mit ihren Controllern koindiziert
-% sind -- also zwar außerhalb der NP stehen, aber auf sie bezogen sind und
-% tendenziell nach deren semantischen Personenmerkmalen flektieren (\textsc{index}
-% außerhalb der NP oder der vom Controller prädizierten grammatischen Funktion).
 
 \section{Die Kongruenzhierarchie}
 \label{sec:kongrhier}
@@ -3342,9 +2582,9 @@ in \cref{fig:theoagrdist}.
 
 %
 	& %
-	& \Concord
+	& \textsc{concord}
 	& %
-	& \Index
+	& \textsc{index}
 	& %
 	& %
 	\\
@@ -3463,13 +2703,13 @@ adverbiale Präpositionalphrase vor, in der \lit{Lukas} seinerseits ein
 Genitivattribut zu \lit{hant} `Hand' darstellt. Trotz allem sind beide
 Personen damit im Diskurs verankert, sodass im weiteren Verlauf Verben wie
 \lit{hant} `haben (\Tpl.\Ind.\Prs)', Pronomina wie \norm{ſie} `sie
-(\Pl)' und damit auch \lit{bedi} `beide' auf sie gemeinsam Bezug nehmen
+(\textsc{pl})' und damit auch \lit{bedi} `beide' auf sie gemeinsam Bezug nehmen
 können.
 
 Während in \cref{ex:disjointctrl_1} die beiden Controller in unterschiedlichen
 Satzgliedern desselben Satzes stehen, ist die Verbindung der Controller in
 \cref{ex:disjointctrl_2} unter formalen Kriterien noch lockerer. So bezieht sich
-\lit{ſi beidv̍} `sie beide (\N)' dort gleichermaßen auf
+\lit{ſi beidv̍} `sie beide (\textsc{n})' dort gleichermaßen auf
 \lit{Mehthilt} und ihren Mann \lit{Heinrich\textdel{}}. Letzterer wird
 syntaktisch getrennt in einem eingeschobenen, unabhängigen Temporalsatz
 genannt.
@@ -3503,7 +2743,7 @@ Innerhalb des Temporalsatzes wird Mechthild zwar durch das Pronomen \lit{ſi}
 das Subjektspronomen und Heinrich das Objekt von \lit{neme} `nahm'
 darstellt. Beide Controller werden zwar syntaktisch unabhängig voneinander im
 Diskurs etabliert, stehen aber für den kombinierten Bezug durch Pronomen wie
-\norm{si} `sie (\Pl)' und damit auch für \norm{bėide}
+\norm{si} `sie (\textsc{pl})' und damit auch für \norm{bėide}
 `beide' zur Verfügung.
 
 Im Sinne eines erweiterten Konjunktionsbegriffs werden im Folgenden auch
