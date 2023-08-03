@@ -1177,59 +1177,59 @@ syntaktischen Konstituenten abbildet und eine Variante der \xbar{X}-Theorie
 \autocites{chomsky1970,jackendoff1977} darstellt. Projektionen innerhalb des
 Baumes können dabei funktional annotiert sein; nicht-verzweigende
 \xbar{X}-Kategorien werden als überflüssig angesehen und in der Regel
-weggelassen, wie in \cref{ex:cfstruct}, wo kein struktureller Unterschied
+weggelassen, wie in \cref{fig:cfstruct}, wo kein struktureller Unterschied
 zwischen Spezifikator, Adjunkt und Komplement gemacht wird, weil die Annotation
 disambiguiert.
 
-\begin{exe}
-\ex\label{ex:cfstruct}
-	\begin{forest} shorter edges, italic leaves, align text
-	[CP\mysn{cfstruct_CP}
-		[{\anno[\pass{subj}]{NP\mysn{cfstruct_NP}}}
-		 	[\anno{\xhead{N}\mysn{cfstruct_N}}
-		 		[Lola]
-		 	]
-		]
-		[\anno{\xhead{C}\mysn{cfstruct_C}}
-			[rennt]
-		]
+\begin{figure}
+\begin{forest} shorter edges, italic leaves, align text
+[CP\mysn{cfstruct_CP}
+	[{\anno[\pass{subj}]{NP\mysn{cfstruct_NP}}}
+	 	[\anno{\xhead{N}\mysn{cfstruct_N}}
+	 		[Lola]
+	 	]
 	]
-	\end{forest}
-	\hspace{2em}
-	\avm{%
-		\tikzmark{cfstruct_f}$f$: [
-			pred	& \astruct{rennen}{\ups{subj}} \\
-			tense	& \textsc{prs} \\
+	[\anno{\xhead{C}\mysn{cfstruct_C}}
+		[rennt]
+	]
+]
+\node [avmcontainer] {\avm{%
+	\tikzmark{cfstruct_f}$f$: [
+		pred	& \astruct{rennen}{\ups{subj}} \\
+		tense	& \textsc{prs} \\
+		%
+		subj	&	\tikzmark{cfstruct_subj}$g$: [
+			pred	& `Lola' \\
+			pers	& 3 \\
+			num		& \textsc{sg} \\
+			case	& \textsc{nom} \\
+		]
+	]%
+}}; 
+\end{forest}
+\begin{tikzpicture}[remember picture, overlay]
+	\draw [myarrow]
+		([yshift=.5ex]{pic cs:cfstruct_CP})
+		to [out=east, in=west]
+		([yshift=.5ex]{pic cs:cfstruct_f});
+	\draw [myarrow]
+		([yshift=.5ex]{pic cs:cfstruct_C})
+		to [out=east, in=west]
+		([yshift=.5ex]{pic cs:cfstruct_f});
+	\draw [myarrow]
+		({pic cs:cfstruct_NP})
+		to [out=south east, in=west]
+		([yshift=.5ex]{pic cs:cfstruct_subj});
+	\draw [myarrow]
+		([yshift=.5ex]{pic cs:cfstruct_N})
+		to [out=east, in=west]
+		([yshift=.5ex]{pic cs:cfstruct_subj});
+\end{tikzpicture}
+\caption{Analyse des Satzes \fw{Lola rennt}}
+\label{fig:cfstruct}
+\end{figure}
 
-			subj	&	\tikzmark{cfstruct_subj}$g$: [
-				pred	& `Lola' \\
-				pers	& 3 \\
-				num		& \textsc{sg} \\
-				case	& \textsc{nom} \\
-			]
-		]%
-	}
-	\begin{tikzpicture}[remember picture, overlay]
-		\draw [myarrow]
-			([yshift=.5ex]{pic cs:cfstruct_CP})
-			to [out=east, in=west]
-			([yshift=.5ex]{pic cs:cfstruct_f});
-		\draw [myarrow]
-			([yshift=.5ex]{pic cs:cfstruct_C})
-			to [out=east, in=west]
-			([yshift=.5ex]{pic cs:cfstruct_f});
-		\draw [myarrow]
-			({pic cs:cfstruct_NP})
-			to [out=south east, in=west]
-			([yshift=.5ex]{pic cs:cfstruct_subj});
-		\draw [myarrow]
-			([yshift=.5ex]{pic cs:cfstruct_N})
-			to [out=east, in=west]
-			([yshift=.5ex]{pic cs:cfstruct_subj});
-	\end{tikzpicture}
-\end{exe}
-
-In \cref{ex:cfstruct} wird die Korrespondenz zwischen der C-Struktur und der
+In \cref{fig:cfstruct} wird die Korrespondenz zwischen der C-Struktur und der
 F-Struktur des Satzes \fw{Lola rennt} dargestellt. Der Satz betsteht aus einer
 NP mit dem Kopf \fw{Lola}, die das \textsc{subjekt} des Satzes darstellt, und
 einer \fw{conjunctional phrase} (CP), die das \textsc{subjekt} dominiert und
@@ -1302,131 +1302,125 @@ kommt es zur Kongruenz zwischen Subjekt und Verb
 In Anlehnung an die Beispiele \cref{ex:coordidx,ex:engartdiscong} werden hier
 noch einmal zur Illustration die jeweils grammatisch akzeptablen Varianten vor
 dem Hintergrund des gewählten Theorieframeworks gezeigt. Die Annotation der
-koordinierten NPs folgt \citet{peterson2004}. In \cref{ex:lfgcoord_1} erfordert
+koordinierten NPs folgt \citet{peterson2004}. In \cref{fig:lfgcoord_1} erfordert
 das Verb \fw{spielen} ein Subjekt mit den Personenmerkmalen \textsc{3.~person}
 und \textsc{plural} in Übereinstimmung mit dem kombinierten \textsc{index} der
-Subjekts-NP in $g$; zwei Singulare ergeben zusammen einen Plural.
+Subjekts-NP in $g$; zwei Singulare ergeben zusammen einen Plural.%
+%
+	\footnote{Mit \q{g-und} wird das gruppenbildende \fw{und} bezeichnet, bei
+		dem sich die Konjunkte auf jeweils unterschiedliche Indizes $i, j$
+		beziehen \autocite[382--383]{dalrymple2001}.}
 
-\begin{exe}
-\ex \label{ex:lfgcoord_1}
-	{\hspace{-2em}
-	\begin{forest} narrower nodes, shorter edges, italic leaves, align text
-	[CP\mysn{lfgcoord1_CP}
-		[{\anno[\pass{subj}]{NP\mysn{lfgcoord1_NP1}}}
-			[{\anno[\updownelem]{\xhead{N}}}
-				[Jan]
-			]
-			[Conj
-				[und]
-			]
-			[{\anno[\updownelem]{\xhead{N}}}
-				[Markus]
-			]
+\begin{figure}
+\begin{forest} narrower nodes, shorter edges, italic leaves, align text
+[CP\mysn{lfgcoord1_CP}
+	[{\anno[\pass{subj}]{NP\mysn{lfgcoord1_NP1}}}
+		[{\anno[\updownelem]{\xhead{N}}}
+			[Jan]
 		]
-		[\anno{\xbar{C}}
-			[\anno{\xhead{C}}
-				[{%
-					spielen \\
-					\smaller[2]\upshape\tabcolsep=.5ex%
-					\begin{tabular}[t]{@{} l l l @{}}
-						\ups{subj pers}	& \req & 3 \\
-						\ups{subj num}	& \req & \textsc{pl} \\
-					\end{tabular}%
-				}]
-			]
-			[\anno{VP\mysn{lfgcoord1_VP}}
-				[{\anno[\pass{obj}]{NP\mysn{lfgcoord1_NP2}}}
-					[\anno{\xhead{N}}
-						[Fußball]
-					]
+		[Conj
+			[und]
+		]
+		[{\anno[\updownelem]{\xhead{N}}}
+			[Markus]
+		]
+	]
+	[\anno{\xbar{C}}
+		[\anno{\xhead{C}}
+			[spielen, name=spielen, minimum width=4em]
+		]
+		[\anno{VP\mysn{lfgcoord1_VP}}
+			[{\anno[\pass{obj}]{NP\mysn{lfgcoord1_NP2}}}
+				[\anno{\xhead{N}}
+					[Fußball]
 				]
 			]
 		]
 	]
-	\end{forest}}
-	\hfill
+]
+%
+% Annotation des Knotens zu breit, als dass die AVM noch hinpasst
+\node at (spielen) [below=1ex] {
+	\smaller[2]\upshape\tabcolsep=.5ex%
+	\begin{tabular}[t]{@{} l l l @{}}
+		\ups{subj pers}	& \req & 3 \\
+		\ups{subj num}	& \req & \textsc{pl} \\
+	\end{tabular}%
+};
+%
+\node [avmcontainer=2em, font=\footnotesize] {
 	\avm{%
 	\tikzmark{lfgcoord1_f}$f$: [
 		pred	& \astruct{spielen}{\ups{subj}, \ups{obj}} \\
 		tense	& \textsc{prs} \\
-
+		%
 		subj	& \tikzmark{lfgcoord1_g}$g$: [
-			conj & \textit{g-und}\footnotemark \\
-			
+			conj & \textit{g-und} \\
+			%	
 			\mc{2}{l}{%
 				\{
 					[
 						pred	&	`Jan' \\
-							index	&	[
-								pers	& 3 \\
-								gend	& \textsc{m} \\
-								num		& \textsc{sg} % \\
-							] \\
-
-%							concord	& [
-								case	& \textsc{nom} % \\
-%								gend	& \textsc{m} \\
-%								num		& \textsc{sg} \\
-%							]
-					],
+						index	&	[
+							pers	& 3 \\
+							gend	& \textsc{m} \\
+							num		& \textsc{sg} % \\
+						] \\
+						case	& \textsc{nom} % \\
+					]\smallskip\\
+					%
 					[
 						pred	&	`Markus' \\
-							index	&	[
-								pers	& 3 \\
-								gend	& \textsc{m} \\
-								num		& \textsc{sg} % \\
-							] \\
-
-%							concord	& [
-								case	& \textsc{nom} % \\
-%								gend	& \textsc{m} \\
-%								num		& \textsc{sg} \\
-%							]
+						index	&	[
+							pers	& 3 \\
+							gend	& \textsc{m} \\
+							num		& \textsc{sg} % \\
+						] \\
+						case	& \textsc{nom} % \\
 					]
 				\}%
 			} \\
-
+			%
 			index	&	[
 				pers	& 3 \\
 				num		& \textsc{pl} \\
 			] \\
 		] \\
-
+		%
 		obj	& \tikzmark{lfgcoord1_h}$h$: [
-			\q{Fußball}
+			\normalfont{\q{Fußball}}
 		] \\
-	]%
-	}
-	\begin{tikzpicture}[remember picture, overlay]
-		\draw [myarrow]
-			([yshift=.5ex]{pic cs:lfgcoord1_CP})
-			-- ++(right:1.5em)
-			to [out=east, in=west]
-			([yshift=.5ex]{pic cs:lfgcoord1_f});
-		\draw [myarrow]
-			([yshift=.5ex]{pic cs:lfgcoord1_VP})
-			to [out=east, in=west, min distance=0.5cm]
-			([yshift=.5ex]{pic cs:lfgcoord1_f});
-		\draw [myarrow]
-			([yshift=.5ex]{pic cs:lfgcoord1_NP1})
-			to [out=east, in=north west]
-			([yshift=.5ex]{pic cs:lfgcoord1_g});
-		\draw [myarrow]
-			([yshift=.5ex]{pic cs:lfgcoord1_NP2})
-			to [out=south east, in=south west]
-			([yshift=.5ex]{pic cs:lfgcoord1_h});
-	\end{tikzpicture}
-%
-	\footnotetext{Mit \q{g-und} wird das gruppenbildende \fw{und} bezeichnet,
-	bei dem sich die Konjunkte auf jeweils unterschiedliche Indizes $i, j$
-	beziehen \autocite[382--383]{dalrymple2001}.}
-\end{exe}
+	]}
+};
+\end{forest}
+\begin{tikzpicture}[remember picture, overlay]
+	\draw [myarrow]
+		([yshift=.5ex]{pic cs:lfgcoord1_CP})
+		-- ++(right:1.5em)
+		to [out=east, in=west]
+		([yshift=.5ex]{pic cs:lfgcoord1_f});
+	\draw [myarrow]
+		([yshift=.5ex]{pic cs:lfgcoord1_VP})
+		to [out=east, in=west, min distance=0.5cm]
+		([yshift=.5ex]{pic cs:lfgcoord1_f});
+	\draw [myarrow]
+		([yshift=.5ex]{pic cs:lfgcoord1_NP1})
+		to [out=east, in=north west]
+		([yshift=.5ex]{pic cs:lfgcoord1_g});
+	\draw [myarrow]
+		([yshift=.5ex]{pic cs:lfgcoord1_NP2})
+		to [out=east, in=north west]
+		([yshift=.5ex]{pic cs:lfgcoord1_h});
+\end{tikzpicture}
+\caption{Analyse des Satzes \fw{Jan und Markus spielen Fußball}}
+\label{fig:lfgcoord_1}
+\end{figure}
 
-Demgegenüber ist es innerhalb der in \cref{ex:lfgcoord_2} gezeigten NP
+Demgegenüber ist es innerhalb der in \cref{fig:lfgcoord_2} gezeigten NP
 notwendig, dass der De\-termi\-nierer \fw{diese} im Numerus mit dem
-\textsc{condord}-Merkmal jedes der beiden Konjunkte übereinstimmt, damit Kongruenz
-hergestellt werden kann und ein kohärenter, grammatisch wohlgeformter Ausdruck
-entsteht.%
+\textsc{condord}-Merkmal jedes der beiden Konjunkte übereinstimmt, damit
+Kongruenz hergestellt werden kann und ein kohärenter, grammatisch wohlgeformter
+Ausdruck entsteht.%
 %
 	\footnote{Im Deutschen kommen noch Kasus und Genus hinzu, die hier
 	vereinfachend weggelassen wurden. \citet{dalrymple2001} benutzt \textsc{spec} als
@@ -1439,19 +1433,11 @@ entsteht.%
 \citet[91--94]{kingdalrymple2004} zufolge stellen Modifikatoren im Deutschen
 zusätzlich Bedingungen an \textsc{index}-Merkmale.
 
-\begin{exe}
-\ex \label{ex:lfgcoord_2}
+\begin{figure}
 	\begin{forest} narrower nodes, shorter edges, italic leaves, align text
 	[{\anno[\pass{subj}]{DP\mysn{lfgcoord2_DP}}}
 		[\anno{\xhead{D}}
-			[{%
-				diese \\
-				\smaller[2]\upshape\tabcolsep=.5ex%
-				\begin{tabular}[t]{@{} l l l @{}}
-					\ups{concord num}	& \req & \textsc{pl} \\
-					\ups{index num}		& \req & \textsc{pl} \\
-				\end{tabular}%
-			}]
+			[diese, name=diese, minimum width=4em]
 		]
 		[{\anno{NP\mysn{lfgcoord2_NP}}}
 		% 	[\anno{\xbar{N}}
@@ -1467,56 +1453,68 @@ zusätzlich Bedingungen an \textsc{index}-Merkmale.
 		% 	]
 		]
 	]
+	%
+	% Annotation des Knotens zu breit, als dass die AVM noch hinpasst
+	\node at (diese) [below=1ex] {
+		\smaller[2]\upshape\tabcolsep=.5ex%
+		\begin{tabular}[t]{@{} l l l @{}}
+			\ups{concord num}	& \req & \textsc{pl} \\
+			\ups{index num}		& \req & \textsc{pl} \\
+		\end{tabular}%
+	};
+	%
+	\node [avmcontainer, font=\footnotesize] {
+		\avm{%
+		\tikzmark{lfgcoord2_f}$f$: [
+			spec	& [
+				pred	& `diese'
+			] \\
+			%
+			conj	& \textit{g-und} \\
+			%
+			\mc{2}{l}{%
+				\{
+					[
+						pred	& `Jungen' \\
+						%
+						concord	& [
+							case	& \textsc{nom} \\
+							num		& \textsc{pl} \\
+							gend	& \textsc{m}
+						] \\
+						%
+						index	& [
+							pers	& 3 \\
+							num		& \textsc{pl} \\
+							gend	& \textsc{m}
+						]
+					]\smallskip\\
+					%
+					[
+						pred	& `Mädchen' \\
+						%
+						concord	& [
+							case	& \textsc{nom} \\
+							num		& \textsc{pl} \\
+							gend	& \textsc{f}
+						] \\
+						%
+						index	& [
+							pers	& 3 \\
+							num		& \textsc{pl} \\
+							gend	& \textsc{f}
+						]
+					]
+				\}%
+			} \smallskip \\
+			%
+			index	& [
+				pers	& 3 \\
+				num		& \textsc{pl} \\
+			]
+		]}
+	};
 	\end{forest}
-	~
-	\avm{%
-	\tikzmark{lfgcoord2_f}$f$: [
-		spec	& [
-			pred	& `diese'
-		] \\
-		
-		conj	& \textit{g-und} \\
-
-		\mc{2}{l}{%
-			\{
-				[
-					pred	& `Jungen' \\
-
-					concord	& [
-						case	& \textsc{nom} \\
-						num		& \textsc{pl} \\
-						gend	& \textsc{m}
-					] \\
-
-					index	& [
-						pers	& 3 \\
-						num		& \textsc{pl} \\
-						gend	& \textsc{m}
-					]
-				],
-				[
-					pred	& `Mädchen' \\
-
-					concord	& [
-						case	& \textsc{nom} \\
-						num		& \textsc{pl} \\
-						gend	& \textsc{f}
-					] \\
-
-					index	& [
-						pers	& 3 \\
-						num		& \textsc{pl} \\
-						gend	& \textsc{f}
-					]
-				]
-			\}%
-		} \smallskip \\
-
-		index	& [
-			pers	& 3 \\
-			num		& \textsc{pl} \\
-		]
-	]}
 	\begin{tikzpicture}[remember picture, overlay]
 		\draw [myarrow]
 			([yshift=.5ex]{pic cs:lfgcoord2_NP})
@@ -1531,7 +1529,9 @@ zusätzlich Bedingungen an \textsc{index}-Merkmale.
 		% 	to [out=east, in=west]
 		% 	([yshift=.5ex]{pic cs:lfgcoord2_g});
 	\end{tikzpicture}
-\end{exe}
+\caption{Analyse des Satzfragments \fw{diese Jungen und Mädchen}}
+\label{fig:lfgcoord_2}
+\end{figure}
 
 Da der Plural im modernen Deutschen keine Genusdifferenzierung aufweist, ist
 der Ausdruck im Beispiel möglich. Wenn die Konjunkte im Singular stehen, können
@@ -1543,7 +1543,7 @@ in \cref{sec:ctrltarg} vorgestellt wurden, lassen sich in der Terminologie der
 LFG als Abhängigkeiten zwischen immer weniger lokalen F-Strukturen fassen,
 insofern (lexikalische) C-Strukturköpfe (\xhead{X}) mit F-Strukturköpfen
 (Prädikatoren, \textsc{pred}) korrespondieren \autocite[117]{bresnanetal2016}.
-Dies wird anhand von \cref{ex:fstructdomains} verdeutlicht.
+Dies wird anhand von \cref{fig:fstructdomains} verdeutlicht.
 
 Dort ist \fw{braune} als adjektivisches Kongruenztarget ein Adjunkt von
 \fw{Katze} und steht damit in derselben F-Struktur $g$ wie sein Controller
@@ -1558,8 +1558,7 @@ einer anderen F-Struktur als das Subjekt ($j$ und $g$). Da aber Subjekt und
 Objekt vom gleichen Verb \fw{putzen} abhängen, befinden sich beide dennoch
 innerhalb derselben F-Struktur $f$ (gleicher Satz).
 
-\begin{exe}
-\ex\label{ex:fstructdomains}
+\begin{figure}
 	\begin{forest} narrower nodes, shorter edges, italic leaves, align text
 	[CP\mysn{fsdom_CP}
 		[{\anno[\pass{subj}]{DP\mysn{fsdom_DPs}}}
@@ -1592,38 +1591,39 @@ innerhalb derselben F-Struktur $f$ (gleicher Satz).
 			]
 		]
 	]
+	%
+	\node [avmcontainer=0em, font=\footnotesize] {
+		\avm{%
+			\tikzmark{fsdom_f}$f$: [
+				subj	& \tikzmark{fsdom_subj}$g$: [
+					poss	& \tikzmark{fsdom_poss}$h$: [
+						pred	& `Jana' \\
+						case	& \textsc{gen} \\
+					] \\
+					%
+					adj		& \tikzmark{fsdom_adj}\{
+						[
+							pred	& `braun'
+						]
+					\} \\
+					%
+					pred	& \astruct{Katze}{\ups{poss}} \\
+					case	& \textsc{nom} \\
+					pers	& 3 \\
+					gend	& \textsc{f} \\
+					num		& \textsc{sg} \\
+				]~$i$ \\
+				%
+				pred	& \astruct{putzen}{\ups{subj}, \ups{obj}} \smallskip \\
+				%
+				obj	& \tikzmark{fsdom_obj}$j$: [
+					prontype	& $refl$ \\
+					pred		& $pro$ \\
+					case		& \textsc{acc} \\
+				]~$i$ \\
+			]}
+	};
 	\end{forest}
-	\hspace{2em}
-	\avm{%
-		\tikzmark{fsdom_f}$f$: [
-			subj	& \tikzmark{fsdom_subj}$g$: [
-				poss	& \tikzmark{fsdom_poss}$h$: [
-					pred	& `Jana' \\
-					case	& \textsc{gen} \\
-				] \\
-
-				adj		& \tikzmark{fsdom_adj}\{
-					[
-						pred	& `braun'
-					]
-				\} \\
-
-				pred	& \astruct{Katze}{\ups{poss}} \\
-				case	& \textsc{nom} \\
-				pers	& 3 \\
-				gend	& \textsc{f} \\
-				num		& \textsc{sg} \\
-			]~$i$\enspace \\
-
-			pred	& \astruct{putzen}{\ups{subj}, \ups{obj}} \smallskip \\
-
-			obj	& \tikzmark{fsdom_obj}$j$: [
-				prontype	& $refl$ \\
-				pred		& $pro$ \\
-				case		& \textsc{acc} \\
-			]~$i$\enspace \\
-		] \\
-	}
 	\begin{tikzpicture}[remember picture, overlay]
 		\draw [myarrow]
 			([yshift=.5ex]{pic cs:fsdom_CP})
@@ -1638,10 +1638,6 @@ innerhalb derselben F-Struktur $f$ (gleicher Satz).
 			([yshift=.5ex]{pic cs:fsdom_DPs})
 			to [out=east, in=west]
 			([yshift=.5ex]{pic cs:fsdom_subj});
-		% \draw [myarrow]
-		% 	([yshift=.5ex]{pic cs:fsdom_NP})
-		% 	to [out=east, in=west]
-		% 	([yshift=.5ex]{pic cs:fsdom_subj});
 		\draw [myarrow]
 			([yshift=.5ex]{pic cs:fsdom_DPp})
 			to [out=east, in=west]
@@ -1652,10 +1648,12 @@ innerhalb derselben F-Struktur $f$ (gleicher Satz).
 			([yshift=.5ex]{pic cs:fsdom_adj});
 		\draw [myarrow]
 			([yshift=.5ex]{pic cs:fsdom_DPr})
-			to [out=south east, in=west]
+			to [out=east, in=west]
 			([yshift=.5ex]{pic cs:fsdom_obj});
 	\end{tikzpicture}
-\end{exe}
+	\caption{Analyse des Satzes \fw{Janas braune Katze putzt sich}}
+	\label{fig:fstructdomains}
+\end{figure}
 
 \section{Floating Quantifiers}
 \label{sec:floatquant}
@@ -1729,60 +1727,60 @@ angenommen, dass Quantoren wie \fw{beide} eine gesonderte funktionale Kategorie
 \fw{all} und das englische \fw{both} `beide', die ganz links in der
 Nominalgruppe stehen (\fw{all die \dots}, \fw{both the \dots}), reiht sich die
 Quantorenphase (QP) mit \fw{beide} im Standarddeutschen gewöhnlich zwischen DP
-und NP ein, wie in \cref{ex:nomstack} dargestellt (vgl.~auch \cite[44--45 mit
+und NP ein, wie in \cref{fig:nomstack} dargestellt (vgl.~auch \cite[44--45 mit
 Anm.~30]{lyons1999}). Als funktionale nominale Kategorie ist \xhead{Q} wie
 \xhead{D} aus Sicht der LFG ein Ko-Kopf von \xhead{N} (\fw{cohead};
 \cite[124]{bresnanetal2016}). Dies bedeutet, dass die Information in DP und QP
 mit NP in derselben F-Struktur vereinigt wird. Zusätzlich wird hier angenommen,
 dass der Quantor zumindest bei seiner Verwendung innerhalb der DP ein Merkmal
 \textsc{quant} definiert, da er aufgrund des distributiven Unterschieds zu
-Adjektiven nicht als Teil der Menge der Adjunkte (\textsc{adjc}) gezählt werden
+Adjektiven nicht als Teil der Menge der Adjunkte (\textsc{adj}) gezählt werden
 sollte.
 
-\begin{exe}
-\ex \label{ex:nomstack}
+\begin{figure}
 	\begin{forest} narrower nodes, shorter edges, italic leaves, align text
-		[DP\mysn{nomstack_DP}
-			[\anno{\xhead{D}}
-				[die]
+	[DP\mysn{nomstack_DP}
+		[\anno{\xhead{D}}
+			[die]
+		]
+		[\anno{QP\mysn{nomstack_QP}}
+			[\anno{\xhead{Q}}
+				[beiden]
 			]
-			[\anno{QP\mysn{nomstack_QP}}
-				[\anno{\xhead{Q}}
-					[beiden]
+			[\anno{NP\mysn{nomstack_NP}}
+				[{\anno[\elem{adj}]{AdjP}}
+					[roten]
 				]
-				[\anno{NP\mysn{nomstack_NP}}
-					[{\anno[\elem{adj}]{AdjP}}
-						[roten]
-					]
-					[\anno{\xhead{N}}
-						[Bücher]
-					]
+				[\anno{\xhead{N}}
+					[Bücher]
 				]
 			]
 		]
-	\end{forest}
-	\hspace{2em}
-	\avm{%
-			\tikzmark{nomstack_f}[
+	]
+	%
+	\node [avmcontainer] {
+		\avm{%
+		\tikzmark{nomstack_f}[
 			def	& $+$ \\
-
+			%
 			quant	& 	[
 				pred	& `beide' \\
 			] \\
-
+			%
 			adj	& \{
 				[
 					pred	& `rot'
 				]
 			\} \\
-
+			%
 			pred	& `Buch' \\
 			case	& \textsc{nom} \\
 			pers	& 3 \\
 			gend	& \textsc{n} \\
 			num		& \textsc{pl} \\
-		]
-	}
+		]}
+	};
+	\end{forest}
 	\begin{tikzpicture}[remember picture, overlay]
 		\draw [myarrow]
 			([yshift=.5ex]{pic cs:nomstack_DP})
@@ -1797,12 +1795,14 @@ sollte.
 			to [out=east, in=west]
 			([yshift=.5ex]{pic cs:nomstack_f});
 	\end{tikzpicture}
-\end{exe}
+	\caption{Analyse des Satzfragments \fw{die beiden roten Bücher}}
+	\label{fig:nomstack}
+\end{figure}
 
 \citet[790]{schwartz2000} hebt darüber hinaus hervor, dass Quantoren wie
 \fw{jeder}, \fw{manche} und \fw{alle} auch eine pronominale Funktion ausüben
 können \autocite[vgl.~auch][11--12]{haspelmath1997}. In diesen Fällen steht der
-Quantor nicht attributiv zu einem Substantiv wie in \cref{ex:nomstack}, sondern
+Quantor nicht attributiv zu einem Substantiv wie in \cref{fig:nomstack}, sondern
 fungiert als eigenständiger Kopf eines Satzglieds \cref{ex:quantpron}.
 
 \begin{exe}
@@ -1846,12 +1846,13 @@ Konstruktionen unterschieden werden
 \ex \label{ex:floatsubj}
 \begin{xlist}
 	\ex \label{ex:floatsubj_1}
-		[\tsup{QP}~Alle [\tsup{NP}~Kinder]] mögen Schokolade.
+		{\ob}\tsup{QP}~Alle {\ob}\tsup{NP}~Kinder{\cb}{\cb} mögen Schokolade.
 	\ex \label{ex:floatsubj_2}
-		[\tsup{DP}~Die Kinder]$_i$ mögen [\tsup{QP}~alle]$_i$ Schokolade.
+		{\ob}\tsup{DP}~Die Kinder{\cb}$_i$ mögen {\ob}\tsup{QP}~alle{\cb}$_i$
+		Schokolade.
 	\ex \label{ex:floatsubj_3}
-		[\tsup{QP}~Alle]$_i$ mögen [\tsup{DP}~sie/*die Kinder]$_i$
-			Schokolade.
+		{\ob}\tsup{QP}~Alle{\cb}$_i$ mögen {\ob}\tsup{DP}~sie/*die
+		Kinder{\cb}$_i$ Schokolade.
 \end{xlist}
 \end{exe}
 
@@ -1877,12 +1878,11 @@ Quantorenphrase (QP) mit dem Quantor als Kopf und einer Determiniererphrase
 \citet{sportiche1988,shlonsky1991} auf das Deutsche und nimmt weitere
 Verfeinerungen ihrer Theorie bezüglich möglicher Positionen des gestrandeten
 Quantors vor. Für das Englische \fw{all} `alle' mit Bezug auf das Subjekt
-gibt \citet[180]{merchant1996} grob die Konstituentenstruktur in \cref{ex:qfgg}
+gibt \citet[180]{merchant1996} grob die Konstituentenstruktur in \cref{fig:qfgg}
 an (die Pfeile wurden zur Verdeutlichung der postulierten Transformation
 hinzugefügt).
 
-\begin{exe}
-\ex \label{ex:qfgg}
+\begin{figure}
 	\begin{forest} shorter edges, italic leaves
 	[IP
 		[DP$_i$
@@ -1916,7 +1916,9 @@ hinzugefügt).
 	\draw [-latex, gray] (t1) to [out=west, in=south] (t2);
 	\draw [-latex, gray] (t2) to [out=west, in=south] (DP);
 	\end{forest}
-\end{exe}
+	\caption{Analyse des Satzes \fw{The boys have all seen the film}}
+	\label{fig:qfgg}
+\end{figure}
 
 \textcites{sportiche1988,shlonsky1991,merchant1996} beschränken sich sämtlich
 auf den Quantor \fw{alle}, nur \citet{pittner1995} geht darüber hinaus und
@@ -1978,34 +1980,32 @@ ohne spezielle Markierung nicht nachvollziehbar.
 
 \phantomsection
 \label{phsec:hebrqf}
-Die bisher referierten Artikel diskutieren Floating Quantifiers im Rahmen der
-Rektions- und Bindungstheorie \autocite{chomsky1981}. Wie könnte eine Adaption
-in die LFG aussehen? Diesen Versuch unternimmt \citet{spector2009} in Rückgriff
-auf \citet{shlonsky1991} für das Ivrit. Anders als im Deutschen oder im
-Französischen kongruiert der gefloatete Quantor (\fw{kol} `alle') dort
-nicht bloß, sondern beinhaltet ein klitisches Pronomen, das mit dem
-Quantifizierten koindiziert ist.%
+Die bisher referierten Artikel diskutieren Floating Quantifiers im Rahmen von
+Government and Binding \autocite{chomsky1981}. Wie könnte eine Adaption in die
+LFG aussehen? Diesen Versuch unternimmt \citet{spector2009} in Rückgriff auf
+\citet{shlonsky1991} für das Ivrit, siehe \cref{ex:hebrqf,fig:hebrqf}. Anders
+als im Deutschen oder im Französischen kongruiert der gefloatete Quantor
+(\fw{kol} `alle') dort nicht bloß, sondern beinhaltet ein klitisches Pronomen,
+das mit dem Quantifizierten koindiziert ist.%
 %
-	\footnote{Im Sinne der Grammatikalisierungs\-theorie nach \citet{lehmann2015}
-		stellt Klitisierung eine Vorstufe von Kongruenz dar
+	\footnote{Im Sinne der Grammatikalisierungs\-theorie nach
+		\citet{lehmann2015} stellt Klitisierung eine Vorstufe von Kongruenz dar
 		\autocite[vgl.][44]{lehmann2015}.%
 	}
-	% Außerdem: Topik > Thema > Subjekt (Lehmann 2015: 121)
-%
-% Aufgrund ihrer grammatischen Struktur haben Sätze wie der in \cref{ex:hebrqf}
-% ebenfalls anders als im Deutschen die Satzmelodie einer
-% Thema-Rhema-Konstruktion mit einer Pause nach dem Thema:
-% \fw{ha-yeladim~/~\dots} \autocite[531]{spector2009}.
 
 \begin{exe}
 \ex \label{ex:hebrqf}
-	Ivrit \parencite[nach][522, 537]{spector2009}\\
+	\langinfo%
+		{Ivrit}
+		{}
+		{\cite[nach][522, 537]{spector2009}}\\
 	\gll ha-yeladim halxu kulam la-yam \\
 		\textsc{def}=children[\textsc{3pl.m}]$_i$ went all=\textsc{3pl.m}$_i$
 			to=sea.\textsc{def} \\
 	\trans `The children went all to the sea.'
-	\\
+\end{exe}
 
+\begin{figure}
 	\begin{forest} shorter edges, narrower nodes, italic leaves, align text
 	[IP\mysn{hebrqf_IP}
 		[NP\mysn{hebrqf_NP}
@@ -2033,39 +2033,41 @@ Quantifizierten koindiziert ist.%
 			]
 		]
 	]
-	\end{forest}
-	\hspace{2em}
-	\avm{\tikzmark{hebrqf_f}[
-		top	& \tikzmark{hebrqf_top}[
-			pred	& `child' \\
-			def		& $+$ \\
-			num		& \textsc{pl} \\
-		] $i$
-		\smallskip \\
-
-		subj	& \tikzmark{hebrqf_subj}[
-			pred	& \astruct{all}{\ups{obj}} \\
-			obj	& [
-				pred	& $pro$ \\
-				pers	& 3 \\
-				gend	& \textsc{m} \\
-				num		& \textsc{pl} \\
-			] $i$\enspace \\
-		]
-		\smallskip \\
-
-		pred	& \astruct{went}{\ups{subj}, \ups{\Oblq{dir}}}
-		\smallskip \\
-
-		\Oblq{dir}	& \tikzmark{hebrqf_obl}[
-			pred	& \astruct{to}{\ups{obj}} \\
-			obj	& [
-				pred	& `sea' \\
+	%
+	\node [avmcontainer, font=\footnotesize] {
+		\avm{\tikzmark{hebrqf_f}[
+			top	& \tikzmark{hebrqf_top}[
+				pred	& `child' \\
 				def		& $+$ \\
-				num		& \textsc{sg} \\
+				num		& \textsc{pl} \\
+			] $i$
+			\smallskip \\
+			%
+			subj	& \tikzmark{hebrqf_subj}[
+				pred	& \astruct{all}{\ups{obj}} \\
+				obj	& [
+					pred	& $pro$ \\
+					pers	& 3 \\
+					gend	& \textsc{m} \\
+					num		& \textsc{pl} \\
+				] $i$\enspace \\
+			]
+			\smallskip \\
+			%
+			pred	& \astruct{went}{\ups{subj}, \ups{\Oblq{dir}}}
+			\smallskip \\
+			%
+			\Oblq{dir}	& \tikzmark{hebrqf_obl}[
+				pred	& \astruct{to}{\ups{obj}} \\
+				obj	& [
+					pred	& `sea' \\
+					def		& $+$ \\
+					num		& \textsc{sg} \\
+				] \\
 			] \\
-		] \\
-	]}
+		]}
+	};
+	\end{forest}
 	\begin{tikzpicture}[remember picture, overlay]
 		\draw [myarrow]
 			([yshift=.5ex]{pic cs:hebrqf_IP})
@@ -2094,7 +2096,10 @@ Quantifizierten koindiziert ist.%
 				to [out=east, in=west]
 			([yshift=.5ex]{pic cs:hebrqf_obl});
 	\end{tikzpicture}
-\end{exe}
+	\caption{Analyse des Satzes \fw{Ha-yeladim halxu kulam la-yam} `Die Kinder
+		fuhren alle ans Meer'}
+	\label{fig:hebrqf}
+\end{figure}
 
 \citet[533--534]{spector2009} kommt ähnlich wie \citet[29]{pittner1995} zu dem
 Schluss, dass der gefloatete Quantor eine eigenständige NP darstellt. Die
@@ -2136,11 +2141,11 @@ mit nachgestelltem \norm{bėide} hinter einem einfachen Plural-Substantiv vor
 \end{exe}
 
 Da die LFG ohne Transformationen auskommt (also keine Verschiebungen von
-syntaktischen Einheiten auf einer abstrakten Ebene wie in \cref{ex:qfgg}
+syntaktischen Einheiten auf einer abstrakten Ebene wie in \cref{fig:qfgg}
 angenommen werden), bietet sich für die Lesart mit Kontaktstellung in
-\cref{ex:beidepost_2cont} an,
-\norm{die} (\xhead{D}) und \norm{bėide} (\xhead{Q}) als funktionale Ko-Köpfe
-von \norm{jārƶīt} `Jahrestag' (\xhead{N}) zu behandeln.%
+\cref{fig:beidepost_2cont} an, \norm{die} (\xhead{D}) und \norm{bėide}
+(\xhead{Q}) als funktionale Ko-Köpfe von \norm{jārƶīt} `Jahrestag' (\xhead{N})
+zu behandeln.%
 %
 	\footnote{Artikel und Quantor sind im ursprünglichen Beispiel nicht
 		kongruent, insofern \norm{jārƶīt} entweder feminin oder neutral belegt
@@ -2148,13 +2153,12 @@ von \norm{jārƶīt} `Jahrestag' (\xhead{N}) zu behandeln.%
 		flektiert maskulin-feminin, der Quantor \norm{bėidiu} dagegen neutral.
 		Neutrum in Bezug auf einen unbelebten Referenten lässt sich als
 		semantische Kongruenz interpretieren, was die Lesart in
-		\cref{ex:beidepost_2dist} mit pronominal verwendetem \norm{bėidiu}
+		\cref{fig:beidepost_2dist} mit pronominal verwendetem \norm{bėidiu}
 		plausibler macht.}
 
-\begin{exe}
-\ex \label{ex:beidepost_2cont}
+\begin{figure}
 	\begin{forest} shorter edges, narrower nodes, italic leaves, align text
-	[CP
+	[VP
 		[\anno{VP}
 			[{\anno[\pass{obj}]{DP\mysn{beidepost2c_DP}}}
 				[\anno{\xhead{D}}
@@ -2172,13 +2176,13 @@ von \norm{jārƶīt} `Jahrestag' (\xhead{N}) zu behandeln.%
 				]
 			]
 		]
-		[\anno{\xhead{C}}
+		[\anno{\xhead{V}}
 			[begāt]
 		]
 	]
-	\end{forest}
-	\hspace{2em}
-	\avm{%
+	%
+	\node [avmcontainer] {
+		\avm{%
 		\tikzmark{beidepost2c_f}$f:$ [
 			obj	& \tikzmark{beidepost2c_obj}[
 				def	& $+$ \\
@@ -2191,10 +2195,11 @@ von \norm{jārƶīt} `Jahrestag' (\xhead{N}) zu behandeln.%
 					pred	& `beide' \\
 				] \\
 			] \\
-
+			%
 			pred	& \astruct{begehen}{\ups{subj}, \ups{obj}} \\
-		]%
-	}
+		]}
+	};
+	\end{forest}
 	\begin{tikzpicture}[remember picture, overlay]
 	\draw [myarrow]
 		([yshift=.5ex]{pic cs:beidepost2c_NP})
@@ -2209,17 +2214,19 @@ von \norm{jārƶīt} `Jahrestag' (\xhead{N}) zu behandeln.%
 		to [out=east, in=west]
 		([yshift=.5ex]{pic cs:beidepost2c_obj});
 	\end{tikzpicture}
-\end{exe}
+	\caption{Analyse des Satzfragments \norm{die jārƶīt bėide begāt} `die beiden Jahrestage begeht'}
+	\label{fig:beidepost_2cont}
+\end{figure}
 
-Basierend auf der Analyse von \citet{spector2009} dient das Schema in
-\cref{ex:beidepost_2dist} als Arbeits\-hypothese für die Lesart mit gefloatetem
-Quantor. Parallel zu \textsc{subj} und \textsc{top} werden hier die Rollen \textsc{obj} und \textsc{foc}
-für \norm{bėidiu} und die dazugehörige DP angenommen. Die aufeinander bezogenen
-Teile ($g$ und $h$) sind koindiziert ($i$), um die anaphorische Funktion von
-\norm{bėide} zu erfassen.%
+Basierend auf der Analyse von \citet{spector2009} für das Ivrit dient das
+Schema in \cref{fig:beidepost_2dist} als Arbeits\-hypothese für die Lesart mit
+gefloatetem Quantor. Parallel zu \textsc{subj} und \textsc{top} werden hier die
+Rollen \textsc{obj} und \textsc{foc} für \norm{bėidiu} und die dazugehörige DP
+angenommen. Die aufeinander bezogenen Teile ($g$ und $h$) sind koindiziert
+($i$), um die anaphorische Funktion von \norm{bėide} zu erfassen.%
 %
 	\footnote{Die Annotationsform \q{\uncertain{$x$}{$a$}~\req~$v$} in
-		\cref{ex:beidepost_2dist} bedeutet, dass entsprechend der Flexion der
+		\cref{fig:beidepost_2dist} bedeutet, dass entsprechend der Flexion der
 		annotierten Wortform außerhalb des lokalen Funktionskerns (hier $h$)
 		eine grammatische Funktion $x$ als Controller existiert, die ein
 		Attribut $a$ besitzt, das den Wert $v$ für sein Target voraussetzt
@@ -2233,15 +2240,13 @@ den in \cref{ex:floatsubj_3} illustrierten Unterschied in der Akzeptabilität
 von \textit{Alle mögen sie/*die Kinder Schokolade} könnte dies eine Rolle
 spielen.
 
-\begin{exe}
-\ex \label{ex:beidepost_2dist}
+\begin{figure}
 	\begin{forest}
 		shorter edges,
-	% 	shorter edges,
 		narrower nodes,
 		italic leaves,
 		align text
-	[CP
+	[VP
 		[\anno{VP}
 			[{\anno[\pass{foc}]{DP\mysn{beidepost2d_DP}}}
 				[\anno{\xhead{D}}
@@ -2256,43 +2261,47 @@ spielen.
 			[\anno{VP}
 				[{\anno[\pass{obj}]{QP\mysn{beidepost2d_QP}}}
 					[\anno{\xhead{Q}}
-						[{bėidiu\\
-							\smaller[2]\upshape\tabcolsep=.5ex%
-							\begin{tabular}[t]{@{} l l l @{}}
-								\uncertain{$x$}{case}	& \req & \textsc{acc} \\
-								\uncertain{$x$}{num}	& \req & \textsc{pl} \\
-								\uncertain{$x$}{gend}	& \req & \textsc{n} \\
-								$\lor$ \uncertain{$x$}{anim} & \req & $-$ \\
-							\end{tabular}%
-						}]
+						[bėidiu, name=beidiu, minimum width=5em]
 					]
 				]
 			]
 		]
-		[\anno{\xhead{C}}
+		[\anno{\xhead{V}}
 			[begāt]
 		]
 	]
-	\end{forest}
-	\hspace{2em}
-	\avm{%
+	%
+	% Annotation des Knotens zu breit, als dass die AVM noch hinpasst
+	\node at (beidiu) [below=1ex] {
+		\smaller[2]\upshape\tabcolsep=.5ex%
+		\begin{tabular}[t]{@{} l l l @{}}
+			\uncertain{$x$}{case}	& \req & \textsc{acc} \\
+			\uncertain{$x$}{num}	& \req & \textsc{pl} \\
+			\uncertain{$x$}{gend}	& \req & \textsc{n} \\
+			$\lor$ \uncertain{$x$}{anim} & \req & $-$ \\
+		\end{tabular}%
+	};
+	%
+	\node [avmcontainer] {
+		\avm{%
 		\tikzmark{beidepost2d_f}$f:$ [
 			foc	& \tikzmark{beidepost2d_foc}$g:$ [
-				def	& $+$ \\
+				def		& $+$ \\
 				pred	& `Jahrestag' \\
 				case	& \textsc{acc} \\
 				num		& \textsc{pl} \\
 				gend	& \textsc{f} \\
 				anim	& $-$ \\
-			] $i$ \smallskip \\
-
+			]~$i$ \smallskip \\
+			%
 			obj	& \tikzmark{beidepost2d_obj}$h:$ [
 				pred	& `beide' \\
-			] $i$\enspace \\
-
+			]~$i$ \\
+			%
 			pred	& \astruct{begehen}{\ups{subj}, \ups{obj}} \\
-		]%
-	}
+		]}
+	};
+	\end{forest}
 	\begin{tikzpicture}[remember picture, overlay]
 	\draw [myarrow]
 		([yshift=.5ex]{pic cs:beidepost2d_NP})
@@ -2307,9 +2316,11 @@ spielen.
 		to [out=east, in=west]
 		([yshift=.5ex]{pic cs:beidepost2d_foc});
 	\end{tikzpicture}
-\end{exe}
+	\caption{Analyse des Satzframents \norm{die jārƶīt bėidiu begāt} `die Jahrestage beide begeht'}
+	\label{fig:beidepost_2dist}
+\end{figure}
 
-Die Schemata in \cref{ex:beidepost_2cont,ex:beidepost_2dist} zeigen außerdem,
+Die Schemata in \cref{fig:beidepost_2cont,fig:beidepost_2dist} zeigen außerdem,
 dass die Nachstellung des Quantors tendenziell zu syntaktischer Ambiguität
 führt. In den hier gesammelten Daten tritt das Problem vor allem bei den
 zahlreichen Belegen für \norm{si bėide} auf, wenn \norm{si} im Mittelfeld
