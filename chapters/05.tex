@@ -47,11 +47,7 @@ ausgewerteten Urkunde im Abgleich mit ihrem angegebenen Ausstellungsort
 verzichtet.
 
 Die Suche in der Datenbank geschah
-% , wie in
-% \textcites[207--209]{beckerschallert2021}[155--158]{beckerschallert2022b}
-% beschrieben,
 mit Hilfe
-% des in \cref{ex:regexcao} aufgeführten
 eines regulären Ausdrucks \autocite[dazu z.\,B.][33--37]{perkuhnetal2012}, der
 auf Basis der Liste der im \CAO{} belegten Formen des Lemmas
 \norm{bėide} formuliert wurde \autocites(mit allen Deklinationsformen insgesamt
@@ -72,19 +68,6 @@ Bei der Suche nach Zeichenketten wurden die Belegstellen nicht automatisch nach
 dem syntaktischen Funktionskontext des jeweiligen Belegs (determinierender
 Quantor, Konjunktion) geschieden. Diese Zuordnung geschah manuell in einem
 zweiten Schritt.
-
-% \needspace{3\baselineskip}
-% \begin{exe}
-% \ex \begin{verbatim}
-% \b(?:
-%   (?:b(?:[eêéæ]|e[iîye]|eͤ|êi|a[iîy]|aͤ|aͥ|âi|æi|i[æe])
-%     |p(?:[ea][iy]|[eæ]|æi)
-%   )[dt]
-%   (?:eiw|uͥ|vͥ|u̍|v̍|ú|v́|iͮ|j|i(?:û|v̂|uͦ|vͦ|uͤ|vͤ)|[ie][uvw]?|[uv])?
-% )\b
-% \end{verbatim}
-% \label{ex:regexcao}
-% \end{exe}
 
 \begin{table}
 \centering
@@ -231,44 +214,6 @@ im Hiatus steht und der daher zumindest theoretisch elidierbar ist
 \autocites[vgl.][90--91]{askedal1973}[191]{gjelsten1980} wurden gesondert
 markiert, wenn auch die Urkundentexte nicht an ein metrisches Schema gebunden
 sind.
-
-% \subsection{Ausgeschlossene Belege}
-% \label{subsec:ausgeschlossene_cao}
-
-% Neben diesen dialektalen Ausschlusskriterien wurde ein Beleg aufgrund von
-% inhaltlichen Ambiguitäten ausgeschlossen \cref{ex:beidesamt}. Dieser ist an
-% sich einschlägig, doch gibt es hier Komplikationen bei der Referenz von
-% \lit{beidú ſamit} \wdef{alle beide}. Zunächst könnte man vermuten, dass sich
-% dieser Ausdruck auf \lit{die bruͦdir von ſant Johanniſ}
-% \wdef{die Brüder von St.~Johannes} bezieht, wobei diese nicht persönlich
-% erwähnt werden.
-
-% \begin{exe}
-% \ex\label{ex:beidesamt}
-% 	\lit{Vnde hant die brůdir von ſant Johanniſ daz ſelbi guͦt / \textbf{beidú}
-% 	ſamit / wider verlúhen Heinrich jrme ſun} \\
-% 	\begin{taggedline}{\parencites(Freiburg i.\,Br., 1273)[\pno~201,~211.25--26]{cao1}}
-%     	\wdef{Und die Brüder von St.~Johannes haben dasselbe Gut, alle beide,
-%     	wieder verliehen an Heinrich, ihren \textins{=~Frau Agnes'} Sohn.}
-% 	\end{taggedline}
-% \end{exe}
-
-% Andererseits ist der Verhandlungsgegenstand der Urkunde Frau Agnes' \lit{hûſ
-% ze Adilar / vnde daz vierteil jrſ gvͦteſ ze \smash{Oͤliſwiller}} \wdef{Haus
-% in Adilar und das Viertel ihres Gutes in Öliswiller}
-% \autocites(N.~Sg~+~N.~Sg.)[\pno~201,~211.23]{cao1}, wobei im weiteren Text
-% stets nur von \norm{\textins{dem} ſelbi\textins*{n} guͦt} \wdef{demselben
-% Gut} (N.~Sg.) die Rede ist. Es scheint dabei unlogisch, dass sich \lit{beidú
-% ſamit} \wdef{alle beide} als Ausdruck der betonten Zweiheit nur auf \lit{daz
-% vierteil jrſ gvͦteſ} \wdef{das Viertel ihres Gutes} beziehen sollte; genauso
-% wird es mehr als zwei Brüder im Johanniterstift gegeben haben. Sinnvoller
-% wäre, \lit{guͦt} \wdef{Gut} in \cref{ex:beidesamt} verallgemeinert im Sinne
-% von \wdef{Besitztum} zu interpretieren. \lit{\textins{B}eidú ſamit} wäre
-% damit als Apposition zu lesen, die unterstreicht, dass mit \lit{guͦt} beide
-% Gegenstände gemeint sind: Haus und Viertel des Gutes. Der Controller von
-% \lit{beidú} ist daher syntaktisch trotz allem \lit{guͦt}, allerdings
-% semantisch umfassend das \lit{hûſ} und das
-% \lit{vierteil}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -624,9 +569,6 @@ Targets auf 110 identifizierte Parallelstellen. Dies bedeutet,
 dass 89,7,\% der Gesamtzahl der Belege mindestens einem anderen Parallelbeleg
 zugeordnet werden können, wobei im Durchschnitt vier Belege ein solches Set aus
 Parallelstellen ergeben, neben 52 Einzelbelegen.
-% Wie können also die Beleghäufigkeiten in den Auswertungstabellen in
-% \cref{ch:kcanalyse} angegeben werden -- einzeln nach absoluter Häufigkeit
-% oder zusammengefasst nach Parallelstelle?
 Da auch zwischen Parallelstellen mitunter Variation herrscht, würde eine
 Zusammenfassung der zugehörigen Belege bei der Zählung die Statistik verzerren.
 Jeden Beleg einzeln zu zählen erscheint daher als die bessere Strategie. Die
@@ -644,11 +586,6 @@ mitteldeutschen Handschriften H und P sowie die
 schwäbische Handschrift Z nicht regulär in die Auswertung
 einbezogen, da dort regelmäßig keine Variation zwischen \norm{bėide} und
 \norm{bėidiu} vorliegt \autocite[vgl. auch][183]{ksw2}.
-% % Belege aus diesen Handschriften werden gelegentlich aber zum Vergleich
-% % mitangeführt.
-% Im Folgenden werden nur diejenigen Belege in die Analyse einbezogen, die nicht
-% aufgrund von fehlender Variation in der jeweiligen Handschrift ausgeschlossen
-% wurden (siehe~\cref{sec:adjdeclkc}).
 
 Der Fall eines vermuteten Abschreibfehlers wird durch den Beleg in
 \cref{ex:kcexcl1} vertreten. Der Editionstext nach \nosh\citet{schroeder1895}
@@ -711,19 +648,6 @@ keine zwei Könige explizit genannt werden, erscheint eine Interpretation von
 (Nom./Akk.~Pl. N.) nicht kongruent mit dem Präpositionalobjekt wäre (Dat.~Pl.
 M.).
 
-% Zur Konstruktion \norm{bėidiu \dots\ unde} im Mittelhochdeutschen siehe
-% \citet[626--628]{ksw2}. Eine allgemeine Diskussion zur Syntax korrelativer
-% Konjunktionen aus Sicht der generativen Grammatik bietet
-% \citet{johannessen2005}; aus Sicht der LFG behandelt
-% \citet[366--368]{dalrymple2001} dieses Thema. Siehe jedoch auch
-% \citet{peterson2004,borsley2005} mit gewichtigen Argumenten gegen
-% \posscite{johannessen1998,johannessen2005} Modell von Koordination als
-% endozentrische, das heißt hierarchische Konstruktion.
-
-% % % Im weiteren Verlauf dieser Arbeit soll jedoch Hermeneutik weniger eine %
-% % Rolle spielen; vielmehr soll die \KC{} als Textkorpus zur % %
-% Untersuchung aus Perspektive der historischen Sprachwissenschaft dienen.
-
 In einem anderen Fall bezieht sich in dem in \cref{ex:chindpaid_1} zitierten
 Beleg \lit{chínd} `Kinder' auf die Knaben Faustinus und Faustus
 \autocites[\pno~10\rb, 5--6]{kc:M}[vgl.][1239--1240]{schroeder1895}. Der Beleg
@@ -785,10 +709,6 @@ tatsächlich \lit{manigen helt guͦten} `manch guten Helden'.
 \ex \label{ex:maccadj}
 	\begin{xlist}
 	\ex \label{ex:maccadj_1}
-		% \gll Der Hertzog von Meran. \\
-		% 	der Herzog von Meran \\
-		% \gll Vnd clauus ſeín man. \\
-		% 	und \textins{Sc}lavus sein Mann \\
 		\gll Di furten manigẽ helt \textbf{gut}. \\
 			die führten viel-\Acc.\Sg.\MascM.\St{} Held gut[\Acc.\Sg.\MascM] \\
 	\sn \gll Si chomen dar mít eínẽ mvt. \\
@@ -805,10 +725,7 @@ tatsächlich \lit{manigen helt guͦten} `manch guten Helden'.
 			[\pno~145\ra, 18--21]{kc:Z}
 			[7346--7350]{schroeder1895}
 		}
-		\trans `%
-			% Der Herzog von Meran und \textins{Sc}lavus, sein Mann,
-			\textelp{} die führten viele gute Helden an. Sie kamen einmütig hin
-			zu der Stadt Rom.'
+		\trans `\textelp{} die führten viele gute Helden an. Sie kamen einmütig 	hin zu der Stadt Rom.'
 		\end{taggedline}
 
 	\ex \label{ex:maccadj_2}
@@ -831,18 +748,6 @@ tatsächlich \lit{manigen helt guͦten} `manch guten Helden'.
 		\trans `Da fragte er die Leute, wo er Jesus finden
 			könnte, den sehr guten Arzt.'%
 		%
-		% 	\footnote{Die Handschriften variieren hier relativ stark im
-		% 		Wortlaut, der Tenor ist jedoch, dass der Bote in der Stadt
-		% 		herumfragt. Die beiden parallelen A-Handschriften enthalten
-		% 		eine Formulierung mit \norm{gesinde} \wdef{Dienerschaft,
-		% 		Leute}: \lit{doͮ frac er di geſinden} \autocite[\pno~3\vb, 26]{kc:A1};
-		% 		\lit{Do uragete er daz geſinde} \autocite[\pno~4\rb, 28]{kc:H}
-		% 		\wdef{Da fragte er die Leute}.
-		% 		% Durch das Schlüsselwort
-		% 		% \norm{arƶāt} \wdef{Arzt} beeinflusst könnte der Schreiber von
-		% 		% M hier \norm{gesinde} mit \norm{gesunde}
-		% 		% \wdef{Gesunde/r} verwechselt haben.
-		% 		}
 		\end{taggedline}
 		\\
 	\end{xlist}
