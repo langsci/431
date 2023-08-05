@@ -87,17 +87,17 @@ Schema verdeutlicht den syntaktischen Kontext.
 		\begin{tikzpicture}[baseline=(1a_lb.base)]
 			\node at (0,2)  (1a)    {\norm{her Rvͦdiger}};
 			\node           (1a_box)[draw,rectangle,fit=(1a)] {};
-			\node           (1a_lb) [above=.5ex of 1a_box, font=\mynodefont]
+			\node           (1a_lb) [above=.5ex of 1a_box, mynodefont]
 		                            {Controller 1};
 
 			\node at (0,0)  (1b)    {\norm{ſin hovſfrowe}};
 			\node           (1b_box)[draw,rectangle,fit=(1b)] {};
-			\node           (1b_lb) [above=.5ex of 1b_box, font=\mynodefont]
+			\node           (1b_lb) [above=.5ex of 1b_box, mynodefont]
 		                            {Controller 2};
 
 			\node at (3,1) (2)      {\norm{bediv}};
 			\draw (2) node (2_box)  [draw,rectangle,fit=(2)] {};
-			\node (2_lb)   [above=.5ex of 2_box, font=\mynodefont] {Target};
+			\node (2_lb)   [above=.5ex of 2_box, mynodefont] {Target};
 
 			\draw [-latex] (1a_box) to [out=east, in=west] (2_box);
 			\draw [-latex] (1b_box) to [out=east, in=west] (2_box);
@@ -274,12 +274,12 @@ zur Illustration.
 	\begin{tikzpicture}[baseline=(1_lb.base)]
 		\node at (0,0) (1)    {\lit{wingarten}};
 		\node          (1_box)[draw,rectangle,fit=(1)] {};
-		\node          (1_lb) [above=.5ex of 1_box, font=\mynodefont]
+		\node          (1_lb) [above=.5ex of 1_box, mynodefont]
 	                          {Controller};
 
 		\node at (3,0) (2)      {\lit{bede}};
 		\draw (2) node (2_box)  [draw,rectangle,fit=(2)] {};
-		\node (2_lb)   [above=.5ex of 2_box, font=\mynodefont] {Target};
+		\node (2_lb)   [above=.5ex of 2_box, mynodefont] {Target};
 		
 		\draw [-latex] (1_box) to [out=east, in=west] (2_box);
 	\end{tikzpicture} \\
@@ -402,13 +402,13 @@ syntaktischen Zusammenhang.%
 		\node at (0,2)  (1a)    [gray]
 	                            {\lit{vlreich}};
 		\node           (1a_box)[draw,gray,rectangle,fit=(1a)] {};
-		\node           (1a_lb) [above=.5ex of 1a_box, gray, font=\mynodefont]
+		\node           (1a_lb) [above=.5ex of 1a_box, gray, mynodefont]
 	                            {Controller 1};
 
 		\node at (0,0)  (1b)    [gray]
 		                        {\lit{Elzbeten}};
 		\node           (1b_box)[draw,gray,rectangle,fit=(1b)] {};
-		\node           (1b_lb) [above=.5ex of 1b_box, gray, font=\mynodefont]
+		\node           (1b_lb) [above=.5ex of 1b_box, gray, mynodefont]
 	                            {Controller 2};    
 
 		\node at (3,1) (2)      {\lit{ſi}};
@@ -429,14 +429,14 @@ syntaktischen Zusammenhang.%
 		                    yshift=-.5ex,
 		                    rectangle
 		                ] {};
-		\node           (2_lb1) [above=.5ex of 2_box1, gray, font=\mynodefont]
+		\node           (2_lb1) [above=.5ex of 2_box1, gray, mynodefont]
 		                        {Target};
-		\node           (2_lb2) [below=.5ex of 2_box2, font=\mynodefont]
+		\node           (2_lb2) [below=.5ex of 2_box2, mynodefont]
 		                        {Controller};
 
 		\node at (6,1)  (3)      {\lit{beidev}};
 		\node           (3_box)  [draw,rectangle,fit=(3)] {};
-		\node           (3_lb)   [above=.5ex of 3_box, font=\mynodefont]
+		\node           (3_lb)   [above=.5ex of 3_box, mynodefont]
 		                        {Target};
 
 		\draw [-latex,gray] (1a_box) to [out=east, in=west] (2_box1);
@@ -1074,7 +1074,7 @@ kombinierte unbelebte Feminina auf.
 	\footnotetext{Die Schreibung wurde am Digitalisat der Handschrift
 %	(\href{https://mdz-nbn-resolving.de/urn:nbn:de:bvb:12-bsb00104263-7}{urn:nbn:de:bvb:12-bsb00104263-7})
 	verifiziert, die Glossierung aus dem \REM{} übernommen. Dieselbe
-	Textstelle in M405Y (München, Bayerische Staatsbibl., Cgm 183: Bl.~4\vo, 5;
+	Textstelle in M405Y (München, Bayerische Staatsbibl., Cgm 183: Bl.~4v, 5;
 	\cite[9715]{hsc}% ;
 % 	\href{https://mdz-nbn-resolving.de/urn:nbn:de:bvb:12-bsb00006141-6}{urn:nbn:de:bvb:12-bsb00006141-6}
 	) enthält dafür \lit{ſchvͦl chint} `Schulkinder' und ebenso \lit{diſiv
@@ -1136,7 +1136,7 @@ gibt \cref{ex:beid2p2snglncao}.
 	    \node at (0,0)  (1)     [gray]
 	                            {\lit{wroͮwen}};
 	    \node           (1_box) [draw,gray,rectangle,fit=(1)] {};
-	    \node           (1_lb)  [above=.5ex of 1_box, gray, font=\mynodefont]
+	    \node           (1_lb)  [above=.5ex of 1_box, gray, mynodefont]
 	                            {Controller};
 
 		\node at (3,0) (2)      {\lit{ſi}};
@@ -1157,14 +1157,14 @@ gibt \cref{ex:beid2p2snglncao}.
 	                        yshift=-.5ex,
 	                        rectangle
 	                    ] {};
-	    \node           (2_lb1) [above=.5ex of 2_box1, gray, font=\mynodefont]
+	    \node           (2_lb1) [above=.5ex of 2_box1, gray, mynodefont]
 	                            {Target};
-	    \node           (2_lb2) [below=.5ex of 2_box2, font=\mynodefont]
+	    \node           (2_lb2) [below=.5ex of 2_box2, mynodefont]
 	                            {Controller};
 
 	    \node at (6,0)  (3)      {\lit{beide}};
 	    \node           (3_box)  [draw,rectangle,fit=(3)] {};
-	    \node           (3_lb)   [above=.5ex of 3_box, font=\mynodefont]
+	    \node           (3_lb)   [above=.5ex of 3_box, mynodefont]
 	                            {Target};
 
 	    \draw [-latex,gray] (1_box)  to [yshift=-1.5ex]     (2_box1);
@@ -1843,7 +1843,7 @@ die jeweilige Zählweise.
 		},
 		lbl/.style={
 			minimum height=1.5em,
-			font={\mynodefont}
+			mynodefont
 		},
 		every node/.style={
 			anchor=base,
@@ -1885,7 +1885,7 @@ die jeweilige Zählweise.
 		},
 		lbl/.style={
 			minimum height=1.5em,
-			font={\mynodefont}
+			mynodefont
 		},
 		every node/.style={
 			anchor=base,
@@ -3295,14 +3295,15 @@ Gen.\ liegen keine Belege vor.
 \centering
 \caption{Form nach dem Kasus nominaler Konjunkte}
 \begin{tabular}{
-	l
+	>{\scshape}l
 	r r c r r
 	c
 	r r c r r
 	r
 }
 \toprule
-\mr{3}{*}[-1ex]{}
+
+%
 	& \mc{5}{c}{belebt}
 	& % --
 	& \mc{5}{c}{unbelebt}
@@ -3329,17 +3330,17 @@ Gen.\ liegen keine Belege vor.
 \cmidrule{11-12}
 
 %
-	& bėid(e)
-	& bėidiu
+	& \norm{bėid(e)}
+	& \norm{bėidiu}
 	& % --
-	& bėid(e)
-	& bėidiu
+	& \norm{bėid(e)}
+	& \norm{bėidiu}
 	& % --
-	& bėid(e)
-	& bėidiu
+	& \norm{bėid(e)}
+	& \norm{bėidiu}
 	& % --
-	& bėid(e)
-	& bėidiu
+	& \norm{bėid(e)}
+	& \norm{bėidiu}
 	& % --
 	\\
 
@@ -3429,7 +3430,7 @@ Summe
 	\\
 
 \bottomrule
-\end{tabularx}
+\end{tabular}
 \label{tab:caokoordnomctrlcase}
 \end{table}
 
