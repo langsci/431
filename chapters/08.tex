@@ -138,17 +138,17 @@ steht.
 	\begin{tikzpicture}[baseline=(1a_lb.base)]
 	\node at (0,2)  (1a)    {\lit{Willehalm}};
 	\node           (1a_box)[draw,rectangle,fit=(1a)] {};
-	\node           (1a_lb) [above=.5ex of 1a_box, font=\mynodefont]
-	                        {Controller 1};
+	\node           (1a_lb) [above=.5ex of 1a_box, mynodefont]
+	                        {controller 1};
 
 	\node at (0,0)  (1b)    {\lit{Dietreich}};
 	\node           (1b_box)[draw,rectangle,fit=(1b)] {};
-	\node           (1b_lb) [above=.5ex of 1b_box, font=\mynodefont]
-	                        {Controller 2};
+	\node           (1b_lb) [above=.5ex of 1b_box, mynodefont]
+	                        {controller 2};
 
 	\node at (3,1) (2)      {\lit{baíde}};
 	\draw (2) node (2_box)  [draw,rectangle,fit=(2)] {};
-	\node (2_lb)   [above=.5ex of 2_box, font=\mynodefont] {Target};
+	\node (2_lb)   [above=.5ex of 2_box, mynodefont] {target};
 
 	\draw [-latex] (1a_box) to [out=east, in=west] (2_box);
 	\draw [-latex] (1b_box) to [out=east, in=west] (2_box);
@@ -533,12 +533,12 @@ Substantiven, sondern nur um ein einzelnes Substantiv, das im Plural steht.
 	\node (1)      [align=center]
 	               {\lit{gotes boten}};
 	\node (1_box)  [draw,rectangle,fit=(1)] {};
-	\node (1_lb)   [above=.5ex of 1_box, font=\mynodefont]{Controller};
+	\node (1_lb)   [above=.5ex of 1_box, mynodefont]{controller};
 
 	\node (2)      [right=4em of 1_box, align=center]
 	               {\lit{bêde}};
 	\draw (2) node (2_box1) [draw,rectangle,fit=(2)] {};
-	\node (2_lb1)  [above=.5ex of 2_box1, font=\mynodefont] {Target};
+	\node (2_lb1)  [above=.5ex of 2_box1, mynodefont] {target};
 
 	\draw [-latex] (1_box) to (2_box1);
 	\end{tikzpicture}\\
@@ -831,14 +831,14 @@ Das Verhältnis zwischen Kongruenzcontrollern und Target wird in
 	\node at (0,2)  (1a)    [gray]
 	                        {\lit{muoter}};
 	\node           (1a_box)[draw,gray,rectangle,fit=(1a)] {};
-	\node           (1a_lb) [above=.5ex of 1a_box, gray, font=\mynodefont]
-	                        {Controller 1};
+	\node           (1a_lb) [above=.5ex of 1a_box, gray, mynodefont]
+	                        {controller 1};
 
 	\node at (0,0)  (1b)    [gray]
 	                        {\lit{sun}};
 	\node           (1b_box)[draw,gray,rectangle,fit=(1b)] {};
-	\node           (1b_lb) [above=.5ex of 1b_box, gray, font=\mynodefont]
-	                        {Controller 2};    
+	\node           (1b_lb) [above=.5ex of 1b_box, gray, mynodefont]
+	                        {controller 2};    
 
 	\node at (3,1) (2)      {\lit{si}};
 	\draw (2) node (2_box1) [
@@ -858,15 +858,15 @@ Das Verhältnis zwischen Kongruenzcontrollern und Target wird in
 	                    yshift=-.5ex,
 	                    rectangle
 	                ] {};
-	\node           (2_lb1) [above=.5ex of 2_box1, gray, font=\mynodefont]
-	                        {Target};
-	\node           (2_lb2) [below=.5ex of 2_box2, font=\mynodefont]
-	                        {Controller};
+	\node           (2_lb1) [above=.5ex of 2_box1, gray, mynodefont]
+	                        {target};
+	\node           (2_lb2) [below=.5ex of 2_box2, mynodefont]
+	                        {controller};
 
 	\node at (6,1)  (3)      {\lit{baide}};
 	\node           (3_box)  [draw,rectangle,fit=(3)] {};
-	\node           (3_lb)   [above=.5ex of 3_box, font=\mynodefont]
-	                        {Target};
+	\node           (3_lb)   [above=.5ex of 3_box, mynodefont]
+	                        {target};
 
 	\draw [-latex,gray] (1a_box) to [out=east, in=west] (2_box1);
 	\draw [-latex,gray] (1b_box) to [out=east, in=west] (2_box1);
@@ -1108,8 +1108,8 @@ männlich-maskuline Referenz.
 	    \node at (0,0)  (1)     [gray]
 	                            {\lit{hêrren}};
 	    \node           (1_box) [draw,gray,rectangle,fit=(1)] {};
-	    \node           (1_lb)  [above=.5ex of 1_box, gray, font=\mynodefont]
-	                            {Controller};
+	    \node           (1_lb)  [above=.5ex of 1_box, gray, mynodefont]
+	                            {controller};
 
 		\node at (3,0) (2)      {\lit{si}};
 	    \draw (2) node (2_box1) [
@@ -1129,15 +1129,15 @@ männlich-maskuline Referenz.
 	                        yshift=-.5ex,
 	                        rectangle
 	                    ] {};
-	    \node           (2_lb1) [above=.5ex of 2_box1, gray, font=\mynodefont]
-	                            {Target};
-	    \node           (2_lb2) [below=.5ex of 2_box2, font=\mynodefont]
-	                            {Controller};
+	    \node           (2_lb1) [above=.5ex of 2_box1, gray, mynodefont]
+	                            {target};
+	    \node           (2_lb2) [below=.5ex of 2_box2, mynodefont]
+	                            {controller};
 
 	    \node at (6,0)  (3)      {\lit{baide}};
 	    \node           (3_box)  [draw,rectangle,fit=(3)] {};
-	    \node           (3_lb)   [above=.5ex of 3_box, font=\mynodefont]
-	                            {Target};
+	    \node           (3_lb)   [above=.5ex of 3_box, mynodefont]
+	                            {target};
 
 	    \draw [-latex,gray] (1_box)  to [yshift=-1.5ex]     (2_box1);
 	    \draw [latex-]      (3_box)  to [yshift=1.5ex]      (2_box2);
@@ -4254,7 +4254,7 @@ schematisch dargestellt.
 	\begin{tikzpicture}[baseline=(2_lb1.base)]
     \node (1)      {\lit{antwerc}};
     \node (1_box)  [draw,rectangle,fit=(1)] {};
-    \node (1_lb)   [above=.5ex of 1_box, font=\mynodefont]{Controller};
+    \node (1_lb)   [above=.5ex of 1_box, mynodefont]{controller};
 
     \node (2)      [right=4em of 1_box, align=center]
                    {\lit{groz}\\ \lit{ſtarc}};
@@ -4275,12 +4275,12 @@ schematisch dargestellt.
                         yshift=-1ex,
                         rectangle
                     ] {};
-    \node (2_lb1)  [above=.5ex of 2_box1, font=\mynodefont] {Target};
-    \node (2_lb2)  [below=.5ex of 2_box2, font=\mynodefont] {Controller};
+    \node (2_lb1)  [above=.5ex of 2_box1, mynodefont] {target};
+    \node (2_lb2)  [below=.5ex of 2_box2, mynodefont] {controller};
 
     \node (3)      [right=4.5em of 2] {\lit{$^?$bediv}};
     \node (3_box)  [draw,dashed,rectangle,fit=(3)] {};
-    \node (3_lb)   [above=.5ex of 3_box, font=\mynodefont] {Target};
+    \node (3_lb)   [above=.5ex of 3_box, mynodefont] {target};
 
     \draw [-latex] (1_box)  to [yshift=-2ex] (2_box1);
     \draw [latex-, dashed] (3_box) to [yshift=1.5ex] (2_box2);
