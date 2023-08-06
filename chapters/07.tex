@@ -78,33 +78,14 @@ Antezedens beziehen und dessen Personenmerkmale reflektieren.
 % 	enthält, das funktionale Äquivalent zur lexikalischen Kategorie \xhead{N}
 % 	der Substantive \autocite[vgl.~z.\,B.][135--138]{bresnanetal2016}.}
 % %
-Zwei Belege werden in \cref{ex:beid2coordncao1} angeführt. Das beigefügte
-Schema verdeutlicht den syntaktischen Kontext.
+Zwei Belege werden in \cref{ex:beid2coordncao1} angeführt. Das Schema in
+\cref{ex:beid2coordncao1_1} verdeutlicht den syntaktischen Kontext.
 
 \begin{exe}
 \ex \label{ex:beid2coordncao1}
 \begin{xlist}
 	\ex \label{ex:beid2coordncao1_1}
-		\begin{tikzpicture}[baseline=(1a_lb.base)]
-			\node at (0,2)  (1a)    {\norm{her Rvͦdiger}};
-			\node           (1a_box)[draw,rectangle,fit=(1a)] {};
-			\node           (1a_lb) [above=.5ex of 1a_box, mynodefont]
-		                            {Controller 1};
-
-			\node at (0,0)  (1b)    {\norm{ſin hovſfrowe}};
-			\node           (1b_box)[draw,rectangle,fit=(1b)] {};
-			\node           (1b_lb) [above=.5ex of 1b_box, mynodefont]
-		                            {Controller 2};
-
-			\node at (3,1) (2)      {\norm{bediv}};
-			\draw (2) node (2_box)  [draw,rectangle,fit=(2)] {};
-			\node (2_lb)   [above=.5ex of 2_box, mynodefont] {Target};
-
-			\draw [-latex] (1a_box) to [out=east, in=west] (2_box);
-			\draw [-latex] (1b_box) to [out=east, in=west] (2_box);
-		\end{tikzpicture}
-
-	\sn \gll swenne aber her Rvͦdiger vnd ſin
+		\gll swenne aber her Rvͦdiger vnd ſin
 			hovſfrowe bediv niht enſint\\
 			so=wenn aber Herr Rüdiger[\textsc{nom.sg.\MascM}] und sein
 			Ehefrau[\textsc{nom.sg.\FemF}] beide-\textsc{nom.pl.\NeutMF.st} nicht
@@ -130,6 +111,29 @@ Schema verdeutlicht den syntaktischen Kontext.
 				\parencites(Nr.~2915, Kl.~St.~Urban, Kt.~Luzern, 1298)[213,33--35]{cao4}
 \end{xlist}
 \end{exe}
+
+\begin{figure}
+\begin{tikzpicture}[baseline=(1a_lb.base)]
+			\node at (0,2)  (1a)    {\norm{her Rvͦdiger}};
+			\node           (1a_box)[draw,rectangle,fit=(1a)] {};
+			\node           (1a_lb) [above=.5ex of 1a_box, mynodefont]
+		                            {controller 1};
+
+			\node at (0,0)  (1b)    {\norm{ſin hovſfrowe}};
+			\node           (1b_box)[draw,rectangle,fit=(1b)] {};
+			\node           (1b_lb) [above=.5ex of 1b_box, mynodefont]
+		                            {controller 2};
+
+			\node at (3,1) (2)      {\norm{bediv}};
+			\draw (2) node (2_box)  [draw,rectangle,fit=(2)] {};
+			\node (2_lb)   [above=.5ex of 2_box, mynodefont] {target};
+
+			\draw [-latex] (1a_box) to [out=east, in=west] (2_box);
+			\draw [-latex] (1b_box) to [out=east, in=west] (2_box);
+		\end{tikzpicture}
+\caption{Direkter Bezug von \norm{bėide} auf zwei Controller}
+\label{fig:beid2coordncao1_1}
+\end{figure}
 
 Daneben liegen noch die drei Belege in \cref{ex:beid2coordncao2} vor, die aus
 der regulären Auswertung ausgeschlossen wurden, da bei ihnen die Flexion des
@@ -264,34 +268,35 @@ auffällig.
 \label{subsubsec:persplnp}
 
 Als Vergleichsmaterial zu den Belegen in \cref{subsubsec:perscombsgnp} mit
-unmittelbarem Bezug auf koordinierte Controller wurden hier solche
-aufgenommen, in denen sich \norm{bėide} direkt auf ein einzelnes Substantiv im
-Plural bezieht. Für diesen Kontext gibt es weit mehr Belege, als dass jeder
-einzelne zitiert werden könnte. Das Beispiel in \cref{ex:beid2snglncao} dient
-zur Illustration.
+unmittelbarem Bezug auf koordinierte Controller wurden hier solche aufgenommen,
+in denen sich \norm{bėide} direkt auf ein einzelnes Substantiv im Plural
+bezieht. Für diesen Kontext gibt es weit mehr Belege, als dass jeder einzelne
+zitiert werden könnte. Das Beispiel in \cref{ex:beid2snglncao} und das
+dazugehörige Schema in \cref{fig:beid2snglncao} dienen zur Illustration.
 
 \begin{exe}
 \ex \label{ex:beid2snglncao}
-	\begin{tikzpicture}[baseline=(1_lb.base)]
-		\node at (0,0) (1)    {\lit{wingarten}};
-		\node          (1_box)[draw,rectangle,fit=(1)] {};
-		\node          (1_lb) [above=.5ex of 1_box, mynodefont]
-	                          {Controller};
-
-		\node at (3,0) (2)      {\lit{bede}};
-		\draw (2) node (2_box)  [draw,rectangle,fit=(2)] {};
-		\node (2_lb)   [above=.5ex of 2_box, mynodefont] {Target};
-		
-		\draw [-latex] (1_box) to [out=east, in=west] (2_box);
-	\end{tikzpicture} \\
-
-\sn \gll ſo mag er wol / die bede wingarten \textelp{}
+	\gll ſo mag er wol / die bede wingarten \textelp{}
 			verkoͮfen \\
 		so kann er wohl {} die beide-\textsc{acc.pl.\MascI.st}
 			Weingarten-\textsc{acc.pl.\MascI} {} verkaufen \\
 	\trans `so kann er wohl die beiden Weingärten \textelp{} verkaufen'
 		\parencites(Nr.~1221, Zürich, 1290)[484,9]{cao2}
 \end{exe}
+
+\begin{figure}
+\begin{tikzpicture}[baseline=(1_lb.base)]
+	\node at (0,0) (1)    {\lit{wingarten}};
+	\node          (1_box)[draw,rectangle,fit=(1)] {};
+	\node          (1_lb) [above=.5ex of 1_box, mynodefont] {controller};
+	\node at (3,0) (2)      {\lit{bede}};
+	\draw (2) node (2_box)  [draw,rectangle,fit=(2)] {};
+	\node (2_lb)   [above=.5ex of 2_box, mynodefont] {target};
+	\draw [-latex] (1_box) to [out=east, in=west] (2_box);
+\end{tikzpicture}
+\caption{Direkter Bezug eines Targets auf einen einzelnen Controller}
+\label{fig:beid2snglncao}
+\end{figure}
 
 \cref{tab:simpnomctrl} bietet eine Übersicht der Verteilung der verschiedenen
 Kongruenz\-formen von \norm{bėide} in Abhängigkeit von den
@@ -399,53 +404,7 @@ syntaktischen Zusammenhang.%
 
 \begin{exe}
 \ex\label{ex:beid2p2coordncao}
-	\begin{tikzpicture}[baseline=(1a_lb.base)]
-		\node at (0,2)  (1a)    [gray]
-	                            {\lit{vlreich}};
-		\node           (1a_box)[draw,gray,rectangle,fit=(1a)] {};
-		\node           (1a_lb) [above=.5ex of 1a_box, gray, mynodefont]
-	                            {Controller 1};
-
-		\node at (0,0)  (1b)    [gray]
-		                        {\lit{Elzbeten}};
-		\node           (1b_box)[draw,gray,rectangle,fit=(1b)] {};
-		\node           (1b_lb) [above=.5ex of 1b_box, gray, mynodefont]
-	                            {Controller 2};    
-
-		\node at (3,1) (2)      {\lit{ſi}};
-		\draw (2) node (2_box1) [
-		                    draw,
-		                    gray,
-		                    minimum height=3em,
-		                    minimum width=3em,
-		                    xshift=-.5ex,
-		                    yshift=+.5ex,
-		                    rectangle
-		                ] {};
-		\draw (2) node (2_box2) [
-		                    draw,
-		                    minimum height=3em,
-		                    minimum width=3em,
-		                    xshift=+.5ex,
-		                    yshift=-.5ex,
-		                    rectangle
-		                ] {};
-		\node           (2_lb1) [above=.5ex of 2_box1, gray, mynodefont]
-		                        {Target};
-		\node           (2_lb2) [below=.5ex of 2_box2, mynodefont]
-		                        {Controller};
-
-		\node at (6,1)  (3)      {\lit{beidev}};
-		\node           (3_box)  [draw,rectangle,fit=(3)] {};
-		\node           (3_lb)   [above=.5ex of 3_box, mynodefont]
-		                        {Target};
-
-		\draw [-latex,gray] (1a_box) to [out=east, in=west] (2_box1);
-		\draw [-latex,gray] (1b_box) to [out=east, in=west] (2_box1);
-		\draw [latex-]      (3_box)  to [yshift=1.5ex]      (2_box2);
-	\end{tikzpicture}
-
-\sn \gll daz vlreich \textelp{} vor vns hat genomen ze einer
+	\gll daz vlreich \textelp{} vor vns hat genomen ze einer
 		houſfrowen vrowen Elzbeten \textelp{} vnd ſi
 		beidev \textelp{} verzigen habent \textelp{} alles des
 		rehtes \\
@@ -463,8 +422,58 @@ die grammatischen Merkmale des direkten Controllers von \norm{bėide} an:
 \textsc{1pl} entspricht `wir/uns/unser', \textsc{3pl} entspricht `sie/die/sich'.
 Die kombinierten Angaben danach stehen für die Personen\-merkmale der beiden
 \q*{Erstcontroller}, das heißt, der nominalen Controller, auf die sich
-\norm{bėide} gemäß dem Schema in \cref{ex:beid2p2coordncao} indirekt
+\norm{bėide} gemäß dem Schema in \cref{fig:beid2p2coordncao} indirekt
 bezieht.
+
+\begin{figure}
+\begin{tikzpicture}[baseline=(1a_lb.base)]
+	\node at (0,2)  (1a)    [gray]
+                            {\lit{vlreich}};
+	\node           (1a_box)[draw,gray,rectangle,fit=(1a)] {};
+	\node           (1a_lb) [above=.5ex of 1a_box, gray, mynodefont]
+                            {controller 1};
+
+	\node at (0,0)  (1b)    [gray]
+	                        {\lit{Elzbeten}};
+	\node           (1b_box)[draw,gray,rectangle,fit=(1b)] {};
+	\node           (1b_lb) [above=.5ex of 1b_box, gray, mynodefont]
+                            {controller 2};    
+
+	\node at (3,1) (2)      {\lit{ſi}};
+	\draw (2) node (2_box1) [
+	                    draw,
+	                    gray,
+	                    minimum height=3em,
+	                    minimum width=3em,
+	                    xshift=-.5ex,
+	                    yshift=+.5ex,
+	                    rectangle
+	                ] {};
+	\draw (2) node (2_box2) [
+	                    draw,
+	                    minimum height=3em,
+	                    minimum width=3em,
+	                    xshift=+.5ex,
+	                    yshift=-.5ex,
+	                    rectangle
+	                ] {};
+	\node           (2_lb1) [above=.5ex of 2_box1, gray, mynodefont]
+	                        {target};
+	\node           (2_lb2) [below=.5ex of 2_box2, mynodefont]
+	                        {controller};
+
+	\node at (6,1)  (3)      {\lit{beidev}};
+	\node           (3_box)  [draw,rectangle,fit=(3)] {};
+	\node           (3_lb)   [above=.5ex of 3_box, mynodefont]
+	                        {target};
+
+	\draw [-latex,gray] (1a_box) to [out=east, in=west] (2_box1);
+	\draw [-latex,gray] (1b_box) to [out=east, in=west] (2_box1);
+	\draw [latex-]      (3_box)  to [yshift=1.5ex]      (2_box2);
+\end{tikzpicture}
+\caption{Indirekter Bezug eines Targets auf zwei \q{Erstcontroller} über ein Personalpronomen}
+\label{fig:beid2p2coordncao}
+\end{figure}
 
 \begin{table}
 \centering
@@ -1129,50 +1138,12 @@ Erstcontroller.
 Zuletzt bleiben noch Belege für Targets zu diskutieren, die sich auf einen
 pronominalen Controller beziehen, der sich seinerseits auf ein einzelnes
 Substantiv im Plural bezieht. Ein Beispiel für diesen syntaktischen Kontext
-gibt \cref{ex:beid2p2snglncao}.
+geben \cref{ex:beid2p2snglncao} und die Illustration der Kongruenzbeziehung in
+\cref{fig:beid2p2snglncao}.
 
 \begin{exe}
 \ex \label{ex:beid2p2snglncao}
-	\begin{tikzpicture}[baseline=(2_lb1.base)]
-	    \node at (0,0)  (1)     [gray]
-	                            {\lit{wroͮwen}};
-	    \node           (1_box) [draw,gray,rectangle,fit=(1)] {};
-	    \node           (1_lb)  [above=.5ex of 1_box, gray, mynodefont]
-	                            {Controller};
-
-		\node at (3,0) (2)      {\lit{ſi}};
-	    \draw (2) node (2_box1) [
-	                        draw,
-	                        gray,
-	                        minimum height=3em,
-	                        minimum width=3em,
-	                        xshift=-.5ex,
-	                        yshift=+.5ex,
-	                        rectangle
-	                    ] {};
-	    \draw (2) node (2_box2) [
-	                        draw,
-	                        minimum height=3em,
-	                        minimum width=3em,
-	                        xshift=+.5ex,
-	                        yshift=-.5ex,
-	                        rectangle
-	                    ] {};
-	    \node           (2_lb1) [above=.5ex of 2_box1, gray, mynodefont]
-	                            {Target};
-	    \node           (2_lb2) [below=.5ex of 2_box2, mynodefont]
-	                            {Controller};
-
-	    \node at (6,0)  (3)      {\lit{beide}};
-	    \node           (3_box)  [draw,rectangle,fit=(3)] {};
-	    \node           (3_lb)   [above=.5ex of 3_box, mynodefont]
-	                            {Target};
-
-	    \draw [-latex,gray] (1_box)  to [yshift=-1.5ex]     (2_box1);
-	    \draw [latex-]      (3_box)  to [yshift=1.5ex]      (2_box2);
-	\end{tikzpicture}
-
-\sn \gll vnd ſol ez den zwein wroͮwen gen biz an ir beider tot / ſo
+	\gll vnd ſol ez den zwein wroͮwen gen biz an ir beider tot / ſo
 		ſi beide nit enſint \textelp{} \\
 		und soll es den zwei Frauen-\textsc{dat.pl.\FemF} übergeben bis an ihr
 		beider Tod {} wenn \textsc{3pl\subF.nom} beide-\textsc{nom.pl.m+f\subF.st}
@@ -1181,6 +1152,49 @@ gibt \cref{ex:beid2p2snglncao}.
 		Wenn sie beide nicht \textins{mehr} sind, \textelp{}'
 		\parencites(Nr.~2568, Sirnau, Kr.~Esslingen, 1297)[3,31]{cao4}
 \end{exe}
+
+\begin{figure}
+\begin{tikzpicture}[baseline=(2_lb1.base)]
+    \node at (0,0)  (1)     [gray]
+                            {\lit{wroͮwen}};
+    \node           (1_box) [draw,gray,rectangle,fit=(1)] {};
+    \node           (1_lb)  [above=.5ex of 1_box, gray, mynodefont]
+                            {controller};
+
+	\node at (3,0) (2)      {\lit{ſi}};
+    \draw (2) node (2_box1) [
+                        draw,
+                        gray,
+                        minimum height=3em,
+                        minimum width=3em,
+                        xshift=-.5ex,
+                        yshift=+.5ex,
+                        rectangle
+                    ] {};
+    \draw (2) node (2_box2) [
+                        draw,
+                        minimum height=3em,
+                        minimum width=3em,
+                        xshift=+.5ex,
+                        yshift=-.5ex,
+                        rectangle
+                    ] {};
+    \node           (2_lb1) [above=.5ex of 2_box1, gray, mynodefont]
+                            {target};
+    \node           (2_lb2) [below=.5ex of 2_box2, mynodefont]
+                            {controller};
+
+    \node at (6,0)  (3)      {\lit{beide}};
+    \node           (3_box)  [draw,rectangle,fit=(3)] {};
+    \node           (3_lb)   [above=.5ex of 3_box, mynodefont]
+                            {target};
+
+    \draw [-latex,gray] (1_box)  to [yshift=-1.5ex]     (2_box1);
+    \draw [latex-]      (3_box)  to [yshift=1.5ex]      (2_box2);
+\end{tikzpicture}
+\caption{Indirekter Bezug eines Targets auf einen einzelnen \q{Erstcontroller} über ein Personalpronomen}
+\label{fig:beid2p2snglncao}
+\end{figure}
 
 Wie zuvor dienen diese Belege als Vergleich für diejenigen mit Bezug auf
 kombinierte Erstcontroller. Ihre Verteilung nach den Personenmerkmalen des
