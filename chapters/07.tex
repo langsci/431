@@ -1842,98 +1842,96 @@ messen: zum einen als linearer Abstand in Wortformen (im Sinne von in sich
 geschlossenen morphosyntaktischen Einheiten, vgl.~\cite[252--253]{bauer2000}),
 zum anderen als syntaktischer Abstand hinsichtlich der Domäne von Target und
 Controller (gleiches Satzglied, gleicher Teilsatz, anderer (Teil-)Satz;
-vgl.~\cref{sec:ctrltarg}). Die Beispiele in \cref{fig:caodirdist} verdeutlichen
-die jeweilige Zählweise.
+vgl.~\cref{sec:ctrltarg}). Die Schemata in
+\crefrange{fig:caodirdist_words}{fig:caodirdist_syn} verdeutlichen die
+jeweilige Zählweise.
 
 \begin{figure}
-\centering
-\subfloat[Abstand nach Wortformen]{%
+\begin{tikzpicture}[
+	baseline=(a.base),
+	word/.style={
+		draw,
+		minimum height=1.5em,
+		minimum width=4em,
+		font=\itshape
+	},
+	lbl/.style={
+		minimum height=1.5em,
+		mynodefont
+	},
+	every node/.style={
+		anchor=base,
+		text height=1.5ex,
+		text depth=.5ex
+	}
+]
+
+\node [word]                      (1) {Ich};
+\node [word, base right=1ex of 1] (2) {unde};
+\node [word, base right=1ex of 2] (3) {mīn};
+\node [word, base right=1ex of 3] (4) {hūsvrouwe};
+\node [word, base right=1ex of 4] (5) {verjęhen};
+\node [word, base right=1ex of 5] (6) {bėidiu};
+
+\path[-]      (1) edge [out=north, in=north] node (a) [lbl, above] {0} (2);
+\path[-]      (2) edge [out=north, in=north] node [lbl, above] {1} (3);
+\path[-]      (3) edge [out=north, in=north] node [lbl, above] {2} (4);
+\path[-]      (4) edge [out=north, in=north] node [lbl, above] {3} (5);
+\path[-latex] (5) edge [out=north, in=north] node [lbl, above] {4} (6);
+\path[-]      (4) edge [out=south, in=south] node [lbl, below] {0} (5);
+\path[-latex] (5) edge [out=south, in=south] node [lbl, below] {1} (6);
+\end{tikzpicture}
+\caption{Abstandsberechnung: nach Wortformen}
+\label{fig:caodirdist_words}
+\end{figure}
+
+\begin{figure}
 	\begin{tikzpicture}[
-		baseline=(a.base),
-		word/.style={
-			draw,
-			minimum height=1.5em,
-			minimum width=4em,
-			font=\itshape
-		},
-		lbl/.style={
-			minimum height=1.5em,
-			mynodefont
-		},
-		every node/.style={
-			anchor=base,
-			text height=1.5ex,
-			text depth=.5ex
-		}
-	]
+	baseline=(vflbl.base),
+	box/.style={
+		draw,
+		minimum height=2.5em,
+		font=\itshape
+	},
+	wordbox/.style={
+		draw,
+		minimum height=1.75em,
+		font=\itshape
+	},
+	lbl/.style={
+		minimum height=1.5em,
+		mynodefont
+	},
+	every node/.style={
+		anchor=base,
+		text height=1.5ex,
+		text depth=.5ex
+	}
+]
 
-	\node [word]                      (1) {Ich};
-	\node [word, base right=1ex of 1] (2) {unde};
-	\node [word, base right=1ex of 2] (3) {mīn};
-	\node [word, base right=1ex of 3] (4) {hūsvrouwe};
-	\node [word, base right=1ex of 4] (5) {verjęhen};
-	\node [word, base right=1ex of 5] (6) {bėidiu};
+\node [wordbox,                    ] (1) {Ich};
+\node [wordbox, base right=1ex of 1] (2) {unde};
+\node [wordbox, base right=1ex of 2] (3) {mīn};
+\node [wordbox, base right=1ex of 3] (4) {hūsvrouwe};
+\node [wordbox, base right=3ex of 4] (5) {verjęhen};
+\node [wordbox, base right=3ex of 5, thick] (6) {bėidiu};
+\node [         base right=3ex of 6] (7) {\phantom{abcdef}};
 
-	\path[-]      (1) edge [out=north, in=north] node (a) [lbl, above] {0} (2);
-	\path[-]      (2) edge [out=north, in=north] node [lbl, above] {1} (3);
-	\path[-]      (3) edge [out=north, in=north] node [lbl, above] {2} (4);
-	\path[-]      (4) edge [out=north, in=north] node [lbl, above] {3} (5);
-	\path[-latex] (5) edge [out=north, in=north] node [lbl, above] {4} (6);
-	\path[-]      (4) edge [out=south, in=south] node [lbl, below] {0} (5);
-	\path[-latex] (5) edge [out=south, in=south] node [lbl, below] {1} (6);
-	\end{tikzpicture}
-	\label{fig:caodirdist_words}
-}
+\node (VF)  [box, rectangle, fit={(1) (2) (3) (4)}, thick] {};
+\node (LSK) [box, rectangle, fit=(5)] {};
+\node (MF)  [box, rectangle, fit=(6)] {};
+\node (RSK) [box, rectangle, fit=(7)] {};
 
-\subfloat[Abstand nach der syntaktischen Domäne]{%
- 	\begin{tikzpicture}[
-		baseline=(vflbl.base),
-		box/.style={
-			draw,
-			minimum height=2.5em,
-			font=\itshape
-		},
-		wordbox/.style={
-			draw,
-			minimum height=1.75em,
-			font=\itshape
-		},
-		lbl/.style={
-			minimum height=1.5em,
-			mynodefont
-		},
-		every node/.style={
-			anchor=base,
-			text height=1.5ex,
-			text depth=.5ex
-		}
-	]
+\node (vflbl)  [lbl, above=.5ex of VF]  {VF};
+\node (lsklbl) [lbl, above=.5ex of LSK] {LSK};
+\node (mflbl)  [lbl, above=.5ex of MF]  {MF};
+\node (rsklbl) [lbl, above=.5ex of RSK] {RSK};
 
-	\node [wordbox,                    ] (1) {Ich};
-	\node [wordbox, base right=1ex of 1] (2) {unde};
-	\node [wordbox, base right=1ex of 2] (3) {mīn};
-	\node [wordbox, base right=1ex of 3] (4) {hūsvrouwe};
-	\node [wordbox, base right=3ex of 4] (5) {verjęhen};
-	\node [wordbox, base right=3ex of 5, thick] (6) {bėidiu};
-	\node [         base right=3ex of 6] (7) {\phantom{abcdef}};
-
-	\node (VF)  [box, rectangle, fit={(1) (2) (3) (4)}, thick] {};
-	\node (LSK) [box, rectangle, fit=(5)] {};
-	\node (MF)  [box, rectangle, fit=(6)] {};
-	\node (RSK) [box, rectangle, fit=(7)] {};
-
-	\node (vflbl)  [lbl, above=.5ex of VF]  {VF};
-	\node (lsklbl) [lbl, above=.5ex of LSK] {LSK};
-	\node (mflbl)  [lbl, above=.5ex of MF]  {MF};
-	\node (rsklbl) [lbl, above=.5ex of RSK] {RSK};
-
-	\draw [-, thick] (VF) -- ++(south:2em) -| (6);
-	\end{tikzpicture}
-	\vspace{.5\baselineskip}
-	\label{fig:caodirdist_syn}
-}
-\caption{Zählweisen bei der Abstandsberechnung}
-\label{fig:caodirdist}
+\draw [-, thick] (VF) -- ++(south:2em) -| (6);
+\end{tikzpicture}
+\vspace{.5\baselineskip}
+\caption{Abstandsberechnung: nach der syntaktischen Domäne}
+\label{fig:caodirdist_syn}
 \end{figure}
 
 In \cref{fig:caodirdist_words} wird der Abstand zwischen den beiden Controllern
@@ -3058,31 +3056,36 @@ darstellt -- sie verzeichnen dafür in der zweiten Hälfte des 13.~Jahrhunderts
 0\,\% und für die erste Hälfte des 14.~Jahrhunderts lediglich 2\,\% bezogen
 auf die Gesamtzahl der Belege für \norm{bēd-} in ihrem Korpus.
 
-Zusätzlich zur obigen Tabelle stellt \cref{fig:cao_beide_geofunctypes} die
-geografische Verteilung der \norm{bėide}- und \norm{bėidiu}-Typen nach
+Zusätzlich zur obigen Tabelle stellen
+\crefrange{fig:cao_beide_geofunctypes_quant}{fig:cao_beide_geofunctypes_conj}
+die geografische Verteilung der \norm{bėide}- und \norm{bėidiu}-Typen nach
 Verwendungskontext grafisch für alle in der Stichprobe vorhandenen Belegorte
 dar. Auffällig ist, dass besonders im Nieder\-alemannischen bei der Konjunktion
 hauptsächlich \norm{beide}-Formen gegenüber sowohl \norm{bėide} als auch
 \norm{bėidiu} beim Quantor vertreten sind, sieht man von der geringeren
 Belegzahl insgesamt ab.
 
-\afterpage{
-\begin{figure}[p!]
-\centering
-\subfloat[\norm{bėide} als Quantor (\textsc{x}, \textsc{y} \dots\ \norm{(si) bėide})]{
-	\includegraphics[
-		width=.5\linewidth,
-	]{./figures/2021-07-12_cao_beide_iu-quant.png}
-}
-\subfloat[\norm{bėide} als Konjunktion (\norm{bėide} \textsc{x} \norm{unde} \textsc{y})]{
-	\includegraphics[
-		width=.5\linewidth,
-	]{./figures/2021-07-12_cao_beide_iu-conj.png}
-}
-\caption{Die geografische Verteilung von \norm{e}- und \norm{iu}-Flexionstypen}
-\label{fig:cao_beide_geofunctypes}
+\begin{figure}
+\includegraphics[
+	width=\linewidth,
+	keepaspectratio,
+]{./figures/2021-07-12_cao_beide_iu-quant.png}
+\caption{Geografische Verteilung von \norm{e}- und \norm{iu}-Flexionstypen bei
+	\norm{bėide} als Quantor (X, Y \dots\ \norm{(si) bėide}; Hintergrundkarte:
+	\cite{wiesinger1983:rede})}
+\label{fig:cao_beide_geofunctypes_quant}
 \end{figure}
-}
+
+\begin{figure}
+\includegraphics[
+	width=\linewidth,
+	keepaspectratio,
+]{./figures/2021-07-12_cao_beide_iu-conj.png}
+\caption{Geografische Verteilung von \norm{e}- und \norm{iu}-Flexionstypen bei
+	\norm{bėide} als Konjunktion (\norm{bėide} X \norm{unde} Y;
+	Hintergrundkarte: \cite{wiesinger1983:rede})}
+\label{fig:cao_beide_geofunctypes_conj}
+\end{figure}
 
 Darüber hinaus liegt in je einem Fall Variation zwischen einer Urkunde und
 ihrer Kopie bei ansonsten gleichem Wortlaut \cref{ex:intraurkvar1} sowie
