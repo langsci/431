@@ -57,6 +57,10 @@
 \SetBlockEnvironment{quote}
 \let\q\textquote
 
+% csquotes
+% Redefine \textins in accordance with \ob … \cb from langsci-optional.sty
+\renewcommand{\mktextins}[1]{{\ob}#1{\cb}}
+
 % enumitem
 \usepackage{enumitem}
 
