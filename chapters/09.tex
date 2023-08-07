@@ -899,13 +899,13 @@ in \cref{fig:beid2p2coordn} illustriert diesen syntaktischen Kontext.
 		\node at (0,2)  (1a)    [gray]
 	                            {A};
 		\node           (1a_box)[draw,gray,rectangle,fit=(1a)] {};
-		\node           (1a_lb) [above=.5ex of 1a_box, gray, font=\mynodefont]
+		\node           (1a_lb) [above=.5ex of 1a_box, gray, mynodefont]
 	                            {Controller 1};
 
 		\node at (0,0)  (1b)    [gray]
 		                        {B};
 		\node           (1b_box)[draw,gray,rectangle,fit=(1b)] {};
-		\node           (1b_lb) [above=.5ex of 1b_box, gray, font=\mynodefont]
+		\node           (1b_lb) [above=.5ex of 1b_box, gray, mynodefont]
 	                            {Controller 2};    
 
 		\node at (3,1) (2)      {sie};
@@ -926,14 +926,14 @@ in \cref{fig:beid2p2coordn} illustriert diesen syntaktischen Kontext.
 		                    yshift=-.5ex,
 		                    rectangle
 		                ] {};
-		\node           (2_lb1) [above=.5ex of 2_box1, gray, font=\mynodefont]
+		\node           (2_lb1) [above=.5ex of 2_box1, gray, mynodefont]
 		                        {Target};
-		\node           (2_lb2) [below=.5ex of 2_box2, font=\mynodefont]
+		\node           (2_lb2) [below=.5ex of 2_box2, mynodefont]
 		                        {Controller};
 
 		\node at (6,1)  (3)      {beide};
 		\node           (3_box)  [draw,rectangle,fit=(3)] {};
-		\node           (3_lb)   [above=.5ex of 3_box, font=\mynodefont]
+		\node           (3_lb)   [above=.5ex of 3_box, mynodefont]
 		                        {Target};
 
 		\draw [-latex,gray] (1a_box) to [out=east, in=west] (2_box1);
