@@ -466,78 +466,76 @@ der distributiven Eigenschaften jedes Gruppenmitglieds ist.%
 	}
 %
 Gender Resolution tritt also dem Modell zufolge immer dann ein, wenn
-semantische Geschlechtsmerkmale (\textsc{sex}) keine Schnittmenge bilden können, siehe
-\cref{fig:sexintersect_3}.
+semantische Geschlechtsmerkmale (\textsc{sex}) keine Schnittmenge bilden
+können, siehe \cref{fig:sexintersect_3}.
 
 \begin{figure}
-\centering
-\subfloat[Kombination von belebten Maskulina]{
-	\begin{tikzpicture}[
-		baseline=(current bounding box.north),
-		set/.style = {
-			circle,
-			draw,
-			minimum size = 2cm
-		}
-	]
-	\node[set, label={180:\SM}] (M1) at (0,0) {};
-	\node[set, label={  0:\SM}] (M2) at (1,0) {};
-	\begin{scope}
-		\clip (0,0) circle(1cm);
-		\clip (1,0) circle(1cm);
-		\fill[lightgray](0,0) circle(1cm);
-	\end{scope}
-	\node at (.5,0) {\SM};
-	\node[anchor=west,align=left] at (3.5,0) {$\{\SM\} \cap \{\SM\} = \{\SM\}$};
-	\end{tikzpicture}
-	\label{fig:sexintersect_1}
-}
+\begin{tikzpicture}[
+	baseline=(current bounding box.north),
+	set/.style = {
+		circle,
+		draw,
+		minimum size = 2cm
+	}
+]
+\node[set, label={180:\SM}] (M1) at (0,0) {};
+\node[set, label={  0:\SM}] (M2) at (1,0) {};
+\begin{scope}
+	\clip (0,0) circle(1cm);
+	\clip (1,0) circle(1cm);
+	\fill[lightgray](0,0) circle(1cm);
+\end{scope}
+\node at (.5,0) {\SM};
+\node[anchor=west,align=left] at (3.5,0) {$\{\SM\} \cap \{\SM\} = \{\SM\}$};
+\end{tikzpicture}
+\label{fig:sexintersect_1}
+\caption{Kombination der Sexus-Merkmale belebter Maskulina}
+\end{figure}
 
-\subfloat[Kombination von belebten Feminina]{
-	\begin{tikzpicture}[
-		baseline=(current bounding box.north),
-		set/.style = {
-			circle,
-			draw,
-			minimum size = 2cm
-		}
-	]
-	\node[set, label={180:\SF}] (F1) at (0,0) {};
-	\node[set, label={  0:\SF}] (F2) at (1,0) {};
-	\begin{scope}
-		\clip (0,0) circle(1cm);
-		\clip (1,0) circle(1cm);
-		\fill[lightgray](0,0) circle(1cm);
-	\end{scope}
-	\node at (.5,0) {\SF};
-	\node[anchor=west,align=left] at (3.5,0) {$\{\SF\} \cap \{\SF\} = \{\SF\}$};
-	\end{tikzpicture}
-	\label{fig:sexintersect_2}
-}
+\begin{figure}
+\begin{tikzpicture}[
+	baseline=(current bounding box.north),
+	set/.style = {
+		circle,
+		draw,
+		minimum size = 2cm
+	}
+]
+\node[set, label={180:\SF}] (F1) at (0,0) {};
+\node[set, label={  0:\SF}] (F2) at (1,0) {};
+\begin{scope}
+	\clip (0,0) circle(1cm);
+	\clip (1,0) circle(1cm);
+	\fill[lightgray](0,0) circle(1cm);
+\end{scope}
+\node at (.5,0) {\SF};
+\node[anchor=west,align=left] at (3.5,0) {$\{\SF\} \cap \{\SF\} = \{\SF\}$};
+\end{tikzpicture}
+\label{fig:sexintersect_2}
+\caption{Kombination der Sexus-Merkmale belebter Feminina}
+\end{figure}
 
-\subfloat[Kombination von belebtem Maskulinum und Femininum]{
-	\begin{tikzpicture}[
-		baseline=(current bounding box.north),
-		set/.style = {
-			circle,
-			draw,
-			minimum size = 2cm
-		}
-	]
-	\node[set, label={180:\SM}] (M) at (0,0) {};
-	\node[set, label={  0:\SF}] (F) at (1,0) {};
-	\begin{scope}
-		\clip (0,0) circle(1cm);
-		\clip (1,0) circle(1cm);
-		\fill[lightgray](0,0) circle(1cm);
-	\end{scope}
-	\node at (.5,0) {};
-	\node[anchor=west,align=left] at (3.5,0) {$\{\SM\} \cap \{\SF\} = \{\ \}$};
-	\end{tikzpicture}
-	\label{fig:sexintersect_3}
-}
-\label{fig:sexintersect}
-\caption{Kombination der Sexus-Merkmale belebter Controller}
+\begin{figure}
+\begin{tikzpicture}[
+	baseline=(current bounding box.north),
+	set/.style = {
+		circle,
+		draw,
+		minimum size = 2cm
+	}
+]
+\node[set, label={180:\SM}] (M) at (0,0) {};
+\node[set, label={  0:\SF}] (F) at (1,0) {};
+\begin{scope}
+	\clip (0,0) circle(1cm);
+	\clip (1,0) circle(1cm);
+	\fill[lightgray](0,0) circle(1cm);
+\end{scope}
+\node at (.5,0) {};
+\node[anchor=west,align=left] at (3.5,0) {$\{\SM\} \cap \{\SF\} = \{\ \}$};
+\end{tikzpicture}
+\label{fig:sexintersect_3}
+\caption{Kombination der Sexus-Merkmale belebter Maskulina und Feminina}
 \end{figure}
 
 Die Menge an Belegen für den direkten Bezug zwischen Controller und Target ist
@@ -1218,14 +1216,15 @@ dieser auf zwei Maskulina bezieht.
 
 Wie bei den Belegen mit direktem Bezug kann das Auftreten von neutralem
 \norm{bėidiu} bei verschiedenem Geschlecht der Erstcontroller mit einer
-Mengenoperation analog zu der in \cref{fig:iclgr} erklärt werden; verbildlicht
-wird dies in \cref{fig:iclgr2}. Maskulin und Feminin haben zwar jeweils eine
-Schnittmenge mit der Menge der semantisch gekoppelten Genera ($G_s$),
-allerdings nicht miteinander. In \cref{ex:iclgr2_1} resultiert daher eine leere
-Menge $\{\ \}$ die dem Neutrum als Resolutionsgenus entspricht. In den anderen
-beiden Fällen mit Neutrum \crefrange{ex:iclgr2_2}{ex:iclgr2_3} kommt es nur
-jeweils beim Maskulinum und beim Femininum zu einer Schnittmenge mit $G_s$,
-aber nirgends sonst, sodass auch dort nur das Neutrum als Lösung bleibt.
+Mengenoperation analog zu der in \cref{fig:iclgr} erklärt werden; illustriert
+wird dies in \crefrange{fig:iclgr2_1}{fig:iclgr2_3}. Maskulin und Feminin haben
+zwar jeweils eine Schnittmenge mit der Menge der semantisch gekoppelten Genera
+($G_s$), allerdings nicht miteinander. In \cref{ex:iclgr2_1} resultiert daher
+eine leere Menge $\{\ \}$ die dem Neutrum als Resolutionsgenus entspricht. In
+den anderen beiden Fällen mit Neutrum \crefrange{ex:iclgr2_2}{ex:iclgr2_3}
+kommt es nur jeweils beim Maskulinum und beim Femininum zu einer Schnittmenge
+mit $G_s$, aber nirgends sonst, sodass auch dort nur das Neutrum als Lösung
+bleibt.
 
 \begin{exe}
 \ex \label{ex:iclgr2}
@@ -1264,87 +1263,88 @@ aber nirgends sonst, sodass auch dort nur das Neutrum als Lösung bleibt.
 \end{exe}
 
 \begin{figure}
-\centering
-\subfloat[Kombination von unbelebtem Maskulinum und Femininum]{
+\begin{tikzpicture}[
+	baseline=(current bounding box.north),
+		set/.style = {
+			circle,
+			draw,
+			minimum size = 2cm
+		}
+	]
+	\node[set, label={180:\textsc{m}}]    (M)  at (0.0,+0.5) {};
+	\node[set, label={  0:\textsc{f}}]    (F)  at (1.0,+0.5) {};
+	\node[set, label={270:$G_s$}] (MF) at (0.5,-0.5) {};
+	\begin{scope}
+		\clip (0.0,+0.5) circle(1cm);
+		\clip (1.0,+0.5) circle(1cm);
+		\clip (0.5,-0.5) circle(1cm);
+		\fill[lightgray](0.0,+0.5) circle(1cm);
+	\end{scope}
+	\node at (barycentric cs:M=1,MF=1) [below left]  {\textsc{m}};
+	\node at (barycentric cs:F=1,MF=1) [below right] {\textsc{f}};
+	\node at (barycentric cs:M=1,F=1,MF=1) {};
+	\node[anchor=west,align=left] at (3.5,0) {
+		$\{\textsc{m}\} \cap \{\textsc{f}\} \cap G_s = \{\ \}$
+	};
+\end{tikzpicture}
+\caption{Kombination von unbelebtem Maskulinum und Femininum}
+\label{fig:iclgr2_1}
+\end{figure}
+
+\begin{figure}
 	\begin{tikzpicture}[
 		baseline=(current bounding box.north),
-			set/.style = {
-				circle,
-				draw,
-				minimum size = 2cm
-			}
-		]
-		\node[set, label={180:\textsc{m}}]    (M)  at (0.0,+0.5) {};
-		\node[set, label={  0:\textsc{f}}]    (F)  at (1.0,+0.5) {};
-		\node[set, label={270:$G_s$}] (MF) at (0.5,-0.5) {};
-		\begin{scope}
-			\clip (0.0,+0.5) circle(1cm);
-			\clip (1.0,+0.5) circle(1cm);
-			\clip (0.5,-0.5) circle(1cm);
-			\fill[lightgray](0.0,+0.5) circle(1cm);
-		\end{scope}
-		\node at (barycentric cs:M=1,MF=1) [below left]  {\textsc{m}};
-		\node at (barycentric cs:F=1,MF=1) [below right] {\textsc{f}};
-		\node at (barycentric cs:M=1,F=1,MF=1) {};
-		\node[anchor=west,align=left] at (3.5,0) {
-			$\{\textsc{m}\} \cap \{\textsc{f}\} \cap G_s = \{\ \}$
-		};
-	\end{tikzpicture}
-}
+		set/.style = {
+			circle,
+			draw,
+			minimum size = 2cm
+		}
+	]
+	\node[set, label={180:\textsc{m}}]    (M)  at (0.0,+0.5) {};
+	\node[set, label={  0:}]      (N)  at (1.0,+0.5) {};
+	\node[set, label={270:$G_s$}] (MF) at (0.5,-0.5) {};
+	\begin{scope}
+		\clip (0.0,+0.5) circle(1cm);
+		\clip (1.0,+0.5) circle(1cm);
+		\clip (0.5,-0.5) circle(1cm);
+		\fill[lightgray](0.0,+0.5) circle(1cm);
+	\end{scope}
+	\node at (barycentric cs:M=1,MF=1) [below left] {\textsc{m}};
+	\node at (barycentric cs:M=1,N=1,MF=1) {};
+	\node[anchor=west,align=left] at (3.5,0) {
+		$\{\textsc{m}\} \cap \{\ \} \cap G_s = \{\ \}$
+	};
+\end{tikzpicture}
+\caption{Kombination von unbelebtem Maskulinum und Neutrum}
+\label{fig:iclgr2_2}
+\end{figure}
 
-\subfloat[Kombination von unbelebtem Maskulinum und Neutrum]{
-		\begin{tikzpicture}[
-			baseline=(current bounding box.north),
-			set/.style = {
-				circle,
-				draw,
-				minimum size = 2cm
-			}
-		]
-		\node[set, label={180:\textsc{m}}]    (M)  at (0.0,+0.5) {};
-		\node[set, label={  0:}]      (N)  at (1.0,+0.5) {};
-		\node[set, label={270:$G_s$}] (MF) at (0.5,-0.5) {};
-		\begin{scope}
-			\clip (0.0,+0.5) circle(1cm);
-			\clip (1.0,+0.5) circle(1cm);
-			\clip (0.5,-0.5) circle(1cm);
-			\fill[lightgray](0.0,+0.5) circle(1cm);
-		\end{scope}
-		\node at (barycentric cs:M=1,MF=1) [below left] {\textsc{m}};
-		\node at (barycentric cs:M=1,N=1,MF=1) {};
-		\node[anchor=west,align=left] at (3.5,0) {
-			$\{\textsc{m}\} \cap \{\ \} \cap G_s = \{\ \}$
-		};
-	\end{tikzpicture}
-}
-
-\subfloat[Kombination von unbelebtem Femininum und Neutrum]{
-	\begin{tikzpicture}[
-			baseline=(current bounding box.north),
-			set/.style = {
-				circle,
-				draw,
-				minimum size = 2cm
-			}
-		]
-		\node[set, label={180:\textsc{f}}]    (F)  at (0.0,+0.5) {};
-		\node[set, label={  0:}]      (N)  at (1.0,+0.5) {};
-		\node[set, label={270:$G_s$}] (MF) at (0.5,-0.5) {};
-		\begin{scope}
-			\clip (0.0,+0.5) circle(1cm);
-			\clip (1.0,+0.5) circle(1cm);
-			\clip (0.5,-0.5) circle(1cm);
-			\fill[lightgray](0.0,+0.5) circle(1cm);
-		\end{scope}
-		\node at (barycentric cs:F=1,MF=1) [below left] {\textsc{f}};
-		\node at (barycentric cs:F=1,N=1,MF=1) {};
-		\node[anchor=west,align=left] at (3.5,0) {
-			$\{\textsc{f}\} \cap \{\ \} \cap G_s = \{\ \}$
-		};
-	\end{tikzpicture}
-}
-\caption{Kombination verschiedener Genusmerkmale unbelebter Controller}
-\label{fig:iclgr2}
+\begin{figure}
+\begin{tikzpicture}[
+		baseline=(current bounding box.north),
+		set/.style = {
+			circle,
+			draw,
+			minimum size = 2cm
+		}
+	]
+	\node[set, label={180:\textsc{f}}]    (F)  at (0.0,+0.5) {};
+	\node[set, label={  0:}]      (N)  at (1.0,+0.5) {};
+	\node[set, label={270:$G_s$}] (MF) at (0.5,-0.5) {};
+	\begin{scope}
+		\clip (0.0,+0.5) circle(1cm);
+		\clip (1.0,+0.5) circle(1cm);
+		\clip (0.5,-0.5) circle(1cm);
+		\fill[lightgray](0.0,+0.5) circle(1cm);
+	\end{scope}
+	\node at (barycentric cs:F=1,MF=1) [below left] {\textsc{f}};
+	\node at (barycentric cs:F=1,N=1,MF=1) {};
+	\node[anchor=west,align=left] at (3.5,0) {
+		$\{\textsc{f}\} \cap \{\ \} \cap G_s = \{\ \}$
+	};
+\end{tikzpicture}
+\caption{Kombination von unbelebtem Femininum und Neutrum}
+\label{fig:iclgr2_3}
 \end{figure}
 
 \subsection{Neutrum bei maskulinem und femininem Bezug}
