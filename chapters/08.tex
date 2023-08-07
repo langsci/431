@@ -119,15 +119,26 @@ Beispiele.
 \subsubsection{Kombinierte nominale Controller}
 \label{subsubsec:conomctrlpers}
 
-Das Beispiel und das Schema in \cref{ex:beid2subst} verdeutlichen den
-syntaktischen Kontext, der im Folgenden zu untersuchen sein wird. Der Quantor
-\norm{bėide} bezieht sich als Target direkt auf zwei Controller,
-\lit{Willehalm} und \lit{Dietreich}, ohne dass eine Pronominalform dazwischen
-steht.
+Das Beispiel in \cref{ex:beid2subst} und das Schema in \cref{fig:beid2subst}
+verdeutlichen den syntaktischen Kontext, der im Folgenden zu untersuchen sein
+wird. Der Quantor \norm{bėide} bezieht sich als Target direkt auf zwei
+Controller, \lit{Willehalm} und \lit{Dietreich}, ohne dass eine Pronominalform
+dazwischen steht.
 
 \begin{exe}
 \ex \label{ex:beid2subst}
-	\begin{tikzpicture}[baseline=(1a_lb.base)]
+	\gll Willehalm vnd Dietreich. \\
+		Willehalm[\textsc{nom.sg.\MascM}] und Dietrich[\textsc{nom.sg.\MascM}] \\
+\sn \gll wurden baíde da erſlagen. \\
+		wurden beide-\textsc{nom.pl.\MascM.st} da erschlagen \\
+	\trans `Willehalm und Dietrich wurden beide dort erschlagen.'
+			(%
+				C1:~83vb,36--37%
+			)
+\end{exe}
+
+\begin{figure}
+\begin{tikzpicture}[baseline=(1a_lb.base)]
 	\node at (0,2)  (1a)    {\lit{Willehalm}};
 	\node           (1a_box)[draw,rectangle,fit=(1a)] {};
 	\node           (1a_lb) [above=.5ex of 1a_box, mynodefont]
@@ -144,17 +155,10 @@ steht.
 
 	\draw [-latex] (1a_box) to [out=east, in=west] (2_box);
 	\draw [-latex] (1b_box) to [out=east, in=west] (2_box);
-	\end{tikzpicture}\\
-
-\sn \gll Willehalm vnd Dietreich. \\
-		Willehalm[\textsc{nom.sg.\MascM}] und Dietrich[\textsc{nom.sg.\MascM}] \\
-\sn \gll wurden baíde da erſlagen. \\
-		wurden beide-\textsc{nom.pl.\MascM.st} da erschlagen \\
-	\trans `Willehalm und Dietrich wurden beide dort erschlagen.'
-			(%
-				C1:~83vb,36--37%
-			)
-\end{exe}
+\end{tikzpicture}
+\caption{Direkter Bezug von \norm{bėide} auf zwei Controller}
+\label{fig:beid2subst}
+\end{figure}
 
 Die erwähnten vier Belege, bei denen ein Target \norm{bėide} in einer
 direkten Kongruenz\-beziehung zu zwei Substantiven steht, verteilen sich auf
@@ -363,14 +367,25 @@ bezieht.
 \label{subsubsec:nomctrlpers}
 
 In diesem Abschnitt werden zum Vergleich Belege wie der in
-\cref{ex:beidplsubst} diskutiert. Das Target \lit{bêde} `beide' ist hier
-ebenfalls unmittelbar auf seinen Controller bezogen. Im Vergleich zum vorigen
-Abschnitt handelt es sich beim Controller jedoch nicht um die Kombination von
-Substantiven, sondern nur um ein einzelnes Substantiv, das im Plural steht.
+\cref{ex:beidplsubst} angeführte und in \cref{fig:beidplsubst} illustrierte
+diskutiert. Das Target \lit{bêde} `beide' ist hier ebenfalls unmittelbar auf
+seinen Controller bezogen. Im Vergleich zum vorigen Abschnitt handelt es sich
+beim Controller jedoch nicht um die Kombination von Substantiven, sondern nur
+um ein einzelnes Substantiv, das im Plural steht.
 
 \begin{exe}
 \ex \label{ex:beidplsubst}
-	\begin{tikzpicture}[baseline=(1_lb.base)]
+	\gll die gotes boten bêde \\
+		 die Gottesboten[\textsc{nom.pl.\MascM}] beide-\textsc{nom.pl.\MascM.st} \\
+	\trans `die beiden Gottesboten'
+		(%
+			\KC:~V.~7845;
+			\cite[225]{schroeder1895}%
+		)
+\end{exe}
+
+\begin{figure}
+\begin{tikzpicture}[baseline=(1_lb.base)]
 	\node (1)      [align=center]
 	               {\lit{gotes boten}};
 	\node (1_box)  [draw,rectangle,fit=(1)] {};
@@ -382,16 +397,10 @@ Substantiven, sondern nur um ein einzelnes Substantiv, das im Plural steht.
 	\node (2_lb1)  [above=.5ex of 2_box1, mynodefont] {target};
 
 	\draw [-latex] (1_box) to (2_box1);
-	\end{tikzpicture}\\
-
-\sn \gll die gotes boten bêde \\
-		 die Gottesboten[\textsc{nom.pl.\MascM}] beide-\textsc{nom.pl.\MascM.st} \\
-	\trans `die beiden Gottesboten'
-		(%
-			\KC:~V.~7845;
-			\cite[225]{schroeder1895}%
-		)
-\end{exe}
+\end{tikzpicture}
+\caption{Direkter Bezug eines Targets auf einen einzelnen Controller}
+\label{fig:beidplsubst}
+\end{figure}
 
 Kontexte, in denen \norm{bėide} in einer direkten Kongruenzbeziehung mit einem
 einzigen Substantiv im Plural steht, sind auch in der \KC{} im Vergleich
@@ -560,9 +569,8 @@ Plural sind neun vorhanden.
 
 Hier soll zunächst der Kongruenzbezug zwischen kombinierten Controllern und
 Quantor mit einem Pronomen als Verbindungsglied anhand der gesammelten Belege
-untersucht werden.
-Das Verhältnis zwischen Kongruenzcontrollern und Target wird in
-\cref{ex:beidanactrl} illustriert.%
+untersucht werden. Das Verhältnis zwischen Kongruenzcontrollern und Target wird
+in \cref{ex:beidanactrl} und \cref{fig:beidanactrl} illustriert.%
 %
 	\footnote{Auch für die \KC{} gilt, dass das Personalpronomen der
 		3.~Pers.\ Pl.\ Nom./Akk. in der Regel zu \norm{si} ausgeglichen
@@ -574,7 +582,25 @@ Das Verhältnis zwischen Kongruenzcontrollern und Target wird in
 
 \begin{exe}
 \ex\label{ex:beidanactrl}
-	\begin{tikzpicture}[baseline=(1a_lb.base)]
+	\gll Si nâmen di muoter mit dem sun, \\
+		sie nahmen die Mutter[\textsc{acc.sg.\FemF}] mit dem Sohn[\textsc{dat.sg.\MascM}] \\
+\sn \gll si viengen si bî dem hâre, \\
+		sie fingen \textsc{3pl\subMF.acc} an dem Haare \\
+\sn \gll si vuorten si baide zewâre \\
+		sie führten \textsc{3pl\subMF.acc} beide-\textsc{acc.pl.m+f\subMF.st}
+			wirklich \\
+\sn \gll vur die burch an daz velt \\
+		vor die Stadt an das Ebene \\
+	\trans `Sie nahmen die Mutter mit dem Sohn. Sie fingen sie an den
+		Haaren. Ja, sie führten sie beide vor die Stadt zu der Ebene.'
+		(%
+			KC:~V.~14269--14272;
+			\cite[339]{schroeder1895}%
+		)
+\end{exe}
+
+\begin{figure}
+\begin{tikzpicture}[baseline=(1a_lb.base)]
 	\node at (0,2)  (1a)    [gray]
 	                        {\lit{muoter}};
 	\node           (1a_box)[draw,gray,rectangle,fit=(1a)] {};
@@ -618,24 +644,10 @@ Das Verhältnis zwischen Kongruenzcontrollern und Target wird in
 	\draw [-latex,gray] (1a_box) to [out=east, in=west] (2_box1);
 	\draw [-latex,gray] (1b_box) to [out=east, in=west] (2_box1);
 	\draw [latex-]      (3_box)  to [yshift=1.5ex]      (2_box2);
-	\end{tikzpicture}\\
-
-\sn \gll Si nâmen di muoter mit dem sun, \\
-		sie nahmen die Mutter[\textsc{acc.sg.\FemF}] mit dem Sohn[\textsc{dat.sg.\MascM}] \\
-\sn \gll si viengen si bî dem hâre, \\
-		sie fingen \textsc{3pl\subMF.acc} an dem Haare \\
-\sn \gll si vuorten si baide zewâre \\
-		sie führten \textsc{3pl\subMF.acc} beide-\textsc{acc.pl.m+f\subMF.st}
-			wirklich \\
-\sn \gll vur die burch an daz velt \\
-		vor die Stadt an das Ebene \\
-	\trans `Sie nahmen die Mutter mit dem Sohn. Sie fingen sie an den
-		Haaren. Ja, sie führten sie beide vor die Stadt zu der Ebene.'
-		(%
-			KC:~V.~14269--14272;
-			\cite[339]{schroeder1895}%
-		)
-\end{exe}
+\end{tikzpicture}
+\caption{Indirekter Bezug eines Targets auf zwei \q{Erstcontroller} über ein Personalpronomen}
+\label{fig:beidanactrl}
+\end{figure}
 
 Auch wenn es sich bei \lit{muoter mit dem sun} `Mutter mit dem Sohn' nicht
 strikt um eine syntaktische Koordination vom Typ \q{X \fw{und}
@@ -820,53 +832,14 @@ baidev verloͤrn} `dann wären wir beide verloren' (C1:~60rb,44--60va,3).
 \label{subsubsec:beid2p2snglnkc}
 
 Beim indirekten Bezug zwischen einem einzelnen Substantiv im Plural und
-\norm{bėide} als Target wie in \cref{ex:nplsibeide} liegt in der Stichprobe
-zur \KC{} keine Variation vor. In allen neun Fällen sind
-ausschließlich Formen von \norm{bėid(e)} belegt, davon besitzen alle eine
+\norm{bėide} als Target wie in \cref{ex:nplsibeide} und \cref{fig:nplsibeide}
+liegt in der Stichprobe zur \KC{} keine Variation vor. In allen neun Fällen
+sind ausschließlich Formen von \norm{bėid(e)} belegt, davon besitzen alle eine
 männlich-maskuline Referenz.
 
 \begin{exe}
 \ex \label{ex:nplsibeide}
-	\begin{tikzpicture}[baseline=(2_lb1.base)]
-	    \node at (0,0)  (1)     [gray]
-	                            {\lit{hêrren}};
-	    \node           (1_box) [draw,gray,rectangle,fit=(1)] {};
-	    \node           (1_lb)  [above=.5ex of 1_box, gray, mynodefont]
-	                            {controller};
-
-		\node at (3,0) (2)      {\lit{si}};
-	    \draw (2) node (2_box1) [
-	                        draw,
-	                        gray,
-	                        minimum height=3em,
-	                        minimum width=3em,
-	                        xshift=-.5ex,
-	                        yshift=+.5ex,
-	                        rectangle
-	                    ] {};
-	    \draw (2) node (2_box2) [
-	                        draw,
-	                        minimum height=3em,
-	                        minimum width=3em,
-	                        xshift=+.5ex,
-	                        yshift=-.5ex,
-	                        rectangle
-	                    ] {};
-	    \node           (2_lb1) [above=.5ex of 2_box1, gray, mynodefont]
-	                            {target};
-	    \node           (2_lb2) [below=.5ex of 2_box2, mynodefont]
-	                            {controller};
-
-	    \node at (6,0)  (3)      {\lit{baide}};
-	    \node           (3_box)  [draw,rectangle,fit=(3)] {};
-	    \node           (3_lb)   [above=.5ex of 3_box, mynodefont]
-	                            {target};
-
-	    \draw [-latex,gray] (1_box)  to [yshift=-1.5ex]     (2_box1);
-	    \draw [latex-]      (3_box)  to [yshift=1.5ex]      (2_box2);
-	\end{tikzpicture}\\
-
-\sn \gll do die hêrren pranten \textelp{} \\
+	\gll do die hêrren pranten \textelp{} \\
 			als die Herr-\textsc{nom.pl.\MascM} brannten {} \\
 \sn \gll da ze Kastel er si baide begraif \\
 			dort zu Kastel er \textsc{3pl\subM.acc}
@@ -878,6 +851,49 @@ männlich-maskuline Referenz.
 				\cite[372]{schroeder1895}%
 			)
 \end{exe}
+
+\begin{figure}
+\begin{tikzpicture}[baseline=(2_lb1.base)]
+    \node at (0,0)  (1)     [gray]
+                            {\lit{hêrren}};
+    \node           (1_box) [draw,gray,rectangle,fit=(1)] {};
+    \node           (1_lb)  [above=.5ex of 1_box, gray, mynodefont]
+                            {controller};
+
+	\node at (3,0) (2)      {\lit{si}};
+    \draw (2) node (2_box1) [
+                        draw,
+                        gray,
+                        minimum height=3em,
+                        minimum width=3em,
+                        xshift=-.5ex,
+                        yshift=+.5ex,
+                        rectangle
+                    ] {};
+    \draw (2) node (2_box2) [
+                        draw,
+                        minimum height=3em,
+                        minimum width=3em,
+                        xshift=+.5ex,
+                        yshift=-.5ex,
+                        rectangle
+                    ] {};
+    \node           (2_lb1) [above=.5ex of 2_box1, gray, mynodefont]
+                            {target};
+    \node           (2_lb2) [below=.5ex of 2_box2, mynodefont]
+                            {controller};
+
+    \node at (6,0)  (3)      {\lit{baide}};
+    \node           (3_box)  [draw,rectangle,fit=(3)] {};
+    \node           (3_lb)   [above=.5ex of 3_box, mynodefont]
+                            {target};
+
+    \draw [-latex,gray] (1_box)  to [yshift=-1.5ex]     (2_box1);
+    \draw [latex-]      (3_box)  to [yshift=1.5ex]      (2_box2);
+\end{tikzpicture}
+\caption{Indirekter Bezug eines Targets auf einen einzelnen \q{Erstcontroller} über ein Personalpronomen}
+\label{fig:nplsibeide}
+\end{figure}
 
 \subsubsection[Zu Askedals (1973) Hypothese der
 ‚Monoflexion‘]{Zu \posscite{askedal1973} Hypothese der \q{Monoflexion}}
@@ -3300,7 +3316,20 @@ schematisch dargestellt.
 
 \begin{exe}
 \ex\label{ex:recquery}
-	\begin{tikzpicture}[baseline=(2_lb1.base)]
+	\gll ſi macheten ir antwerc. \\
+		sie machten ihr Belagerungsgerät[\textsc{acc.sg.\NeutI}] \\
+\sn \gll bediv groz unde ſtarc. \\
+		beide groß[\textsc{acc.sg.\NeutI}] und stark[\textsc{acc.sg.\NeutI}] \\
+	\trans `Sie machten ihr Belagerungsgerät sowohl groß als auch stark.'
+			(%
+				A1:~32vb,34--35; vgl.
+				\KC:~V.~7586--7587;
+				\cite[220]{schroeder1895}%
+			)
+\end{exe}
+
+\begin{figure}
+\begin{tikzpicture}[baseline=(2_lb1.base)]
     \node (1)      {\lit{antwerc}};
     \node (1_box)  [draw,rectangle,fit=(1)] {};
     \node (1_lb)   [above=.5ex of 1_box, mynodefont]{controller};
@@ -3333,19 +3362,10 @@ schematisch dargestellt.
 
     \draw [-latex] (1_box)  to [yshift=-2ex] (2_box1);
     \draw [latex-, dashed] (3_box) to [yshift=1.5ex] (2_box2);
-    \end{tikzpicture}\\
-
-\sn \gll ſi macheten ir antwerc. \\
-		sie machten ihr Belagerungsgerät[\textsc{acc.sg.\NeutI}] \\
-\sn \gll bediv groz unde ſtarc. \\
-		beide groß[\textsc{acc.sg.\NeutI}] und stark[\textsc{acc.sg.\NeutI}] \\
-	\trans `Sie machten ihr Belagerungsgerät sowohl groß als auch stark.'
-			(%
-				A1:~32vb,34--35; vgl.
-				\KC:~V.~7586--7587;
-				\cite[220]{schroeder1895}%
-			)
-\end{exe}
+\end{tikzpicture}
+\caption{Hypothetischer indirekter Bezug eines Targets auf einen einzelnen \q{Erstcontroller} über ein prädikatives Adjektiv}
+\label{fig:recquery}
+\end{figure}
 
 Auch wenn \lit{groz} `groß' und \lit{ſtarc} `kräftig, stark' in
 \cref{ex:recquery} keine Flexionsendungen aufweisen, da es sich um
