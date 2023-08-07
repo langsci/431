@@ -168,15 +168,15 @@ syntaktischen Kontext.
 \centering
 \caption{Flexion nach Personenmerkmalen der kombinierten nominalen Controller}
 \begin{tabular}{
-	l l
+	>{\scshape}l >{\scshape}l
 	r r
 	r
 }
 \toprule
-Controller 1
-	& Controller 2
-	& bėide
-	& bėidiu
+\normalfont Controller 1
+	& \normalfont Controller 2
+	& \norm{bėide}
+	& \norm{bėidiu}
 	& Summe
 	\\
 
@@ -402,11 +402,11 @@ Flexionstyp.
 \begin{table}
 \centering
 \caption{Flexion nach Personenmerkmalen der einfachen nominalen Controller}
-\begin{tabular}{l r r r}
+\begin{tabular}{>{\scshape}l r r r}
 \toprule
-Controller
-	& bėid(e)
-	& bėidiu
+\normalfont Controller
+	& \norm{bėid(e)}
+	& \norm{bėidiu}
 	& Summe
 	\\
 
@@ -422,7 +422,7 @@ Controller
 
 \midrule
 
-Summe   & 12 &  4 & 16 \\
+\normalfont Summe & 12 &  4 & 16 \\
 
 \bottomrule
 \end{tabular}
@@ -657,14 +657,14 @@ Kongruenzformen aufweisen (effektiv: B1 und VB; vgl.~auch
 \caption{Flexion nach Personenmerkmalen der anaphorischen Controller
 (kombinierter Bezug)}
 \begin{tabular}{
-	l @{$~+~$} l
+	>{\scshape}l @{$~+~$} >{\scshape}l
     r r
     r
 }
 \toprule
 \mc{2}{c}{Controller}
-    & bėid(e)
-    & bėidiu
+    & \norm{bėid(e)}
+    & \norm{bėidiu}
     & Summe
     \\
 
@@ -896,7 +896,7 @@ Stellen beziehen.
 
 \begin{table}
 \centering
-\caption{Kombinationen von \norm{sie/siu/die/diu bėide/-iu} in der \KC{}}
+\caption{Kombinationen von \norm{si/sie/siu} und \norm{di/die/diu} mit \norm{bėide/-iu} in der \KC{}}
 \begin{tabular}{
 	l
 	@{\hspace{4\tabcolsep}}
@@ -910,24 +910,24 @@ Stellen beziehen.
 \toprule
 
 Controller
-	& bėide
-	& beid
-	& bėidiu
+	& \norm{bėide}
+	& \norm{bėid}
+	& \norm{bėidiu}
 	& Summe
 	\\
 
 \midrule
 
-si    & 12 &  6 &  1 & 19 \\
+\norm{si}  & 12 &  6 &  1 & 19 \\
 
 \midrule
 
-die   &  1 &    &    &  1 \\
-di    &  1 &  1 &    &  2 \\
+\norm{di}  &  1 &  1 &    &  2 \\
+\norm{die} &  1 &    &    &  1 \\
 
 \midrule
 
-Summe & 14 &  7 &  1 & 22 \\
+Summe      & 14 &  7 &  1 & 22 \\
 
 \bottomrule
 \end{tabular}
@@ -1071,82 +1071,82 @@ Vorkommen von \norm{si} als Basis für ein Enklitikum (\norm{siȥ/-n} $\gets$
 \centering
 \caption{Varianten des Personalpronomens der 3.\ Pers.\ Pl.\ Nom./Akk.\ in je 1.000 Zeilen}
 \begin{tabular}{l
-	r r r
-	@{\hspace{4\tabcolsep}}
 	r
+	@{\hspace{4\tabcolsep}}
+	r r r
 	@{\hspace{4\tabcolsep}}
 	r
 }
 \toprule
 Hs.
-	& sie
-	& sei
-	& siu
-	& si
+	& \norm{si}
+	& \norm{sie}
+	& \norm{siu}
+	& \norm{sei}
 	& Summe
 	\\
 
 \midrule
 
 A1
-	& 2
-	& % --
-	& 1
 	& 123
+	& 2
+	& 1
+	& % --
 	& 126
 	\\
 
 M
-	& % --
- 	& 2
-	& 6
 	& 86
+	& % --
+	& 6
+ 	& 2
 	& 94
 	\\
 
 \midrule
 
 B1
-	& 1
-	& 2
-	& % --
 	& 83
+	& 1
+	& % --
+	& 2
 	& 86
 	\\
 
 VB
+	& 37
 	& 38
 	& % --
 	& % --
-	& 37
 	& 75
 	\\
 
 \midrule
 
 C1
-	& % --
-	& % --
-	& % --
 	& 97
+	& % --
+	& % --
+	& % --
 	& 97
 	\\
 
 K
-	& % --
-	& % --
-	& % --
 	& 50
+	& % --
+	& % --
+	& % --
 	& 50
 	\\
 
 \midrule
 
 Summe
-	&  41
-	&   4
-	&   7
 	& 476
+	&  41
+	&   7
+	&   4
 	& 528
 	\\
 
@@ -1230,7 +1230,8 @@ syntaktischen Kontexte Belege für kombinierten unbelebten Bezug.
 
 \begin{table}
 \centering
-\caption{Flexion nach syntaktischem Kontext (kombinierter Bezug)}
+\caption{Form von \norm{bėide} nach syntaktischem Kontext (kombinierter Bezug)}
+\setlength{\tabcolsep}{4pt}
 \begin{tabular}{
 	l l
 	c
@@ -1241,14 +1242,14 @@ syntaktischen Kontexte Belege für kombinierten unbelebten Bezug.
 	r
 }
 \toprule
-\mr{2}{*}{Belebtheit}
-	& \mr{2}{*}{Geschlecht}
+\mr{2}{*}[-.5ex]{Belebtheit}
+	& \mr{2}{*}[-.5ex]{Geschlecht}
 	& %
 	& \mc{2}{c}{$N_i + N_j$}
 	& %
 	& \mc{2}{c}{$PRO_{i + j}$}
 	& %
-	& \mr{2}{*}{Summe}
+	& \mr{2}{*}[-.5ex]{Summe}
 	\\
 
 \cmidrule{4-5}
@@ -1257,11 +1258,11 @@ syntaktischen Kontexte Belege für kombinierten unbelebten Bezug.
 %
 	& %
 	& %
-	& bėid(e)
-	& bėidiu
+	& \norm{bėid(e)}
+	& \norm{bėidiu}
 	& %
-	& bėid(e)
-	& bėidiu
+	& \norm{bėid(e)}
+	& \norm{bėidiu}
 	& %
 	& %
 	\\
@@ -1337,7 +1338,7 @@ vor.
 
 \begin{table}
 \centering
-\caption{Flexion nach syntaktischem Kontext (einfacher Bezug)}
+\caption{Form von \norm{bėide} nach syntaktischem Kontext (einfacher Bezug)}
 \begin{tabular}{
 	l l
 	c
@@ -1348,14 +1349,14 @@ vor.
 	r
 }
 \toprule
-\mr{2}{*}{Belebtheit}
-	& \mr{2}{*}{Genus}
+\mr{2}{*}[-.5ex]{Belebtheit}
+	& \mr{2}{*}[-.5ex]{Genus}
 	& %
 	& \mc{2}{c}{$N_i$}
 	& %
 	& \mc{2}{c}{$PRO_i$}
 	& %
-	& \mr{2}{*}{Summe}
+	& \mr{2}{*}[-.5ex]{Summe}
 	\\
 
 \cmidrule{4-5}
@@ -1364,11 +1365,11 @@ vor.
 %
 	& %
 	& %
-	& bėid(e)
-	& bėidiu
+	& \norm{bėid(e)}
+	& \norm{bėidiu}
 	& %
-	& bėid(e)
-	& bėidiu
+	& \norm{bėid(e)}
+	& \norm{bėidiu}
 	& %
 	& %
 	\\
@@ -1469,11 +1470,12 @@ zusammenzufassen. Die Verteilung der Belege wird in \cref{tab:codistp}
 aufgeführt.
 
 \begin{table}
-\centering
-\caption{Flexion nach Distanz von kombinierten nominalen Controllern}
+\setlength{\tabcolsep}{4pt}
+\caption{Form von \norm{bėide} nach Distanz von kombinierten nominalen
+Controllern}
 \begin{tabular}{
 	l
-	c l l
+	c >{\scshape}l >{\scshape}l
 	r
 	r
 	r
@@ -1482,10 +1484,10 @@ aufgeführt.
 
 Domäne
 	& Wortdist.
-	& Controller 1
-	& Controller 2
-	& bėide
-	& bėidiu
+	& \normalfont Controller 1
+	& \normalfont Controller 2
+	& \norm{bėide}
+	& \norm{bėidiu}
 	& Summe
 	\\
 
@@ -1540,10 +1542,10 @@ Zu beachten ist wieder, dass die Belege für zwei kombinierte 3.\ Pers.\ M.\
 \norm{bėide} bezieht sich an dieser Stelle auf \norm{Dietrīch} und
 \norm{Willehalm} \cref{ex:dietwill2}. Hier steht in beiden Fällen in Einklang
 mit Genus und Sexus \norm{bėide}. Bei gleicher Entfernung zu den jeweiligen
-Controllern steht bei der Kombination von feminin-weiblichem \lit{muͦter}
-`Mutter' mit pronominalem \lit{dv} (gemeint ist der \lit{chûnig} `König' in B1
-(23rc,5) die formal neutrale Form \lit{beideu} \cref{ex:mutterdu2}. Dies
-geschieht in Übereinstimmung mit dem gemischten Geschlecht der Controller.
+Controllern steht in \cref{ex:mutterdu2} bei der Kombination von
+feminin-weiblichem \lit{muͦter} `Mutter' mit pronominalem \lit{dv} `du' die
+formal neutrale Form \lit{beideu}. Dies geschieht in Übereinstimmung mit dem
+gemischten Geschlecht der Controller.
 
 \begin{exe}
 \ex \label{ex:dietwill2} % 203
@@ -1574,7 +1576,8 @@ geschieht in Übereinstimmung mit dem gemischten Geschlecht der Controller.
 		dein Mutter[\textsc{nom.sg.\FemF}] und \textsc{2sg\subM.nom} \\
 \sn \gll Schv̂ln beideu chv̂men {dar zvͦ} \\
 		sollen beide-\textsc{nom.pl.\NeutMF.st} kommen dahin \\
-	\trans `Deine Mutter und du sollt beide dorthin kommen.'
+	\trans `Deine Mutter und du \textins{=~der König} sollt beide dorthin
+		kommen.'
 		(%
 			B1:~23rc,13--14;
 			3/1~Wortformen, gleicher Teilsatz%
@@ -1652,10 +1655,10 @@ die neutrales \norm{-iu} entgegen Form und Semantik aufweisen.
 
 \begin{table}
 \centering
-\caption{Flexion nach Distanz vom einfachen nominalen Controller}
+\caption{Form von \norm{bėide} nach Distanz vom einfachen nominalen Controller}
 \begin{tabular}{
 	l
-	c l
+	c >{\scshape}l
 	r r
 	r
 }
@@ -1663,9 +1666,9 @@ die neutrales \norm{-iu} entgegen Form und Semantik aufweisen.
 
 Domäne
 	& Wortdist.
-	& Controller
-	& bėid(e)
-	& bėidiu
+	& \normalfont Controller
+	& \norm{bėid(e)}
+	& \norm{bėidiu}
 	& Summe
 	\\
 
@@ -1707,7 +1710,7 @@ gl. Satzglied
 
 gl. Teilsatz
 	& 1 \dots\ 3
-	& \textsc{3pl.\MascM}
+	& 3pl.\MascM
 	& 2
 	& 2
 	& 4
@@ -1808,9 +1811,8 @@ regelmäßig eine Form des Typs \norm{bėid(e)}. Die formal neutrale Form
 ungleichem Geschlecht oder Genus belegt.
 
 \begin{table}
-\centering
-\caption{Flexion nach Distanz vom anaphorischen Controller (kombinierter
-Bezug)}
+\setlength{\tabcolsep}{4pt}
+\caption{Form von \norm{bėide} nach Distanz vom anaphorischen Controller (kombinierter Bezug)}
 \begin{tabular}{
 	l
 	c
@@ -1842,11 +1844,11 @@ Bezug)}
 
 %
 	& %
-	& \mc{1}{c}{bėid(e)}
-	& \mc{1}{c}{bėidiu}
+	& \mc{1}{c}{\norm{bėid(e)}}
+	& \mc{1}{c}{\norm{bėidiu}}
 	& %
-	& \mc{1}{c}{bėid(e)}
-	& \mc{1}{c}{bėidiu}
+	& \mc{1}{c}{\norm{bėid(e)}}
+	& \mc{1}{c}{\norm{bėidiu}}
 	& %
 	\\
 
@@ -2023,7 +2025,7 @@ Durchschnitt beträgt die Distanz rund 19 Wortformen zwischen Erstcontroller und
 
 \begin{table}
 \centering
-\caption{Flexion nach Distanz von kombinierten Erstcontrollern}
+\caption{Form von \norm{bėide} nach Distanz von kombinierten Erstcontrollern}
 %
 % {1,2,3,4} × 5 ^ {1,2,3}
 %
@@ -2058,11 +2060,11 @@ Durchschnitt beträgt die Distanz rund 19 Wortformen zwischen Erstcontroller und
 
 %
 	& %
-	& \mc{1}{c}{bėid(e)}
-	& \mc{1}{c}{bėidiu}
+	& \mc{1}{c}{\norm{bėid(e)}}
+	& \mc{1}{c}{\norm{bėidiu}}
 	& %
-	& \mc{1}{c}{bėid(e)}
-	& \mc{1}{c}{bėidiu}
+	& \mc{1}{c}{\norm{bėid(e)}}
+	& \mc{1}{c}{\norm{bėidiu}}
 	& %
 	\\
 
@@ -2301,10 +2303,10 @@ bairischen Handschriften bei der Konjunktion noch beide Formen vorkommen, ab
 dem 14.~Jahrhundert dann bei der Konjunktion bis auf wenige Ausnahmen regelmäßig
 \norm{bėidiu} erscheint.
 
-\begin{table}
+\begin{sidewaystable}
 \centering
 \caption%
-{Form von \norm{bėide} in den exzerpierten Textzeugen nach Funktion}
+{Flexionsform von \norm{bėide} in den exzerpierten Textzeugen nach Funktion}
 \begin{tabular}[t]{
 	l c
 	l
@@ -2435,7 +2437,7 @@ Z
 \bottomrule
 \end{tabular}
 \label{tab:kcbeidefuncvar}
-\end{table}
+\end{sidewaystable}
 
 Wie zuvor beobachtet liegt in den mitteldeutschen Handschriften H
 und P kein Unterschied in der Form der Konjunktion vor
@@ -2468,9 +2470,9 @@ Personenmerkmalhaltigkeit der verschiedenen im \KC{}-Material belegten
 koordinierten Wortarten und Phrasentypen auf und sortiert die einzelnen
 Handschriften nach Variation in der Form der Konjunktion und Entstehungszeit.
 
-\begin{table}
+\begin{sidewaystable}
 \centering
-\caption{Form nach Wortart/Phrasentyp der Konjunkte}
+\caption{Form von \norm{bėide} nach Wortart/Phrasentyp der Konjunkte}
 \begin{tabular}[t]{
 	l c
 	l
@@ -2612,7 +2614,7 @@ Z
 \bottomrule
 \end{tabular}
 \label{tab:beidefuncpos}
-\end{table}
+\end{sidewaystable}
 
 Die größte Varia\-tion herrscht demnach in den Handschriften A1 und
 VB, wobei in A1 keine Belege für \norm{bėide \dots\ unde}
@@ -2680,9 +2682,9 @@ Trotz allem liegen in der Gruppe der belebten Konjunkte mit gemischtem Genus
 beziehungsweise Sexus zehn Belege mit \norm{bėidiu} gegenüber sieben Belegen
 mit \norm{bėide} vor.
 
-\begin{table}
+\begin{sidewaystable}
 \centering
-\caption{Form nach Personenmerkmalen nominaler Konjunkte}
+\caption{Form von \norm{bėide} nach Personenmerkmalen nominaler Konjunkte}
 \begin{tabular}{
 	l
 	r r c r r
@@ -2720,17 +2722,17 @@ mit \norm{bėide} vor.
 \cmidrule{11-12}
 
 %
-	& bėid(e)
-	& bėidiu
+	& \norm{bėid(e)}
+	& \norm{bėidiu}
 	& %
-	& bėid(e)
-	& bėidiu
+	& \norm{bėid(e)}
+	& \norm{bėidiu}
 	& %
-	& bėid(e)
-	& bėidiu
+	& \norm{bėid(e)}
+	& \norm{bėidiu}
 	& %
-	& bėid(e)
-	& bėidiu
+	& \norm{bėid(e)}
+	& \norm{bėidiu}
 	& %
 	\\
 
@@ -2786,7 +2788,7 @@ Summe
 \bottomrule
 \end{tabular}
 \label{tab:konjnomperskc}
-\end{table}
+\end{sidewaystable}
 
 Geht man angesichts dieser Beleglage trotz der Einwände von
 \citet{gjelsten1980} und \citet{ksw2} davon aus, dass Personenmerkmale in der
@@ -3051,18 +3053,18 @@ Determiniererphrasen (DPs) enthalten, nicht nur im Dativ. Möglicherweise liegt
 der Grund dafür in der Versstruktur der \KC{}, obwohl gerade die
 A-Rezension sehr lose mit Metrum und Reim umgeht \autocite[92]{wolf2008}.
 
-\begin{table}
+\begin{sidewaystable}
 \centering
-\caption{Form nach dem Kasus nominaler Konjunkte}
+\caption{Form von \norm{bėide} nach dem Kasus nominaler Konjunkte}
 \begin{tabular}{
-	l
+	>{\scshape}l
 	r r c r r
 	c
 	r r c r r
 	r
 }
 \toprule
-\mr{3}{*}[-1ex]{Kasus}
+\mr{3}{*}[-1ex]{\normalfont Kasus}
 	& \mc{5}{c}{belebt}
 	& % --
 	& \mc{5}{c}{unbelebt}
@@ -3089,17 +3091,17 @@ A-Rezension sehr lose mit Metrum und Reim umgeht \autocite[92]{wolf2008}.
 \cmidrule{11-12}
 
 %
-	& bėid(e)
-	& bėidiu
+	& \norm{bėid(e)}
+	& \norm{bėidiu}
 	& % --
-	& bėid(e)
-	& bėidiu
+	& \norm{bėid(e)}
+	& \norm{bėidiu}
 	& % --
-	& bėid(e)
-	& bėidiu
+	& \norm{bėid(e)}
+	& \norm{bėidiu}
 	& % --
-	& bėid(e)
-	& bėidiu
+	& \norm{bėid(e)}
+	& \norm{bėidiu}
 	& % --
 	\\
 
@@ -3174,7 +3176,7 @@ Summe
 \bottomrule
 \end{tabular}
 \label{tab:kckoordnomctrlcase}
-\end{table}
+\end{sidewaystable}
 
 Zwei Belege mit eindeutig flektiertem \norm{bėide} in Verbindung mit
 \norm{unde} treten nur in Z auf \cref{ex:kczbeidenunde_1}. Dort
@@ -3355,17 +3357,17 @@ Personenmerkmalen übereinstimmen.
 
 \begin{table}
 \centering
-\caption{Form nach Personenmerkmalen adjektivischer und verbaler Konjunkte}
+\caption{Form von \norm{bėide} nach Personenmerkmalen adjektivischer und verbaler Konjunkte}
 \begin{tabular}{
-	l
+	>{\scshape}l
 	r r
 	r
 }
 \toprule
 
-Controller
-	& bėid(e)
-	& bėidiu
+\normalfont Controller
+	& \norm{bėid(e)}
+	& \norm{bėidiu}
 	& Summe
 	\\
 
