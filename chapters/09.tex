@@ -2135,7 +2135,7 @@ aufgelöst wird, bei Apposition hingegen nicht
 					\smaller[2]\upshape\tabcolsep=.5ex%
 					\begin{tabular}[t]{@{} l l l @{}}
 						\ups{gf~case} & \req & \textsc{dat} \\
-						\ups{gf~num} & \req & \textsc{pl} \\
+						\ups{gf~num}  & \req & \textsc{pl} \\
 					\end{tabular}%
 				}]
 			]
@@ -2152,9 +2152,8 @@ aufgelöst wird, bei Apposition hingegen nicht
 			]
 		]
 	]
-	\end{forest}
-	\quad
-	\adjustbox{valign=t}{\smaller[2]%
+	%
+	\node [avmcontainer] {
 		\avm{%
 		\tikzmark{beidenunde_f}$f$: [
 			conj	& \textit{appos} \\
@@ -2163,7 +2162,7 @@ aufgelöst wird, bei Apposition hingegen nicht
 					$g_1$: [
 						pred	& `beide'
 					]~$i$, \smallskip \\
-
+					%
 					$g_2$: [
 						conj	& \textit{g-und} \\
 						\mc{2}{l}{%
@@ -2171,36 +2170,37 @@ aufgelöst wird, bei Apposition hingegen nicht
 								$h_1$: [
 									pred	& `Mann' \\
 									pers	& 3 \\
-									num	& \textsc{sg} \\
+									num		& \textsc{sg} \\
 									gend	& \textsc{m} \\
-									sex	& \SM \\
+									sex		& \SM \\
 									case	& \textsc{dat}
 								], $h_2$: [
 								 	pred	& `Frau' \\
 								 	pers	& 3 \\
-								 	num	& \textsc{sg} \\
+								 	num		& \textsc{sg} \\
 								 	gend	& \textsc{n} \\
-								 	sex	& \SF \\
+								 	sex		& \SF \\
 								 	case	& \textsc{dat}
 								]
 							\}%
 						} \smallskip \\
-
+						%
 						index	& [
 							pers	& 3 \\
 							gend	& \textsc{n} \\
-							num	& \textsc{pl}
+							num		& \textsc{pl}
 						]
 					]~$i$
 				\}%
-			}\smallskip \\
+		}\smallskip \\
 		index	& [
-			pers	& 3 \\
-			gend	& \textsc{n} \\
-			num	& \textsc{pl}
-		] \\
-	] \\
-	}}
+				pers	& 3 \\
+				gend	& \textsc{n} \\
+				num		& \textsc{pl}
+			] \\
+		]}
+	};
+	\end{forest}
 	\begin{tikzpicture}[remember picture, overlay]
 	\draw [myarrow]
 		([yshift=.5ex]{pic cs:beidenunde_DP})
