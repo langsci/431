@@ -259,40 +259,38 @@ Personenmerkmale, von denen Geschlecht -- grammatisches (\textsc{gend}) oder
 semantisches (\textsc{sex}) -- eines ist. Für die Kombination der
 Nominalphrasen lässt sich jedoch kein einzelner Phrasenkopf (\xhead{N})
 identifizieren, mit dessen Genusmerkmal problemlos kongruiert werden kann, was
-in \cref{ex:npconstit} anhand einer Koordinations\-konstruktion verdeutlicht
+in \cref{fig:npconstit} anhand einer Koordinations\-konstruktion verdeutlicht
 wird.
 
-\begin{exe}
-\ex \label{ex:npconstit}
-	\begin{tabular}[t]{@{} r @{\quad} c @{\hspace{2em}} r @{\quad} c @{}}
-	a.
-		& \begin{forest} shorter edges, narrower nodes, italic leaves
-		[NP
-			[\xbar{N}
-				[\xhead{N}
-					[A]
-				]
+\begin{figure}
+\begin{forest} shorter edges, narrower nodes, italic leaves
+	[NP
+		[\xbar{N}
+			[\xhead{N}
+				[A]
 			]
 		]
-		\end{forest}
-		& b.
-		& \begin{forest} shorter edges, narrower nodes, italic leaves
-		[NP
-			[\xbar{N}
-				[\xhead{N}
-					[A]
-				]
-				[Conj
-					[und]
-				]
-				[\xhead{N}
-					[B]
-				]
+	]
+\end{forest}
+\hspace{2em}
+\begin{forest} shorter edges, narrower nodes, italic leaves
+	[NP
+		[\xbar{N}
+			[\xhead{N}
+				[A]
+			]
+			[Conj
+				[und]
+			]
+			[\xhead{N}
+				[B]
 			]
 		]
-		\end{forest}
-	\end{tabular}
-\end{exe}
+	]
+\end{forest}
+\caption{Einfacher und komplexer Phrasenkopf einer NP}
+\label{fig:npconstit}
+\end{figure}
 
 Als Folge ergibt sich, dass die zweite Regel angewandt wird und das Genus
 zugunsten semantischer Eigenschaften aufgelöst wird, wenn möglich. Bei den
@@ -318,7 +316,7 @@ In \cref{ex:gendassgmt1_txt} wird ein Beispiel für den Fall gegeben, in dem das
 Target \lit{pediv} `beide' mit nur einem nominalen Controller \lit{Jnſidel}
 `Siegel' kongruiert. Es handelt sich dabei um ein unbelebtes Substantiv, daher
 definiert \lit{Jnſidel} sein Genusmerkmal über das Lexikon: Es ist ein Neutrum
-\cref{ex:gendassgmt1_morphlex}. Das Target \lit{pediv} kongruiert mit seinem
+(\cref{fig:gendassgmt1_morphlex}). Das Target \lit{pediv} kongruiert mit seinem
 Controller in den formalen Kategorien Kasus, Genus und Numerus. Da nur ein
 Controller involviert ist, kann dessen Genusmerkmal einfach auf Kompatibilität
 abgeprüft werden: Das Target verlangt gemäß seiner Wortform \lit{pediv} ein
@@ -326,31 +324,28 @@ Neutrum; sein Controller \lit{Jnſidel} `Siegel' bietet gemäß seines
 Lexikoneintrags das Neutrum als Genusmerkmal. Kongruenz kommt also zustande.
 
 \begin{exe}
-\ex \label{ex:gendassgmt1}
-\begin{xlist}
-	\ex \label{ex:gendassgmt1_txt}
-		\gll vnſriv pediv Jnſidel \\
-			unser-\textsc{acc.pl.\NeutI.st} beide-\textsc{acc.pl.\NeutI.st}
-				Siegel[\textsc{acc.pl.\NeutI}] \\
-		\trans `unsere beiden Siegel'
-			\parencites(Nr.~3224~A, Freising, 1299)[400,12--13]{cao4}
-	\\
-
-	\ex \label{ex:gendassgmt1_morphlex}
-		\begin{tabular}[t]{@{} l @{\hspace{2em}} c @{\hspace{2em}} l}
-				
-		\norm{insigel}
-			&	N
-			&	\begin{tabular}[t]{@{} l l l @{}}
-					\ups{pred}	& =	& `Siegel' \\
-					\ups{anim}	& = & $-$ \\
-					\ups{gend}	& =	& \textsc{n} \\
-					\ups{pers}	& =	& 3 \\
-				\end{tabular}
-		\end{tabular}
-	\\
-	\end{xlist}
+\ex \label{ex:gendassgmt1_txt}
+	\gll vnſriv pediv Jnſidel \\
+		unser-\textsc{acc.pl.\NeutI.st} beide-\textsc{acc.pl.\NeutI.st}
+			Siegel[\textsc{acc.pl.\NeutI}] \\
+	\trans `unsere beiden Siegel'
+		\parencites(Nr.~3224~A, Freising, 1299)[400,12--13]{cao4}
 \end{exe}
+
+% \begin{figure}
+% \begin{tabular}[t]{@{} l @{\hspace{2em}} c @{\hspace{2em}} l}
+% \norm{insigel}
+% 	&	N
+% 	&	\begin{tabular}[t]{@{} l l l @{}}
+% 			\ups{pred}	& =	& `Siegel' \\
+% 			\ups{anim}	& = & $-$ \\
+% 			\ups{gend}	& =	& \textsc{n} \\
+% 			\ups{pers}	& =	& 3 \\
+% 		\end{tabular}
+% \end{tabular}
+% \caption{Morpholexikalische Definition von \norm{insigel} `Siegel'}
+% \label{fig:gendassgmt1_morphlex}
+% \end{figure}
 
 Dasselbe gilt auch, wenn das Target innerhalb des gleichen Satzes in
 Distanzstellung zu seinem Controller steht, das heißt, ein Floating Quantifier
@@ -358,14 +353,28 @@ vorliegt. In \cref{ex:gendassgmt2} bezieht sich das Target \lit{baide} auf den
 Controller \lit{rihtære} `Richter', wobei der Quantor hinter dem finiten Verb
 im Mittelfeld und damit getrennt von dem Substantiv steht, das er modifiziert.
 Der Zusammenhang zwischen beiden aufeinander bezogenen Teilen wird dadurch
-angezeigt, dass sie miteinander kongruieren. Gerade in diesem Kontext wäre die
-Untersuchung von Hybrid Nouns wie \norm{wīp} `Frau (\NeutF)' interessant, da
-dadurch Aufschluss darüber erlangt würde, ob beim direkten Bezug auf ein
-einzelnes Plural-Substantiv formale oder semantische Kongruenz eintritt.
-Entsprechende Belege sind aber weder im exzerptierten \CAO{}- noch im
-\KC{}-Material vorhanden. Eine Suche im \REM{} nach Formen von \norm{bėide} in
-direkter Abhängigkeit von einem belebten Plural-Substantiv war ebenfalls nicht
-erfolgreich.%
+angezeigt, dass sie miteinander kongruieren.
+
+\begin{exe}
+\ex \label{ex:gendassgmt2}
+	\gll Die richtare ſprachen dar beide zuͦ. \\
+		die Richter[\textsc{nom.pl\subM}] sprachen da
+		beide-\textsc{nom.pl\subM.st} zu \\
+	\trans `Die Richter äußerten sich da beide zu'
+		(%
+			H:~60vb,28; vgl.~abweichend
+			\KC:~V.~10090;
+			\cite[267]{schroeder1895}%
+		)
+\end{exe}
+
+Gerade in diesem Kontext wäre die Untersuchung von Hybrid Nouns wie \norm{wīp}
+`Frau (\NeutF)' interessant, da dadurch Aufschluss darüber erlangt würde, ob
+beim direkten Bezug auf ein einzelnes Plural-Substantiv formale oder
+semantische Kongruenz eintritt. Entsprechende Belege sind aber weder im
+exzerptierten \CAO{}- noch im \KC{}-Material vorhanden. Eine Suche im \REM{}
+nach Formen von \norm{bėide} in direkter Abhängigkeit von einem belebten
+Plural-Substantiv war ebenfalls nicht erfolgreich.%
 %
 	\footnote{Diese Stelle variiert zwischen den Fassungen. So übersetzt
 		\citeauthor{myers2013} sinngemäß: \textquote[{\cite[244]{myers2013};
@@ -458,19 +467,6 @@ erfolgreich.%
 			\end{tabular}
 		}
 
-\begin{exe}
-\ex \label{ex:gendassgmt2}
-	\gll Die richtare ſprachen dar beide zuͦ. \\
-		die Richter[\textsc{nom.pl\subM}]$_i$ sprachen da
-			beide-\textsc{nom.pl\subM.st}$_i$ zu \\
-	\trans `Die Richter äußerten sich da beide zu'
-		(%
-			H:~60vb,28; vgl.~abweichend
-			\KC:~V.~10090;
-			\cite[267]{schroeder1895}%
-		)
-\end{exe}
-
 \subsubsection{Belebte kombinierte Controller}
 \label{subsubsec:x+x_dir_anim}
 
@@ -480,7 +476,7 @@ dass eine koordinierte NP kein Kopf\-nomen beinhalte, insofern bei
 koordinierten nominalen Konjunkten die übliche klare Projektionslinie von genau
 einem N-Kopf zur NP-Ebene fehle \autocites[183,
 Anm.~85]{wechslerzlatic2003}[585, Anm.~7]{wechsler2009}. Der Knoten \q{NP}
-enthält bei der Koordination statt einem Unterknoten drei \cref{ex:npconstit}.%
+enthält bei der Koordination statt einem Unterknoten drei \cref{fig:npconstit}.%
 %
 	\footnote{Aus Sicht der Government-and-Binding-Theorie beziehungsweise des
 	Minimalismus gehen beispielsweise
@@ -535,7 +531,7 @@ distributiven Eigenschaften jedes Gruppenmitglieds ist.%
 %
 Gender Resolution tritt also dem Modell zufolge immer dann ein, wenn
 semantische Geschlechtsmerkmale (\textsc{sex}) keine Schnittmenge bilden
-können, siehe \cref{fig:sexintersect_3}.
+können wie im dritten Diagramm von \cref{fig:sexintersect}.
 
 \begin{figure}
 \begin{tikzpicture}[
@@ -555,12 +551,8 @@ können, siehe \cref{fig:sexintersect_3}.
 \end{scope}
 \node at (.5,0) {\SM};
 \node[anchor=west,align=left] at (3.5,0) {$\{\SM\} \cap \{\SM\} = \{\SM\}$};
-\end{tikzpicture}
-\label{fig:sexintersect_1}
-\caption{Kombination der Sexus-Merkmale belebter Maskulina}
-\end{figure}
+\end{tikzpicture}\bigskip
 
-\begin{figure}
 \begin{tikzpicture}[
 	baseline=(current bounding box.north),
 	set/.style = {
@@ -578,12 +570,8 @@ können, siehe \cref{fig:sexintersect_3}.
 \end{scope}
 \node at (.5,0) {\SF};
 \node[anchor=west,align=left] at (3.5,0) {$\{\SF\} \cap \{\SF\} = \{\SF\}$};
-\end{tikzpicture}
-\label{fig:sexintersect_2}
-\caption{Kombination der Sexus-Merkmale belebter Feminina}
-\end{figure}
+\end{tikzpicture}\bigskip
 
-\begin{figure}
 \begin{tikzpicture}[
 	baseline=(current bounding box.north),
 	set/.style = {
@@ -602,8 +590,8 @@ können, siehe \cref{fig:sexintersect_3}.
 \node at (.5,0) {};
 \node[anchor=west,align=left] at (3.5,0) {$\{\SM\} \cap \{\SF\} = \{\ \}$};
 \end{tikzpicture}
-\label{fig:sexintersect_3}
-\caption{Kombination der Sexus-Merkmale belebter Maskulina und Feminina}
+\caption{Kombination der Sexus-Merkmale belebter Controller}
+\label{fig:sexintersect}
 \end{figure}
 
 Die Menge an Belegen für den direkten Bezug zwischen Controller und Target ist
@@ -616,12 +604,12 @@ im gesammelten Belegmaterial nicht gefunden werden.%
 	belebten Feminina, die direkt durch eine adjektivisch flektierende Wortart
 	modifiziert werden, waren ergebnislos.}
 %
-Das Diagramm in \cref{fig:sexintersect_2} ist daher eine begründete Annahme,
-die sich auf Belege mit indirektem Bezug zwischen Controller und Target stützt
-(siehe~\cref{subsec:beid2p2coordrefl}). Das Beispiel in \cref{ex:dietwill3}
-zeigt die Kombi\-nation zweier männlicher Personen; ein Beispiel für die
-Kombination einer männlichen und einer weiblichen Person wurde bereits in
-\cref{ex:gendres2} gegeben.
+Das zweite Diagramm in \cref{fig:sexintersect} ist daher eine begründete
+Annahme, die sich auf Belege mit indirektem Bezug zwischen Controller und
+Target stützt (siehe~\cref{subsec:beid2p2coordrefl}). Das Beispiel in
+\cref{ex:dietwill3} zeigt die Kombi\-nation zweier männlicher Personen; ein
+Beispiel für die Kombination einer männlichen und einer weiblichen Person wurde
+bereits in \cref{ex:gendres2} gegeben.
 
 \begin{exe}
 \ex\label{ex:dietwill3}
@@ -675,7 +663,7 @@ Neutrum die Resolutionsform darstellt, ist es mit $\{\ \}$ definiert
 \autocites[vgl.][576--578]{wechsler2009}[184--186]{wechslerzlatic2003}. Damit
 ergibt sich für das Mittelhochdeutsche ein ähnliches System wie im Färöischen
 oder im Isländischen
-\autocites(vgl.~\cref{ex:iclgr,fig:iclgr})[225--226]{thrainsson2004}%
+\autocites(vgl.~\cref{fig:iclgr})[225--226]{thrainsson2004}%
 {wechsler2009}. Anders als das Mittelhochdeutsche besitzen diese im Nom.~Pl.
 (Isländisch auch im Akk.~Pl.) der starken Adjektivdeklination unterschiedliche
 Endungen für die einzelnen Genera.%
@@ -688,21 +676,7 @@ Endungen für die einzelnen Genera.%
 		\cite[182--183]{ksw2}); siehe auch \cref{tab:faerislmhdadj}.%
 	}
 
-\begin{exe}
-\ex \label{ex:iclgr}
-	Isländisch \autocites[nach][578]{wechsler2009}[186]{wechslerzlatic2003}
-	
-	$G_s = \{\textsc{m}, \textsc{f}\}$
-
-	\begin{tabular}[b]{@{} >{\scshape}l @{~} l l @{}}
-		masc: & $\{\textsc{m}\}$ & ($\gets \SM$) \\
-		fem:  & $\{\textsc{f}\}$ & ($\gets \SF$) \\
-		neut: & $\{\ \}$  & (expletives Genus) \\
-	\end{tabular}
-\end{exe}
-
 \begin{figure}
-\centering
 	\begin{tikzpicture}[
 		baseline=(current bounding box.north),
 		set/.style = {
@@ -729,6 +703,14 @@ Endungen für die einzelnen Genera.%
 	\node at (barycentric cs:M1=1,M2=1,M3=1) {\textsc{m}};
 
 	\node[anchor=west,align=left] at (3.5,0) {
+		$G_s = \{\textsc{m}, \textsc{f}\}$\medskip\\
+
+		\begin{tabular}[b]{@{} >{\scshape}l @{~} l l @{}}
+			masc: & $\{\textsc{m}\}$ & ($\gets \SM$) \\
+			fem:  & $\{\textsc{f}\}$ & ($\gets \SF$) \\
+			neut: & $\{\ \}$  & (expletives Genus) \\
+		\end{tabular}\bigskip\\
+
 		$\{\textsc{m}\} \cap \{\textsc{m}\} \cap G_s = \{\textsc{m}\}$
 	};
 	\end{tikzpicture}
@@ -738,7 +720,7 @@ Endungen für die einzelnen Genera.%
 \label{fig:iclgr}
 \end{figure}
 
-Aus den Regeln in \cref{ex:iclgr} ergibt sich das Resultat in \cref{fig:iclgr},
+Aus den Regeln in \cref{fig:iclgr} ergibt sich das abgebildete Schema,
 das beim Bezug von \norm{bėide} auf zwei Maskulina eintritt. In den zwei
 regelmäßigen Fällen im Belegmaterial \cref{ex:m+m_inan_e} unterscheiden die
 betreffenden Urkunden in der Grafie deutlich zwischen den Typen \norm{-e} und
@@ -1017,34 +999,35 @@ zwar gewöhnlich durch formale Gender Resolution blockiert, jedoch nicht immer
 vollständig, sodass die beiden Strategien in Konkurrenz zueinander stehen.
 
 Das Pronomen \norm{si} in \cref{fig:beid2p2coordn} definiert die grammatischen
-Eigenschaften in \cref{ex:beid2p2coordn_morphlex1}: Es handelt sich um ein
+Eigenschaften in \cref{fig:beid2p2coordn_morphlex1}: Es handelt sich um ein
 Personalpronomen im Nominativ Plural. Darüber hinaus referenziert dieses
 Pronomen eine Gruppe von dritten Personen mit divergierenden
 Geschlechtsmerkmalen. Das Pronomen \norm{si} ist selbst formal
 genusindifferent.
 
-\begin{exe}
-\ex \label{ex:beid2p2coordn_morphlex1}
-	\begin{tabular}[t]{@{} l @{\hspace{2em}} c @{\hspace{2em}} l}
-		\norm{si}
-			&	D
-			&	\begin{tabular}[t]{l l l}
-					\ups{pred}				& =	& $pro$ \\
-					\ups{prontype}			& =	& $pers$ \\
-					\ups{concord}			& =	& ↓ \\
-						\quad\downs{num}	& =	& \textsc{pl} \\
-						\quad\downs{case}	& =	& \textsc{nom} \\
-						\quad\downs{gend}	& = & Ø \\
-					\ups{index}			& =	& ↓ \\
-						\quad\downs{pers}	& =	& 3 \\
-						\quad\downs{num}	& =	& \textsc{pl} \\
-						\quad\downs{sex}	& =	& $\SM \cap \SF$ \\
-				\end{tabular}
-		\\
-	\end{tabular}
-\end{exe}
+\begin{figure}
+\begin{tabular}[t]{@{} l @{\hspace{2em}} c @{\hspace{2em}} l}
+	\norm{si}
+		&	D
+		&	\begin{tabular}[t]{l l l}
+				\ups{pred}				& =	& $pro$ \\
+				\ups{prontype}			& =	& $pers$ \\
+				\ups{concord}			& =	& ↓ \\
+					\quad\downs{num}	& =	& \textsc{pl} \\
+					\quad\downs{case}	& =	& \textsc{nom} \\
+					\quad\downs{gend}	& = & Ø \\
+				\ups{index}			& =	& ↓ \\
+					\quad\downs{pers}	& =	& 3 \\
+					\quad\downs{num}	& =	& \textsc{pl} \\
+					\quad\downs{sex}	& =	& $\SM \cap \SF$ \\
+			\end{tabular}
+			\\
+\end{tabular}
+\caption{Morpholexikalische Definition von \norm{si} `sie (\textsc{pl})'}
+\label{fig:beid2p2coordn_morphlex1}
+\end{figure}
 
-Das Target \norm{bėide} in \cref{ex:beid2p2coordn_morphlex2} kongruiert mit
+Das Target \norm{bėide} in \cref{fig:beid2p2coordn_morphlex2} kongruiert mit
 seinem Controller in den formalen Merk\-malen (\textsc{concord}): Kasus (case),
 Genus (\textsc{gend}) und Numerus (\textsc{num}). Darüber hinaus koindiziert
 (\textsc{index}) es seinen Controller mit dessen Merkmalen Person
@@ -1067,71 +1050,73 @@ der Controller für formale Kongruenzmerkmale lexikalisch nicht spezifiziert ist
 %
 Das semantische Sexusmerkmal wird also in Abwesenheit des formalen
 Genusmerkmals verwendet, um Kongruenz zu ermöglichen
-\cref{ex:beid2p2coordn_morphlex2}. Die Kombination von männlicher und
+\cref{fig:beid2p2coordn_morphlex2}. Die Kombination von männlicher und
 weiblicher Referenz wird daher am Target zu einem Neutrum aufgelöst.
 
-\begin{exe}
-\ex \label{ex:beid2p2coordn_morphlex2}
-	\begin{tabular}[t]{@{} l @{\hspace{2em}} c @{\hspace{2em}} l}
-		\norm{bėidiu}
-			&	Q
-			&	\begin{tabular}[t]{l l l}
-					\ups{pred}				& =		& `beide' \\
-					\ups{index}			& =		& ↓ \\
-						\quad\downs{pers}	& =		& \textsc{3} \\
-						\quad\downs{num}	& =		& \textsc{pl} \\
-						\quad\downs{sex}	& =		& $\SM \cap \SF$
-							\tikzmark{b2p2cml1_sex}\\
-					\ups{gf~concord}		& =		& ↓ \\
-						\quad\downs{case}	& \req	& \textsc{nom} \\
-						\quad\downs{num}	& \req	& \textsc{pl} \\
-				\end{tabular}
-		\\
-	\end{tabular}
-	\begin{tikzpicture}[remember picture, overlay]
-		\draw [-latex]
-			([yshift=1ex]{pic cs:b2p2cml1_sex})
-			-- ++(east:3em) node[anchor=west] {\textsc{n} (\norm{-iu})};
-	\end{tikzpicture}
-\end{exe}
+\begin{figure}
+\begin{tabular}[t]{@{} l @{\hspace{2em}} c @{\hspace{2em}} l}
+	\norm{bėidiu}
+		&	Q
+		&	\begin{tabular}[t]{l l l}
+				\ups{pred}				& =		& `beide' \\
+				\ups{index}			& =		& ↓ \\
+					\quad\downs{pers}	& =		& \textsc{3} \\
+					\quad\downs{num}	& =		& \textsc{pl} \\
+					\quad\downs{sex}	& =		& $\SM \cap \SF$
+						\tikzmark{b2p2cml1_sex}\\
+				\ups{gf~concord}		& =		& ↓ \\
+					\quad\downs{case}	& \req	& \textsc{nom} \\
+					\quad\downs{num}	& \req	& \textsc{pl} \\
+			\end{tabular}
+	\\
+\end{tabular}
+\begin{tikzpicture}[remember picture, overlay]
+	\draw [-latex]
+		([yshift=1ex]{pic cs:b2p2cml1_sex})
+		-- ++(east:3em) node[anchor=west] {\textsc{n} (\norm{-iu})};
+\end{tikzpicture}
+\caption{Morpholexikalische Definition von \norm{bėidiu} `beide' als semantische Resolutionsform}
+\label{fig:beid2p2coordn_morphlex2}
+\end{figure}
 
 Um die trotz allem vorkommende Form \norm{bėide} zu erklären, wäre denkbar,
 dass die Information des Sexusmerkmals formal interpretiert wird
-\cref{ex:beid2p2coordn_morphlex4}: Ein Flexiv, das Maskulina und Feminina
+\cref{fig:beid2p2coordn_morphlex4}: Ein Flexiv, das Maskulina und Feminina
 gleichermaßen bezeichnet, ist mit \norm{-e} vorhanden. Da das Pronomen kein
 Genusmerkmal definiert, läge auch damit keine Verletzung von
 morphosyntaktischen Beschränkungen vor.
 
-\begin{exe}
-\ex \label{ex:beid2p2coordn_morphlex4}
-	\begin{tabular}[t]{@{} l @{\hspace{2em}} c @{\hspace{2em}} l}
-		\norm{bėide}
-			&	Q
-			&	\begin{tabular}[t]{l l l}
-					\ups{pred}				& =		& `beide' \\
-					\ups{index}			& =		& ↓ \\
-						\quad\downs{pers}	& =		& \textsc{3} \\
-						\quad\downs{num}	& =		& \textsc{pl} \\
-						\quad\downs{sex}	& =		& $\SM \cap \SF$
-							\tikzmark{b2p2cml2_sex}\\
-					\ups{gf~concord}		& =		& ↓ \\
-						\quad\downs{case}	& \req	& \textsc{nom} \\
-						\quad\downs{gend}	& \req	& $\textsc{m} \lor f$
-							\tikzmark{b2p2cml2_gend}\\
-						\quad\downs{num}	& \req	& \textsc{pl} \\
-				\end{tabular}
-		\\
-	\end{tabular}
-	\begin{tikzpicture}[remember picture, overlay]
-		\draw [-latex, rounded corners=1ex]
-			([yshift=.5ex]{pic cs:b2p2cml2_sex})
-			-- ++(east:1em) |-
-			([yshift=1ex]{pic cs:b2p2cml2_gend});
-		\draw [-latex]
-			([yshift=0ex]{pic cs:b2p2cml2_gend})
-			-- ++(east:3em) node[anchor=west] {\textsc{m+f} (\norm{-e})};
-	\end{tikzpicture}
-\end{exe}
+\begin{figure}
+\begin{tabular}[t]{@{} l @{\hspace{2em}} c @{\hspace{2em}} l}
+	\norm{bėide}
+		&	Q
+		&	\begin{tabular}[t]{l l l}
+				\ups{pred}				& =		& `beide' \\
+				\ups{index}			& =		& ↓ \\
+					\quad\downs{pers}	& =		& \textsc{3} \\
+					\quad\downs{num}	& =		& \textsc{pl} \\
+					\quad\downs{sex}	& =		& $\SM \cap \SF$
+						\tikzmark{b2p2cml2_sex}\\
+				\ups{gf~concord}		& =		& ↓ \\
+					\quad\downs{case}	& \req	& \textsc{nom} \\
+					\quad\downs{gend}	& \req	& $\textsc{m} \lor \textsc{f}$
+						\tikzmark{b2p2cml2_gend}\\
+					\quad\downs{num}	& \req	& \textsc{pl} \\
+			\end{tabular}
+	\\
+\end{tabular}
+\begin{tikzpicture}[remember picture, overlay]
+	\draw [-latex, rounded corners=1ex]
+		([yshift=.5ex]{pic cs:b2p2cml2_sex})
+		-- ++(east:1em) |-
+		([yshift=1ex]{pic cs:b2p2cml2_gend});
+	\draw [-latex]
+		([yshift=0ex]{pic cs:b2p2cml2_gend})
+		-- ++(east:3em) node[anchor=west] {\textsc{m+f} (\norm{-e})};
+\end{tikzpicture}
+\caption{Morpholexikalische Definition von \norm{bėide} `beide' als semantisch basierte, formal flektierte Resolutionsform}
+\label{fig:beid2p2coordn_morphlex4}
+\end{figure}
 
 Insofern angenommen werden kann, dass \norm{si bėide} bei Kontaktstellung eine
 Phrase bildet, unterscheiden sich die betreffenden Schreiberinnen und Schreiber
@@ -1235,40 +1220,41 @@ dem' und \lit{auf alle deu} `auf alle die'
 in formalem Einklang mit seinem Controller. Anzumerken ist, dass das
 Relativpronomen und \norm{bėide} in unterschiedlichen Phrasen stehen, also
 trotz oberflächlicher Kontaktstellung in der C-Struktur Distanzstellung
-vorliegt. Da das Relativpronomen in \cref{ex:dibeidecstruct} die
+vorliegt. Da das Relativpronomen in \cref{fig:dibeidecstruct} die
 Subjektsposition einnimmt (hier die DP-Schwester von \xbar{C}) und das finite
 Verb im Relativsatz in der rechten Satzklammer steht, bleibt die linke
 Satzklammer (\xhead{C}) leer. In der linearen Abfolge der Wortformen steht
 daher \norm{bėide} direkt hinter \norm{die}, auch wenn \norm{die} und
 \norm{bėide} zusammen keine Phrase bilden.
 
-\begin{exe}
-\ex \label{ex:dibeidecstruct}
-	\begin{forest} shorter edges, align text,
-	[CP
-		[DP
-			[\xhead{D}
-				[\textit{die}]
-			]
+\begin{figure}
+\begin{forest} shorter edges, align text,
+[CP
+	[DP
+		[\xhead{D}
+			[\textit{die}]
 		]
-		[\xbar{C}
-			[\xhead{C}
-				[Ø]
+	]
+	[\xbar{C}
+		[\xhead{C}
+			[Ø]
+		]
+		[VP
+			[QP
+				[\xhead{Q}
+					[\textit{beide}]
+				]
 			]
-			[VP
-				[QP
-					[\xhead{Q}
-						[\textit{beide}]
-					]
-				]
-				[\xbar{V}
-					[\dots]
-				]
+			[\xbar{V}
+				[\dots]
 			]
 		]
 	]
-	\end{forest}
-\end{exe}
+]
+\end{forest}
+\caption{Konstituenz des Satzfragments \fw{\dots, die beide \dots}}
+\label{fig:dibeidecstruct}
+\end{figure}
 
 Die in \cref{ex:m+m_inan_e2_2} zitierte Urkunde unterscheidet zumindest beim
 definiten Artikel regelmäßig zwischen \norm{die} und \norm{diu}. In beiden
