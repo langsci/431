@@ -1269,9 +1269,10 @@ Wie bei den Belegen mit direktem Bezug kann das Auftreten von neutralem
 Mengenoperation analog zu der in \cref{fig:iclgr} erklärt werden; illustriert
 wird dies in \crefrange{fig:iclgr2_1}{fig:iclgr2_3}. Maskulin und Feminin haben
 zwar jeweils eine Schnittmenge mit der Menge der semantisch gekoppelten Genera
-($G_s$), allerdings nicht miteinander. In \cref{ex:iclgr2_1} resultiert daher
-eine leere Menge $\{\ \}$ die dem Neutrum als Resolutionsgenus entspricht. In
-den anderen beiden Fällen mit Neutrum \crefrange{ex:iclgr2_2}{ex:iclgr2_3}
+($G_s$), allerdings nicht miteinander. In \cref{fig:iclgr2_1} zu
+\cref{ex:iclgr2_1} resultiert daher eine leere Menge $\{\ \}$ die dem Neutrum
+als Resolutionsgenus entspricht. In den anderen beiden Fällen mit Neutrum,
+\cref{ex:iclgr2_2,ex:iclgr2_3} mit \cref{fig:iclgr2_2,fig:iclgr2_3},
 kommt es nur jeweils beim Maskulinum und beim Femininum zu einer Schnittmenge
 mit $G_s$, aber nirgends sonst, sodass auch dort nur das Neutrum als Lösung
 bleibt.
@@ -1280,14 +1281,44 @@ bleibt.
 \ex \label{ex:iclgr2}
 \begin{xlist}
 	\ex \label{ex:iclgr2_1}
-		\gll vnd verzeih mich / \textelp{}  dez Cehenten vnd der huͦb / dev
-				paidev {vor benemt} ſint \\
-			und verzichte mich {} {} des Zehnten[\textsc{gen.sg.\MascI}] und der
+		\gll % vnd verzeih mich / \textelp{}
+			dez Cehenten vnd der huͦb / dev paidev {vor benemt} ſint \\
+			% und verzichte mich {} {}
+			des Zehnten[\textsc{gen.sg.\MascI}] und der
 				Hube[\textsc{gen.sg.\FemI}] {} \textsc{rel.nom.pl.\NeutI}
 				beide-\textsc{nom.pl.\NeutI.st} vorgenannt sind \\
-			\trans `und verzichte \textelp{} auf den Zehnten und die Hube,
+			\trans `\textins{und verzichte \dots} auf den Zehnten und die Hube,
 				die beide vorgenannt sind'
 				\parencites(Nr.~3261, Regensburg, 1299)[424,38--39]{cao4}
+
+	\begin{figure}
+	\begin{tikzpicture}[
+		baseline=(current bounding box.north),
+			set/.style = {
+				circle,
+				draw,
+				minimum size = 2cm
+			}
+		]
+		\node[set, label={180:\textsc{m}}]    (M)  at (0.0,+0.5) {};
+		\node[set, label={  0:\textsc{f}}]    (F)  at (1.0,+0.5) {};
+		\node[set, label={270:$G_s$}] (MF) at (0.5,-0.5) {};
+		\begin{scope}
+			\clip (0.0,+0.5) circle(1cm);
+			\clip (1.0,+0.5) circle(1cm);
+			\clip (0.5,-0.5) circle(1cm);
+			\fill[lightgray](0.0,+0.5) circle(1cm);
+		\end{scope}
+		\node at (barycentric cs:M=1,MF=1) [below left]  {\textsc{m}};
+		\node at (barycentric cs:F=1,MF=1) [below right] {\textsc{f}};
+		\node at (barycentric cs:M=1,F=1,MF=1) {};
+		\node[anchor=west,align=left] at (3.5,0) {
+			$\{\textsc{m}\} \cap \{\textsc{f}\} \cap G_s = \{\ \}$
+		};
+	\end{tikzpicture}
+	\caption{Kombination von unbelebtem Maskulinum und Femininum}
+	\label{fig:iclgr2_1}
+	\end{figure}
 
 	\ex \label{ex:iclgr2_2}
 		\gll einen Hof / vnd ein Lehen - da pei / vnd ſind paidev æigen \\
@@ -1299,6 +1330,34 @@ bleibt.
 				sind'
 				\parencites(Nr.~1923, Steyr, 1294)[194,36--37]{cao3}
 
+	\begin{figure}
+	\begin{tikzpicture}[
+			baseline=(current bounding box.north),
+			set/.style = {
+				circle,
+				draw,
+				minimum size = 2cm
+			}
+		]
+		\node[set, label={180:\textsc{m}}]    (M)  at (0.0,+0.5) {};
+		\node[set, label={  0:}]      (N)  at (1.0,+0.5) {};
+		\node[set, label={270:$G_s$}] (MF) at (0.5,-0.5) {};
+		\begin{scope}
+			\clip (0.0,+0.5) circle(1cm);
+			\clip (1.0,+0.5) circle(1cm);
+			\clip (0.5,-0.5) circle(1cm);
+			\fill[lightgray](0.0,+0.5) circle(1cm);
+		\end{scope}
+		\node at (barycentric cs:M=1,MF=1) [below left] {\textsc{m}};
+		\node at (barycentric cs:M=1,N=1,MF=1) {};
+		\node[anchor=west,align=left] at (3.5,0) {
+			$\{\textsc{m}\} \cap \{\ \} \cap G_s = \{\ \}$
+		};
+	\end{tikzpicture}
+	\caption{Kombination von unbelebtem Maskulinum und Neutrum}
+	\label{fig:iclgr2_2}
+	\end{figure}
+
 	\ex \label{ex:iclgr2_3}
 		\gll daz ich auz minem hauz vnd auz miner hofſtat div bediv min recht
 				eigen ſint \textelp{} \\
@@ -1309,93 +1368,36 @@ bleibt.
 			\trans `dass ich aus meinem Haus und aus meinem Grundstück, die
 				beide mein rechtmäßiges Eigentum sind \textelp{}'
 				\parencites(Nr.~1282, Ulm und Kl.~Raitenhaslach, Kr.~Altötting, 1282)[526,37--38]{cao2}
+
+		\begin{figure}
+		\begin{tikzpicture}[
+				baseline=(current bounding box.north),
+				set/.style = {
+					circle,
+					draw,
+					minimum size = 2cm
+				}
+			]
+			\node[set, label={180:\textsc{f}}]    (F)  at (0.0,+0.5) {};
+			\node[set, label={  0:}]      (N)  at (1.0,+0.5) {};
+			\node[set, label={270:$G_s$}] (MF) at (0.5,-0.5) {};
+			\begin{scope}
+				\clip (0.0,+0.5) circle(1cm);
+				\clip (1.0,+0.5) circle(1cm);
+				\clip (0.5,-0.5) circle(1cm);
+				\fill[lightgray](0.0,+0.5) circle(1cm);
+			\end{scope}
+			\node at (barycentric cs:F=1,MF=1) [below left] {\textsc{f}};
+			\node at (barycentric cs:F=1,N=1,MF=1) {};
+			\node[anchor=west,align=left] at (3.5,0) {
+				$\{\textsc{f}\} \cap \{\ \} \cap G_s = \{\ \}$
+			};
+		\end{tikzpicture}
+		\caption{Kombination von unbelebtem Femininum und Neutrum}
+		\label{fig:iclgr2_3}
+		\end{figure}
 	\end{xlist}
 \end{exe}
-
-\begin{figure}
-\begin{tikzpicture}[
-	baseline=(current bounding box.north),
-		set/.style = {
-			circle,
-			draw,
-			minimum size = 2cm
-		}
-	]
-	\node[set, label={180:\textsc{m}}]    (M)  at (0.0,+0.5) {};
-	\node[set, label={  0:\textsc{f}}]    (F)  at (1.0,+0.5) {};
-	\node[set, label={270:$G_s$}] (MF) at (0.5,-0.5) {};
-	\begin{scope}
-		\clip (0.0,+0.5) circle(1cm);
-		\clip (1.0,+0.5) circle(1cm);
-		\clip (0.5,-0.5) circle(1cm);
-		\fill[lightgray](0.0,+0.5) circle(1cm);
-	\end{scope}
-	\node at (barycentric cs:M=1,MF=1) [below left]  {\textsc{m}};
-	\node at (barycentric cs:F=1,MF=1) [below right] {\textsc{f}};
-	\node at (barycentric cs:M=1,F=1,MF=1) {};
-	\node[anchor=west,align=left] at (3.5,0) {
-		$\{\textsc{m}\} \cap \{\textsc{f}\} \cap G_s = \{\ \}$
-	};
-\end{tikzpicture}
-\caption{Kombination von unbelebtem Maskulinum und Femininum}
-\label{fig:iclgr2_1}
-\end{figure}
-
-\begin{figure}
-	\begin{tikzpicture}[
-		baseline=(current bounding box.north),
-		set/.style = {
-			circle,
-			draw,
-			minimum size = 2cm
-		}
-	]
-	\node[set, label={180:\textsc{m}}]    (M)  at (0.0,+0.5) {};
-	\node[set, label={  0:}]      (N)  at (1.0,+0.5) {};
-	\node[set, label={270:$G_s$}] (MF) at (0.5,-0.5) {};
-	\begin{scope}
-		\clip (0.0,+0.5) circle(1cm);
-		\clip (1.0,+0.5) circle(1cm);
-		\clip (0.5,-0.5) circle(1cm);
-		\fill[lightgray](0.0,+0.5) circle(1cm);
-	\end{scope}
-	\node at (barycentric cs:M=1,MF=1) [below left] {\textsc{m}};
-	\node at (barycentric cs:M=1,N=1,MF=1) {};
-	\node[anchor=west,align=left] at (3.5,0) {
-		$\{\textsc{m}\} \cap \{\ \} \cap G_s = \{\ \}$
-	};
-\end{tikzpicture}
-\caption{Kombination von unbelebtem Maskulinum und Neutrum}
-\label{fig:iclgr2_2}
-\end{figure}
-
-\begin{figure}
-\begin{tikzpicture}[
-		baseline=(current bounding box.north),
-		set/.style = {
-			circle,
-			draw,
-			minimum size = 2cm
-		}
-	]
-	\node[set, label={180:\textsc{f}}]    (F)  at (0.0,+0.5) {};
-	\node[set, label={  0:}]      (N)  at (1.0,+0.5) {};
-	\node[set, label={270:$G_s$}] (MF) at (0.5,-0.5) {};
-	\begin{scope}
-		\clip (0.0,+0.5) circle(1cm);
-		\clip (1.0,+0.5) circle(1cm);
-		\clip (0.5,-0.5) circle(1cm);
-		\fill[lightgray](0.0,+0.5) circle(1cm);
-	\end{scope}
-	\node at (barycentric cs:F=1,MF=1) [below left] {\textsc{f}};
-	\node at (barycentric cs:F=1,N=1,MF=1) {};
-	\node[anchor=west,align=left] at (3.5,0) {
-		$\{\textsc{f}\} \cap \{\ \} \cap G_s = \{\ \}$
-	};
-\end{tikzpicture}
-\caption{Kombination von unbelebtem Femininum und Neutrum}
-\label{fig:iclgr2_3}
-\end{figure}
 
 \subsection{Neutrum bei maskulinem und femininem Bezug}
 \label{subsec:m+m_anim_beidiu}
@@ -1968,9 +1970,6 @@ ansonsten nominale Kategorien modifiziert und entsprechend flektiert, kann vom
 Zwang zur Flexion befreit auch zusammen mit nicht-nominalen Kategorien wie
 Präpositionalphrasen oder Adverbialen verwendet werden, die selbst keine mit
 dem Quantor als Modifizierer kompatiblen grammatischen Merkmale bereitstellen.
-In \cref{ex:beidquantsyncont} wird versucht, den Gebrauch von \norm{bėide} mit
-adverbialen Konjunkten in \cref{subsec:caobeidquantsyncont} und
-\ref{subsec:kcbeidquantsyncont} als F-Struktur zu modellieren.
 
 Auf phonologischer Ebene könnte es sich mit \citet[134--136]{lehmann2015} bei
 \norm{bėide} um phonologische Erosion (\fw{phonological attrition}) handeln,
@@ -1992,6 +1991,7 @@ der starken Adjektivdeklination in den jüngeren ausgewerteten
 		\trans `sowohl im Dorf als auch auf dem Feld'
 			\parencites(Nr.~3319, Michelstetten, Bz.~Mistelbach, 1299)[461,28]{cao4}
 
+		\begin{figure}
 		\avm{[
 			preconj	& \textit{beide} \\
 			conj		& \textit{und} \\
@@ -2016,7 +2016,9 @@ der starken Adjektivdeklination in den jüngeren ausgewerteten
 				]
 			]\}
 		]}
-		\medskip
+		\caption{Analyse des Satzfragments \norm{bėidiu ze dorfe unde ze velde} `sowohl im Dorf als auch auf dem Feld'}
+		\label{fig:caokoordsyn_3_2}
+		\end{figure}
 
 	\ex \label{ex:syntintvar1_2}
 		\gll Beideu {\ob}\tsup{Adv} ſpæt {\cb} vnde
@@ -2028,6 +2030,7 @@ der starken Adjektivdeklination in den jüngeren ausgewerteten
 				VB:~33ra,36%
 			)
 
+		\begin{figure}
 		\avm{[
 			preconj	& \textit{beide} \\
 			conj		& \textit{und} \\
@@ -2040,20 +2043,44 @@ der starken Adjektivdeklination in den jüngeren ausgewerteten
 				deg	& $pos$
 			]\}
 		]}
+		\caption{Analyse des Satzfragments \norm{bėidiu spǟte unde vrüje} `sowohl spät als auch früh'}
+		\label{fig:syntintvar1_2}
+		\end{figure}
 	\end{xlist}
 \end{exe}
 
-Während die Präpositionalobjekte in \cref{ex:caokoordsyn_3_2} zwar jeweils
-Personenmerkmale bieten und nach dem Kasus flektieren, den die Präposition
-regiert, steht \lit{baidev} nicht im Dativ. In \cref{ex:syntintvar1_2}
-enthalten die Konjunkte keinerlei Genusmerkmale, nach denen \lit{Beideu}
-flektieren könnte. In beiden Fällen ist eine Interpretation von \lit{Beideu}
-als Hinweis, dass sich der Ausdruck auf genau zwei Referenten bezieht, nicht
-sinnvoll. Stattdessen ist anzunehmen, dass es hier desemantisiert als
-Fokuspartikel dient, die betont, dass zwei gleichwertige Optionen vorliegen
-\autocite[425--428]{johannessen2005}. Wie \cref{ex:beideintiahd_3} zeigt, ist
-die Verwendung von \norm{bėide} als Konjunktion zumindest mit
-Präpositionalphrasen schon in vormittelhochdeutscher Zeit möglich.
+In \cref{ex:beidquantsyncont} wird versucht, den Gebrauch von \norm{bėide} mit
+adverbialen Konjunkten in \cref{subsec:caobeidquantsyncont} und
+\ref{subsec:kcbeidquantsyncont} als F-Struktur zu modellieren. Während die
+Präpositionalobjekte in \cref{ex:caokoordsyn_3_2,fig:caokoordsyn_3_2} zwar
+jeweils Personenmerkmale bieten und nach dem Kasus flektieren, den die
+Präposition regiert, steht \lit{baidev} nicht im Dativ. In
+\cref{ex:syntintvar1_2,fig:syntintvar1_2} enthalten die Konjunkte keinerlei
+Genusmerkmale, nach denen \lit{Beideu} flektieren könnte. In beiden Fällen ist
+eine Interpretation von \lit{Beideu} als Hinweis, dass sich der Ausdruck auf
+genau zwei Referenten bezieht, nicht sinnvoll. Stattdessen ist anzunehmen, dass
+es hier desemantisiert als Fokuspartikel dient, die betont, dass zwei
+gleichwertige Optionen vorliegen \autocite[425--428]{johannessen2005}. Wie
+\cref{ex:beideintiahd_3_copy} exemplarisch zeigt, ist die Verwendung von
+\norm{bėide} als Konjunktion zumindest mit Präpositionalphrasen schon in
+vormittelhochdeutscher Zeit möglich.
+
+\begin{exe}
+\ex \label{ex:beideintiahd_3_copy}
+	% \langinfo%
+	% 	{Althochdeutsch}
+	% 	{}
+	% 	{}\\
+	Althochdeutsch\\
+	\gll pediu in demo lihnamen unte in demo muôte \\
+		beide in \textsc{def.dat.sg.\MascI} Körper-\textsc{dat.sg.\MascI} und in
+			\textsc{def.dat.sg.\MascI} Geist-\textsc{dat.sg.\MascI} \\
+	\trans `sowohl im Körper als auch im Geist'
+		(%
+			\tit{Predigtsammlung~B}: 3,25--26;
+			\cite[171]{steinmeyer1916}%
+		)
+\end{exe}
 
 Da kein morphosyntaktisches Merkmal greifbar ist, das für die Verteilung von
 \norm{bėide}- und \norm{bėidiu}-Typen der Konjunktion verantwortlich gemacht
@@ -2166,26 +2193,14 @@ lediglich wichtig, dass bei Koordination das \textsc{index}-Merkmal der
 Konjunkte aufgelöst wird, bei Apposition hingegen nicht
 \autocite[444]{sadlernordlinger2006}. Die Beispiele in
 \cref{ex:kczbeidenundesynt1} lassen sich daher wie in
-\cref{ex:kczbeidenundesynt2} dargestellt modellieren.
+\cref{fig:kczbeidenundesynt2} dargestellt modellieren.
 
-\begin{exe}
-\ex \label{ex:kczbeidenundesynt2}
-	\begin{forest}
-		shorter edges,
-		narrower nodes,
-		italic leaves,
-		align text,
+\begin{figure}
+	\begin{forest} shorter edges, narrower nodes, italic leaves, align text
 	[{\anno[\pass{\SObj{recip}}]{DP\mysn{beidenunde_DP}}}
 		[{\anno[\updownelem]{QP}}
 			[\anno{\xhead{Q}}
-				[{%
-					bėiden, \\
-					\smaller[2]\upshape\tabcolsep=.5ex%
-					\begin{tabular}[t]{@{} l l l @{}}
-						\ups{gf~case} & \req & \textsc{dat} \\
-						\ups{gf~num}  & \req & \textsc{pl} \\
-					\end{tabular}%
-				}]
+				[bėiden, name=beiden, minimum width=3em]
 			]
 		]
 		[{\anno[\updownelem]{NP}}
@@ -2201,7 +2216,16 @@ Konjunkte aufgelöst wird, bei Apposition hingegen nicht
 		]
 	]
 	%
-	\node [avmcontainer] {
+	% Annotation des Knotens zu breit, als dass die AVM noch hinpasst
+	\node at (beiden) [below=1ex] {
+		\smaller[2]\upshape\tabcolsep=.5ex%
+		\begin{tabular}[t]{@{} l l l @{}}
+			\ups{gf~case} & \req & \textsc{dat} \\
+			\ups{gf~num}  & \req & \textsc{pl} \\
+		\end{tabular}%
+	};
+	%
+	\node [avmcontainer=0ex, font=\footnotesize] {
 		\avm{%
 		\tikzmark{beidenunde_f}$f$: [
 			conj	& \textit{appos} \\
@@ -2222,7 +2246,8 @@ Konjunkte aufgelöst wird, bei Apposition hingegen nicht
 									gend	& \textsc{m} \\
 									sex		& \SM \\
 									case	& \textsc{dat}
-								], $h_2$: [
+								],
+								$h_2$: [
 								 	pred	& `Frau' \\
 								 	pers	& 3 \\
 								 	num		& \textsc{sg} \\
@@ -2256,7 +2281,10 @@ Konjunkte aufgelöst wird, bei Apposition hingegen nicht
 		([yshift=.5ex]{pic cs:beidenunde_f});
 	\end{tikzpicture}
 	\\
-\end{exe}
+	\caption{Analyse des Satzfragments \norm{bėiden, man unde wīp} `beiden,
+		Mann und Frau'}
+	\label{fig:kczbeidenundesynt2}
+\end{figure}
 
 In der F-Struktur auf der rechten Seite werden die Konjunkte \norm{man} `Mann'
 und \norm{wīp} `Frau' in $g_2$ mit ihren grammatischen Eigenschaften einzeln
