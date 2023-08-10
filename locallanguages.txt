@@ -2,7 +2,6 @@ Alemannisch
 Alemannisch-Bairisch
 Alemannisch-Schwäbisch
 Altenglisch
-Althochdeutsch
 Altsächsisch
 Altwestnordisch
 Badisch
@@ -14,8 +13,6 @@ Bosnisch
 Bosnisch-Kroatisch-Mazedonisch-Serbisch
 BKMS
 Englisch
-Französisch
-Frühneuhochdeutsch
 Färöisch
 Germanisch
 Gotisch
@@ -24,7 +21,6 @@ Hessisch
 Hochalemannisch
 Indoeuropäisch
 Isländisch
-Ivrit
 Kroatisch
 Lateinisch
 Mazedonisch
@@ -32,7 +28,6 @@ Mittelalemannisch
 Mittelbairisch
 Mitteldeutsch
 Mittelfränkisch
-Mittelhochdeutsch
 Mittelniederländisch
 Niederalemannisch
 Niederländisch
