@@ -2173,7 +2173,7 @@ zu behandeln.%
 	%
 	\node [avmcontainer] {
 		\avm{%
-		\tikzmark{beidepost2c_f}$f:$ [
+		\tikzmark{beidepost2c_f}$f$: [
 			obj	& \tikzmark{beidepost2c_obj}[
 				def	& $+$ \\
 				pred	& `Jahrestag' \\
@@ -2193,15 +2193,15 @@ zu behandeln.%
 	\begin{tikzpicture}[remember picture, overlay]
 	\draw [myarrow]
 		([yshift=.5ex]{pic cs:beidepost2c_NP})
-		to [out=east, in=west]
+		to [out=east, in=south west]
 		([yshift=.5ex]{pic cs:beidepost2c_obj});
 	\draw [myarrow]
 		([yshift=.5ex]{pic cs:beidepost2c_QP})
-		to [out=east, in=west]
+		to [out=east, in=south west]
 		([yshift=.5ex]{pic cs:beidepost2c_obj});
 	\draw [myarrow]
 		([yshift=.5ex]{pic cs:beidepost2c_DP})
-		to [out=east, in=west]
+		to [out=east, in=south west]
 		([yshift=.5ex]{pic cs:beidepost2c_obj});
 	\end{tikzpicture}
 	\caption{Analyse des Satzfragments \norm{die jārƶīt bėide begāt} `die beiden Jahrestage begeht'}
@@ -2274,8 +2274,8 @@ spielen.
 	%
 	\node [avmcontainer] {
 		\avm{%
-		\tikzmark{beidepost2d_f}$f:$ [
-			foc	& \tikzmark{beidepost2d_foc}$g:$ [
+		\tikzmark{beidepost2d_f}$f$: [
+			foc	& \tikzmark{beidepost2d_foc}$g$: [
 				def		& $+$ \\
 				pred	& `Jahrestag' \\
 				case	& \textsc{acc} \\
@@ -2284,7 +2284,7 @@ spielen.
 				anim	& $-$ \\
 			]~$i$ \smallskip \\
 			%
-			obj	& \tikzmark{beidepost2d_obj}$h:$ [
+			obj	& \tikzmark{beidepost2d_obj}$h$: [
 				pred	& `beide' \\
 			]~$i$ \\
 			%
