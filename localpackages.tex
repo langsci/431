@@ -29,27 +29,6 @@
   \posscitealias%
   \textcites}
 
-% cleveref
-% In-text references
-% cf. https://tex.stackexchange.com/a/139051
-% Since German plural formation is not as regular as in English (-e, -en for
-% example), we will define the label as empty
-\usepackage[\lsBookLanguage,sort&compress,noabbrev]{cleveref}
-\newcommand{\crefrangeconjunction}{--}
-\crefname{xnumi}{}{}
-\creflabelformat{xnumi}{(#2#1#3)}
-\crefname{xnumii}{}{}
-\creflabelformat{xnumii}{(#2#1#3)}
-\crefname{xnumiii}{}{}
-\creflabelformat{xnumiii}{(#2#1#3)}
-\crefname{xnumiv}{}{}
-\creflabelformat{xnumiv}{(#2#1#3)}
-\crefrangeformat{xnumi}{(#3#1#4)--(#5#2#6)}
-\crefrangeformat{xnumii}{(#3#1#4--#5\crefstripprefix{#1}{#2}#6)}
-\crefrangemultiformat{xnumii}{(#3\arabic{xnumi}#1#4--#5#2#6)}
-{ und~(#3\arabic{xnumi}#1#4--#5#2#6)}{, (#3\arabic{xnumi}#1#4--#5#2#6)}
-{ und~(#3\arabic{xnumi}#1#4--#5#2#6)}
-
 % csquotes
 % Quotations
 \usepackage{csquotes}
