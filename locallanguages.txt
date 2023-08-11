@@ -1,4 +1,3 @@
-Englisch
 Färöisch
 Germanisch
 Gotisch
@@ -27,7 +26,6 @@ Swahili
 Sächsisch
 Südböhmisch
 Thüringisch
-Thüringisch-Hessisch
 Urgermanisch
 Urindogermanisch
 Vormittelhochdeutsch
