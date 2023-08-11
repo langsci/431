@@ -1,6 +1,3 @@
-BKMS
-Bosnisch
-Bosnisch-Kroatisch-Mazedonisch-Serbisch
 Englisch
 Färöisch
 Germanisch
@@ -9,9 +6,7 @@ Hebräisch
 Hessisch
 Indoeuropäisch
 Isländisch
-Kroatisch
 Lateinisch
-Mazedonisch
 Mitteldeutsch
 Mittelfränkisch
 Mittelniederländisch
@@ -27,7 +22,6 @@ Rheinfränkisch
 Rheinisch
 Russisch
 Schwäbisch
-Serbisch
 Spanisch
 Swahili
 Sächsisch
