@@ -45,22 +45,6 @@
   % Defaults to "gesehen am" per biblatex/lbx/german.lbx
   urlseen = {Zugriff am},
 }
-\DefineBibliographyExtras{german}{%
-  \protected\def\mkbibdateshort#1#2#3{%
-    \iffieldundef{#3}
-      {}
-      {\mkdayzeros{\thefield{#3}}\adddot
-       \iffieldundef{#2}{}{}}% No \thinspace (CB)
-    \iffieldundef{#2}
-      {}
-      {\mkmonthzeros{\thefield{#2}}%
-       \iffieldundef{#1}
-         {}
-         {\iffieldundef{#3}{/}{\adddot}}}% No \thinspace (CB)
-    \iffieldbibstring{#1}
-      {\bibstring{\thefield{#1}}}
-      {\dateeraprintpre{#1}\mkyearzeros{\thefield{#1}}}}%
-}
 \renewbibmacro*{url+urldate}{%
   \usebibmacro{url}%
   \iffieldundef{urlyear}
