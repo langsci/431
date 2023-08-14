@@ -30,6 +30,11 @@
   \textcites}
 
 % biblatex
+% Make divider for multicites and multipostnotes semicolon instead of colon
+\renewcommand{\multicitedelim}{\addsemicolon\addspace}
+\renewcommand{\multipostnotedelim}{\addsemicolon\addspace}
+
+% biblatex
 % No punctuation after question mark
 % cf. https://github.com/dcpurton/biblatex-sbl/issues/7#issuecomment-172309750
 \DefineBibliographyExtras{german}{%
