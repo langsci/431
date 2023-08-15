@@ -1127,13 +1127,15 @@ Sprachen, für die mehr oder weniger ausführliche Beschreibungen in diesem
 Theorieframework vorliegen \autocites[zum modernen Standarddeutschen
 vgl.][]{berman2003}{fortmann2006}. Die Wahl der theoretischen Anbindung ist der
 Praktikabilität geschuldet. Die LFG operiert vornehmlich mit grammatischen
-Merkmalen im Sinne \posscite{corbett2012} und ist damit bestens geeignet, um
-Kongruenzphänomene zu analysieren; der Annotationsformalismus und die
-Darstellung von Merkmalsstrukturen sind vergleichsweise unkompliziert.
+Merkmalen im Sinne \posscite{corbett2012} im Zusammenspiel mit der
+Konstituentenstruktur und ist damit bestens geeignet, um Kongruenz als
+morphosyntaktisches Phänomen zu analysieren.
+% ; der Annotationsformalismus und die
+% Darstellung von Merkmalsstrukturen sind vergleichsweise unkompliziert.
 
-Hauptbestandteil des Formalismus der LFG ist die funktionale Struktur, die eine
-der als parallel gedachten Repräsentationsebenen darstellt, auf denen Sprache
-operiert \autocite[840--844]{buttking2015}.%
+Hauptbestandteil des Formalismus der LFG ist die funktionale Struktur
+(F-Struktur), die eine der als parallel gedachten Repräsentationsebenen
+darstellt, auf denen Sprache operiert \autocite[840--844]{buttking2015}.%
 %
 	\footnote{\citet[862--865]{buttking2015} nennen darüber hinaus zum Beispiel
 		noch die
@@ -1174,8 +1176,7 @@ einfach instanziiert werden \autocite[vgl.][44--58]{bresnanetal2016}.
 		] \\
 		mutter		& \dots \\
 	]}}
-\caption{Beispiel für eine Attribut-Wert-Matrix \autocite[adaptiert
-	nach][209]{mueller2023}}
+\caption{Attribut-Wert-Matrix \autocite[nach][209]{mueller2023}}
 \label{fig:avm}
 \end{figure}
 
@@ -1263,16 +1264,16 @@ also nicht als gerichteter Prozess verstanden, bei dem Merkmalsbündel kopiert
 oder verschoben werden, sondern als das Zusammenspiel zweier Elemente, die
 partielle Informationen über dasselbe linguistische Objekt spezifizieren.
 Kongruenz resultiert daraus, dass die von den beiden Quellen gebotenen
-Informationen kompatibel miteinander sein müssen.%
-%
-	\footnote{\foreignblockcquote{english}[7]{wechslerzlatic2003}{%
-		\textins*{A}greement is not viewed as a directional process of copying
-		or moving feature bundles, but rather as two elements specifying
-		partial information about a single linguistic object. Agreement results
-		from the fact that this information coming from two sources must be
-		compatible}.
-	}
-%
+Informationen kompatibel miteinander sein müssen.
+% %
+% 	\footnote{\foreignblockcquote{english}[7]{wechslerzlatic2003}{%
+% 		\textins*{A}greement is not viewed as a directional process of copying
+% 		or moving feature bundles, but rather as two elements specifying
+% 		partial information about a single linguistic object. Agreement results
+% 		from the fact that this information coming from two sources must be
+% 		compatible}.
+% 	}
+% %
 Dies wird in \figref{fig:lolamorphlex} verdeutlicht, wo die Lexikoneinträge für
 \fw{Lola} und \fw{rennt} vereinfacht wiedergegeben werden.
 
@@ -1308,10 +1309,10 @@ zwischen Subjekt und Verb
 \autocite[vgl.][59]{bresnanetal2016}.
 
 In Anlehnung an die Beispiele \REF{ex:coordidx} und \REF{ex:engartdiscong} in
-Abbildung \figref{fig:lfgcoord_1} und \ref{fig:lfgcoord_2} noch einmal zur
-Illustration die jeweils grammatisch akzeptablen Varianten vor dem Hintergrund
-des gewählten Theorieframeworks gezeigt. Die Annotation der koordinierten NPs
-folgt \citet{peterson2004}. In \figref{fig:lfgcoord_1} erfordert das Verb
+\figref{fig:lfgcoord_1} und \ref{fig:lfgcoord_2} noch einmal zur Illustration
+die jeweils grammatisch akzeptablen Varianten vor dem Hintergrund des gewählten
+Theorieframeworks gezeigt. Die Annotation der koordinierten NPs folgt
+\citet{peterson2004}. In \figref{fig:lfgcoord_1} erfordert das Verb
 \fw{spielen} ein Subjekt mit den Personenmerkmalen 3.~Person und Plural in
 Übereinstimmung mit dem kombinierten Index der Subjekt-NP in $g$; zwei
 Singulare ergeben zusammen einen Plural.%
@@ -1321,7 +1322,7 @@ Singulare ergeben zusammen einen Plural.%
 		beziehen \autocite[382--383]{dalrymple2001}.}
 
 \begin{figure}
-\begin{forest} narrower nodes, italic leaves, align text
+\begin{forest} shorter edges, narrower nodes, italic leaves, align text
 [CP\mysn{lfgcoord1_CP}
 	[{\anno[\pass{subj}]{NP\mysn{lfgcoord1_NP1}}}
 		[{\anno[\updownelem]{\xhead{N}}}
@@ -1569,7 +1570,7 @@ und Objekt vom gleichen Verb \fw{putzen} abhängen, befinden sich beide dennoch
 innerhalb derselben F-Struktur $f$ (gleicher Satz).
 
 \begin{figure}
-	\begin{forest} narrower nodes, italic leaves, align text
+	\begin{forest} shorter edges, narrower nodes, italic leaves, align text
 	[CP\mysn{fsdom_CP}
 		[{\anno[\pass{subj}]{DP\mysn{fsdom_DPs}}}
 			[{\anno[\pass{poss}]{DP\mysn{fsdom_DPp}}}
