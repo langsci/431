@@ -1,6 +1,5 @@
 % Legally required note on this being an accepted dissertation
-\renewcommand{\lsImpressumExtra}{Accepted as a Ph.\,D. thesis at the University
-of Marburg, Department of German Studies and Arts, in September 2022}
+\renewcommand{\lsImpressumExtra}{Revised Ph.\,D. thesis, University of Marburg, Department of German Studies and Arts, accepted in September 2022}
 
 % Author's ORCID
 \newcommand*{\orcid}{0000-0002-6023-551X}
@@ -100,7 +99,7 @@ of Marburg, Department of German Studies and Arts, in September 2022}
 \newcommand{\downs}[1]{(↓~{\textsc{#1}})} % (↓X)
 \newcommand{\elem}[1]{↓~$\in$~(↑~{\textsc{#1}})} % ↓ ∊ (↑X)
 \newcommand{\pass}[1]{(↑~{\textsc{#1}})~=~↓} % (↑X) = ↓
-\newcommand{\req}{=$_c$} % =_c
+\newcommand{\req}{=\textsubscript{c}} % =_c
 \newcommand{\uncertain}[2]{((\textsc{#1}~↑)~{\textsc{#2}})} % ((X↑) Y)
 \newcommand{\updown}{↑~=~↓} % ↑ = ↓
 \newcommand{\updownelem}{↓~$\in$~↑} % ↓ ∊ ↑
@@ -109,15 +108,27 @@ of Marburg, Department of German Studies and Arts, in September 2022}
 \newcommand{\xbar}[1]{#1′} % X'
 \newcommand{\xhead}[1]{#1⁰} % X⁰
 
-% \SObjT and \OblqT must be manually added to the leipzig glossary listing
-\newcommand{\SObj}[1]{\textsc{obj}$_{#1}$}
-\newcommand{\Oblq}[1]{\textsc{obl}$_{#1}$}
+% Secondary object and oblique argument
+\newcommand{\SObj}[1]{%
+  \notblank{#1}{%
+    \textsc{obj}\textsubscript{#1}%
+  }{%
+    \textsc{obj}\textsubscript{θ}%
+  }%
+}
+\newcommand{\Oblq}[1]{%
+  \notblank{#1}{%
+    \textsc{obl}\textsubscript{#1}%
+  }{%
+    \textsc{obl}\textsubscript{θ}%
+  }%
+}
 
 % A-structure rules: \astruct[1]{2}{3} > '2 <3> 1'
 \newcommand{\astruct}[3][]{`#2~⟨\,#3\,⟩%
 	\notblank{#1}{%
-		\enspace#1'}{%
-		}'%
+		\enspace#1'%
+	}{'}%
 }
 
 % Feature annotation above (for use in TREES); no value in [] prints ↑ = ↓
