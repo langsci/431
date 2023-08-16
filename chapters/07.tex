@@ -1751,7 +1751,6 @@ vgl.~\sectref{sec:ctrltarg}). Die Schemata in \figref{fig:caodirdist_words} und
 
 \begin{figure}
 \begin{tikzpicture}[
-	baseline=(a.base),
 	word/.style={
 		draw,
 		minimum height=1.5em,
@@ -1766,6 +1765,9 @@ vgl.~\sectref{sec:ctrltarg}). Die Schemata in \figref{fig:caodirdist_words} und
 		anchor=base,
 		text height=1.5ex,
 		text depth=.5ex
+	},
+	every edge/.append style={
+		min distance=2.25em
 	}
 ]
 
@@ -1776,7 +1778,7 @@ vgl.~\sectref{sec:ctrltarg}). Die Schemata in \figref{fig:caodirdist_words} und
 \node [word, base right=1ex of 4] (5) {verjęhen};
 \node [word, base right=1ex of 5] (6) {bėidiu};
 
-\path[-]      (1) edge [out=north, in=north] node (a) [lbl, above] {0} (2);
+\path[-]      (1) edge [out=north, in=north] node [lbl, above] {0} (2);
 \path[-]      (2) edge [out=north, in=north] node [lbl, above] {1} (3);
 \path[-]      (3) edge [out=north, in=north] node [lbl, above] {2} (4);
 \path[-]      (4) edge [out=north, in=north] node [lbl, above] {3} (5);
@@ -1830,21 +1832,21 @@ vgl.~\sectref{sec:ctrltarg}). Die Schemata in \figref{fig:caodirdist_words} und
 \node (mflbl)  [lbl, above=.5ex of MF]  {MF};
 \node (rsklbl) [lbl, above=.5ex of RSK] {RSK};
 
-\draw [-, thick] (VF) -- ++(south:2em) -| (6);
+\draw [-, draw=white, double=black, ultra thick] (VF) -- ++(south:2em) -| (6);
 \end{tikzpicture}
 \vspace{.5\baselineskip}
 \caption{Abstandsberechnung: nach der syntaktischen Domäne}
 \label{fig:caodirdist_syn}
 \end{figure}
 
-In \figref{fig:caodirdist_words} wird der Abstand zwischen den beiden Controllern
-\norm{ich} und \norm{(mīn) hūsvrouwe} `(meine) Ehefrau' zu ihrem Target
-\norm{bėidiu} `beide' nach Wortformen gezählt. Der erste Sprung zur jeweils
-nächsten Wortform wird mit null angesetzt, da zwischen \norm{ich} und
+In \figref{fig:caodirdist_words} wird der Abstand zwischen den beiden
+Controllern \norm{ich} und \norm{(mīn) hūsvrouwe} `(meine) Ehefrau' zu ihrem
+Target \norm{bėidiu} `beide' nach Wortformen gezählt. Der erste Sprung zur
+jeweils nächsten Wortform wird mit null angesetzt, da zwischen \norm{ich} und
 \norm{unde} `und' sowie zwischen \norm{hūsvrouwe} `Ehefrau' und
 \norm{verjęhen} `aussagen, bekennen' jeweils kein Abstand besteht. Auf
-diese Weise ergibt sich für das Beispiel insgesamt ein kombinierter Wortformenabstand von vier und
-eins zwischen Controller und Target.
+diese Weise ergibt sich für das Beispiel insgesamt ein kombinierter
+Wortformenabstand von vier und eins zwischen Controller und Target.
 
 Bei den Untersuchungen zum Belegmaterial des \CAO{} hat sich die
 Entfernungsbestimmung nach Satzgliedern und Sätzen (im Folgenden vereinfachend:
@@ -1852,14 +1854,14 @@ syntaktische Distanz) allerdings als sinnvoller erwiesen. In
 \figref{fig:caodirdist_syn} wird das Beispiel der Anschaulichkeit halber
 vereinfacht im Rahmen des Feldermodells des deutschen\il{Neuhochdeutsch} Satzes
 \autocites{drach1963}{woellstein2010}[vgl.\ auch][44--49]{mueller2023}
-wiederholt. Die Controller \norm{ich} und \norm{hūsvrouwe} `Ehefrau'
-stehen im Vorfeld (VF), während das Target \norm{bėidiu} `beide' nach der
-linken Satzklammer (LSK) im Mittelfeld (MF) steht. Damit steht das Target in
-einem anderen Satzteil als seine Controller, dennoch aber im gleichen Teilsatz,
-in diesem Fall dem Hauptsatz (\norm{verjęhen} `aussagen, bekennen' nimmt
-in der Regel einen Nebensatz als Komplement). Da die linke Satzklammer mit
-einem Vollverb besetzt ist, ist die rechte Satzklammer (RSK) leer. Der
-Wortformenabstand steigt tendenziell mit zunehmendem Abstand zwischen
+wiederholt. Die Controller \norm{ich} und \norm{hūsvrouwe} `Ehefrau' stehen im
+Vorfeld (\textsc{VF}), während das Target \norm{bėidiu} `beide' nach der linken
+Satzklammer (\textsc{LSK}) im Mittelfeld (\textsc{MF}) steht. Damit steht das
+Target in einem anderen Satzteil als seine Controller, dennoch aber im gleichen
+Teilsatz, in diesem Fall dem Hauptsatz (\norm{verjęhen} `aussagen, bekennen'
+nimmt in der Regel einen Nebensatz als Komplement). Da die linke Satzklammer
+mit einem Vollverb besetzt ist, ist die rechte Satzklammer (\textsc{RSK}) leer.
+Der Wortformenabstand steigt tendenziell mit zunehmendem Abstand zwischen
 Satzgliedern zueinander und darüber hinaus.
 
 \subsection{Nominale Controller}
