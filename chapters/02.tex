@@ -31,6 +31,8 @@ Phänomen aus morphologischer und typologischer Perspektive.
 \section{Controller, Target und Domäne}
 \label{sec:ctrltarg}
 
+\is{Controller|(}
+
 Wichtige Begriffe im Hinblick auf Kongruenz nach \citet{corbett2006} sind
 zunächst \fw{Controller} (Kongruenzauslöser) und \fw{Target} (Kongruenzziel).%
 %
@@ -157,7 +159,7 @@ Deutschen\il{Neuhochdeutsch}.%
 Wie darüber hinaus aus dem Schema in \figref{fig:termini} deutlich wird,
 unterscheiden \citet{wechslerzlatic2003} nicht nur zwischen grammatischer und
 pragmatischer Kongruenz, sondern innerhalb der grammatischen Kongruenz noch
-Kongruenz mit den Merkmalskategorien Concord (grammatische Kongruenz
+Kongruenz mit den Merkmalskategorien \isi{Concord} (grammatische Kongruenz
 \fw{ad formam} innerhalb der NP) und Index (grammatische Kongruenz
 \fw{ad formam} oder \fw{ad sensum} außerhalb der NP;
 \cite[8--17]{wechslerzlatic2003}. Die theoretische Grundlage für diese
@@ -185,7 +187,7 @@ sich beide aus der Semantik speisen.
 	\draw [-latex] (prg) -- (sem);
 
 	\node [draw, rectangle, align=center, gray] (con) at (0,-2) {
-		\textsc{concord} \\
+		\textsc{concord\isi{Concord}} \\
 		\footnotesize (Modifikatoren)
 	};
 	\node [draw, rectangle, align=center, gray] (idx) at (3,-2) {
@@ -300,8 +302,12 @@ Controller.
 		)		
 \end{exe}
 
+\is{Controller|)}
+
 \section{Index und Concord}
 \label{sec:indexconcord}
+
+\is{Concord|(}
 
 \phantomsection
 \label{phsec:index}
@@ -403,6 +409,8 @@ auf höherer syntaktischer Ebene stattfindet
 		\label{ex:engartdiscong_4}
 	\end{xlist}
 \end{exe}
+
+\is{Concord|)}
 
 \section{Genus, Sexus und Belebtheit}
 \label{sec:gendsex}
@@ -788,17 +796,17 @@ kursorische Suche im \REM{} nach dem inalienablen Typ mit
 	\end{exe}
 
 Neben formalen und semantischen Merkmalen kann auch die Distanz zwischen einem
-Controller und seinem Target einen Einfluss auf die Wahl der Kongruenzform
+\isi{Controller} und seinem Target einen Einfluss auf die Wahl der Kongruenzform
 haben, wenn mehrere Möglichkeiten bestehen. Unter dieser Prämisse untersuchen
 \citet{panther2009} und \citet{binanzeretal2022} semantische Kongruenz für die
 moderne Standardsprache des Deutschen\il{Neuhochdeutsch}, \citet{fleischer2012}
 geht diesem Aspekt in diachroner Perspektive nach. Diesen Studien ist die
 Erkenntnis gemein, dass Kongruenz \fw{ad sensum} zum einen mit wachsender
-linearer Distanz zwischen Controller und Target tendenziell zunimmt, zum
+linearer Distanz zwischen \isi{Controller} und Target tendenziell zunimmt, zum
 anderen verschiedene Arten von Pronomina und anaphorischen
 Ausdrücken\is{Anapher} eine unterschiedlich hohe Affinität zur semantischen
-Kongruenz aufweisen, sich also auch die syntaktische Domäne von Controller und
-Target auf die Wahl der Kongruenzform auswirkt \autocites%
+Kongruenz aufweisen, sich also auch die syntaktische Domäne von
+\isi{Controller} und Target auf die Wahl der Kongruenzform auswirkt \autocites%
 	(siehe auch \sectref{sec:ctrltarg}, \sectref{sec:kongrhier})%
 	[84--85]{panther2009}[197--199]{fleischer2012}%
 .
@@ -883,7 +891,7 @@ welchem Genus das jeweilige Lexem verwendet wird, soweit dies möglich war.
 
 Ein Problem für Kongruenz entsteht dann, wenn zum Beispiel durch Koordination
 von zwei Nominalen (Substantiven oder Personalpronomen) unterschiedliche
-grammatische Merkmale derselben Kategorie (Genus, Numerus) pro Controller
+grammatische Merkmale derselben Kategorie (Genus, Numerus) pro \isi{Controller}
 vorliegen. Die Frage in diesem Fall ist, wie ein Target, das für die jeweilige
 Kategorie flektiert, mit diesen divergierenden Merkmalen umgeht. Eine
 Möglichkeit der Konfliktlösung besteht darin, lediglich mit dem nächsten
@@ -921,7 +929,7 @@ in dem Schema in \figref{fig:ccagraphic} gezeigt.
 	\node (C) [box, rectangle, fit={(1) (2) (3)}, thick] {};
 	\node (T) [box, rectangle, fit=(5)                 ] {};
 
-	\node (clbl) [lbl, above=.5ex of C] {controller};
+	\node (clbl) [lbl, above=.5ex of C] {controller\isi{Controller}};
 	\node (tlbl) [lbl, above=.5ex of T] {target};
 
 	\draw [-, draw=white, double=black, ultra thick] (3) -- ++(south:2em) -| (T);
@@ -956,7 +964,7 @@ in dem Schema in \figref{fig:ccagraphic} gezeigt.
 	\node (C) [box, rectangle, fit={(1) (2) (3)}, thick] {};
 	\node (T) [box, rectangle, fit=(5)                 ] {};
 
-	\node (clbl) [lbl, above=.5ex of C] {controller};
+	\node (clbl) [lbl, above=.5ex of C] {controller\isi{Controller}};
 	\node (tlbl) [lbl, above=.5ex of T] {target};
 
 	\draw [-, draw=white, double=black, ultra thick] (3) -- ++(south:2em) -| (T);
@@ -1001,9 +1009,9 @@ solchen Fällen die Kombinationsstrategie angewandt, wie in
 \figref{fig:combgraphic} verdeutlicht
 \autocites[vgl.][312]{grimm1890}[329]{grimm1898}[39--41]{behaghel1928}[187--189]{dal2014}:
 Wenn für das Target keine Form der Deklinationsendung vorliegt, die im Plural
-genusindifferent ist, muss der Unterschied zwischen den einzelnen Controllern
-durch die Kombination ihrer Personenmerkmale aufgelöst werden, damit das Target
-regelgemäß kongruieren kann
+genusindifferent ist, muss der Unterschied zwischen den einzelnen
+Controllern\is{Controller} durch die Kombination ihrer Personenmerkmale
+aufgelöst werden, damit das Target regelgemäß kongruieren kann
 \autocites[vgl.][182--193]{corbett1983}[269--306]{corbett1991}[243--263]{corbett2006}.
 
 \begin{figure}
@@ -1034,7 +1042,7 @@ regelgemäß kongruieren kann
 	\node (C) [box, rectangle, fit={(1) (2) (3)}, thick] {};
 	\node (T) [box, rectangle, fit=(5)                 ] {};
 
-	\node (clbl) [lbl, above=.5ex of C] {controller};
+	\node (clbl) [lbl, above=.5ex of C] {controller\isi{Controller}};
 	\node (tlbl) [lbl, above=.5ex of T] {target};
 
 	\draw [-, thick] (C) -- ++(south:2em) -| (T);
@@ -1069,8 +1077,8 @@ der Kombination der semantischen Personenmerkmale die neutrale Form
 
 Eine direkte Entsprechung von \REF{ex:gendres} mit umgekehrter Reihenfolge der
 grammatischen Merkmale der Konjunkte ist im ausgewerteten Material nicht
-vorhanden, sondern lediglich der Fall mit \norm{bėide} als Modifikator
-eines Personalpronomens, das sich seinerseits auf zwei Controller in dieser
+vorhanden, sondern lediglich der Fall mit \norm{bėide} als Modifikator eines
+Personalpronomens, das sich seinerseits auf zwei \isi{Controller} in dieser
 Abfolge bezieht. \citet[96, 145]{askedal1973} führt die in
 \REF{ex:askfmbeidiu} angeführten Stellen auf, die sich mit den leicht anders
 formulierten Fällen im ausgewerteten Material decken, sodass davon auszugehen
@@ -1448,7 +1456,7 @@ Singulare ergeben zusammen einen Plural.%
 
 Demgegenüber ist es innerhalb der in \figref{fig:lfgcoord_2} gezeigten NP
 notwendig, dass der De\-termi\-nierer \fw{diese} im Numerus mit dem
-Concord-Merkmal jedes einzelnen der beiden Konjunkte übereinstimmt, damit
+\isi{Concord}-Merkmal jedes einzelnen der beiden Konjunkte übereinstimmt, damit
 Kongruenz hergestellt werden kann und ein kohärenter, grammatisch wohlgeformter
 Ausdruck entsteht.%
 %
@@ -1580,10 +1588,10 @@ Dies wird anhand von \figref{fig:fstructdomains} verdeutlicht.
 
 Dort ist \fw{braune} als adjektivisches Kongruenztarget\is{Adjektiv!attributiv}
 ein \isi{Adjunkt} von \fw{Katze} und steht damit in derselben F-Struktur $g$
-wie sein Controller (gleiche NP). Auf \fw{Katze} ist ebenfalls der Possessor
-\fw{Janas} in $h$ bezogen. \fw{Janas} und \fw{Katze} befinden sich zwar in
-verschiedenen F-Strukturen ($g$ und $h$), allerdings ist der Possessor in $h$
-Teil der Subjektfunktion $g$ (gleicher Satzteil). Das Reflexivpronomen
+wie sein \isi{Controller} (gleiche NP). Auf \fw{Katze} ist ebenfalls der
+Possessor \fw{Janas} in $h$ bezogen. \fw{Janas} und \fw{Katze} befinden sich
+zwar in verschiedenen F-Strukturen ($g$ und $h$), allerdings ist der Possessor
+in $h$ Teil der Subjektfunktion $g$ (gleicher Satzteil). Das Reflexivpronomen
 \fw{sich} in $j$ bildet das direkte Objekt von \fw{putzen}. Da es sich bei dem
 Objekt um ein Reflexivpronomen handelt, ist es mit dem Subjekt in $g$
 koindiziert und stellt ebenfalls dessen Kongruenztarget dar, allerdings steht
@@ -1706,7 +1714,7 @@ Als Modifikatoren von Substantiven (und in manchen Fällen auch Pronomen, zum
 Beispiel \fw{sie beide}, \fw{alle diese}) unterliegen Quantoren wie
 \norm{bėide} im Mittelhochdeutschen\il{Mittelhochdeutsch} wie auch \fw{beide}
 im Neuhochdeutschen\il{Neuhochdeutsch} der \isi{Adjektivdeklination}. Das
-bedeutet, sie kongruieren mit ihrem nominalen Controller formal in den
+bedeutet, sie kongruieren mit ihrem nominalen \isi{Controller} formal in den
 Kategorien Kasus (\textsc{case}), Genus (\textsc{gend}) und Numerus
 (\textsc{num}) über ein fusionales Suffix, das diese Eigenschaften kombiniert
 kodiert \autocites(vgl.~auch \sectref{sec:ctrltarg},
@@ -2260,9 +2268,9 @@ anaphorische\is{Anapher} Funktion von \norm{bėide} zu erfassen.%
 		\q{\uncertain{$x$}{$a$}~\req~$v$} in \figref{fig:beidepost_2dist}
 		bedeutet, dass entsprechend der Flexion der annotierten Wortform
 		außerhalb des lokalen Funktionskerns (hier $h$) eine grammatische
-		Funktion $x$ als Controller existiert, die ein Attribut\is{Attribut}
-		$a$ besitzt, das den Wert $v$ für sein Target voraussetzt
-		(\fw{inside-out functional uncertainty};
+		Funktion $x$ als \isi{Controller} existiert, die ein
+		Attribut\is{Attribut} $a$ besitzt, das den Wert $v$ für sein Target
+		voraussetzt (\fw{inside-out functional uncertainty};
 		\cite[66--70]{bresnanetal2016}).}
 %
 Eine eingehendere Diskussion der Konstruktion müsste auf die
@@ -2434,9 +2442,10 @@ zulassen.%
 	durchgeführt wurden.}
 %
 Das Ergebnis der Studie ist, dass mit wachsender \q{syntaktischer Distanz}
-zwischen Controller und Target die Wahrscheinlichkeit für das Auftreten von
-semantischer statt formaler Kongruenz steigt \autocite[218--223]{corbett1979}.
-\citet[204]{corbett1979} formuliert die Kongruenzhierarchie folgendermaßen:
+zwischen \isi{Controller} und Target die Wahrscheinlichkeit für das Auftreten
+von semantischer statt formaler Kongruenz steigt
+\autocite[218--223]{corbett1979}. \citet[204]{corbett1979} formuliert die
+Kongruenzhierarchie folgendermaßen:
 
 \begin{exe}
 \ex attributive > predicate > relative pronoun > personal pronoun
@@ -2495,9 +2504,9 @@ Instanz beschränkt sei, die die Kongruenzbeziehung kontrolliert.
 % 		not restricted to the sentence of the item controlling agreement}.}
 
 Die Kernthese von \citet{wechslerzlatic2003} ist daher, dass formale Kongruenz
-bei Attributen\is{Attribut} zu erwarten ist, da innerhalb der NP Concord das
-entscheidende Kongruenzmerkmal darstellt. Hingegen ist semantische Kongruenz
-bei Personalpronomen außerhalb der bindenden NP deshalb mit höherer
+bei Attributen\is{Attribut} zu erwarten ist, da innerhalb der NP \isi{Concord}
+das entscheidende Kongruenzmerkmal darstellt. Hingegen ist semantische
+Kongruenz bei Personalpronomen außerhalb der bindenden NP deshalb mit höherer
 Wahrscheinlichkeit zu erwarten, weil Pronomen über den referenziellen Index an
 ihren Referenten gebunden sind \autocite[89--91]{wechslerzlatic2003}. Die
 Autoren argumentieren also für eine Korrelation zwischen der Distribution von
@@ -2511,9 +2520,9 @@ wurden. In diesen Fällen komme entweder grammatische oder pragmatische
 Kongruenz zum Zuge, letztere speist sich aus der Semantik des Bezeichneten.
 Relativpronomina seien dagegen immer anaphorisch\is{Anapher} gebunden -- wobei
 sich die Autoren hier vermutlich auf den innersprachlichen Kontext beziehen --
-und kongruieren in Index-Merkmalen, möglicherweise auch in Concord-Merkmalen,
-da sie NP-intern auftreten. Aufgrund induktiver Kriterien ergibt sich das
-Schema in \figref{fig:theoagrdist}.
+und kongruieren in Index-Merkmalen, möglicherweise auch in
+\isi{Concord}-Merkmalen, da sie NP-intern auftreten. Aufgrund induktiver
+Kriterien ergibt sich das Schema in \figref{fig:theoagrdist}.
 
 \begin{figure}
 \setlength{\tabcolsep}{4pt}
@@ -2618,19 +2627,19 @@ vorgenommen wird.
 Neben Fällen, in denen sich \fw{beide} direkt oder indirekt auf zwei mit
 \fw{und} verbundene Konjunkte bezieht (zum Beispiel \q{\textsc{substantiv}
 \fw{und} \textsc{substantiv}}), gibt es vereinzelt Kontexte, in denen die
-kombinierten Controller nach syntaktischen Kriterien keine Konjunkte im
+kombinierten \isi{Controller} nach syntaktischen Kriterien keine Konjunkte im
 formalen Sinn darstellen \autocite[vgl.~auch][247--248]{askedal1973}.
-Nichtsdestoweniger können zwei formal getrennte Controller $i$ und $j$ im
-Diskurs existieren, auf die sich \norm{bėide} `beide' als Target
-gleichermaßen bezieht. Dies ist in der Belegstelle in \REF{ex:disjointctrl_1}
-der Fall, in der es um ein Geschäft geht, das \fw{Agneſ} und \fw{Lukas}
-gemeinsam getätigt haben. Sie sagen \lit{bedi} `beide (\textsc{n.pl})' aus, die
-Zahlung erhalten zu haben.%
+Nichtsdestoweniger können zwei formal getrennte \isi{Controller} $i$ und $j$ im
+Diskurs existieren, auf die sich \norm{bėide} `beide' als Target gleichermaßen
+bezieht. Dies ist in der Belegstelle in \REF{ex:disjointctrl_1} der Fall, in
+der es um ein Geschäft geht, das \fw{Agneſ} und \fw{Lukas} gemeinsam getätigt
+haben. Sie sagen \lit{bedi} `beide (\textsc{n.pl})' aus, die Zahlung erhalten
+zu haben.%
 %
 	\footnote{In der ausgewerteten Stichprobe tritt \lit{be(i)di} wie an der in
 		\REF{ex:disjointctrl_1} zitierten Stelle auch an folgenden weiteren
 		Stellen ausschließlich bei der Kombination von männlichen und
-		weiblichen Controllern auf:
+		weiblichen Controllern\is{Controller} auf:
 		%
 		\citet[124,23; Nr.~81, Kl.~Tennenbach, Kr.~Emmendingen, 1264]{cao1};
 		\citet[205,38--39; Nr.~190, Basel, 1273]{cao1} und
@@ -2681,12 +2690,13 @@ Verlauf Verben wie \lit{hant} `haben (\textsc{3pl.ind.prs})', Pronomina wie
 \norm{ſie} `sie (\textsc{pl})' und damit auch \lit{bedi} `beide' auf sie
 gemeinsam Bezug nehmen können.
 
-Während in \REF{ex:disjointctrl_1} die beiden Controller in unterschiedlichen
-Satzgliedern desselben Satzes stehen, ist die Verbindung der Controller in
-\REF{ex:disjointctrl_2} unter formalen Kriterien noch lockerer. So bezieht
-sich \lit{ſi beidv̍} `sie beide (\textsc{n})' dort gleichermaßen auf Frau
-Mechthild und ihren Mann Heinrich. Letzterer wird syntaktisch getrennt in einem
-eingeschobenen, unabhängigen Temporalsatz genannt.
+Während in \REF{ex:disjointctrl_1} die beiden \isi{Controller} in
+unterschiedlichen Satzgliedern desselben Satzes stehen, ist die Verbindung der
+\isi{Controller} in \REF{ex:disjointctrl_2} unter formalen Kriterien noch
+lockerer. So bezieht sich \lit{ſi beidv̍} `sie beide (\textsc{n})' dort
+gleichermaßen auf Frau Mechthild und ihren Mann Heinrich. Letzterer wird
+syntaktisch getrennt in einem eingeschobenen, unabhängigen Temporalsatz
+genannt.
 
 \begin{exe}
 \ex\label{ex:disjointctrl_2}
@@ -2715,16 +2725,17 @@ eingeschobenen, unabhängigen Temporalsatz genannt.
 \end{exe}
 
 Innerhalb des Temporalsatzes wird Mechthild zwar durch das Pronomen \lit{ſi}
-`sie' vertreten, doch auch hier liegt keine Konjunktion vor, da \lit{ſi}
-das Subjektpronomen und Heinrich das Objekt von \lit{neme} `nahm'
-darstellt. Beide Controller werden zwar syntaktisch unabhängig voneinander im
-Diskurs etabliert, stehen aber für den kombinierten Bezug durch Pronomen wie
+`sie' vertreten, doch auch hier liegt keine Konjunktion vor, da \lit{ſi} das
+Subjektpronomen und Heinrich das Objekt von \lit{neme} `nahm' darstellt. Beide
+\isi{Controller} werden zwar syntaktisch unabhängig voneinander im Diskurs
+etabliert, stehen aber für den kombinierten Bezug durch Pronomen wie
 \norm{si} `sie (\textsc{pl})' und damit auch für \norm{bėide}
 `beide' zur Verfügung.
 
 Im Sinne eines erweiterten Konjunktionsbegriffs werden im Folgenden auch
 \norm{bėide}-Targets wie die in \REF{ex:disjointctrl_1} und
-\REF{ex:disjointctrl_2} berücksichtigt, obwohl ihre Controller formal nicht mit
-einer Konjunktion verbunden sind. Was in diesen Fällen zählt, ist, dass sich
-das jeweilige Target auf semantischer Ebene gleichzeitig auf zwei Controller
-bezieht, indem die Controller im Kontext verankert -- indiziert -- sind.
+\REF{ex:disjointctrl_2} berücksichtigt, obwohl ihre \isi{Controller} formal
+nicht mit einer Konjunktion verbunden sind. Was in diesen Fällen zählt, ist,
+dass sich das jeweilige Target auf semantischer Ebene gleichzeitig auf zwei
+\isi{Controller} bezieht, indem die \isi{Controller} im Kontext verankert --
+indiziert -- sind.

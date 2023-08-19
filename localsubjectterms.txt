@@ -1,5 +1,3 @@
-Concord
-Controller
 Datenbank
 Default
 Definitheit
@@ -205,4 +203,6 @@ Belebtheitshierarchie (auch: Animacy Hierarchy)
 Beschränkung (auch: Kondition)
 Bindung
 Closest Conjunct Agreement
+Concord
+Controller
 Kongruenzhierarchie (auch: Agreement Hierarchy)
