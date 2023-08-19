@@ -1,4 +1,3 @@
-Closest Conjunct Agreement
 Concord
 Controller
 Datenbank
@@ -205,4 +204,5 @@ Belebtheit
 Belebtheitshierarchie (auch: Animacy Hierarchy)
 Beschränkung (auch: Kondition)
 Bindung
+Closest Conjunct Agreement
 Kongruenzhierarchie (auch: Agreement Hierarchy)
