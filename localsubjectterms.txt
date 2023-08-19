@@ -1,2 +1,188 @@
-subject terms to index
-oneperline
+A-Struktur (auch: Struktur, Argument-)
+Adjektiv
+Adjektivdeklination
+Adjunkt
+affektiv
+Agreement Hierarchy (auch: Kongruenzhierarchie)
+Alienabilität
+Ambiguität
+anaphorisch
+Animacy Hierarchy (auch: Belebtheitshierarchie)
+Animata
+Annotation
+Apokope
+Apposition
+Attribut-Wert-Matrize (AVM)
+attributiv
+Ausnahme
+Autornähe
+Basisgenerierung
+Belebtheit
+Beschränkung (auch: Bedingung)
+Bindung
+C-Struktur (auch: Strukutr, Konstituenten-)
+Closest Conjunct Agreement
+Concord
+Controller
+Datenbank
+Default
+Definitheit
+Denotation
+Desiderat
+Determinierer
+Diachronie
+Dialektgeografie
+Digitalisat
+Diskursanker
+Distanz
+Distanz, absolute (auch: Wortformenabstand)
+Distanz, syntaktische (auch: Domäne)
+Distanzstellung
+Distribution
+Distribution, komplementäre
+Domäne
+Dual
+Dualhypothese
+Editionsphilologie
+Endungslosigkeit
+Epikoinon
+Erstcontroller
+F-Struktur (auch: Struktur, funktionale)
+Fachsprache
+Falschpositiv
+Feldermodell
+Floating Quantifier
+Fokus
+Fokuspartikel
+Formelhaftigkeit
+freie Variation
+Frequenz
+Fürstenspiegel
+Gender (auch: Geschlecht, soziales)
+Gender Resolution (auch: Ausgleich, Resolution)
+Gender Resolution (auch: Genusausgleich)
+gender, covert
+gender, overt
+Generalisierung
+generisches Maskulinum
+Genus
+Genus (auch: Geschlecht, grammatisches)
+Genusdistinktion, Abbau der
+Genuskongruenz
+Genusmerkmale
+genusneutral
+Genuszuweisung
+Geschlecht, biologisches
+Geschlecht, formales
+Geschlecht, konzeptuelles
+Geschlecht, lexikalisches (auch: gender, lexical)
+Geschlecht, natürliches (auch: gender, natural)
+Geschlecht, referentielles (auch: gender, referential)
+Geschlecht, semantisches
+Geschlechterrolle
+Government and Binding (GB)
+Grammatikalisierung
+Head Feature Principle
+Head-driven Phrase Structure Grammar (HPSG)
+Hiatus
+Hyperkorrektur
+Inanimata
+Index
+Individualisierbarkeit
+Junggrammatik
+kataphorisch
+Klassenbildung
+Ko-Kopf (cohead)
+Kohärenz
+Koindizierung
+Kombinationsstrategie
+Komplexitätsreduktion
+Kongruenz, formale
+Kongruenz, formale (auch: constructio ad formam)
+Kongruenz, pragmatische (auch: constructio ad sensum)
+Kongruenz, semantische
+Kongruenz, semantische (auch: constructio ad sensum)
+Kongruenzrelation
+Kongruenzrelation, nicht-kanonische
+Konjunktion
+Konnotation
+Konstruktion
+Konstruktion, korrelative
+Kontaktstellung
+Konvention
+konzeptuelle Schriftlichkeit
+Koordination
+Korpus
+Kovarianz
+Latinität
+Leithandschrift
+Lemmatisierung
+Lesart, distributive
+Lesart, kollektive
+Lexical Functional Grammar (LFG)
+Lexical Hybrid
+Lexikon
+Lokalität
+Markiertheit
+Markierung
+Merkmale, grammatische
+Merkmale, semantische
+Mikrovarianz
+Minimalismus
+Misgendering
+Mittelfeld
+Modifikator
+Motivation, semantische
+Mündlichkeit
+Nebensilbenabschwächung
+neuhochdeutsche Diphthongierung
+Nomen Agentis
+Normalisierung
+Numerusprofilierung
+Paradigma
+Paralleltext
+Personenmerkmal(e)
+Phrase, Determinierer- (DP)
+Phrase, Komplementierer- (CP)
+Phrase, Nominal- (NP)
+Phrase, Quantoren- (QP)
+Pronomen, deiktisch (auch: Pragmatik)
+Pronomen, demonstrativ
+Pronomen, exophorisch (auch: Pragmatik)
+Pronomen, personal
+Pronomen, reflexiv
+Pronomen, relativ
+Prosa
+Präkonjunktion
+Präzedenz, funktionale
+Präzedenz, syntaktische
+Quantifizierung (auch: quant)
+Quantor, attributiv
+Quantor, pronominal
+regulärer Ausdruck (RegEx)
+Reimchronik
+Retextualisierung
+Satzklammer
+Schreibdialekt (auch: Schreibsprache)
+Schreiberidentifizierung
+sexuelle Identität
+Sexus
+Spur
+Stichprobe
+Stranding
+Tagger
+Target
+Textkritik
+Token
+Topikalisierung
+Transkription
+Urkunde
+Variation
+Verifizierung
+Vers
+Verweiskette
+Volkssprache
+Vorbehalt
+Vorfeld
+X′-Theorie
+Zeilenende
