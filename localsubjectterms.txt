@@ -1,5 +1,4 @@
 Adjektiv
-Adjunkt
 affektiv
 Agreement Hierarchy (auch: Kongruenzhierarchie)
 Alienabilität
@@ -94,6 +93,7 @@ Ko-Kopf (cohead)
 Kohärenz
 Koindizierung
 Kombinationsstrategie
+Komplement
 Komplexitätsreduktion
 Kongruenz, formale
 Kongruenz, formale (auch: constructio ad formam)
@@ -165,6 +165,7 @@ Schreibdialekt (auch: Schreibsprache)
 Schreiberidentifizierung
 sexuelle Identität
 Sexus
+Spezifikator
 Spur
 Stichprobe
 Stranding
@@ -189,3 +190,4 @@ Zeilenende
 
 Adjektivdeklination
 Argumentstruktur
+Adjunkt
