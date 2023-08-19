@@ -1,7 +1,7 @@
-Ambiguität
 anaphorisch
 Animata
 Annotation
+Antezedens
 Apokope
 Apposition
 Attribut-Wert-Matrize (AVM)
@@ -199,5 +199,6 @@ Adjunkt
 Adverb
 Adverbial
 Alienabilität
+Ambiguität
 Argumentstruktur
 Kongruenzhierarchie (auch: Agreement Hierarchy)
