@@ -1,4 +1,3 @@
-Antezedens
 Apokope
 Apposition
 Attribut-Wert-Matrize (AVM)
@@ -200,5 +199,6 @@ Ambiguität
 anaphorisch
 Animata
 Annotation
+Antezedens
 Argumentstruktur
 Kongruenzhierarchie (auch: Agreement Hierarchy)
