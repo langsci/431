@@ -1,4 +1,3 @@
-Apposition
 Attribut-Wert-Matrize (AVM)
 attributiv
 Attributivphrase (AP)
@@ -200,5 +199,6 @@ Animata
 Annotation
 Antezedens
 Apokope
+Apposition
 Argumentstruktur
 Kongruenzhierarchie (auch: Agreement Hierarchy)
