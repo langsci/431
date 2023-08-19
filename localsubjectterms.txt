@@ -1,4 +1,3 @@
-Autornähe
 Basisgenerierung
 Belebtheit
 Belebtheitshierarchie (auch: Animacy Hierarchy)
@@ -205,4 +204,5 @@ Argumentstruktur
 Attribut
 Attribut-Wert-Matrize (AVM)
 Ausnahme
+Autornähe
 Kongruenzhierarchie (auch: Agreement Hierarchy)
