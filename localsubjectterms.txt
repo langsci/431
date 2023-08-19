@@ -1,5 +1,3 @@
-Attributivphrase (AP)
-Ausnahme
 Autornähe
 Basisgenerierung
 Belebtheit
@@ -206,4 +204,5 @@ Apposition
 Argumentstruktur
 Attribut
 Attribut-Wert-Matrize (AVM)
+Ausnahme
 Kongruenzhierarchie (auch: Agreement Hierarchy)
