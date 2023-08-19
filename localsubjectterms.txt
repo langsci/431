@@ -1,4 +1,3 @@
-Apokope
 Apposition
 Attribut-Wert-Matrize (AVM)
 attributiv
@@ -200,5 +199,6 @@ anaphorisch
 Animata
 Annotation
 Antezedens
+Apokope
 Argumentstruktur
 Kongruenzhierarchie (auch: Agreement Hierarchy)
