@@ -1,6 +1,4 @@
 Adjektiv
-affektiv
-Agreement Hierarchy (auch: Kongruenzhierarchie)
 Alienabilität
 Ambiguität
 anaphorisch
@@ -65,6 +63,7 @@ generisches Maskulinum
 Genus
 Genus (auch: Geschlecht, grammatisches)
 Genusdistinktion, Abbau der
+Genusgebrauch
 Genuskongruenz
 Genusmerkmale
 genusneutral
@@ -191,3 +190,4 @@ Zeilenende
 Adjektivdeklination
 Argumentstruktur
 Adjunkt
+Kongruenzhierarchie (auch: Agreement Hierarchy)
