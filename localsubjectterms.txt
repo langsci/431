@@ -1,4 +1,3 @@
-Beschränkung (auch: Bedingung, Kondition)
 Bindung
 Closest Conjunct Agreement
 Concord
@@ -202,6 +201,8 @@ Attribut
 Attribut-Wert-Matrize (AVM)
 Ausnahme
 Autornähe
+Bedingung
 Belebtheit
 Belebtheitshierarchie (auch: Animacy Hierarchy)
+Beschränkung (auch: Kondition)
 Kongruenzhierarchie (auch: Agreement Hierarchy)
