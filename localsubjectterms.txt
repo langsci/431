@@ -1,4 +1,3 @@
-Attribut-Wert-Matrize (AVM)
 attributiv
 Attributivphrase (AP)
 Ausnahme
@@ -201,4 +200,5 @@ Antezedens
 Apokope
 Apposition
 Argumentstruktur
+Attribut-Wert-Matrize (AVM)
 Kongruenzhierarchie (auch: Agreement Hierarchy)
