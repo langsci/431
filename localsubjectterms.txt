@@ -34,7 +34,7 @@ freie Variation
 Frequenz
 funktionale Struktur (F-Struktur)
 Fürstenspiegel
-Gender (auch: Geschlecht, soziales)
+Gender
 Gender Resolution (auch: Ausgleich, Resolution)
 Gender Resolution (auch: Genusausgleich)
 gender, covert
@@ -42,7 +42,6 @@ gender, overt
 Generalisierung
 generisches Maskulinum
 Genus
-Genus (auch: Geschlecht, grammatisches)
 Genusdistinktion, Abbau der
 Genusgebrauch
 Genuskongruenz
@@ -51,11 +50,13 @@ genusneutral
 Genuszuweisung
 Geschlecht, biologisches
 Geschlecht, formales
+Geschlecht, grammatisches (auch: Genus)
 Geschlecht, konzeptuelles
 Geschlecht, lexikalisches (auch: gender, lexical)
 Geschlecht, natürliches (auch: gender, natural)
 Geschlecht, referentielles (auch: gender, referential)
 Geschlecht, semantisches
+Geschlecht, soziales (auch: Gender)
 Geschlechterrolle
 Government and Binding (GB)
 Grammatikalisierung
@@ -76,11 +77,10 @@ Kombinationsstrategie
 Komplement
 Komplementiererphrase (CP)
 Komplexitätsreduktion
+Kongruenz, anaphorische (auch: Index)
 Kongruenz, attributive (auch: Concord)
-Kongruenz, formale
 Kongruenz, formale (auch: constructio ad formam)
 Kongruenz, pragmatische (auch: constructio ad sensum)
-Kongruenz, semantische
 Kongruenz, semantische (auch: constructio ad sensum)
 Kongruenzrelation
 Kongruenzrelation, nicht-kanonische
