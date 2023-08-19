@@ -1,4 +1,3 @@
-Annotation
 Antezedens
 Apokope
 Apposition
@@ -200,5 +199,6 @@ Alienabilität
 Ambiguität
 anaphorisch
 Animata
+Annotation
 Argumentstruktur
 Kongruenzhierarchie (auch: Agreement Hierarchy)
