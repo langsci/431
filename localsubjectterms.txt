@@ -1,4 +1,3 @@
-Datenbank
 Default
 Definitheit
 Demonstrativpronomen
@@ -205,4 +204,5 @@ Bindung
 Closest Conjunct Agreement
 Concord
 Controller
+Datenbank
 Kongruenzhierarchie (auch: Agreement Hierarchy)
