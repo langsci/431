@@ -1,4 +1,3 @@
-anaphorisch
 Animata
 Annotation
 Antezedens
@@ -200,5 +199,6 @@ Adverb
 Adverbial
 Alienabilität
 Ambiguität
+anaphorisch
 Argumentstruktur
 Kongruenzhierarchie (auch: Agreement Hierarchy)
