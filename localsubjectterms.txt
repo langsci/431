@@ -1,4 +1,3 @@
-Default
 Definitheit
 Demonstrativpronomen
 Denotation
@@ -205,4 +204,5 @@ Closest Conjunct Agreement
 Concord
 Controller
 Datenbank
+Default
 Kongruenzhierarchie (auch: Agreement Hierarchy)
