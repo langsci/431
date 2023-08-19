@@ -1,6 +1,4 @@
-A-Struktur (auch: Struktur, Argument-)
 Adjektiv
-Adjektivdeklination
 Adjunkt
 affektiv
 Agreement Hierarchy (auch: Kongruenzhierarchie)
@@ -186,3 +184,8 @@ Vorbehalt
 Vorfeld
 X′-Theorie
 Zeilenende
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Adjektivdeklination
+Argumentstruktur
