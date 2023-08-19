@@ -1,4 +1,3 @@
-Adverb
 Ambiguität
 anaphorisch
 Animata
@@ -7,6 +6,7 @@ Apokope
 Apposition
 Attribut-Wert-Matrize (AVM)
 attributiv
+Attributivphrase (AP)
 Ausnahme
 Autornähe
 Basisgenerierung
@@ -196,7 +196,8 @@ Adjektiv, attributiv
 Adjektiv, prädikativ
 Adjektivdeklination
 Adjunkt
+Adverb
+Adverbial
 Alienabilität
 Argumentstruktur
 Kongruenzhierarchie (auch: Agreement Hierarchy)
-Adverbial
