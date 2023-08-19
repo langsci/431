@@ -1,7 +1,4 @@
-Basisgenerierung
-Belebtheit
-Belebtheitshierarchie (auch: Animacy Hierarchy)
-Beschränkung (auch: Bedingung)
+Beschränkung (auch: Bedingung, Kondition)
 Bindung
 Closest Conjunct Agreement
 Concord
@@ -205,4 +202,6 @@ Attribut
 Attribut-Wert-Matrize (AVM)
 Ausnahme
 Autornähe
+Belebtheit
+Belebtheitshierarchie (auch: Animacy Hierarchy)
 Kongruenzhierarchie (auch: Agreement Hierarchy)
