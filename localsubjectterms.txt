@@ -1,4 +1,3 @@
-Animata
 Annotation
 Antezedens
 Apokope
@@ -200,5 +199,6 @@ Adverbial
 Alienabilität
 Ambiguität
 anaphorisch
+Animata
 Argumentstruktur
 Kongruenzhierarchie (auch: Agreement Hierarchy)
