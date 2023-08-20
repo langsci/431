@@ -39,6 +39,12 @@ main.snd: main.bbl
 	sed -i 's/.*Akademie.*//' main.adx
 	sed -i 's/\\MakeCapital//' main.adx
 	sed -i -r 's/.*\{[ivxlc]+\}//' main.adx # no entries which appear on Roman-digit pages
+	sed -i -r 's/\{Ć(.+?)\|/\{C\1@Ć\1\|/' main.adx # Make Ć sort as C
+	sed -i -r 's/\{(.+?)ä(.+?)\|/\{\1a\2@\1ä\2\|/' main.adx # Make ä sort as a
+	sed -i -r 's/\{(.+?)ö(.+?)\|/\{\1o\2@\1ö\2\|/' main.adx # Make ö sort as o
+	sed -i -r 's/\{(.+?)ü(.+?)\|/\{\1u\2@\1ü\2\|/' main.adx # Make ü sort as u
+	sed -i -r 's/\{(.+?)ß(.+?)\|/\{\1ss\2@\1ß\2\|/' main.adx # Make ß sort as ss
+	sed -i -r 's/\{(.+?)æ(.+?)\|/\{\1ae\2@\1æ\2\|/' main.adx # Make æ sort as ae
 # 	python3 fixindex.py
 # 	mv mainmod.adx main.adx
 	makeindex -o main.and main.adx
