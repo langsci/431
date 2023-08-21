@@ -1,4 +1,3 @@
-Definitheit
 Demonstrativpronomen
 Denotation
 Desiderat
@@ -8,10 +7,9 @@ Diachronie
 Dialektgeografie
 Digitalisat
 Diskursanker
-Distanz
 Distanz, absolute (auch: Wortformenabstand)
 Distanz, syntaktische (auch: Domäne)
-Distanzstellung
+Distanzstellung (auch: Mittelfeld)
 Distribution
 Distribution, komplementäre
 Domäne
@@ -47,13 +45,13 @@ Genusmerkmale
 genusneutral
 Genuszuweisung
 Geschlecht, biologisches
-Geschlecht, formales
+Geschlecht, formales (auch: Genus)
 Geschlecht, grammatisches (auch: Genus)
-Geschlecht, konzeptuelles
-Geschlecht, lexikalisches (auch: gender, lexical)
-Geschlecht, natürliches (auch: gender, natural)
-Geschlecht, referentielles (auch: gender, referential)
-Geschlecht, semantisches
+Geschlecht, konzeptuelles (auch: Denotation)
+Geschlecht, lexikalisches (auch: Genus)
+Geschlecht, natürliches (auch: Sexus)
+Geschlecht, referentielles (auch: Pragmatik)
+Geschlecht, semantisches (auch: Sexus)
 Geschlecht, soziales (auch: Gender)
 Geschlechterrolle
 Government and Binding (GB)
@@ -205,4 +203,5 @@ Concord
 Controller
 Datenbank
 Default
+Definitheit
 Kongruenzhierarchie (auch: Agreement Hierarchy)
