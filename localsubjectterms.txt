@@ -1,4 +1,3 @@
-Desiderat
 Determinierer
 Determiniererphrase (DP)
 Diachronie
@@ -205,4 +204,5 @@ Default
 Definitheit
 Demonstrativpronomen
 Denotation
+Desiderat
 Kongruenzhierarchie (auch: Agreement Hierarchy)
