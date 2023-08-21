@@ -1,4 +1,3 @@
-Domäne
 Dual
 Dualhypothese
 Editionsphilologie
@@ -210,4 +209,5 @@ Distribution, morphologische
 Distribution, statistische
 Distribution, syntaktische
 Distribution, zeitliche
+Domäne
 Kongruenzhierarchie (auch: Agreement Hierarchy)
