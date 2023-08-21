@@ -1,4 +1,3 @@
-Floating Quantifier
 Fokus
 Fokuspartikel
 Formelhaftigkeit
@@ -210,4 +209,5 @@ Erstcontroller
 Fachsprache
 Falschpositiv
 Feldermodell
+Floating Quantifier
 Kongruenzhierarchie (auch: Agreement Hierarchy)
