@@ -1,5 +1,3 @@
-Distribution
-Distribution, komplementäre
 Domäne
 Dual
 Dualhypothese
@@ -206,4 +204,10 @@ Diskursanker
 Distanz, absolute (auch: Wortformenabstand)
 Distanz, syntaktische (auch: Domäne)
 Distanzstellung (auch: Mittelfeld)
+Distribution, geografische
+Distribution, komplementäre
+Distribution, morphologische
+Distribution, statistische
+Distribution, syntaktische
+Distribution, zeitliche
 Kongruenzhierarchie (auch: Agreement Hierarchy)
