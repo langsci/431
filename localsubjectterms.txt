@@ -1,4 +1,3 @@
-Determiniererphrase (DP)
 Diachronie
 Dialektgeografie
 Digitalisat
@@ -205,4 +204,5 @@ Demonstrativpronomen
 Denotation
 Desiderat
 Determinierer
+Determiniererphrase (DP)
 Kongruenzhierarchie (auch: Agreement Hierarchy)
