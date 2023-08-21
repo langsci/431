@@ -1,5 +1,3 @@
-Distanz, absolute (auch: Wortformenabstand)
-Distanz, syntaktische (auch: Domäne)
 Distanzstellung (auch: Mittelfeld)
 Distribution
 Distribution, komplementäre
@@ -206,4 +204,6 @@ Diachronie
 Dialektgeografie
 Digitalisat
 Diskursanker
+Distanz, absolute (auch: Wortformenabstand)
+Distanz, syntaktische (auch: Domäne)
 Kongruenzhierarchie (auch: Agreement Hierarchy)
