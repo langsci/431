@@ -36,8 +36,8 @@ main.snd: main.bbl
 	sed -i 's/.*Commission.*//' main.adx
 	sed -i 's/.*committee.*//' main.adx
 	sed -i 's/.*government.*//' main.adx
-	sed -i 's/.*Akademie.*//' main.adx
 	sed -i 's/\\MakeCapital//' main.adx
+	sed -i 's/.*Akademie.*//' main.adx
 	sed -i -r 's/.*\{[ivxlc]+\}//' main.adx # no entries which appear on Roman-digit pages
 	sed -i -r 's/\{Ć(.+?)\|/\{C\1@Ć\1\|/' main.adx # Make Ć sort as C
 	sed -i -r 's/\{(.+?)ä(.+?)\|/\{\1a\2@\1ä\2\|/' main.adx # Make ä sort as a
@@ -46,6 +46,11 @@ main.snd: main.bbl
 	sed -i -r 's/\{(.+?)ß(.+?)\|/\{\1ss\2@\1ß\2\|/' main.adx # Make ß sort as ss
 	sed -i -r 's/\{(.+?)á(.+?)\|/\{\1a\2@\1á\2\|/' main.adx # Make á sort as a
 	sed -i -r 's/\{(.+?)æ(.+?)\|/\{\1ae\2@\1æ\2\|/' main.adx # Make æ sort as ae
+	sed -i -r 's/(Komplementiererphrase)/\1 (CP)/' main.sdx # Add CP abbreviation
+	sed -i -r 's/(Verbphrase)/\1 (VP)/' main.sdx # Add VP abbreviation
+	sed -i -r 's/(Determiniererphrase)/\1 (DP)/' main.sdx # Add DP abbreviation
+	sed -i -r 's/(Quantorenphrase)/\1 (QP)/' main.sdx # Add QP abbreviation
+	sed -i -r 's/(Nominalphrase)/\1 (NP)/' main.sdx # Add NP abbreviation
 # 	python3 fixindex.py
 # 	mv mainmod.adx main.adx
 	makeindex -o main.and main.adx
