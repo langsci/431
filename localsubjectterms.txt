@@ -1,4 +1,3 @@
-Diskursanker
 Distanz, absolute (auch: Wortformenabstand)
 Distanz, syntaktische (auch: Domäne)
 Distanzstellung (auch: Mittelfeld)
@@ -206,4 +205,5 @@ Determiniererphrase (DP)
 Diachronie
 Dialektgeografie
 Digitalisat
+Diskursanker
 Kongruenzhierarchie (auch: Agreement Hierarchy)
