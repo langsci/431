@@ -1,5 +1,3 @@
-Dialektgeografie
-Digitalisat
 Diskursanker
 Distanz, absolute (auch: Wortformenabstand)
 Distanz, syntaktische (auch: Domäne)
@@ -206,4 +204,6 @@ Desiderat
 Determinierer
 Determiniererphrase (DP)
 Diachronie
+Dialektgeografie
+Digitalisat
 Kongruenzhierarchie (auch: Agreement Hierarchy)
