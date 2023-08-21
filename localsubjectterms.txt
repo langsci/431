@@ -1,4 +1,3 @@
-Demonstrativpronomen
 Denotation
 Desiderat
 Determinierer
@@ -189,6 +188,7 @@ Antezedens
 Apokope
 Apposition
 Argumentstruktur
+Artikel
 Attribut
 Attribut-Wert-Matrize (AVM)
 Ausnahme
@@ -204,4 +204,5 @@ Controller
 Datenbank
 Default
 Definitheit
+Demonstrativpronomen
 Kongruenzhierarchie (auch: Agreement Hierarchy)
