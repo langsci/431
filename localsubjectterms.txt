@@ -1,4 +1,3 @@
-Endungslosigkeit
 Epikoinon
 Erstcontroller
 Fachsprache
@@ -100,6 +99,7 @@ neuhochdeutsche Diphthongierung
 Nomen Agentis
 Nominalphrase (NP)
 Normalisierung
+Nullsubjekt
 Numerusprofilierung
 Paradigma
 Paralleltext
@@ -209,4 +209,5 @@ Distribution, zeitliche
 Domäne
 Dual
 Editionsphilologie
+Endungslosigkeit
 Kongruenzhierarchie (auch: Agreement Hierarchy)
