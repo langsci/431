@@ -1,4 +1,3 @@
-Diachronie
 Dialektgeografie
 Digitalisat
 Diskursanker
@@ -145,6 +144,7 @@ Schreiberidentifizierung
 sexuelle Identität
 Sexus
 Spezifikator
+Sprachgeschichte (auch: historische Linguistik)
 Spur
 Stichprobe
 Stranding
@@ -205,4 +205,5 @@ Denotation
 Desiderat
 Determinierer
 Determiniererphrase (DP)
+Diachronie
 Kongruenzhierarchie (auch: Agreement Hierarchy)
