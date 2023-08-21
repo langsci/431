@@ -1,4 +1,3 @@
-Denotation
 Desiderat
 Determinierer
 Determiniererphrase (DP)
@@ -205,4 +204,5 @@ Datenbank
 Default
 Definitheit
 Demonstrativpronomen
+Denotation
 Kongruenzhierarchie (auch: Agreement Hierarchy)
