@@ -1,5 +1,3 @@
-Fokus
-Fokuspartikel
 Formelhaftigkeit
 freie Variation
 Frequenz
@@ -94,6 +92,7 @@ Nomen Agentis
 Nominalphrase (NP)
 Normalisierung
 Nullsubjekt
+Numerus
 Numerusprofilierung
 Paradigma
 Paralleltext
@@ -125,6 +124,7 @@ Schreibdialekt (auch: Schreibsprache)
 Schreiberidentifizierung
 sexuelle Identität
 Sexus
+Skopus
 Spezifikator
 Sprachgeschichte (auch: historische Linguistik)
 Spur
@@ -210,4 +210,6 @@ Fachsprache
 Falschpositiv
 Feldermodell
 Floating Quantifier
+Fokus
+Fokuspartikel
 Kongruenzhierarchie (auch: Agreement Hierarchy)
