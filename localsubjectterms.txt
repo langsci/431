@@ -1,5 +1,3 @@
-Dual
-Dualhypothese
 Editionsphilologie
 Endungslosigkeit
 Epikoinon
@@ -210,4 +208,5 @@ Distribution, statistische
 Distribution, syntaktische
 Distribution, zeitliche
 Domäne
+Dual
 Kongruenzhierarchie (auch: Agreement Hierarchy)
