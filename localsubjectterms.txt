@@ -1,5 +1,4 @@
 Genusdistinktion, Abbau der
-Genuszuweisung
 Geschlecht, biologisches
 Geschlecht, formales (auch: Genus)
 Geschlecht, grammatisches (auch: Genus)
@@ -209,4 +208,5 @@ Genusindifferenz
 Genuskongruenz
 Genusmarkierung (-kategorie)
 Genusmerkmal
+Genuszuweisung
 Kongruenzhierarchie (auch: Agreement Hierarchy)
