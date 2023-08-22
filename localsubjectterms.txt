@@ -1,4 +1,3 @@
-funktionale Struktur (F-Struktur)
 Fürstenspiegel
 Gender
 Gender Resolution (auch: Ausgleich, Resolution)
@@ -212,4 +211,5 @@ Fokuspartikel
 Formelhaftigkeit
 freie Variation
 Frequenz
+funktionale Struktur (F-Struktur)
 Kongruenzhierarchie (auch: Agreement Hierarchy)
