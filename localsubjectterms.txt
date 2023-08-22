@@ -3,8 +3,6 @@ Kongruenz, attributive (auch: Concord)
 Kongruenz, formale (auch: constructio ad formam)
 Kongruenz, pragmatische (auch: constructio ad sensum)
 Kongruenz, semantische (auch: constructio ad sensum)
-Konnotation
-Konstituentenstruktur (C-Struktur)
 Konstruktion
 Konstruktion, korrelative
 Kontaktstellung
@@ -201,3 +199,4 @@ Kongruenzhierarchie (auch: Agreement Hierarchy)
 Kongruenzrelation
 Kongruenzrelation, nicht-kanonische
 Konjunktion
+Konstituentenstruktur (C-Struktur)
