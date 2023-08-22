@@ -1,8 +1,4 @@
 Genusdistinktion, Abbau der
-Genusgebrauch
-Genuskongruenz
-Genusmarkierung (-kategorie)
-Genusmerkmale
 genusneutral (-indifferent, -übergreifend)
 Genuszuweisung
 Geschlecht, biologisches
@@ -69,7 +65,6 @@ Merkmale, grammatische
 Merkmale, semantische
 Mikrovarianz
 Minimalismus
-Misgendering
 Mittelfeld
 Modifikator
 Motivation, semantische
@@ -210,4 +205,8 @@ gender, covert
 Generalisierung (auch: Hyperkorrektur)
 Genus
 generischer Gebrauch
+Genusgebrauch (auch: Misgendering)
+Genuskongruenz
+Genusmarkierung (-kategorie)
+Genusmerkmal
 Kongruenzhierarchie (auch: Agreement Hierarchy)
