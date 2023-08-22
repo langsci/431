@@ -1,4 +1,3 @@
-kataphorisch
 Klassenbildung
 Ko-Kopf (cohead)
 Kohärenz
@@ -119,7 +118,7 @@ Adverb
 Adverbial
 Alienabilität
 Ambiguität
-anaphorisch
+Anapher
 Animata
 Annotation
 Antezedens
@@ -199,4 +198,5 @@ Inanimata
 Index
 Individualisierbarkeit
 Junggrammatik
+Katapher
 Kongruenzhierarchie (auch: Agreement Hierarchy)
