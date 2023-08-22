@@ -1,6 +1,3 @@
-Kohärenz
-Koindizierung
-Kombinationsstrategie
 Komplement
 Komplementiererphrase (CP)
 Komplexitätsreduktion
@@ -47,6 +44,7 @@ Nebensilbenabschwächung
 neuhochdeutsche Diphthongierung
 Nomen Agentis
 Nominalphrase (NP)
+Nominalgruppe
 Normalisierung
 Nullsubjekt
 Numerus
@@ -199,4 +197,7 @@ Junggrammatik
 Katapher
 Klassenbildung
 Ko-Kopf (cohead)
+Kohärenz
+Koindizierung
+Kombinationsstrategie
 Kongruenzhierarchie (auch: Agreement Hierarchy)
