@@ -1,5 +1,3 @@
-Inanimata
-Index
 Individualisierbarkeit
 Junggrammatik
 kataphorisch
@@ -199,4 +197,6 @@ Grammatikalisierung
 Head Feature Principle
 Head-driven Phrase Structure Grammar (HPSG)
 Hiatus
+Inanimata
+Index
 Kongruenzhierarchie (auch: Agreement Hierarchy)
