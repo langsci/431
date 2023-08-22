@@ -1,4 +1,3 @@
-Junggrammatik
 kataphorisch
 Klassenbildung
 Ko-Kopf (cohead)
@@ -199,4 +198,5 @@ Hiatus
 Inanimata
 Index
 Individualisierbarkeit
+Junggrammatik
 Kongruenzhierarchie (auch: Agreement Hierarchy)
