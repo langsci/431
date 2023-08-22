@@ -1,4 +1,3 @@
-Fürstenspiegel
 Gender
 Gender Resolution (auch: Ausgleich, Resolution)
 Gender Resolution (auch: Genusausgleich)
@@ -212,4 +211,5 @@ Formelhaftigkeit
 freie Variation
 Frequenz
 funktionale Struktur (F-Struktur)
+Fürstenspiegel
 Kongruenzhierarchie (auch: Agreement Hierarchy)
