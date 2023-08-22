@@ -1,4 +1,3 @@
-Formelhaftigkeit
 freie Variation
 Frequenz
 funktionale Struktur (F-Struktur)
@@ -133,13 +132,13 @@ Stranding
 Substantiv
 Tagger
 Target
-Textkritik
 Token
 Topikalisierung
 Transkription
 Urkunde
 Variation
 Verbphrase (VP)
+Vergleichshandschrift
 Verifizierung
 Vers
 Verweiskette
@@ -212,4 +211,5 @@ Feldermodell
 Floating Quantifier
 Fokus
 Fokuspartikel
+Formelhaftigkeit
 Kongruenzhierarchie (auch: Agreement Hierarchy)
