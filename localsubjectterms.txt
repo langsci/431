@@ -1,4 +1,3 @@
-Komplement
 Komplementiererphrase (CP)
 Komplexitätsreduktion
 Kongruenz, anaphorische (auch: Index)
@@ -200,4 +199,5 @@ Ko-Kopf (cohead)
 Kohärenz
 Koindizierung
 Kombinationsstrategie
+Komplement
 Kongruenzhierarchie (auch: Agreement Hierarchy)
