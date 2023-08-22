@@ -1,4 +1,3 @@
-generisches Maskulinum
 Genusdistinktion, Abbau der
 Genusgebrauch
 Genuskongruenz
@@ -210,4 +209,5 @@ Gender Resolution
 gender, covert
 Generalisierung (auch: Hyperkorrektur)
 Genus
+generischer Gebrauch
 Kongruenzhierarchie (auch: Agreement Hierarchy)
