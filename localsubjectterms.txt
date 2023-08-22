@@ -1,6 +1,4 @@
 Gender
-Gender Resolution (auch: Ausgleich, Resolution)
-Gender Resolution (auch: Genusausgleich)
 gender, covert
 gender, overt
 Generalisierung
@@ -212,4 +210,5 @@ freie Variation
 Frequenz
 funktionale Struktur (F-Struktur)
 Fürstenspiegel
+Gender Resolution
 Kongruenzhierarchie (auch: Agreement Hierarchy)
