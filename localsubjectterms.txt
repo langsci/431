@@ -1,4 +1,3 @@
-Komplexitätsreduktion
 Kongruenz, anaphorische (auch: Index)
 Kongruenz, attributive (auch: Concord)
 Kongruenz, formale (auch: constructio ad formam)
@@ -200,4 +199,5 @@ Koindizierung
 Kombinationsstrategie
 Komplement
 Komplementiererphrase (CP)
+Komplexitätsreduktion
 Kongruenzhierarchie (auch: Agreement Hierarchy)
