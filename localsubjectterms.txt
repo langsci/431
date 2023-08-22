@@ -1,5 +1,3 @@
-freie Variation
-Frequenz
 funktionale Struktur (F-Struktur)
 Fürstenspiegel
 Gender
@@ -212,4 +210,6 @@ Floating Quantifier
 Fokus
 Fokuspartikel
 Formelhaftigkeit
+freie Variation
+Frequenz
 Kongruenzhierarchie (auch: Agreement Hierarchy)
