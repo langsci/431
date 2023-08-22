@@ -1,4 +1,3 @@
-Individualisierbarkeit
 Junggrammatik
 kataphorisch
 Klassenbildung
@@ -199,4 +198,5 @@ Head-driven Phrase Structure Grammar (HPSG)
 Hiatus
 Inanimata
 Index
+Individualisierbarkeit
 Kongruenzhierarchie (auch: Agreement Hierarchy)
