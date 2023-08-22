@@ -1,9 +1,3 @@
-Genusdistinktion, Abbau der
-Geschlecht, lexikalisches (auch: Genus)
-Geschlecht, natürliches (auch: Sexus)
-Geschlecht, referentielles (auch: Pragmatik)
-Geschlecht, semantisches (auch: Sexus)
-Geschlecht, soziales (auch: Gender)
 Government and Binding (GB)
 Grammatikalisierung
 Head Feature Principle
@@ -198,6 +192,7 @@ gender, covert
 Generalisierung (auch: Hyperkorrektur)
 generischer Gebrauch
 Genus
+Genusdistinktion, Abbau der
 Genusgebrauch (auch: Misgendering)
 Genusindifferenz
 Genuskongruenz
