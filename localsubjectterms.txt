@@ -1,14 +1,11 @@
-Gender
-gender, covert
-gender, overt
 Generalisierung
 generisches Maskulinum
-Genus
 Genusdistinktion, Abbau der
 Genusgebrauch
 Genuskongruenz
+Genusmarkierung (-kategorie)
 Genusmerkmale
-genusneutral
+genusneutral (-indifferent, -übergreifend)
 Genuszuweisung
 Geschlecht, biologisches
 Geschlecht, formales (auch: Genus)
@@ -211,4 +208,6 @@ Frequenz
 funktionale Struktur (F-Struktur)
 Fürstenspiegel
 Gender Resolution
+gender, covert
+Genus
 Kongruenzhierarchie (auch: Agreement Hierarchy)
