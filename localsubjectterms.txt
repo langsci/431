@@ -1,4 +1,3 @@
-Klassenbildung
 Ko-Kopf (cohead)
 Kohärenz
 Koindizierung
@@ -199,4 +198,5 @@ Index
 Individualisierbarkeit
 Junggrammatik
 Katapher
+Klassenbildung
 Kongruenzhierarchie (auch: Agreement Hierarchy)
