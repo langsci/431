@@ -1,5 +1,4 @@
 Genusdistinktion, Abbau der
-genusneutral (-indifferent, -übergreifend)
 Genuszuweisung
 Geschlecht, biologisches
 Geschlecht, formales (auch: Genus)
@@ -203,9 +202,10 @@ Fürstenspiegel
 Gender Resolution
 gender, covert
 Generalisierung (auch: Hyperkorrektur)
-Genus
 generischer Gebrauch
+Genus
 Genusgebrauch (auch: Misgendering)
+Genusindifferenz
 Genuskongruenz
 Genusmarkierung (-kategorie)
 Genusmerkmal
