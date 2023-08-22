@@ -1,14 +1,9 @@
 Genusdistinktion, Abbau der
-Geschlecht, biologisches
-Geschlecht, formales (auch: Genus)
-Geschlecht, grammatisches (auch: Genus)
-Geschlecht, konzeptuelles (auch: Denotation)
 Geschlecht, lexikalisches (auch: Genus)
 Geschlecht, natürliches (auch: Sexus)
 Geschlecht, referentielles (auch: Pragmatik)
 Geschlecht, semantisches (auch: Sexus)
 Geschlecht, soziales (auch: Gender)
-Geschlechterrolle
 Government and Binding (GB)
 Grammatikalisierung
 Head Feature Principle
@@ -209,4 +204,5 @@ Genuskongruenz
 Genusmarkierung (-kategorie)
 Genusmerkmal
 Genuszuweisung
+Geschlechterrolle
 Kongruenzhierarchie (auch: Agreement Hierarchy)
