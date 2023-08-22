@@ -1,4 +1,3 @@
-Ko-Kopf (cohead)
 Kohärenz
 Koindizierung
 Kombinationsstrategie
@@ -199,4 +198,5 @@ Individualisierbarkeit
 Junggrammatik
 Katapher
 Klassenbildung
+Ko-Kopf (cohead)
 Kongruenzhierarchie (auch: Agreement Hierarchy)
