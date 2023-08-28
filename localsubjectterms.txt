@@ -4,7 +4,6 @@ Kongruenz, formale (auch: constructio ad formam)
 Kongruenz, pragmatische (auch: constructio ad sensum)
 Kongruenz, semantische (auch: constructio ad sensum)
 
-Pronomen, relativ
 Prosa
 Prädikat
 Präkonjunktion
@@ -189,4 +188,5 @@ Paralleltext
 Personalpronomen
 Personenmerkmal(e)
 Reflexivpronomen
+Relativpronomen
 Schriftlichkeit
