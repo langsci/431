@@ -4,7 +4,6 @@ Kongruenz, formale (auch: constructio ad formam)
 Kongruenz, pragmatische (auch: constructio ad sensum)
 Kongruenz, semantische (auch: constructio ad sensum)
 
-Quantifizierung (auch: quant)
 Quantor, attributiv
 Quantor, pronominal
 Quantorenphrase (QP)
@@ -186,6 +185,7 @@ Pragmatik
 Prosa
 Prädikat
 Präpositionalphrase (PP)
+Quantifizierung (auch: quant)
 Reflexivpronomen
 Relativpronomen
 Schriftlichkeit
