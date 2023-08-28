@@ -4,7 +4,6 @@ Kongruenz, formale (auch: constructio ad formam)
 Kongruenz, pragmatische (auch: constructio ad sensum)
 Kongruenz, semantische (auch: constructio ad sensum)
 
-Normalisierung
 Nullsubjekt
 Numerus
 Numerusprofilierung
@@ -194,4 +193,5 @@ Mündlichkeit
 Nebensilbenabschwächung
 Nominalgruppe
 Nominalphrase (NP)
+Normalisierung
 Schriftlichkeit
