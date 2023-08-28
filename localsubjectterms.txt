@@ -4,7 +4,6 @@ Kongruenz, formale (auch: constructio ad formam)
 Kongruenz, pragmatische (auch: constructio ad sensum)
 Kongruenz, semantische (auch: constructio ad sensum)
 
-Modifikator
 Motivation, semantische
 Mündlichkeit
 Nebensilbenabschwächung
@@ -195,4 +194,5 @@ Merkmale, semantische
 Mikrovarianz
 Minimalismus
 Mittelfeld
+Modifikator
 Schriftlichkeit
