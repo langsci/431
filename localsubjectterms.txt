@@ -4,9 +4,6 @@ Kongruenz, formale (auch: constructio ad formam)
 Kongruenz, pragmatische (auch: constructio ad sensum)
 Kongruenz, semantische (auch: constructio ad sensum)
 
-Quantor, attributiv
-Quantor, pronominal
-Quantorenphrase (QP)
 regulärer Ausdruck (RegEx)
 Reimchronik
 Relativsatz
@@ -186,6 +183,7 @@ Prosa
 Prädikat
 Präpositionalphrase (PP)
 Quantifizierung (auch: quant)
+Quantorenphrase (QP)
 Reflexivpronomen
 Relativpronomen
 Schriftlichkeit
