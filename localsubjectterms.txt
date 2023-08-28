@@ -4,8 +4,6 @@ Kongruenz, formale (auch: constructio ad formam)
 Kongruenz, pragmatische (auch: constructio ad sensum)
 Kongruenz, semantische (auch: constructio ad sensum)
 
-Motivation, semantische
-Mündlichkeit
 Nebensilbenabschwächung
 neuhochdeutsche Diphthongierung
 Nomen Agentis
@@ -195,4 +193,6 @@ Mikrovarianz
 Minimalismus
 Mittelfeld
 Modifikator
+Motivation, semantische
+Mündlichkeit
 Schriftlichkeit
