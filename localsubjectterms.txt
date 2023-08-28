@@ -4,7 +4,6 @@ Kongruenz, formale (auch: constructio ad formam)
 Kongruenz, pragmatische (auch: constructio ad sensum)
 Kongruenz, semantische (auch: constructio ad sensum)
 
-sexuelle Identität
 Sexus (Sexusmerkmal, Geschlechtsmerkmal)
 Skopus
 Spezifikator
@@ -187,4 +186,5 @@ Satzklammer
 Schreibdialekt (auch: Schreibsprache)
 Schreiberidentifizierung
 Schriftlichkeit
+sexuelle Identität
 Vorlagenproblematik
