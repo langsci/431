@@ -4,7 +4,7 @@ Kongruenz, formale (auch: constructio ad formam)
 Kongruenz, pragmatische (auch: constructio ad sensum)
 Kongruenz, semantische (auch: constructio ad sensum)
 
-Sexus (Sexusmerkmal, Geschlechtsmerkmal)
+Sexus
 Tagger
 Target
 Token
@@ -187,4 +187,5 @@ Spur
 Stichprobe
 Stranding
 Substantiv
+Sexusmerkmal (auch: Geschlechtsmerkmal)
 Vorlagenproblematik
