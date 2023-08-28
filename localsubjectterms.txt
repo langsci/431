@@ -3,31 +3,7 @@ Kongruenz, attributive (auch: Concord)
 Kongruenz, formale (auch: constructio ad formam)
 Kongruenz, pragmatische (auch: constructio ad sensum)
 Kongruenz, semantische (auch: constructio ad sensum)
-Konstruktion
-Konstruktion, korrelative
-Kontaktstellung
-Konvention
-konzeptuelle Schriftlichkeit
-Koordination
-Kopf
-Korpus
-Kovarianz
-Körperteil
-Latinität
-Leithandschrift
-Lemmatisierung
-Lesart, distributive
-Lesart, kollektive
-Lexical Hybrid
-Lexical-functional Grammar (LFG)
-Lexikon
-Lokalität
-Markiertheit
-Markierung
-Merkmale, grammatische
-Merkmale, semantische
-Mikrovarianz
-Minimalismus
+
 Mittelfeld
 Modifikator
 Motivation, semantische
@@ -70,7 +46,7 @@ Satzklammer
 Schreibdialekt (auch: Schreibsprache)
 Schreiberidentifizierung
 sexuelle Identität
-Sexus
+Sexus (Sexusmerkmal, Geschlechtsmerkmal)
 Skopus
 Spezifikator
 Sprachgeschichte (auch: historische Linguistik)
@@ -188,15 +164,35 @@ Individualisierbarkeit
 Junggrammatik
 Katapher
 Klassenbildung
-Ko-Kopf (cohead)
 Kohärenz
 Koindizierung
 Kombinationsstrategie
 Komplement
 Komplementiererphrase (CP)
 Komplexitätsreduktion
+Kongruenz, prädikativ
 Kongruenzhierarchie (auch: Agreement Hierarchy)
 Kongruenzrelation
 Kongruenzrelation, nicht-kanonische
 Konjunktion
 Konstituentenstruktur (C-Struktur)
+Kontaktstellung
+Konvention
+Koordination
+Kopf
+Korpus
+Kovarianz
+Körperteil
+Latinität
+Leithandschrift
+Lesart
+Lexical Hybrid
+Lexical-functional Grammar (LFG)
+Lexikon
+Lokalität
+Markiertheit
+Merkmale, grammatische
+Merkmale, semantische
+Mikrovarianz
+Minimalismus
+Schriftlichkeit
