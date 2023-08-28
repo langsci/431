@@ -129,6 +129,7 @@ Government and Binding (GB)
 Grammatikalisierung
 Head Feature Principle
 Head-driven Phrase Structure Grammar (HPSG)
+Heteronormativität
 Hiatus
 Inanimata
 Index
@@ -181,6 +182,7 @@ Paradigma
 Paralleltext
 Personalpronomen
 Personenmerkmal(e)
+Pragmatik
 Prosa
 Prädikat
 Präpositionalphrase (PP)
