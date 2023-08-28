@@ -4,8 +4,6 @@ Kongruenz, formale (auch: constructio ad formam)
 Kongruenz, pragmatische (auch: constructio ad sensum)
 Kongruenz, semantische (auch: constructio ad sensum)
 
-Präzedenz, funktionale
-Präzedenz, syntaktische
 Quantifizierung (auch: quant)
 Quantor, attributiv
 Quantor, pronominal
@@ -46,6 +44,7 @@ Zeilenende
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+Abfolge
 Adjektiv, attributiv
 Adjektiv, prädikativ
 Adjektivdeklination
