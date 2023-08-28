@@ -51,6 +51,7 @@ main.snd: main.bbl
 	sed -i -r 's/(Determiniererphrase)/\1 (DP)/' main.sdx # Add DP abbreviation
 	sed -i -r 's/(Quantorenphrase)/\1 (QP)/' main.sdx # Add QP abbreviation
 	sed -i -r 's/(Nominalphrase)/\1 (NP)/' main.sdx # Add NP abbreviation
+	sed -i -r 's/(Präpositionalphrase)/\1 (PP)/' main.sdx # Add PP abbreviation
 # 	python3 fixindex.py
 # 	mv mainmod.adx main.adx
 	makeindex -o main.and main.adx

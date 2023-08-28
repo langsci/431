@@ -4,8 +4,6 @@ Kongruenz, formale (auch: constructio ad formam)
 Kongruenz, pragmatische (auch: constructio ad sensum)
 Kongruenz, semantische (auch: constructio ad sensum)
 
-Präkonjunktion
-Präpositionalphrase (PP)
 Präzedenz, funktionale
 Präzedenz, syntaktische
 Quantifizierung (auch: quant)
@@ -186,6 +184,7 @@ Personalpronomen
 Personenmerkmal(e)
 Prosa
 Prädikat
+Präpositionalphrase (PP)
 Reflexivpronomen
 Relativpronomen
 Schriftlichkeit
