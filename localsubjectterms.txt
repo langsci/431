@@ -5,7 +5,6 @@ Kongruenz, pragmatische (auch: constructio ad sensum)
 Kongruenz, semantische (auch: constructio ad sensum)
 
 Sexus (Sexusmerkmal, Geschlechtsmerkmal)
-Substantiv
 Tagger
 Target
 Token
@@ -187,4 +186,5 @@ Sprachgeschichte (auch: historische Linguistik)
 Spur
 Stichprobe
 Stranding
+Substantiv
 Vorlagenproblematik
