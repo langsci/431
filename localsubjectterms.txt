@@ -5,7 +5,6 @@ Kongruenz, pragmatische (auch: constructio ad sensum)
 Kongruenz, semantische (auch: constructio ad sensum)
 
 Sexus (Sexusmerkmal, Geschlechtsmerkmal)
-Skopus
 Spezifikator
 Sprachgeschichte (auch: historische Linguistik)
 Spur
@@ -187,4 +186,5 @@ Schreibdialekt (auch: Schreibsprache)
 Schreiberidentifizierung
 Schriftlichkeit
 sexuelle Identität
+Skopus
 Vorlagenproblematik
