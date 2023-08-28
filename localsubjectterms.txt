@@ -4,7 +4,6 @@ Kongruenz, formale (auch: constructio ad formam)
 Kongruenz, pragmatische (auch: constructio ad sensum)
 Kongruenz, semantische (auch: constructio ad sensum)
 
-Prädikat
 Präkonjunktion
 Präpositionalphrase (PP)
 Präzedenz, funktionale
@@ -15,7 +14,6 @@ Quantor, pronominal
 Quantorenphrase (QP)
 regulärer Ausdruck (RegEx)
 Reimchronik
-Relativpronomen
 Relativsatz
 Retextualisierung
 Satzklammer
@@ -186,7 +184,8 @@ Paradigma
 Paralleltext
 Personalpronomen
 Personenmerkmal(e)
+Prosa
+Prädikat
 Reflexivpronomen
 Relativpronomen
-Prosa
 Schriftlichkeit
