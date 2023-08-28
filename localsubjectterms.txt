@@ -4,7 +4,6 @@ Kongruenz, formale (auch: constructio ad formam)
 Kongruenz, pragmatische (auch: constructio ad sensum)
 Kongruenz, semantische (auch: constructio ad sensum)
 
-Schreibdialekt (auch: Schreibsprache)
 Schreiberidentifizierung
 sexuelle Identität
 Sexus (Sexusmerkmal, Geschlechtsmerkmal)
@@ -186,5 +185,6 @@ Relativpronomen
 Relativsatz
 Retextualisierung
 Satzklammer
+Schreibdialekt (auch: Schreibsprache)
 Schriftlichkeit
 Vorlagenproblematik
