@@ -4,7 +4,6 @@ Kongruenz, formale (auch: constructio ad formam)
 Kongruenz, pragmatische (auch: constructio ad sensum)
 Kongruenz, semantische (auch: constructio ad sensum)
 
-Retextualisierung
 Satzklammer
 Schreibdialekt (auch: Schreibsprache)
 Schreiberidentifizierung
@@ -186,4 +185,6 @@ regulärer Ausdruck (RegEx)
 Reimchronik
 Relativpronomen
 Relativsatz
+Retextualisierung
 Schriftlichkeit
+Vorlagenproblematik
