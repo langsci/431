@@ -4,8 +4,6 @@ Kongruenz, formale (auch: constructio ad formam)
 Kongruenz, pragmatische (auch: constructio ad sensum)
 Kongruenz, semantische (auch: constructio ad sensum)
 
-Nebensilbenabschwächung
-neuhochdeutsche Diphthongierung
 Nomen Agentis
 Nominalphrase (NP)
 Nominalgruppe
@@ -109,6 +107,7 @@ Determiniererphrase (DP)
 Diachronie
 Dialektgeografie
 Digitalisat
+Diphthongierung, neuhochdeutsche
 Diskursanker
 Distanz, absolute (auch: Wortformenabstand)
 Distanz, syntaktische (auch: Domäne)
@@ -195,4 +194,5 @@ Mittelfeld
 Modifikator
 Motivation, semantische
 Mündlichkeit
+Nebensilbenabschwächung
 Schriftlichkeit
