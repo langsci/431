@@ -5,7 +5,6 @@ Kongruenz, pragmatische (auch: constructio ad sensum)
 Kongruenz, semantische (auch: constructio ad sensum)
 
 Sexus (Sexusmerkmal, Geschlechtsmerkmal)
-Sprachgeschichte (auch: historische Linguistik)
 Spur
 Stichprobe
 Stranding
@@ -187,4 +186,5 @@ Schriftlichkeit
 sexuelle Identität
 Skopus
 Spezifikator
+Sprachgeschichte (auch: historische Linguistik)
 Vorlagenproblematik
