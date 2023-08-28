@@ -4,7 +4,6 @@ Kongruenz, formale (auch: constructio ad formam)
 Kongruenz, pragmatische (auch: constructio ad sensum)
 Kongruenz, semantische (auch: constructio ad sensum)
 
-Numerus
 Numerusprofilierung
 Paradigma
 Paralleltext
@@ -194,4 +193,5 @@ Nominalgruppe
 Nominalphrase (NP)
 Normalisierung
 Nullsubjekt
+Numerus
 Schriftlichkeit
