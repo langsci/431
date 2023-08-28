@@ -4,7 +4,6 @@ Kongruenz, formale (auch: constructio ad formam)
 Kongruenz, pragmatische (auch: constructio ad sensum)
 Kongruenz, semantische (auch: constructio ad sensum)
 
-Personenmerkmal(e)
 Pronomen, deiktisch (auch: Pragmatik)
 Pronomen, demonstrativ
 Pronomen, exophorisch (auch: Pragmatik)
@@ -193,4 +192,5 @@ Numerus
 Paradigma
 Paralleltext
 Personalpronomen
+Personenmerkmal(e)
 Schriftlichkeit
