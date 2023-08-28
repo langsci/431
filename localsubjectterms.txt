@@ -4,7 +4,6 @@ Kongruenz, formale (auch: constructio ad formam)
 Kongruenz, pragmatische (auch: constructio ad sensum)
 Kongruenz, semantische (auch: constructio ad sensum)
 
-Reimchronik
 Relativsatz
 Retextualisierung
 Satzklammer
@@ -185,5 +184,6 @@ Quantifizierung (auch: quant)
 Quantorenphrase (QP)
 Reflexivpronomen
 regulärer Ausdruck (RegEx)
+Reimchronik
 Relativpronomen
 Schriftlichkeit
