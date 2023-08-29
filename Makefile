@@ -45,6 +45,29 @@ main.snd: main.bbl
 	sed -i -r 's/(Quantorenphrase)/\1 (QP)/' main.sdx # Add QP abbreviation
 	sed -i -r 's/(Nominalphrase)/\1 (NP)/' main.sdx # Add NP abbreviation
 	sed -i -r 's/(Präpositionalphrase)/\1 (PP)/' main.sdx # Add PP abbreviation
+
+	# Deal with non-ASCII characters
+	sed -i -r 's/\{Ä(.+?)\|/\{A\1@Ä\1\|/' main.*dx # initial Ä in main entry
+	sed -i -r 's/\{Ö(.+?)\|/\{O\1@Ö\1\|/' main.*dx # initial Ö in main entry
+	sed -i -r 's/\{Ü(.+?)\|/\{U\1@Ü\1\|/' main.*dx # initial Ü in main entry
+	sed -i -r 's/\{Ć(.+?)\|/\{C\1@Ć\1\|/' main.*dx # initial Ć in main entry
+	sed -i -r 's/\{([^!]+)ä([^!]+)([!|])/\{\1a\2@\1ä\2\3/' main.*dx # ä in main entry
+	sed -i -r 's/!([^|]+)ä([^|]+)([|])/!\1a\2@\1ä\2\3/' main.*dx # ä in subentry
+	sed -i -r 's/\{([^!]+)ö([^!]+)([!|])/\{\1o\2@\1ö\2\3/' main.*dx # ö in main entry
+	sed -i -r 's/!([^|]+)ö([^|]+)([|])/!\1o\2@\1ö\2\3/' main.*dx # ö in subentry
+	sed -i -r 's/\{([^!]+)ü([^!]+)([!|])/\{\1u\2@\1ü\2\3/' main.*dx # ü in main entry
+	sed -i -r 's/!([^|]+)ü([^|]+)([|])/!\1u\2@\1ü\2\3/' main.*dx # ü in subentry
+	sed -i -r 's/\{([^!]+)ß([^!]+)([!|])/\{\1ss\2@\1ß\2\3/' main.*dx # ß in main entry
+	sed -i -r 's/!([^|]+)ß([^|]+)([|])/!\1ss\2@\1ß\2\3/' main.*dx # ß in subentry
+	sed -i -r 's/\{([^!]+)á([^!]+)([!|])/\{\1a\2@\1á\2\3/' main.*dx # á in main entry
+	sed -i -r 's/!([^|]+)á([^|]+)([|])/!\1a\2@\1á\2\3/' main.*dx # á in subentry
+	sed -i -r 's/\{([^!]+)å([^!]+)([!|])/\{\1a\2@\1å\2\3/' main.*dx # å in main entry
+	sed -i -r 's/!([^|]+)å([^|]+)([|])/!\1a\2@\1å\2\3/' main.*dx # å in subentry
+	sed -i -r 's/\{([^!]+)ć([^!]+)([!|])/\{\1c\2@\1ć\2\3/' main.*dx # ć in main entry
+	sed -i -r 's/!([^|]+)ć([^|]+)([|])/!\1c\2@\1ć\2\3/' main.*dx # ć in subentry
+	sed -i -r 's/\{([^!]+)æ([^!]+)([!|])/\{\1ae\2@\1æ\2\3/' main.*dx # æ in main entry
+	sed -i -r 's/!([^|]+)æ([^|]+)([|])/!\1ae\2@\1æ\2\3/' main.*dx # æ in subentry
+
 # 	python3 fixindex.py
 # 	mv mainmod.adx main.adx
 	makeindex -o main.and main.adx
