@@ -5,7 +5,6 @@ Kongruenz, pragmatische (auch: constructio ad sensum)
 Kongruenz, semantische (auch: constructio ad sensum)
 
 Sexus
-Urkunde
 Variation
 Verbphrase (VP)
 Vergleichshandschrift
@@ -17,6 +16,7 @@ Vorbehalt
 Vorfeld
 X′-Theorie
 Zeilenende
+Überlieferung
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -110,6 +110,7 @@ Hiatus
 Inanimata
 Index
 Individualisierbarkeit
+Instrumental
 Junggrammatik
 Katapher
 Klassenbildung
@@ -187,4 +188,5 @@ Tagger
 Target
 Topik
 Transkription
+Urkunde
 Vorlagenproblematik
