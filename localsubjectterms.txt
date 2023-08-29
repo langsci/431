@@ -5,7 +5,6 @@ Kongruenz, pragmatische (auch: constructio ad sensum)
 Kongruenz, semantische (auch: constructio ad sensum)
 
 Sexus
-Transkription
 Urkunde
 Variation
 Verbphrase (VP)
@@ -187,4 +186,5 @@ Sexusmerkmal (auch: Geschlechtsmerkmal)
 Tagger
 Target
 Topik
+Transkription
 Vorlagenproblematik
