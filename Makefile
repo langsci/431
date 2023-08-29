@@ -38,17 +38,7 @@ main.snd: main.bbl
 	sed -i 's/.*government.*//' main.adx
 	sed -i 's/\\MakeCapital//' main.adx
 	sed -i 's/.*Akademie.*//' main.adx
-	sed -i -r 's/.*\{[ivxlc]+\}//' main.adx # no entries which appear on Roman-digit pages
-	sed -i -r 's/\{Ć(.+?)\|/\{C\1@Ć\1\|/' main.*dx # Make Ć sort as C
-	sed -i -r 's/\{Ä(.+?)\|/\{A\1@Ä\1\|/' main.*dx # Make A sort as A
-	sed -i -r 's/\{Ö(.+?)\|/\{O\1@Ö\1\|/' main.*dx # Make Ö sort as O
-	sed -i -r 's/\{Ü(.+?)\|/\{U\1@Ü\1\|/' main.*dx # Make Ü sort as U
-	sed -i -r 's/\{(.+?)ä(.+?)\|/\{\1a\2@\1ä\2\|/' main.*dx # Make ä sort as a
-	sed -i -r 's/\{(.+?)ö(.+?)\|/\{\1o\2@\1ö\2\|/' main.*dx # Make ö sort as o
-	sed -i -r 's/\{(.+?)ü(.+?)\|/\{\1u\2@\1ü\2\|/' main.*dx # Make ü sort as u
-	sed -i -r 's/\{(.+?)ß(.+?)\|/\{\1ss\2@\1ß\2\|/' main.*dx # Make ß sort as ss
-	sed -i -r 's/\{(.+?)á(.+?)\|/\{\1a\2@\1á\2\|/' main.*dx # Make á sort as a
-	sed -i -r 's/\{(.+?)æ(.+?)\|/\{\1ae\2@\1æ\2\|/' main.*dx # Make æ sort as ae
+	sed -i -r 's/.*\{[ivxlc]+\}//' main.adx # no entries which appear on Roman-digit pages	
 	sed -i -r 's/(Komplementiererphrase)/\1 (CP)/' main.sdx # Add CP abbreviation
 	sed -i -r 's/(Verbphrase)/\1 (VP)/' main.sdx # Add VP abbreviation
 	sed -i -r 's/(Determiniererphrase)/\1 (DP)/' main.sdx # Add DP abbreviation
