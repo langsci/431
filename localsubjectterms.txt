@@ -6,7 +6,6 @@ Kongruenz, semantische (auch: constructio ad sensum)
 
 Sexus
 Verifizierung
-Vers
 Verweiskette
 Volkssprache
 Vorbehalt
@@ -184,8 +183,9 @@ Tagger
 Target
 Topik
 Transkription
-Überlieferung
 Urkunde
 Verbphrase (VP)
 Vergleichshandschrift
+Vers
 Vorlagenproblematik
+Überlieferung
