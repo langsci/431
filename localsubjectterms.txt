@@ -6,7 +6,6 @@ Kongruenz, semantische (auch: constructio ad sensum)
 
 Sexus
 Verifizierung
-Vorfeld
 X′-Theorie
 Zeilenende
 
@@ -187,5 +186,6 @@ Vers
 Verweiskette
 Volkssprache
 Vorbehalt
+Vorfeld
 Vorlagenproblematik
 Überlieferung
