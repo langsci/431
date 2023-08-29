@@ -38,7 +38,7 @@ main.snd: main.bbl
 	sed -i 's/.*government.*//' main.adx
 	sed -i 's/\\MakeCapital//' main.adx
 	sed -i 's/.*Akademie.*//' main.adx
-	sed -i -r 's/.*\{[ivxlc]+\}//' main.adx # no entries which appear on Roman-digit pages	
+	sed -i -r 's/.*\{[ivxlc]+\}//' main.adx # no entries which appear on Roman-digit pages
 	sed -i -r 's/(Komplementiererphrase)/\1 (CP)/' main.sdx # Add CP abbreviation
 	sed -i -r 's/(Verbphrase)/\1 (VP)/' main.sdx # Add VP abbreviation
 	sed -i -r 's/(Determiniererphrase)/\1 (DP)/' main.sdx # Add DP abbreviation

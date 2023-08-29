@@ -4,7 +4,6 @@ Kongruenz, formale (auch: constructio ad formam)
 Kongruenz, pragmatische (auch: constructio ad sensum)
 Kongruenz, semantische (auch: constructio ad sensum)
 
-Sexus
 Verifizierung
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -165,6 +164,8 @@ Schreibdialekt (auch: Schreibsprache)
 Schreiberidentifizierung
 Schriftlichkeit
 sexuelle Identität
+Sexus
+Sexusmerkmal (auch: Geschlechtsmerkmal)
 Skopus
 Spezifikator
 Sprachgeschichte (auch: historische Linguistik)
@@ -172,7 +173,6 @@ Spur
 Stichprobe
 Stranding
 Substantiv
-Sexusmerkmal (auch: Geschlechtsmerkmal)
 Tagger
 Target
 Topik
