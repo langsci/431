@@ -16,7 +16,6 @@ Vorbehalt
 Vorfeld
 X′-Theorie
 Zeilenende
-Überlieferung
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -188,5 +187,6 @@ Tagger
 Target
 Topik
 Transkription
+Überlieferung
 Urkunde
 Vorlagenproblematik
