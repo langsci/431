@@ -45,6 +45,8 @@ main.snd: main.bbl
 	sed -i -r 's/(Quantorenphrase)/\1 (QP)/' main.sdx # Add QP abbreviation
 	sed -i -r 's/(Nominalphrase)/\1 (NP)/' main.sdx # Add NP abbreviation
 	sed -i -r 's/(Präpositionalphrase)/\1 (PP)/' main.sdx # Add PP abbreviation
+	sed -i -r 's/(Head-driven Phrase Structure Grammar)/\1 (HPSG)/' main.sdx # Add HPSG abbreviation
+	sed -i -r 's/(Lexical-functional Grammar)/\1 (LFG)/' main.sdx # Add LFG abbreviation
 
 	# Deal with non-ASCII characters
 	sed -i -r 's/\{Ä(.+?)\|/\{A\1@Ä\1\|/' main.*dx # initial Ä in main entry
