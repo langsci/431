@@ -6,7 +6,6 @@ Kongruenz, semantische (auch: constructio ad sensum)
 
 Sexus
 Verifizierung
-Zeilenende
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -182,6 +181,7 @@ Urkunde
 Verbphrase (VP)
 Vergleichshandschrift
 Vers
+Versende (auch: Reim, Reimposition)
 Verweiskette
 Volkssprache
 Vorbehalt
