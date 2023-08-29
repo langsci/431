@@ -5,7 +5,6 @@ Kongruenz, pragmatische (auch: constructio ad sensum)
 Kongruenz, semantische (auch: constructio ad sensum)
 
 Sexus
-Vergleichshandschrift
 Verifizierung
 Vers
 Verweiskette
@@ -188,4 +187,5 @@ Transkription
 Überlieferung
 Urkunde
 Verbphrase (VP)
+Vergleichshandschrift
 Vorlagenproblematik
