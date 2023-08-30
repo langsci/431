@@ -1,11 +1,3 @@
-Kongruenz, anaphorische (auch: Index)
-Kongruenz, attributive (auch: Concord)
-Kongruenz, formale (auch: constructio ad formam)
-Kongruenz, pragmatische (auch: constructio ad sensum)
-Kongruenz, semantische (auch: constructio ad sensum)
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 Abfolge
 Adjektiv, attributiv
 Adjektiv, prädikativ
@@ -106,7 +98,11 @@ Kombinationsstrategie
 Komplement
 Komplementiererphrase (CP)
 Komplexitätsreduktion
+Kongruenz, attributive (auch: Concord)
+Kongruenz, formale (auch: constructio ad formam)
 Kongruenz, prädikativ
+Kongruenz, prädikative
+Kongruenz, semantische (auch: constructio ad sensum)
 Kongruenzhierarchie (auch: Agreement Hierarchy)
 Kongruenzrelation
 Kongruenzrelation, nicht-kanonische
