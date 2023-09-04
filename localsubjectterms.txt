@@ -68,7 +68,6 @@ funktionale Struktur (F-Struktur)
 Fürstenspiegel
 Gender Resolution
 gender, covert
-Generalisierung (auch: Hyperkorrektur)
 generischer Gebrauch
 Genus
 Genusdistinktion, Abbau der
@@ -183,4 +182,5 @@ Vorbehalt
 Vorfeld
 Vorlagenproblematik
 X′-Theorie
+Übergeneralisierung (auch: Hyperkorrektur)
 Überlieferung
