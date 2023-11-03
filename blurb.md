@@ -1,5 +1,5 @@
-Inhaltsangabe
-=============
+Inhaltsangabe/Klappentext
+=========================
 
 Bereits Jacob Grimm bemerkte im Band 2 seiner _Geschichte der deutschen Sprache_ (1848), dass adjektivische Genuskongruenz mit gemischtgeschlechtlichem Personenbezug in den älteren Sprachstufen des Deutschen häufig das Neutrum aufweist. Auch John Ole Askedal widmete sich 1973 diesem Thema als Teil seiner Untersuchung zur Entwicklung des Genussystems im Plural des Deutschen auf Basis kritischer Editionen einer Handvoll alt- und mittelhochdeutscher literarischen Werke. Die Standardwerke zur historischen Grammatik des Deutschen beschränken sich bislang darauf, diese Regel undifferenziert nach grammatischem Kontext lediglich zu konstatieren.
 
