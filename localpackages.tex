@@ -65,6 +65,13 @@
 \let\q\textquote
 
 % csquotes
+% Quotation style for word definitions: object language ‚Objektsprache‘
+\DeclareQuoteStyle{wdef}%
+  {\quotesinglbase}{\textquoteleft}%
+  {\quotedblbase}{\textquotedblleft}
+\newcommand{\wdef}[1]{{\setquotestyle{wdef}\enquote{#1}}}
+
+% csquotes
 % Redefine \textins in accordance with \ob … \cb from langsci-optional.sty
 \renewcommand{\mktextins}[1]{{\ob}#1{\cb}}
 
