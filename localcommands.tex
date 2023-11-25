@@ -131,11 +131,11 @@ thesis, University of Marburg, Department of German Studies and Arts, 2022.}
 }
 
 % A-structure rules: \astruct[1]{2}{3} > '2 <3> 1'
-\newcommand{\astruct}[3][]{`#2~⟨\,#3\,⟩%
+\newcommand{\astruct}[3][]{\wdef{#2~⟨\,#3\,⟩%
 	\notblank{#1}{%
-		\enspace#1'%
-	}{'}%
-}
+		\enspace#1%
+	}{}%
+}}
 
 % Feature annotation above (for use in TREES); no value in [] prints ↑ = ↓
 \newcommand{\anno}[2][\updown{}]{%
