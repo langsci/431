@@ -2,8 +2,7 @@
 \label{ch:methoden}
 \is{Stichprobe|(}
 
-\section%
-	{Datenerhebung aus dem \tit{Corpus der altdeutschen Originalurkunden}}
+\section{Datenerhebung aus dem \tit{Corpus der altdeutschen Originalurkunden}}
 \label{sec:miningcao}
 
 Die Daten für die Teilauswertung zum \tit{Corpus der altdeutschen
@@ -34,13 +33,13 @@ Ausstellungs\-kontexte mit möglichst kleinräumigem Bezug erfasst werden, um
 Urkundentexte\is{Urkunde} mit überregionaler Geltung und gegebenenfalls damit
 einhergehender Vermeidung von Regionalismen nach Möglichkeit auszuschließen.
 Implizit lehnen sich diese Kriterien an die in \citet[41--42]{ganslmayer2012}
-diskutierten an, wobei der Faktor \q{Text} in Bezug auf
+diskutierten an, wobei der Faktor \emph{Text} in Bezug auf
 Parallelausfertigungen\is{Paralleltext} und zeitferne Abschriften ignoriert
 wurde. Wenn durch die in \citet[155--158]{beckerschallert2022b} geschilderten
 Ausschlusskriterien lediglich etwa 50\,\% des Gesamttextbestands zur Verfügung
 stehen, dürften die 8,9\,\% der deutschsprachigen Urkunden, die
-\citeauthor{ganslmayer2012} aufgrund des Faktors \q{Text} ausschließt, kaum ins
-Gewicht fallen (neben 4.289 deutschsprachigen Urkunden weist
+\citeauthor{ganslmayer2012} aufgrund des Faktors \emph{Text} ausschließt, kaum
+ins Gewicht fallen (neben 4.289 deutschsprachigen Urkunden weist
 \cite[41]{ganslmayer2012} insgesamt 35 lateinische\il{Lateinisch} und 293
 \il{Mittelniederländisch}mittelniederländische Urkunden aus). Des Weiteren
 wurde auf eine Bestimmung des Schreibdialekts\is{Schreibdialekt} jeder
@@ -50,19 +49,20 @@ Ausstellungsort verzichtet.
 Die Suche in der Datenbank geschah mit Hilfe eines regulären
 Ausdrucks\is{regulärer Ausdruck} \autocite[dazu
 z.\,B.][33--37]{perkuhnetal2012}, der auf Basis der Liste der im
-\CAO{} belegten Formen des Lemmas \norm{bėide} formuliert wurde \autocites(mit
-allen Deklinationsformen insgesamt ca.~2.050 Belege)[vgl.][166--168]{wmu1}.
-\tabref{tab:beidespelcao} listet die belegten grafischen Varianten pro Position
-im Wort entsprechend diesem Suchausdruck tabellarisch auf.%
+\CAO{} belegten Formen des Lemmas \norm{bėide} \wdef{beide} formuliert wurde
+\autocites(mit allen Deklinationsformen insgesamt ca.~2.050
+Belege)[vgl.][166--168]{wmu1}. \tabref{tab:beidespelcao} listet die belegten
+grafischen Varianten pro Position im Wort entsprechend diesem Suchausdruck
+tabellarisch auf.%
 %
 	\footnote{Die einzige im \tit{\WMU{}} verzeichnete Form mit
 		\lit{-t-} ist \lit{beyte} \autocite[166]{wmu1}: \lit{durch beyte deſ
 		vor~ge\-nan\-ten Hugeſ von Luzelſteyn vn̄ Henriches von Fleckenſteyn}
-		`durch beide, des vorgenannten Hugo von Lützelstein und Heinrichs von
-		Fleckenstein' \autocites(Nr.~N~674, Straßburg, 1294)[484,18]{cao5}.
+		\wdef{durch beide, des vorgenannten Hugo von Lützelstein und Heinrichs
+		von Fleckenstein} \autocites(Nr.~N~674, Straßburg, 1294)[484,18]{cao5}.
 		Diese Urkunde war nicht Teil der Auswertung. Formen wie
-		\lit{bete} oder \lit{pet} stehen ansonsten für \norm{bęte} `Bitte,
-		Gebet' oder stellen Formen von \norm{biten} `bitten' dar.}
+		\lit{bete} oder \lit{pet} stehen ansonsten für \norm{bęte} \wdef{Bitte,
+		Gebet} oder stellen Formen von \norm{biten} \wdef{bitten} dar.}
 %
 Bei der Suche nach Zeichenketten wurden die Belegstellen nicht automatisch nach
 dem syntaktischen Funktionskontext des jeweiligen Belegs
@@ -71,8 +71,9 @@ Diese Zuordnung\is{Annotation} geschah manuell in einem zweiten Schritt.
 
 \begin{table}
 \centering
-\caption{Im \WMU{} belegte Schreibweisen von mittelhochdeutsch \norm{bėide/-iu}
-	pro Position im Wort}
+\caption{Im \tit{Wörterbuch der mittelhochdeutschen Urkundensprache} belegte
+	Schreibweisen von mittelhochdeutsch \norm{bėide} und \norm{bėidiu} pro
+	Position im Wort}
 \begin{tabular}{l l l l}
 \lsptoprule
 
@@ -199,15 +200,16 @@ Summe
 Zu allen Kongruenztargets\is{Target} wurden die \isi{Controller} erfasst -- im
 Fall von Targets in unmittelbarer Abhängigkeit von pronominalen Controllern
 diese sowie die letzte Nennung der Referenten, auf die sie
-verweisen\is{Anapher} (\q{\isi{Erstcontroller}}). Alle Controller und Targets
-wurden anschließend nach ihren formalen\is{Merkmale!grammatische} und
-semantischen Personenmerkmalen\is{Personenmerkmal}\is{Merkmale!semantische}
-annotiert. Außerdem wurde jeweils die Wortart festgehalten sowie die
-Flexionsform des Targets mit deren Flexionstyp (\norm{-e}, -Ø,
-\norm{-iu}) und ob gegebenenfalls Schwa-\isi{Apokope} vorliegt. Auch der
-lineare Abstand\is{Distanz!lineare} der betreffenden aufeinander bezogenen
-Wortformen und die \isi{Domäne} der Kongruenzbeziehung\is{Kongruenzrelation}
-(gleiche Phrase, gleicher Teilsatz, anderer Satz) wurden registriert.
+verweisen\is{Anapher} (\term{Erstcontroller}\is{Erstcontroller}). Alle
+Controller und Targets wurden anschließend nach ihren
+formalen\is{Merkmale!grammatische} und semantischen
+Personenmerkmalen\is{Personenmerkmal}\is{Merkmale!semantische} annotiert.
+Außerdem wurde jeweils die Wortart festgehalten sowie die Flexionsform des
+Targets mit deren Flexionstyp (\norm{-e}, -Ø, \norm{-iu}) und ob gegebenenfalls
+Schwa-\isi{Apokope} vorliegt. Auch der lineare Abstand\is{Distanz!lineare} der
+betreffenden aufeinander bezogenen Wortformen und die \isi{Domäne} der
+Kongruenzbeziehung\is{Kongruenzrelation} (gleiche Phrase, gleicher Teilsatz,
+anderer Satz) wurden registriert.
 
 Targets\is{Target}, bei denen in Urkunden vom gleichen Ort nach kursorischer
 Durchsicht kein Unterschied in der starken \isi{Adjektivdeklination} zwischen
@@ -221,6 +223,7 @@ gebunden sind.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Datenerhebung aus der \tit{Kaiserchronik}}
+\label{sec:miningkc}
 
 Die Texte der \tit{Kaiserchronik} (\KC) liegen dank \citetitle{kcdigital}
 \autocite{kcdigital} im XML-Format vor. Dieses kann problemlos in Klartext
@@ -254,11 +257,12 @@ Die grafische Variation unter den 2.559 Belegen, die zum gegenwärtigen
 Zeitpunkt dort aufgelistet werden, bemisst sich auf \lit{b, p} -- \lit{ai, ay,
 ei, ey, eí, eǐ, éi, êi, é, ê} -- \lit{d} -- \lit{iͤv, eu, ev, iu, iv, uͦ, íu,
 iͮ, a, e, i, u, è, ú, û,} Ø. In den ausgewerteten Handschriften der \KC{} gibt
-es keine Anzeichen für Schreibvarianten von \norm{bėide} mit \lit{-t-}, auch
-nicht in Kontexten mit \isi{Apokope}. Formen ähnlich \norm{bėide} mit \lit{-t-}
-oder \lit{-t} sind den Lemmata \norm{bęte} `Bitte, Gebet', \norm{bęten/biten}
-`bitten, beten', \norm{bėtte} `Bett', \norm{bėiten} `zögern, warten' und
-\norm{bieten} `(an)bieten' zuzuordnen.
+es keine Anzeichen für Schreibvarianten von \norm{bėide} \wdef{beide} mit
+\lit{-t-}, auch nicht in Kontexten mit \isi{Apokope}. Formen ähnlich
+\norm{bėide} mit \lit{-t-} oder \lit{-t} sind den Lemmata \norm{bęte}
+\wdef{Bitte, Gebet}, \norm{bęten/biten} \wdef{bitten, beten}, \norm{bėtte}
+\wdef{Bett}, \norm{bėiten} \wdef{zögern, warten} und
+\norm{bieten} \wdef{(an)bieten} zuzuordnen.
 
 Für die gegenwärtige Auswertung kommen nur die Flexionsformen vom Typ \norm{-e}
 und \norm{-iu} in Frage, daher wurden bei der Belegsammlung Formen, bei denen
@@ -302,8 +306,8 @@ bairischer\il{Bairisch} Umgekehrtschreibung von \norm{b} und \norm{w}
 
 \begin{table}
 \centering
-\caption{In der \KC{} belegte Schreibweisen von
-	mittelhochdeutsch \norm{bėide/-iu} pro Position im Wort}
+\caption{In der \tit{Kaiserchronik} belegte Schreibweisen von mittelhochdeutsch
+	\norm{bėide/-iu} pro Position im Wort}
 \begin{tabular}{l l l l}
 \lsptoprule
 
@@ -386,11 +390,11 @@ Prolog nach vornehmlich
 	\norm{von den bâbesen unt von den chunigen,\\
 	baidiu guoten unt ubelen}
 
-	`von den Päpsten und von den Königen,\\
-	sowohl guten als auch schlechten'
+	\wdef{von den Päpsten und von den Königen,\\
+	sowohl guten als auch schlechten}
 }
 
-Aufgrund der thematischen Ausrichtung geht es also vornehmlich um Männer, Paare
+Aufgrund der thematischen Ausrichtung geht es also vornehmlich um Männer; Paare
 aus Mann und Frau kommen extrem selten vor. Die \KC{} ist trotz allem eine
 Untersuchung wert, da es sich bei ihr um einen der prestige- und
 einflussreichsten Texte des deutschsprachigen Mittelalters handelt
@@ -406,17 +410,16 @@ bei 34.652 Wortformen.
 
 Von 59 gesammelten Belegen mit kombiniertem gemischtgeschlechtlichen Bezug
 liegen lediglich sechs attributiv\is{Attribut} gegenüber 53 mit \norm{bėide}
-als Teil der korrelativen \isi{Konjunktion} \norm{bėide \dots\ unde} `sowohl
-\dots\ als auch' vor. Dass nur sehr wenige
-attributive Belege in der Stichprobe enthalten sind, macht den Vergleich
-zu den Urkunden\is{Urkunde} des \CAO{} besonders interessant, da dort
-umgekehrte Mengenverhältnisse vorliegen: Im \CAO{} stehen 76 Belege mit
-kombiniertem gemischtgeschlechtlichen Bezug zur Verfügung, von denen 70
-attributiv sind und lediglich sechs Teil der korrelativen Konjunktion. Die
-Belegsammlung zur \KC{} lässt sich so als Gegengewicht zu derjenigen des \CAO{}
-verstehen, nicht nur, was die Textgattung betrifft. Die \tabref{tab:beidevar}
-schlüsselt die Zahl der gesammelten Belege nach Handschrift mit ihrer
-jeweiligen Sigle, Funktion und Wortform auf.
+als Teil der korrelativen \isi{Konjunktion} \norm{bėide \dots\ unde}
+\wdef{sowohl \dots\ als auch} vor. Dass nur sehr wenige attributive Belege in
+der Stichprobe enthalten sind, macht den Vergleich zu den Urkunden\is{Urkunde}
+des \CAO{} besonders interessant, da dort umgekehrte Mengenverhältnisse
+vorliegen: Im \CAO{} stehen 76 Belege mit kombiniertem gemischtgeschlechtlichen
+Bezug zur Verfügung, von denen 70 attributiv sind und lediglich sechs Teil der
+korrelativen Konjunktion. Die Belegsammlung zur \KC{} lässt sich so als
+Gegengewicht zu derjenigen des \CAO{} verstehen, nicht nur, was die Textgattung
+betrifft. Die \tabref{tab:beidevar} schlüsselt die Zahl der gesammelten Belege
+nach Handschrift mit ihrer jeweiligen Sigle, Funktion und Wortform auf.
 
 \begin{table}
 \centering
@@ -610,8 +613,8 @@ Handschrift überprüft und bestätigt\is{Validierung}.
 			von den Päpsten und von Königen \\
 	\sn \gll Peide und frûmigen \\
 			beide und tüchtigen \\
-		\trans `von den Päpsten und von Königen, sowohl als auch tüchtigen
-			\textins{sic}'
+		\trans \wdef{von den Päpsten und von Königen, sowohl als auch tüchtigen
+			\textins{sic}}
 			(%
 				B1: 2va,20--21%
 			)
@@ -621,8 +624,8 @@ Handschrift überprüft und bestätigt\is{Validierung}.
 			von den Päpsten und von den Königen \\
 	\sn \gll baidiu guoten unt ubelen, \\
 			beide guten und bösen \\
-		\trans `von den Päpsten und von den Königen, sowohl guten als auch
-			bösen'
+		\trans \wdef{von den Päpsten und von den Königen, sowohl guten als auch
+			bösen}
 			(%
 				\KC: V.~19--20;
 				\cite[79]{schroeder1895}%
@@ -631,15 +634,15 @@ Handschrift überprüft und bestätigt\is{Validierung}.
 \end{exe}
 
 Auch die älteste vollständige Handschrift (A1) berichtet, die Chronik handele
-von den Päpsten und von den Königen \lit{bædiv gvͦten vn̄ ubelen} `sowohl guten
-als auch bösen' (A1:~1ra,18; \KC:~V.~20; vgl.~\cite[79]{schroeder1895}),
+von den Päpsten und von den Königen \lit{bædiv gvͦten vn̄ ubelen} \wdef{sowohl
+guten als auch bösen} (A1:~1ra,18; \KC:~V.~20; vgl.~\cite[79]{schroeder1895}),
 insofern wird \norm{bėide} hier nicht als nachgestellter Quantor zu werten
 sein. Die B-\allowbreak{}Pa\-ral\-lel\-hand\-schrift P enthält hier die
-Variante \lit{bejde boſen un̄ frumege} `sowohl bösen als auch
-tüchtige\textins{n}' (P:~1ra,10) und in der B-\isi{Vergleichshandschrift} VB
-lautet die Zeile \lit{Boͤſen vnd frvͤmigen} `bösen und tüchtigen', allerdings
-ohne einleitendes \norm{bėide} (VB:~1ra,18). Am ehesten wird der Beleg in
-\REF{ex:kcexcl1} also zur gleichen Gruppe wie seine
+Variante \lit{bejde boſen un̄ frumege} \wdef{sowohl bösen als auch
+tüchtige\textins{n}} (P:~1ra,10) und in der B-\isi{Vergleichshandschrift} VB
+lautet die Zeile \lit{Boͤſen vnd frvͤmigen} \wdef{bösen und tüchtigen},
+allerdings ohne einleitendes \norm{bėide} (VB:~1ra,18). Am ehesten wird der
+Beleg in \REF{ex:kcexcl1} also zur gleichen Gruppe wie seine
 Parallelstellen\is{Paralleltext} passen: \norm{bėide} als korrelative
 \isi{Konjunktion} mit zwei koordinierten Adjektiven\is{Adjektiv!attributiv}
 (vgl. \sectref{subsec:beidkoordtarg}), von denen das erste ausfällt.
@@ -650,22 +653,23 @@ deren grammatische Bezüge. Ich stimme mit \citet[239]{haupt2019} überein, V.~2
 \blockquote{als Klammer nur auf die zwei zunächst folgenden Wörter
 (\textit{guoten unt ubelen}), im Sinne von \enquote{sowohl als auch}} bezogen
 zu lesen. Ob sich das Attribut\is{Attribut} \lit{baidiu guoten unt ubelen}
-`sowohl guten als auch bösen' nur auf die Könige oder auch auf die Päpste
+\wdef{sowohl guten als auch bösen} nur auf die Könige oder auch auf die Päpste
 bezieht, lässt sich nicht eindeutig\is{Ambiguität} beurteilen. Belege, die den
-Rückbezug der \isi{Konjunktion} \lit{bėide} auf zwei Konjunkte nahelegen,
+Rückbezug der \isi{Konjunktion} \norm{bėide} auf zwei Konjunkte nahelegen,
 ließen sich im exzerpierten Material keine finden. Da keine zwei Könige
 explizit genannt werden, erscheint eine Interpretation von \lit{baidiu} als
-nachgestelltem Quantor mit Bezug auf \lit{chunigen} `Königen' unplausibel,
-zumal in diesem Fall die Form des Quantors (Nom./Akk.~Pl. N.) nicht kongruent
-mit dem Präpositionalobjekt wäre (Dat.~Pl. M.).
+nachgestelltem Quantor \wdef{beide} mit Bezug auf \lit{chunigen} \wdef{Königen}
+unplausibel, zumal in diesem Fall die Form des Quantors (Nom./Akk.~Pl. N.)
+nicht kongruent mit dem Präpositionalobjekt wäre (Dat.~Pl. M.).
 
 In einem anderen Fall bezieht sich in dem in \REF{ex:chindpaid_1} zitierten
-Beleg \lit{chínd} `Kinder' auf die Knaben Faustinus und Faustus (M:~10rb,5--6;
-\KC:~V.~1239--1240; vgl.~\cite[104]{schroeder1895}). Der Beleg ist unflektiert.
-Die angegebenen Parallelstellen\is{Paralleltext} enthalten jeweils \lit{der
-kinde baider} `der beiden Kinder'. Bei Voranstellung des schwach flektierten
-Adjektivs\is{Adjektivdeklination} wäre unabhängig vom Genus\is{Genuskongruenz}
-regulär mit \norm{bėiden} zu rechnen, vergleiche \REF{ex:chindpaid_2}.
+Beleg \lit{chínd} \wdef{Kinder} auf die Knaben Faustinus und Faustus
+(M:~10rb,5--6; \KC:~V.~1239--1240; vgl.~\cite[104]{schroeder1895}). Der Beleg
+ist unflektiert. Die angegebenen Parallelstellen\is{Paralleltext} enthalten
+jeweils \lit{der kinde baider} \wdef{der beiden Kinder}. Bei Voranstellung des
+schwach flektierten Adjektivs\is{Adjektivdeklination} wäre unabhängig vom
+Genus\is{Genuskongruenz} regulär mit \norm{bėiden} zu rechnen, vergleiche
+\REF{ex:chindpaid_2}.
 
 \begin{exe}
 \ex \label{ex:chindpaid}
@@ -676,8 +680,8 @@ regulär mit \norm{bėiden} zu rechnen, vergleiche \REF{ex:chindpaid_2}.
 	\sn \gll Nv {vnder wínt} dich der chínd paid. \\
 			nun nimm.an dich der Kind[\textsc{gen.pl.\NeutM}]
 			beide[\textsc{gen.pl.\NeutM}] \\
-		\trans `Frau, der Traum soll dich nicht belasten. Nun nimm dich der
-			beiden Kinder an.'
+		\trans \wdef{Frau, der Traum soll dich nicht belasten. Nun nimm dich der
+			beiden Kinder an.}
 		% → GEN.PL.M/F/N ansonsten stark -er, schwach -en.
 			(%
 				M:~11ra,17; vgl.
@@ -692,8 +696,8 @@ regulär mit \norm{bėiden} zu rechnen, vergleiche \REF{ex:chindpaid_2}.
 			Gewann er dreißigtausend \\
 	\sn \gll Aller guten chnehte. \\
 			aller gut-\textsc{gen.pl.\MascM.wk} Knechte \\
-		\trans `gewann er \textins{=~Severus} für sich dreißigtausend
-			von allen guten Soldaten.'
+		\trans \wdef{gewann er \textins{=~Severus} für sich dreißigtausend
+			von allen guten Soldaten.}
 			(%
 				M:~52vb,20--21; vgl.
 				A1:~30rb,14--15;
@@ -710,15 +714,16 @@ regulär mit \norm{bėiden} zu rechnen, vergleiche \REF{ex:chindpaid_2}.
 \end{exe}
 
 Vergleichbare Belege mit Nachstellung des Adjektivs\is{Adjektiv!attributiv} in
-einer determinierten NP\is{Determiniererphrase} liegen in der
-Stichprobe lediglich vier vor. Davon enthält der einzige Beleg im
-Akkusativ \REF{ex:maccadj_1} unflektiertes \lit{gut} `gut', gegenüber
-flektiertem \lit{guten} `guten' bei Voranstellung, wie exemplarisch in
+einer determinierten NP\is{Determiniererphrase} liegen in der Stichprobe
+lediglich vier vor. Davon enthält der einzige Beleg im Akkusativ
+\REF{ex:maccadj_1} unflektiertes \lit{gut} \wdef{gut}, gegenüber flektiertem
+\lit{guten} \wdef{guten} bei Voranstellung, wie exemplarisch in
 \REF{ex:maccadj_2} gezeigt. Die Handschrift A1 enthält an dieser Stelle
 % [31\vb, 29]
-tatsächlich \lit{manigen helt guͦten} `manch guten Helden'.
+tatsächlich \lit{manigen helt guͦten} \wdef{viele gute Helden}.
 
 \begin{exe}
+\protectedex{
 \ex \label{ex:maccadj}
 	\begin{xlist}
 	\ex \label{ex:maccadj_1}
@@ -729,8 +734,8 @@ tatsächlich \lit{manigen helt guͦten} `manch guten Helden'.
 			sie kamen dahin mit vereintem Gesinnung \\
 	\sn \gll Jn di ſtat zerome. \\
 			in die Stadt zu=Rom \\
-		\trans `\textelp{} die führten viele gute Helden an. Sie kamen einmütig
-			hin zu der Stadt Rom.'
+		\trans \wdef{\textelp{} die führten viele gute Helden an. Sie kamen
+			einmütig hin zu der Stadt Rom.}
 			(%
 				M:~55vb,20--24; vgl.
 				A1:~31vb,27--31;
@@ -750,8 +755,8 @@ tatsächlich \lit{manigen helt guͦten} `manch guten Helden'.
 			wo er Jesus könnte finden \\
 	\sn \gll Den vil guten arzat \\
 			den viel gut-\textsc{acc.sg.\MascM.wk} Arzt \\
-		\trans `Da fragte er die Leute, wo er Jesus finden
-			könnte, den sehr guten Arzt.'
+		\trans \wdef{Da fragte er die Leute, wo er Jesus finden
+			könnte, den sehr guten Arzt.}
 			(%
 				M:~6rb,31; vgl.
 				A1:~3vb,26--28;
@@ -765,19 +770,20 @@ tatsächlich \lit{manigen helt guͦten} `manch guten Helden'.
 			)
 		\\
 	\end{xlist}
+}
 \end{exe}
 
-Auffällig an \REF{ex:maccadj_1} ist, dass \lit{gut(en)} `gut(en)' auf
-\norm{mvt} `Gesinnung, Stimmung, Geist' gereimt wird. Es ist möglich, dass an
-dieser Stelle die Endung aus Reimzwang wegfällt. Andererseits liegt in der
-Adjektivstichprobe auch in anderen untersuchten Handschriften im
-Kontext der Nachstellung\is{Abfolge} eine Tendenz zur \isi{Endungslosigkeit}
-vor. Dies wird bestätigt\is{Validierung} durch die Beobachtung von
-\citet[241]{ksw2}, die allgemein eine über das 13.~Jahrhundert hin zunehmende
-Neigung zum Weglassen der Flexion beim nachgestellten
-Adjektiv\is{Adjektiv!attributiv} im Reim\is{Versende} feststellen. Die
-Endungslosigkeit von \lit{paid} in \REF{ex:chindpaid_1} wird vermutlich
-ebenfalls in diesem Zusammenhang stehen.
+Auffällig an \REF{ex:maccadj_1} ist, dass \lit{gut(en)} \wdef{gut(en)} auf
+\norm{mvt} \wdef{Gesinnung, Stimmung, Geist} gereimt wird. Es ist möglich, dass
+an dieser Stelle die Endung aus Reimzwang wegfällt. Andererseits liegt in der
+Adjektivstichprobe auch in anderen untersuchten Handschriften im Kontext der
+Nachstellung\is{Abfolge} eine Tendenz zur \isi{Endungslosigkeit} vor. Dies wird
+bestätigt\is{Validierung} durch die Beobachtung von \citet[241]{ksw2}, die
+allgemein eine über das 13.~Jahrhundert hin zunehmende Neigung zum Weglassen
+der Flexion beim nachgestellten Adjektiv\is{Adjektiv!attributiv} im
+Reim\is{Versende} feststellen. Die Endungslosigkeit von \lit{paid} \wdef{beide}
+in \REF{ex:chindpaid_1} wird vermutlich ebenfalls in diesem Zusammenhang
+stehen.
 
 \phantomsection
 \label{phsec:kchiatus}
@@ -788,7 +794,7 @@ Auswertung einbezogen, die vor Vokal oder in Reimposition\is{Versende} stehen.
 der \citetitle{maroldschroeder1969}-Edition von \citet{maroldschroeder1969}
 bereits selbst an, dass denkbar sei, dass die Flexionsendung \norm{-iu} in
 Hiatuspositionen\is{Hiatus} bei der Rezitation apokopiert\is{Apokope} werde und
-möglicherweise hyperkorrekt\is{Übergeneralisierung} dafür \orth{e} geschrieben
+möglicherweise hyperkorrekt\is{Übergeneralisierung} dafür \lit{e} geschrieben
 werde \autocite[90--91]{askedal1973}.
 
 Des Weiteren führt er mit Bezug auf \citet[662--663]{grimm1870} die
@@ -803,7 +809,7 @@ denen \norm{bėidiu} in der Reimposition vorkommt, sind auch im hier
 exzerpierten Material nicht vorhanden, allerdings liegen auch keine Belege vor,
 in denen andernfalls regulär mit \norm{-iu} zu rechnen wäre. Belege mit
 \norm{iu} vor Vokal gibt es immerhin elf, davon bis auf einen
-\REF{ex:neutralpos2} nur bei \norm{bėide} als \isi{Konjunktion}.
+\REF{ex:neutralpos2_2} nur bei \norm{bėide} als \isi{Konjunktion}.
 
 \begin{exe}
 \ex \label{ex:neutralpos}
@@ -811,7 +817,7 @@ in denen andernfalls regulär mit \norm{-iu} zu rechnen wäre. Belege mit
 		den Macht hatten \textsc{3pl\subM.nom} beide-\textsc{nom.pl\subM.st} \\
 \sn \gll Daz enſchol v̂ns nímmer werden leide \\
 		das \textsc{neg}=wird uns nie werden Leid \\
-	\trans `Diese Macht hatten sie beide. Das wird uns nie Leid werden.'
+	\trans \wdef{Diese Macht hatten sie beide. Das wird uns nie Leid werden.}
 		(%
 			B1:~13ra,41--42; vgl.
 			A1:~18rb,3;
@@ -834,7 +840,7 @@ in denen andernfalls regulär mit \norm{-iu} zu rechnen wäre. Belege mit
 	\sn \gll da worden ſi baide oͮffe erſlagen. \\
 			da wurden \textsc{3pl\subM.nom} beide-\textsc{nom.pl.\MascM.st} auf
 				erschlagen \\
-		\trans `Der Berg heißt Gargān, darauf wurden sie beide erschlagen.'
+		\trans \wdef{Der Berg heißt Gargān, darauf wurden sie beide erschlagen.}
 			(%
 				A1:~33rb,28--30; vgl.
 				H:~46ra,12;
@@ -851,7 +857,7 @@ in denen andernfalls regulär mit \norm{-iu} zu rechnen wäre. Belege mit
 			Rom und Lateran \\
 	\sn \gll Wurden ím baidu̍ vndertan \\
 			wurden ihm beide-\textsc{nom.pl.\NeutI.st} untertan \\
-		\trans `Rom und Lateran wurden ihm beide untertan.'
+		\trans \wdef{Rom und Lateran wurden ihm beide untertan.}
 			(%
 				K:~68vb,13--14; vgl.
 				A1:~49vb,15--16;
@@ -883,7 +889,7 @@ alemannisch\il{Alemannisch} ausgewiesen werden \autocite[vgl.][4, 44,
 	\ex \gll bediv rome vnde Lateran \\ % 2013
 		     beide Rom[\textsc{acc.sg.\NeutI}] und
 		     Lateran[\textsc{acc.sg.\MascI}] \\
-		\trans `sowohl Rom als auch der Lateran'
+		\trans \wdef{sowohl Rom als auch der Lateran}
 			(%
 				a11:~2vb,17; vgl.
 				\KC:~V.~5953;
@@ -892,7 +898,7 @@ alemannisch\il{Alemannisch} ausgewiesen werden \autocite[vgl.][4, 44,
 
 	\ex \gll die iuncherren beide \\ % 1091
 		     die Junker-\textsc{nom.pl} beide-\textsc{nom.pl.\MascM} \\
-		\trans `die beiden jungen Herren'
+		\trans \wdef{die beiden jungen Herren}
 			(%
 				a14:~1vb,14; vgl.
 				\KC:~V.~1417;
@@ -902,7 +908,7 @@ alemannisch\il{Alemannisch} ausgewiesen werden \autocite[vgl.][4, 44,
 	\ex \gll Beidiv die ſtat \textins{u}n̄ daz lan\textins{t} \\ % Ø
 		     beide die Stadt[\textsc{acc.sg.\FemI}] und das
 		     Land[\textsc{acc.sg.\NeutI}] \\
-		\trans `sowohl die Stadt als auch das Land'
+		\trans \wdef{sowohl die Stadt als auch das Land}
 			(%
 				b1:~1rb,4%
 			)
@@ -910,7 +916,7 @@ alemannisch\il{Alemannisch} ausgewiesen werden \autocite[vgl.][4, 44,
 	\ex \gll Beidiv wip un̄ man \\ % 2004
 		     beide Frau[\textsc{nom.sg.\NeutF}] und
 		     Mann[\textsc{nom.sg.\MascM}] \\
-		\trans `Frau wie Mann'
+		\trans \wdef{Frau wie Mann}
 			(%
 				b1:~2rb,29; vgl.
 				\KC:~V.~619;
