@@ -1,4 +1,4 @@
-# Gender Resolution bei mittelhochdeutsch *beide*
+# Genusresolution bei mittelhochdeutsch *beide*
 ## Publication Info
 - Authors: Carsten Becker
 - Publication Date: not yet published
