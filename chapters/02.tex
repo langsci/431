@@ -2472,8 +2472,11 @@ Schokolade} könnte dies eine Rolle spielen.
 			]~$i$ \smallskip \\
 			%
 			obj	& \tikzmark{beidepost2d_obj}$h$: [
-				pred	& \wdef{beide} \\
-			]~$i$ \\
+				pred	& $pro$ \\
+				quant	& [
+					pred	& \wdef{beide} \\
+				]
+			]~$i$ \smallskip\\
 			%
 			pred	& \astruct{begehen}{\ups{subj}, \ups{obj}} \\
 		]}
@@ -2484,17 +2487,17 @@ Schokolade} könnte dies eine Rolle spielen.
 		({pic cs:beidepost2d_NP})
 		to [out=-30, in=south west]
 		([yshift=.5ex]{pic cs:beidepost2d_foc});
-	\draw [myarrow]
+	\draw [myarrow, in looseness=.7]
 		([yshift=.5ex]{pic cs:beidepost2d_QP})
-		to [out=-30, in=south west]
-		([yshift=.5ex]{pic cs:beidepost2d_obj});
+		to [out=east, in=215]
+		([yshift=1ex]{pic cs:beidepost2d_obj});
 	\draw [myarrow]
 		({pic cs:beidepost2d_DP})
 		to [out=-24, in=south west]
 		([yshift=.5ex]{pic cs:beidepost2d_foc});
 	\end{tikzpicture}
-	\caption{Analyse des Satzframents \norm{die jārƶīt bėidiu begāt} \wdef{die
-		Jahrestage beide begeht}}
+	\caption{Analyse des Satzfragments \norm{die jārƶīt bėidiu begāt}\\
+		 \wdef{die Jahrestage beide begeht}}
 	\label{fig:beidepost_2dist}
 \end{figure}
 
