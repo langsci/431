@@ -1354,12 +1354,12 @@ und \isi{Komplement} gemacht wird, weil die \isi{Annotation} disambiguiert.
 		([yshift=.5ex]{pic cs:cfstruct_f});
 	\draw [myarrow]
 		({pic cs:cfstruct_NP})
-		to [out=south east, in=south west]
-		([yshift=.5ex]{pic cs:cfstruct_subj});
+		to [out=south east, in=240]
+		({pic cs:cfstruct_subj});
 	\draw [myarrow]
 		([yshift=.5ex]{pic cs:cfstruct_N})
-		to [out=east, in=south west]
-		([yshift=.5ex]{pic cs:cfstruct_subj});
+		to [out=east, in=240]
+		({pic cs:cfstruct_subj});
 \end{tikzpicture}
 \caption{Analyse des Satzes \fw{Lola rennt}}
 \label{fig:cfstruct}
@@ -1541,8 +1541,7 @@ zusammen einen Plural.%
 \begin{tikzpicture}[remember picture, overlay]
 	\draw [myarrow]
 		([yshift=.5ex]{pic cs:lfgcoord1_CP})
-		-- ++(right:1.5em)
-		to [out=east, in=west]
+		to [out=east, in=112]
 		([yshift=.5ex]{pic cs:lfgcoord1_f});
 	\draw [myarrow]
 		([yshift=.5ex]{pic cs:lfgcoord1_VP})
@@ -1550,7 +1549,7 @@ zusammen einen Plural.%
 		([yshift=.5ex]{pic cs:lfgcoord1_f});
 	\draw [myarrow]
 		([yshift=.5ex]{pic cs:lfgcoord1_NP1})
-		to [out=east, in=north west]
+		to [out=-12, in=north west]
 		([yshift=.5ex]{pic cs:lfgcoord1_g});
 	\draw [myarrow]
 		([yshift=.5ex]{pic cs:lfgcoord1_NP2})
@@ -1784,29 +1783,28 @@ innerhalb derselben F-Struktur $f$ (gleicher Satz).
 	\begin{tikzpicture}[remember picture, overlay]
 		\draw [myarrow]
 			([yshift=.5ex]{pic cs:fsdom_CP})
-			-- ++(right:1em)
-			to [out=east, in=west]
+				to [out=east, in=north west]
 			([yshift=.5ex]{pic cs:fsdom_f});
 		\draw [myarrow]
 			([yshift=.5ex]{pic cs:fsdom_VP})
-			to [out=east, in=west]
+			to [out=12, in=south west]
 			([yshift=.5ex]{pic cs:fsdom_f});
-		\draw [myarrow]
-			([yshift=.5ex]{pic cs:fsdom_DPs})
-			to [out=east, in=north west]
+		\draw [myarrow, out looseness=1.6]
+			({pic cs:fsdom_DPs})
+			to [out=-18, in=north west]
 			([yshift=.5ex]{pic cs:fsdom_subj});
+		\draw [myarrow, in looseness=1.25]
+			({pic cs:fsdom_DPp})
+			to [out=-24, in=230]
+			({pic cs:fsdom_poss});
 		\draw [myarrow]
-			([yshift=.5ex]{pic cs:fsdom_DPp})
-			to [out=east, in=south west]
-			([yshift=.5ex]{pic cs:fsdom_poss});
+			({pic cs:fsdom_AP})
+			to [out=south east, in=south west]
+			({pic cs:fsdom_adj});
 		\draw [myarrow]
-			([yshift=.5ex]{pic cs:fsdom_AP})
-			to [out=east, in=south west]
-			([yshift=.5ex]{pic cs:fsdom_adj});
-		\draw [myarrow]
-			([yshift=.5ex]{pic cs:fsdom_DPr})
-			to [out=east, in=south west]
-			([yshift=.5ex]{pic cs:fsdom_obj});
+			({pic cs:fsdom_DPr})
+			to [out=south east, in=south west]
+			({pic cs:fsdom_obj});
 	\end{tikzpicture}
 	\caption{Analyse des Satzes \fw{Janas braune Katze putzt sich}}
 	\label{fig:fstructdomains}
@@ -2087,8 +2085,10 @@ Transformation\is{Government and Binding} hinzugefügt).
 			]
 		]
 	]
-	\draw [-latex, gray] (t1) to [out=west, in=south] (t2);
-	\draw [-latex, gray] (t2) to [out=west, in=south] (DP);
+	\draw [-latex, gray, looseness=1.5]
+		(t1) to [out=south west, in=south] (t2);
+	\draw [-latex, gray]
+		(t2) to [out=west, in=south] (DP);
 	\end{forest}
 	\caption{Analyse des Satzes \fw{The boys have all seen the film}
 	\autocite[nach][180]{merchant1996}}
@@ -2256,11 +2256,11 @@ koindiziert\is{Koindizierung} ist.%
 		%
 		\draw [myarrow]
 			([yshift=.5ex]{pic cs:hebrqf_NP})
-				to [out=east, in=south west]
+				to [out=-6, in=south west]
 			([yshift=.5ex]{pic cs:hebrqf_top});
 		\draw [myarrow]
-			([yshift=.5ex]{pic cs:hebrqf_QP})
-				to [out=east, in=south west]
+			({pic cs:hebrqf_QP})
+				to [out=-45, in=south west]
 			([yshift=.5ex]{pic cs:hebrqf_subj});
 		%
 		\draw [myarrow]
@@ -2375,8 +2375,8 @@ in \figref{fig:qfgg} angenommen werden), bietet sich für die \isi{Lesart} mit
 	\end{forest}
 	\begin{tikzpicture}[remember picture, overlay]
 	\draw [myarrow]
-		([yshift=.5ex]{pic cs:beidepost2c_NP})
-		to [out=east, in=south west]
+		({pic cs:beidepost2c_NP})
+		to [out=south east, in=south west]
 		([yshift=.5ex]{pic cs:beidepost2c_obj});
 	\draw [myarrow]
 		([yshift=.5ex]{pic cs:beidepost2c_QP})
@@ -2481,16 +2481,16 @@ Schokolade} könnte dies eine Rolle spielen.
 	\end{forest}
 	\begin{tikzpicture}[remember picture, overlay]
 	\draw [myarrow]
-		([yshift=.5ex]{pic cs:beidepost2d_NP})
-		to [out=east, in=south west]
+		({pic cs:beidepost2d_NP})
+		to [out=-30, in=south west]
 		([yshift=.5ex]{pic cs:beidepost2d_foc});
 	\draw [myarrow]
 		([yshift=.5ex]{pic cs:beidepost2d_QP})
-		to [out=east, in=south west]
+		to [out=-30, in=south west]
 		([yshift=.5ex]{pic cs:beidepost2d_obj});
 	\draw [myarrow]
-		([yshift=.5ex]{pic cs:beidepost2d_DP})
-		to [out=east, in=south west]
+		({pic cs:beidepost2d_DP})
+		to [out=-24, in=south west]
 		([yshift=.5ex]{pic cs:beidepost2d_foc});
 	\end{tikzpicture}
 	\caption{Analyse des Satzframents \norm{die jārƶīt bėidiu begāt} \wdef{die
