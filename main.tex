@@ -1,6 +1,7 @@
-\documentclass[output=book,booklanguage=german,
-  colorlinks,citecolor=brown,
-  draftmode,
+\documentclass[output=book,booklanguage=german,babelshorthands,
+%   colorlinks,citecolor=brown,
+%   draft,
+%   draftmode,
 ]{langscibook}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%          additional packages                 %%%
@@ -15,7 +16,6 @@
 % \includeonly{glyphtest}
 \begin{document}
 % \include{glyphtest}
-
 
 \input{localcommands.tex}
 \maketitle
@@ -56,6 +56,7 @@
 %%             Backmatter                       %%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\sloppy
 \input{localseealso.tex}
 \input{backmatter.tex}
 \end{document}

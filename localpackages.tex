@@ -64,11 +64,11 @@
 \SetBlockEnvironment{quote}
 \let\q\textquote
 
-% csquotes
-% Quotation style for word definitions: object language ‚Objektsprache‘
+% csquotes Centrally handle quotation style for word definitions:
+% object language ‘Objektsprache’ (preferred by AHL also for German)
 \DeclareQuoteStyle{wdef}%
-  {\quotesinglbase}{\textquoteleft}%
-  {\quotedblbase}{\textquotedblleft}
+  {\textquoteleft}{\textquoteright}
+  {\textquotedblleft}{\textquotedblright}
 \newcommand{\wdef}[1]{{\setquotestyle{wdef}\enquote{#1}}}
 
 % csquotes
@@ -107,6 +107,9 @@
 
 % makecell
 \usepackage{makecell}
+
+% microtype
+\usepackage{microtype}
 
 % multicols
 \usepackage{multicol}

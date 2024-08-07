@@ -1,8 +1,12 @@
 % Legally required note on this being an accepted dissertation
-\renewcommand{\lsImpressumExtra}{Submitted in partial fulfillment of the
-requirements for the degree \emph{Dr.~phil.} in German Language. Revised
+\renewcommand{\lsImpressumExtra}{\medskip Submitted in partial fulfillment of
+the requirements for the degree \emph{Dr.~phil.} in German Language. Revised
 Ph.\,D. thesis, University of Marburg, Department of German Studies and Arts,
-2022.}
+2022.\medskip}
+
+% AHL preference 'section' over '§'
+% adapted here to German
+\renewcommand{\sectref}[1]{Abschnitt~\ref{#1}}
 
 % Author's ORCID
 \newcommand*{\orcid}{0000-0002-6023-551X}
@@ -32,6 +36,30 @@ Ph.\,D. thesis, University of Marburg, Department of German Studies and Arts,
 % Orthography brackets
 \newcommand{\orth}[1]{⟨#1⟩}
 
+% % Fake superscripts
+% \newcommand{\sscr}[2]{%
+%   \smash{$\stackrel{%
+%     \text{%
+%       \raisebox{-.45ex}[0pt][0pt]{%
+%         \smaller[2]#2%
+%       }%
+%     }%
+%   }{%
+%     \text{#1}%
+%   }$}%
+% }
+% \newcommand{\sscrit}[2]{%
+%   \smash{$\stackrel{%
+%     \text{%
+%       \raisebox{-.45ex}[0pt][0pt]{%
+%         \smaller[2]\hspace{.5ex}#2%
+%       }%
+%     }%
+%   }{%
+%     \text{#1}%
+%   }$}%
+% }
+
 % Introduction/definition of technical term
 \newcommand{\term}[1]{{\textsc{\MakeLowercase{#1}}}}
 
@@ -50,10 +78,6 @@ Ph.\,D. thesis, University of Marburg, Department of German Studies and Arts,
 \newcommand{\REA}{\tit{ReA}}
 \newcommand{\REM}{\tit{ReM}}
 \newcommand{\WMU}{\tit{WMU}}
-
-% % See Also for 2nd-level entries in index
-% % Adapted from \langsciseealso in langscibook.cls
-% \newcommand{\cbseealsollvl}{\hspace*{0.7cm}\hangindent=0.7cm\seealso}
 
 % Shorthand for multicol, multirow
 \let\mc\multicolumn

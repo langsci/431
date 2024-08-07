@@ -1,8 +1,9 @@
-# Gender Resolution bei mittelhochdeutsch *beide*
+# Genusresolution bei mittelhochdeutsch *beide*
 ## Publication Info
 - Authors: Carsten Becker
-- Publication Date: not yet published
-- Series: ahl
+- Publication Date: 2024-02-09
+- Series: Advances in Historical Linguistics
+- Volume: 1
 ## Description
 [Book page on langsci-press.org](http://langsci-press.org/catalog/book/431)
 ## Originally submitted thesis

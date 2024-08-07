@@ -47,6 +47,10 @@
 	\newcommand{\lsSeriesColor}{lsRed}
 %	\renewcommand{\lsISSN}{}
 	\renewcommand{\lsSeriesText}{
+	          {\large Advances in Historical Linguistics}
+
+            \bigskip
+            
             Editors:
             Klaus Grübl (Leipzig University, Germany),
             Judith Huber (LMU Munich, Germany),
@@ -60,7 +64,7 @@
             In this series:
 
             \begin{enumerate}
-            \item Becker, Carsten. Gender Resolution bei mittelhochdeutsch \textit{beide}: Eine Analyse im Rahmen der Lexical-Functional Grammar
+            \item Becker, Carsten. Genusresolution bei mittelhochdeutsch \textit{beide}: Eine Analyse im Rahmen der Lexical-Functional Grammar
             \end{enumerate}
         }
 \fi
@@ -69,6 +73,10 @@
 	\newcommand{\lsSeriesColor}{lsLightOrange}
 	\renewcommand{\lsISSN}{2512-4862}
 	\renewcommand{\lsSeriesText}{
+	          {\large African Language Grammars and Dictionaries}
+
+            \bigskip
+
             Chief Editor:    Adams Bodomo \\
             Editor:        Firmin Ahoua
 
@@ -95,7 +103,7 @@
 
             \bigskip
 
-            Editors: Akinbiyi Akinlabi,  Laura J. Downing
+            Editors: Michael R. Marlo,  Laura J. Downing
 
 
             \bigskip
@@ -348,6 +356,7 @@
             \item Diewald, Gabriele \& Katja Politt (eds.). Paradigms regained: Theoretical and empirical arguments for the reassessment of the notion of paradigm.
             \item Freywald, Ulrike,   Horst J. Simon   \& Stefan Müller (eds.). Headedness and/or grammatical anarchy?
             \item Kawaletz, Lea. The semantics of English \textit{-ment} nominalizations.
+            \item Dalrymple, Mary (ed.). Handbook of Lexical Functional Grammar.
             \end{enumerate}
             }
 \fi
@@ -382,6 +391,7 @@
             \item  Edmonds, Amanda, Pascale Leclercq \& Aarnes Gudmestad (eds.), Interpreting  language-learning data.
             \item Berthele, Raphael \& Isabelle Udry (eds.). Individual differences in early instructed language learning: The role of language aptitude, cognition, and motivation.
             \item McManus, Kevin \& Monika S. Schmid (eds.). How special are early birds? Foreign language teaching and learning.
+            \item  Granget, Cyrille,  Isabel Repiso \& Guillaume Fon Sing (eds.). Language, creoles, varieties: From emergence to transmission.
             \end{enumerate}
 	}
 \fi
@@ -437,9 +447,8 @@
             \item Aussant, Émilie \& Jean-Michel Fortis. Historical journey in a linguistic archipelago: Case studies on concepts, fields, and commitments.
             \item McElvenny, James \& Ploder, Andrea. Holisms of communication: The early history of audio-visual sequence analysis.
             \item Anderson, Stephen R. Phonology in the Twentieth Century: Second edition, revised and expanded.
-            \end{enumerate}
             \item McElvenny, James. Interviews in the history of linguistics: Volume I.
-
+            \end{enumerate}
 
             }
 \fi
@@ -478,7 +487,7 @@
 
             \bigskip
 
-            Editors: John Nerbonne, Dirk Geeraerts
+            Editors: Martijn Wieling, Alexandra D'Arcy
 
             \bigskip
 
@@ -647,6 +656,7 @@
             \item Fliessbach, Jan. The intonation of expectations: On marked declaratives, exclamatives, and discourse particles in Castilian Spanish.
             \item Posio, Pekka \& Peter Herbeck (eds). Referring to discourse participants in Ibero-Romance languages.
             \item Pešková, Andrea. L2 Spanish and Italian intonation: Accounting for the different patterns displayed by L1 Czech and German learners.
+            \item Favaro, Marco. Modal particles in Italian: Adverbs of illocutionary modification and sociolinguistic variation.
             \end{enumerate}
             }
 \fi
@@ -674,11 +684,12 @@
             \begin{enumerate}
             \item Lenertová, Denisa, Roland Meyer, Radek Šimík \& Luka Szucsich (Eds.). Advances in formal Slavic linguistics 2016.
             \item Wiland, Bartosz. The spell-out algorithm and lexicalization patterns: Slavic verbs and complementizers.
-            \item Marušič, Franc, Petra Mišmaš  \& Rok Žaucer (eds.).  Advances in formal Slavic linguistics 2017.
+            \item Marušič, Franc, Petra Mišmaš \& Rok Žaucer (eds.). Advances in formal Slavic linguistics 2017.
             \item Blümel, Andreas, Jovana Gajić, Ljudmila Geist, Uwe Junghanns \&  Hagen Pitsch (eds.). Advances in formal Slavic linguistics 2018.
             \item Dočekal, Mojmír \& Marcin Wągiel (eds.). Formal approaches to number in Slavic and beyond.
             \item Wągiel, Marcin. Subatomic quantification.
             \item Kolaković, Zrinka, Edyta Jurkiewicz-Rohrbacher, Björn Hansen, Dušica Filipović Đurđević \& Nataša Fritz. Clitics in the wild: Empirical studies on the microvariation of the pronominal, reflexive and verbal clitics in Bosnian, Croatian and Serbian.
+            \item Biskup, Petr, Marcel Börner, Olav Mueller-Reichau \& Iuliia Shcherbina (eds.). Advances in formal Slavic linguistics 2021.
             \end{enumerate}
             }
 \fi
@@ -756,7 +767,7 @@
             \item Forbes-Barnett, Marsha. Dual aspectual forms and event structure in Caribbean English Creoles.
             \item Sherriah, André Ché. A tale of two dialect regions: Sranan’s 17th-century English input.
             \item Delgado, Sally.  Ship English: Sailors’ speech in the early colonial Caribbean.
-            \item Forrester, Clive (ed.). 2023. Intersections of language rights and social justice in the Caribbean context.
+            \item Forrester, Clive (ed.). Intersections of language rights and social justice in the Caribbean context.
             \end{enumerate}
 
             }
@@ -849,6 +860,7 @@
             \item Schmitz, Dominic. Production, perception, and comprehension of subphonemic detail: Word-Final /s/ in English.
             \item Schubö, Fabian, Sabine Zerbian, Sandra Hanne \& Isabell Wartenburger (eds.). Prosodic boundary phenomena.
             \item Albert, Aviad. A model of sonority based on pitch intelligibility.
+            \item Wehrle, Simon. Conversation and intonation in autism: A multi-dimensional analysis.
             }
             }
             
